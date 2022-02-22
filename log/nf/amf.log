@@ -1,0 +1,42 @@
+time="2022-02-11T07:48:06Z" level=info msg=amf category=App component=AMF
+time="2022-02-11T07:48:06Z" level=info msg="AMF version:  \n\tfree5GC version: v3.0.6\n\tbuild time:      2022-02-11T07:46:41Z\n\tcommit hash:     b3e99f97\n\tcommit time:     2021-09-24T09:44:32Z\n\tgo version:      go1.14.4 linux/amd64" category=App component=AMF
+time="2022-02-11T07:48:06Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-02-11T07:48:06Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-02-11T07:48:06Z" level=info msg="Server started" category=Init component=AMF
+time="2022-02-11T07:48:06Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-02-11T07:48:06Z" level=info msg="Listen on 127.0.0.1:38412" category=NGAP component=AMF
+time="2022-02-11T07:54:30Z" level=info msg=amf category=App component=AMF
+time="2022-02-11T07:54:30Z" level=info msg="AMF version:  \n\tfree5GC version: v3.0.6\n\tbuild time:      2022-02-11T07:46:41Z\n\tcommit hash:     b3e99f97\n\tcommit time:     2021-09-24T09:44:32Z\n\tgo version:      go1.14.4 linux/amd64" category=App component=AMF
+time="2022-02-11T07:54:30Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-02-11T07:54:30Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-02-11T07:54:30Z" level=info msg="Server started" category=Init component=AMF
+time="2022-02-11T07:54:30Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-02-11T07:54:30Z" level=info msg="Listen on 127.0.0.1:38412" category=NGAP component=AMF
+time="2022-02-11T07:54:57Z" level=info msg=amf category=App component=AMF
+time="2022-02-11T07:54:57Z" level=info msg="AMF version:  \n\tfree5GC version: v3.0.6\n\tbuild time:      2022-02-11T07:46:41Z\n\tcommit hash:     b3e99f97\n\tcommit time:     2021-09-24T09:44:32Z\n\tgo version:      go1.14.4 linux/amd64" category=App component=AMF
+time="2022-02-11T07:54:57Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-02-11T07:54:57Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-02-11T07:54:57Z" level=info msg="Server started" category=Init component=AMF
+time="2022-02-11T07:54:57Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-02-11T07:54:57Z" level=info msg="Listen on 127.0.0.1:38412" category=NGAP component=AMF
+time="2022-02-11T07:55:36Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-02-11T07:55:36Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-02-11T07:55:37Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-02-11T07:55:37Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-02-11T07:55:37Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-02-11T07:55:37Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-02-11T07:55:37Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-02-11T08:09:36Z" level=info msg=amf category=App component=AMF
+time="2022-02-11T08:09:36Z" level=info msg="AMF version:  \n\tfree5GC version: v3.0.6\n\tbuild time:      2022-02-11T07:46:41Z\n\tcommit hash:     b3e99f97\n\tcommit time:     2021-09-24T09:44:32Z\n\tgo version:      go1.14.4 linux/amd64" category=App component=AMF
+time="2022-02-11T08:09:36Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-02-11T08:09:36Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-02-11T08:09:36Z" level=info msg="Server started" category=Init component=AMF
+time="2022-02-11T08:09:36Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-02-11T08:09:36Z" level=info msg="Listen on 127.0.0.1:38412" category=NGAP component=AMF
+time="2022-02-11T08:10:53Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-02-11T08:10:53Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-02-11T08:10:54Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-02-11T08:10:54Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-02-11T08:10:54Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-02-11T08:10:54Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-02-11T08:10:54Z" level=info msg="AMF terminated" category=Init component=AMF
