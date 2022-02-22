@@ -20,17 +20,17 @@ import (
 	"github.com/free5gc/amf/factory"
 	"github.com/free5gc/amf/httpcallback"
 	"github.com/free5gc/amf/location"
-	"github.com/free5gc/amf/logger"
 	"github.com/free5gc/amf/mt"
-	"github.com/free5gc/amf/ngap"
-	ngap_message "github.com/free5gc/amf/ngap/message"
-	ngap_service "github.com/free5gc/amf/ngap/service"
 	"github.com/free5gc/amf/oam"
 	"github.com/free5gc/amf/producer/callback"
 	"github.com/free5gc/amf/util"
 	aperLogger "github.com/free5gc/aper/logger"
 	fsmLogger "github.com/free5gc/fsm/logger"
 	"github.com/free5gc/http2_util"
+	"github.com/free5gc/lb/logger"
+	"github.com/free5gc/lb/ngap"
+	ngap_message "github.com/free5gc/lb/ngap/message"
+	ngap_service "github.com/free5gc/lb/ngap/service"
 	"github.com/free5gc/logger_util"
 	nasLogger "github.com/free5gc/nas/logger"
 	ngapLogger "github.com/free5gc/ngap/logger"
@@ -40,25 +40,25 @@ import (
 	pathUtilLogger "github.com/free5gc/path_util/logger"
 )
 
-type AMF struct{}
+type LB struct{}
 
 type (
 	// Config information.
 	Config struct {
-		amfcfg string
+		lbcfg string
 	}
 )
 
 var config Config
 
-var amfCLi = []cli.Flag{
+var lbCLi = []cli.Flag{
 	cli.StringFlag{
 		Name:  "free5gccfg",
 		Usage: "common config file",
 	},
 	cli.StringFlag{
-		Name:  "amfcfg",
-		Usage: "amf config file",
+		Name:  "lbcfg",
+		Usage: "lb config file",
 	},
 }
 
@@ -68,27 +68,27 @@ func init() {
 	initLog = logger.InitLog
 }
 
-func (*AMF) GetCliCmd() (flags []cli.Flag) {
-	return amfCLi
+func (*LB) GetCliCmd() (flags []cli.Flag) {
+	return lbCLi
 }
 
-func (amf *AMF) Initialize(c *cli.Context) error {
+func (lb *LB) Initialize(c *cli.Context) error {
 	config = Config{
-		amfcfg: c.String("amfcfg"),
+		lbcfg: c.String("lbcfg"),
 	}
 
-	if config.amfcfg != "" {
-		if err := factory.InitConfigFactory(config.amfcfg); err != nil {
+	if config.lbcfg != "" {
+		if err := factory.InitConfigFactory(config.lbcfg); err != nil {
 			return err
 		}
 	} else {
-		DefaultAmfConfigPath := path_util.Free5gcPath("free5gc/config/amfcfg.yaml")
+		DefaultAmfConfigPath := path_util.Free5gcPath("free5gc/config/lbcfg.yaml")
 		if err := factory.InitConfigFactory(DefaultAmfConfigPath); err != nil {
 			return err
 		}
 	}
 
-	amf.setLogLevel()
+	lb.setLogLevel()
 
 	if err := factory.CheckConfigVersion(); err != nil {
 		return err
@@ -97,27 +97,27 @@ func (amf *AMF) Initialize(c *cli.Context) error {
 	return nil
 }
 
-func (amf *AMF) setLogLevel() {
+func (lb *LB) setLogLevel() {
 	if factory.AmfConfig.Logger == nil {
-		initLog.Warnln("AMF config without log level setting!!!")
+		initLog.Warnln("LB config without log level setting!!!")
 		return
 	}
 
-	if factory.AmfConfig.Logger.AMF != nil {
-		if factory.AmfConfig.Logger.AMF.DebugLevel != "" {
-			if level, err := logrus.ParseLevel(factory.AmfConfig.Logger.AMF.DebugLevel); err != nil {
-				initLog.Warnf("AMF Log level [%s] is invalid, set to [info] level",
-					factory.AmfConfig.Logger.AMF.DebugLevel)
+	if factory.AmfConfig.Logger.LB != nil {
+		if factory.AmfConfig.Logger.LB.DebugLevel != "" {
+			if level, err := logrus.ParseLevel(factory.AmfConfig.Logger.LB.DebugLevel); err != nil {
+				initLog.Warnf("LB Log level [%s] is invalid, set to [info] level",
+					factory.AmfConfig.Logger.LB.DebugLevel)
 				logger.SetLogLevel(logrus.InfoLevel)
 			} else {
-				initLog.Infof("AMF Log level is set to [%s] level", level)
+				initLog.Infof("LB Log level is set to [%s] level", level)
 				logger.SetLogLevel(level)
 			}
 		} else {
-			initLog.Warnln("AMF Log level not set. Default set to [info] level")
+			initLog.Warnln("LB Log level not set. Default set to [info] level")
 			logger.SetLogLevel(logrus.InfoLevel)
 		}
-		logger.SetReportCaller(factory.AmfConfig.Logger.AMF.ReportCaller)
+		logger.SetReportCaller(factory.AmfConfig.Logger.LB.ReportCaller)
 	}
 
 	if factory.AmfConfig.Logger.NAS != nil {
@@ -217,8 +217,8 @@ func (amf *AMF) setLogLevel() {
 	}
 }
 
-func (amf *AMF) FilterCli(c *cli.Context) (args []string) {
-	for _, flag := range amf.GetCliCmd() {
+func (lb *LB) FilterCli(c *cli.Context) (args []string) {
+	for _, flag := range lb.GetCliCmd() {
 		name := flag.GetName()
 		value := fmt.Sprint(c.Generic(name))
 		if value == "" {
@@ -230,7 +230,7 @@ func (amf *AMF) FilterCli(c *cli.Context) (args []string) {
 	return args
 }
 
-func (amf *AMF) Start() {
+func (lb *LB) Start() {
 	initLog.Infoln("Server started")
 
 	router := logger_util.NewGinWithLogrus(logger.GinLog)
@@ -261,7 +261,7 @@ func (amf *AMF) Start() {
 		}
 	}
 
-	self := context.AMF_Self()
+	self := context.LB_Self()
 	util.InitAmfContext(self)
 
 	addr := fmt.Sprintf("%s:%d", self.BindingIPv4, self.SBIPort)
@@ -275,7 +275,7 @@ func (amf *AMF) Start() {
 	// Register to NRF
 	var profile models.NfProfile
 	if profileTmp, err := consumer.BuildNFInstance(self); err != nil {
-		initLog.Error("Build AMF Profile Error")
+		initLog.Error("Build LB Profile Error")
 	} else {
 		profile = profileTmp
 	}
@@ -290,7 +290,7 @@ func (amf *AMF) Start() {
 	signal.Notify(signalChannel, os.Interrupt, syscall.SIGTERM)
 	go func() {
 		<-signalChannel
-		amf.Terminate()
+		lb.Terminate()
 		os.Exit(0)
 	}()
 
@@ -317,13 +317,13 @@ func (amf *AMF) Start() {
 	}
 }
 
-func (amf *AMF) Exec(c *cli.Context) error {
-	// AMF.Initialize(cfgPath, c)
+func (lb *LB) Exec(c *cli.Context) error {
+	// LB.Initialize(cfgPath, c)
 
-	initLog.Traceln("args:", c.String("amfcfg"))
-	args := amf.FilterCli(c)
+	initLog.Traceln("args:", c.String("lbcfg"))
+	args := lb.FilterCli(c)
 	initLog.Traceln("filter: ", args)
-	command := exec.Command("./amf", args...)
+	command := exec.Command("./lb", args...)
 
 	stdout, err := command.StdoutPipe()
 	if err != nil {
@@ -353,7 +353,7 @@ func (amf *AMF) Exec(c *cli.Context) error {
 
 	go func() {
 		if err = command.Start(); err != nil {
-			initLog.Errorf("AMF Start error: %+v", err)
+			initLog.Errorf("LB Start error: %+v", err)
 		}
 		wg.Done()
 	}()
@@ -363,12 +363,12 @@ func (amf *AMF) Exec(c *cli.Context) error {
 	return err
 }
 
-// Used in AMF planned removal procedure
-func (amf *AMF) Terminate() {
-	logger.InitLog.Infof("Terminating AMF...")
-	amfSelf := context.AMF_Self()
+// Used in LB planned removal procedure
+func (lb *LB) Terminate() {
+	logger.InitLog.Infof("Terminating LB...")
+	lbSelf := context.LB_Self()
 
-	// TODO: forward registered UE contexts to target AMF in the same AMF set if there is one
+	// TODO: forward registered UE contexts to target LB in the same LB set if there is one
 
 	// deregister with NRF
 	problemDetails, err := consumer.SendDeregisterNFInstance()
@@ -377,13 +377,13 @@ func (amf *AMF) Terminate() {
 	} else if err != nil {
 		logger.InitLog.Errorf("Deregister NF instance Error[%+v]", err)
 	} else {
-		logger.InitLog.Infof("[AMF] Deregister from NRF successfully")
+		logger.InitLog.Infof("[LB] Deregister from NRF successfully")
 	}
 
-	// send AMF status indication to ran to notify ran that this AMF will be unavailable
-	logger.InitLog.Infof("Send AMF Status Indication to Notify RANs due to AMF terminating")
-	unavailableGuamiList := ngap_message.BuildUnavailableGUAMIList(amfSelf.ServedGuamiList)
-	amfSelf.AmfRanPool.Range(func(key, value interface{}) bool {
+	// send LB status indication to ran to notify ran that this LB will be unavailable
+	logger.InitLog.Infof("Send LB Status Indication to Notify RANs due to LB terminating")
+	unavailableGuamiList := ngap_message.BuildUnavailableGUAMIList(lbSelf.ServedGuamiList)
+	lbSelf.AmfRanPool.Range(func(key, value interface{}) bool {
 		ran := value.(*context.AmfRan)
 		ngap_message.SendAMFStatusIndication(ran, unavailableGuamiList)
 		return true
@@ -391,6 +391,6 @@ func (amf *AMF) Terminate() {
 
 	ngap_service.Stop()
 
-	callback.SendAmfStatusChangeNotify((string)(models.StatusChange_UNAVAILABLE), amfSelf.ServedGuamiList)
-	logger.InitLog.Infof("AMF terminated")
+	callback.SendAmfStatusChangeNotify((string)(models.StatusChange_UNAVAILABLE), lbSelf.ServedGuamiList)
+	logger.InitLog.Infof("LB terminated")
 }
