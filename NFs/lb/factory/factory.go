@@ -1,5 +1,5 @@
 /*
- * AMF Configuration Factory
+ * LB Configuration Factory
  */
 
 package factory
@@ -10,19 +10,19 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/free5gc/amf/logger"
+	"loadbalance/logger"
 )
 
-var AmfConfig Config
+var LbConfig Config
 
 // TODO: Support configuration update from REST api
 func InitConfigFactory(f string) error {
 	if content, err := ioutil.ReadFile(f); err != nil {
 		return err
 	} else {
-		AmfConfig = Config{}
+		LbConfig = Config{}
 
-		if yamlErr := yaml.Unmarshal(content, &AmfConfig); yamlErr != nil {
+		if yamlErr := yaml.Unmarshal(content, &LbConfig); yamlErr != nil {
 			return yamlErr
 		}
 	}
@@ -31,11 +31,11 @@ func InitConfigFactory(f string) error {
 }
 
 func CheckConfigVersion() error {
-	currentVersion := AmfConfig.GetVersion()
+	currentVersion := LbConfig.GetVersion()
 
-	if currentVersion != AMF_EXPECTED_CONFIG_VERSION {
+	if currentVersion != LB_EXPECTED_CONFIG_VERSION {
 		return fmt.Errorf("config version is [%s], but expected is [%s].",
-			currentVersion, AMF_EXPECTED_CONFIG_VERSION)
+			currentVersion, LB_EXPECTED_CONFIG_VERSION)
 	}
 
 	logger.CfgLog.Infof("config version [%s]", currentVersion)

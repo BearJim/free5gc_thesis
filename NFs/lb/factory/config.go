@@ -1,5 +1,5 @@
 /*
- * AMF Configuration Factory
+ * LB Configuration Factory
  */
 
 package factory
@@ -12,7 +12,7 @@ import (
 )
 
 const (
-	AMF_EXPECTED_CONFIG_VERSION = "1.0.2"
+	LB_EXPECTED_CONFIG_VERSION = "1.0.2"
 )
 
 type Config struct {
@@ -27,14 +27,14 @@ type Info struct {
 }
 
 const (
-	AMF_DEFAULT_IPV4     = "127.0.0.18"
-	AMF_DEFAULT_PORT     = "8000"
-	AMF_DEFAULT_PORT_INT = 8000
-	AMF_DEFAULT_NRFURI   = "https://127.0.0.10:8000"
+	LB_DEFAULT_IPV4     = "127.0.0.21"
+	LB_DEFAULT_PORT     = "8000"
+	LB_DEFAULT_PORT_INT = 8000
+	LB_DEFAULT_NRFURI   = "https://127.0.0.10:8000"
 )
 
 type Configuration struct {
-	AmfName                         string                    `yaml:"amfName,omitempty"`
+	LbName                          string                    `yaml:"lbName,omitempty"`
 	NgapIpList                      []string                  `yaml:"ngapIpList,omitempty"`
 	Sbi                             *Sbi                      `yaml:"sbi,omitempty"`
 	NetworkFeatureSupport5GS        *NetworkFeatureSupport5GS `yaml:"networkFeatureSupport5GS,omitempty"`
