@@ -5,10 +5,9 @@ import (
 	"time"
 
 	formatter "github.com/antonfisher/nested-logrus-formatter"
-	"github.com/sirupsen/logrus"
-
 	"github.com/free5gc/logger_conf"
 	"github.com/free5gc/logger_util"
+	"github.com/sirupsen/logrus"
 )
 
 var (

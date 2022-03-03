@@ -20,6 +20,8 @@ import (
 	ngap_message "loadbalance/ngap/message"
 	ngap_service "loadbalance/ngap/service"
 
+	"loadbalance/util"
+
 	"github.com/free5gc/amf/communication"
 	"github.com/free5gc/amf/consumer"
 	"github.com/free5gc/amf/context"
@@ -29,7 +31,6 @@ import (
 	"github.com/free5gc/amf/mt"
 	"github.com/free5gc/amf/oam"
 	"github.com/free5gc/amf/producer/callback"
-	"github.com/free5gc/amf/util"
 	aperLogger "github.com/free5gc/aper/logger"
 	fsmLogger "github.com/free5gc/fsm/logger"
 	"github.com/free5gc/http2_util"
@@ -84,8 +85,8 @@ func (lb *LB) Initialize(c *cli.Context) error {
 			return err
 		}
 	} else {
-		DefaultAmfConfigPath := path_util.Free5gcPath("free5gc/config/lbcfg.yaml")
-		if err := factory.InitConfigFactory(DefaultAmfConfigPath); err != nil {
+		DefaultLbConfigPath := path_util.Free5gcPath("free5gc/config/lbcfg.yaml")
+		if err := factory.InitConfigFactory(DefaultLbConfigPath); err != nil {
 			return err
 		}
 	}
@@ -100,16 +101,16 @@ func (lb *LB) Initialize(c *cli.Context) error {
 }
 
 func (lb *LB) setLogLevel() {
-	if factory.AmfConfig.Logger == nil {
+	if factory.LbConfig.Logger == nil {
 		initLog.Warnln("LB config without log level setting!!!")
 		return
 	}
 
-	if factory.AmfConfig.Logger.LB != nil {
-		if factory.AmfConfig.Logger.LB.DebugLevel != "" {
-			if level, err := logrus.ParseLevel(factory.AmfConfig.Logger.LB.DebugLevel); err != nil {
+	if factory.LbConfig.Logger.LB != nil {
+		if factory.LbConfig.Logger.LB.DebugLevel != "" {
+			if level, err := logrus.ParseLevel(factory.LbConfig.Logger.LB.DebugLevel); err != nil {
 				initLog.Warnf("LB Log level [%s] is invalid, set to [info] level",
-					factory.AmfConfig.Logger.LB.DebugLevel)
+					factory.LbConfig.Logger.LB.DebugLevel)
 				logger.SetLogLevel(logrus.InfoLevel)
 			} else {
 				initLog.Infof("LB Log level is set to [%s] level", level)
@@ -119,14 +120,14 @@ func (lb *LB) setLogLevel() {
 			initLog.Warnln("LB Log level not set. Default set to [info] level")
 			logger.SetLogLevel(logrus.InfoLevel)
 		}
-		logger.SetReportCaller(factory.AmfConfig.Logger.LB.ReportCaller)
+		logger.SetReportCaller(factory.LbConfig.Logger.LB.ReportCaller)
 	}
 
-	if factory.AmfConfig.Logger.NAS != nil {
-		if factory.AmfConfig.Logger.NAS.DebugLevel != "" {
-			if level, err := logrus.ParseLevel(factory.AmfConfig.Logger.NAS.DebugLevel); err != nil {
+	if factory.LbConfig.Logger.NAS != nil {
+		if factory.LbConfig.Logger.NAS.DebugLevel != "" {
+			if level, err := logrus.ParseLevel(factory.LbConfig.Logger.NAS.DebugLevel); err != nil {
 				nasLogger.NasLog.Warnf("NAS Log level [%s] is invalid, set to [info] level",
-					factory.AmfConfig.Logger.NAS.DebugLevel)
+					factory.LbConfig.Logger.NAS.DebugLevel)
 				logger.SetLogLevel(logrus.InfoLevel)
 			} else {
 				nasLogger.SetLogLevel(level)
@@ -135,14 +136,14 @@ func (lb *LB) setLogLevel() {
 			nasLogger.NasLog.Warnln("NAS Log level not set. Default set to [info] level")
 			nasLogger.SetLogLevel(logrus.InfoLevel)
 		}
-		nasLogger.SetReportCaller(factory.AmfConfig.Logger.NAS.ReportCaller)
+		nasLogger.SetReportCaller(factory.LbConfig.Logger.NAS.ReportCaller)
 	}
 
-	if factory.AmfConfig.Logger.NGAP != nil {
-		if factory.AmfConfig.Logger.NGAP.DebugLevel != "" {
-			if level, err := logrus.ParseLevel(factory.AmfConfig.Logger.NGAP.DebugLevel); err != nil {
+	if factory.LbConfig.Logger.NGAP != nil {
+		if factory.LbConfig.Logger.NGAP.DebugLevel != "" {
+			if level, err := logrus.ParseLevel(factory.LbConfig.Logger.NGAP.DebugLevel); err != nil {
 				ngapLogger.NgapLog.Warnf("NGAP Log level [%s] is invalid, set to [info] level",
-					factory.AmfConfig.Logger.NGAP.DebugLevel)
+					factory.LbConfig.Logger.NGAP.DebugLevel)
 				ngapLogger.SetLogLevel(logrus.InfoLevel)
 			} else {
 				ngapLogger.SetLogLevel(level)
@@ -151,14 +152,14 @@ func (lb *LB) setLogLevel() {
 			ngapLogger.NgapLog.Warnln("NGAP Log level not set. Default set to [info] level")
 			ngapLogger.SetLogLevel(logrus.InfoLevel)
 		}
-		ngapLogger.SetReportCaller(factory.AmfConfig.Logger.NGAP.ReportCaller)
+		ngapLogger.SetReportCaller(factory.LbConfig.Logger.NGAP.ReportCaller)
 	}
 
-	if factory.AmfConfig.Logger.FSM != nil {
-		if factory.AmfConfig.Logger.FSM.DebugLevel != "" {
-			if level, err := logrus.ParseLevel(factory.AmfConfig.Logger.FSM.DebugLevel); err != nil {
+	if factory.LbConfig.Logger.FSM != nil {
+		if factory.LbConfig.Logger.FSM.DebugLevel != "" {
+			if level, err := logrus.ParseLevel(factory.LbConfig.Logger.FSM.DebugLevel); err != nil {
 				fsmLogger.FsmLog.Warnf("FSM Log level [%s] is invalid, set to [info] level",
-					factory.AmfConfig.Logger.FSM.DebugLevel)
+					factory.LbConfig.Logger.FSM.DebugLevel)
 				fsmLogger.SetLogLevel(logrus.InfoLevel)
 			} else {
 				fsmLogger.SetLogLevel(level)
@@ -167,14 +168,14 @@ func (lb *LB) setLogLevel() {
 			fsmLogger.FsmLog.Warnln("FSM Log level not set. Default set to [info] level")
 			fsmLogger.SetLogLevel(logrus.InfoLevel)
 		}
-		fsmLogger.SetReportCaller(factory.AmfConfig.Logger.FSM.ReportCaller)
+		fsmLogger.SetReportCaller(factory.LbConfig.Logger.FSM.ReportCaller)
 	}
 
-	if factory.AmfConfig.Logger.Aper != nil {
-		if factory.AmfConfig.Logger.Aper.DebugLevel != "" {
-			if level, err := logrus.ParseLevel(factory.AmfConfig.Logger.Aper.DebugLevel); err != nil {
+	if factory.LbConfig.Logger.Aper != nil {
+		if factory.LbConfig.Logger.Aper.DebugLevel != "" {
+			if level, err := logrus.ParseLevel(factory.LbConfig.Logger.Aper.DebugLevel); err != nil {
 				aperLogger.AperLog.Warnf("Aper Log level [%s] is invalid, set to [info] level",
-					factory.AmfConfig.Logger.Aper.DebugLevel)
+					factory.LbConfig.Logger.Aper.DebugLevel)
 				aperLogger.SetLogLevel(logrus.InfoLevel)
 			} else {
 				aperLogger.SetLogLevel(level)
@@ -183,14 +184,14 @@ func (lb *LB) setLogLevel() {
 			aperLogger.AperLog.Warnln("Aper Log level not set. Default set to [info] level")
 			aperLogger.SetLogLevel(logrus.InfoLevel)
 		}
-		aperLogger.SetReportCaller(factory.AmfConfig.Logger.Aper.ReportCaller)
+		aperLogger.SetReportCaller(factory.LbConfig.Logger.Aper.ReportCaller)
 	}
 
-	if factory.AmfConfig.Logger.PathUtil != nil {
-		if factory.AmfConfig.Logger.PathUtil.DebugLevel != "" {
-			if level, err := logrus.ParseLevel(factory.AmfConfig.Logger.PathUtil.DebugLevel); err != nil {
+	if factory.LbConfig.Logger.PathUtil != nil {
+		if factory.LbConfig.Logger.PathUtil.DebugLevel != "" {
+			if level, err := logrus.ParseLevel(factory.LbConfig.Logger.PathUtil.DebugLevel); err != nil {
 				pathUtilLogger.PathLog.Warnf("PathUtil Log level [%s] is invalid, set to [info] level",
-					factory.AmfConfig.Logger.PathUtil.DebugLevel)
+					factory.LbConfig.Logger.PathUtil.DebugLevel)
 				pathUtilLogger.SetLogLevel(logrus.InfoLevel)
 			} else {
 				pathUtilLogger.SetLogLevel(level)
@@ -199,14 +200,14 @@ func (lb *LB) setLogLevel() {
 			pathUtilLogger.PathLog.Warnln("PathUtil Log level not set. Default set to [info] level")
 			pathUtilLogger.SetLogLevel(logrus.InfoLevel)
 		}
-		pathUtilLogger.SetReportCaller(factory.AmfConfig.Logger.PathUtil.ReportCaller)
+		pathUtilLogger.SetReportCaller(factory.LbConfig.Logger.PathUtil.ReportCaller)
 	}
 
-	if factory.AmfConfig.Logger.OpenApi != nil {
-		if factory.AmfConfig.Logger.OpenApi.DebugLevel != "" {
-			if level, err := logrus.ParseLevel(factory.AmfConfig.Logger.OpenApi.DebugLevel); err != nil {
+	if factory.LbConfig.Logger.OpenApi != nil {
+		if factory.LbConfig.Logger.OpenApi.DebugLevel != "" {
+			if level, err := logrus.ParseLevel(factory.LbConfig.Logger.OpenApi.DebugLevel); err != nil {
 				openApiLogger.OpenApiLog.Warnf("OpenAPI Log level [%s] is invalid, set to [info] level",
-					factory.AmfConfig.Logger.OpenApi.DebugLevel)
+					factory.LbConfig.Logger.OpenApi.DebugLevel)
 				openApiLogger.SetLogLevel(logrus.InfoLevel)
 			} else {
 				openApiLogger.SetLogLevel(level)
@@ -215,7 +216,7 @@ func (lb *LB) setLogLevel() {
 			openApiLogger.OpenApiLog.Warnln("OpenAPI Log level not set. Default set to [info] level")
 			openApiLogger.SetLogLevel(logrus.InfoLevel)
 		}
-		openApiLogger.SetReportCaller(factory.AmfConfig.Logger.OpenApi.ReportCaller)
+		openApiLogger.SetReportCaller(factory.LbConfig.Logger.OpenApi.ReportCaller)
 	}
 }
 
@@ -250,7 +251,7 @@ func (lb *LB) Start() {
 
 	httpcallback.AddService(router)
 	oam.AddService(router)
-	for _, serviceName := range factory.AmfConfig.Configuration.ServiceNameList {
+	for _, serviceName := range factory.LbConfig.Configuration.ServiceNameList {
 		switch models.ServiceName(serviceName) {
 		case models.ServiceName_NAMF_COMM:
 			communication.AddService(router)
@@ -307,7 +308,7 @@ func (lb *LB) Start() {
 		initLog.Warnf("Initialize HTTP server: %+v", err)
 	}
 
-	serverScheme := factory.AmfConfig.Configuration.Sbi.Scheme
+	serverScheme := factory.LbConfig.Configuration.Sbi.Scheme
 	if serverScheme == "http" {
 		err = server.ListenAndServe()
 	} else if serverScheme == "https" {
