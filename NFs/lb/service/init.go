@@ -19,8 +19,6 @@ import (
 	"loadbalance/ngap"
 	ngap_service "loadbalance/ngap/service"
 
-	// "loadbalance/util"
-
 	"github.com/free5gc/http2_util"
 	"github.com/free5gc/logger_util"
 	"github.com/free5gc/path_util"

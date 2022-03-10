@@ -5,20 +5,22 @@ import (
 
 	"git.cs.nctu.edu.tw/calee/sctp"
 
-	"github.com/free5gc/amf/context"
-	"github.com/free5gc/amf/logger"
+	"loadbalance/logger"
+
+	"loadbalance/context"
+
 	"github.com/free5gc/ngap"
 	"github.com/free5gc/ngap/ngapType"
 )
 
 func Dispatch(conn net.Conn, msg []byte) {
-	var ran *context.AmfRan
-	amfSelf := context.AMF_Self()
+	var ran *context.LbRan
+	lbSelf := context.LB_Self()
 
-	ran, ok := amfSelf.AmfRanFindByConn(conn)
+	ran, ok := lbSelf.LbRanFindByConn(conn)
 	if !ok {
 		logger.NgapLog.Infof("Create a new NG connection for: %s", conn.RemoteAddr().String())
-		ran = amfSelf.NewAmfRan(conn)
+		ran = lbSelf.NewLbRan(conn)
 	}
 
 	if len(msg) == 0 {
@@ -105,8 +107,8 @@ func Dispatch(conn net.Conn, msg []byte) {
 			HandlePDUSessionResourceReleaseResponse(ran, pdu)
 		case ngapType.ProcedureCodeUERadioCapabilityCheck:
 			HandleUERadioCapabilityCheckResponse(ran, pdu)
-		case ngapType.ProcedureCodeAMFConfigurationUpdate:
-			HandleAMFconfigurationUpdateAcknowledge(ran, pdu)
+		case ngapType.ProcedureCodeLBConfigurationUpdate:
+			HandleLBconfigurationUpdateAcknowledge(ran, pdu)
 		case ngapType.ProcedureCodeInitialContextSetup:
 			HandleInitialContextSetupResponse(ran, pdu)
 		case ngapType.ProcedureCodeUEContextModification:
@@ -127,8 +129,8 @@ func Dispatch(conn net.Conn, msg []byte) {
 			return
 		}
 		switch unsuccessfulOutcome.ProcedureCode.Value {
-		case ngapType.ProcedureCodeAMFConfigurationUpdate:
-			HandleAMFconfigurationUpdateFailure(ran, pdu)
+		case ngapType.ProcedureCodeLBConfigurationUpdate:
+			HandleLBconfigurationUpdateFailure(ran, pdu)
 		case ngapType.ProcedureCodeInitialContextSetup:
 			HandleInitialContextSetupFailure(ran, pdu)
 		case ngapType.ProcedureCodeUEContextModification:
@@ -142,11 +144,11 @@ func Dispatch(conn net.Conn, msg []byte) {
 }
 
 func HandleSCTPNotification(conn net.Conn, notification sctp.Notification) {
-	amfSelf := context.AMF_Self()
+	lbSelf := context.LB_Self()
 
 	logger.NgapLog.Infof("Handle SCTP Notification[addr: %+v]", conn.RemoteAddr())
 
-	ran, ok := amfSelf.AmfRanFindByConn(conn)
+	ran, ok := lbSelf.LbRanFindByConn(conn)
 	if !ok {
 		logger.NgapLog.Warnf("RAN context has been removed[addr: %+v]", conn.RemoteAddr())
 		return
