@@ -27,9 +27,9 @@ func Dispatch(conn net.Conn, msg []byte) {
 
 	var amf *context.LbAmf
 
-	//set Amf configuration
+	//set RAN configuration
 
-	SendToAmf(amf, msg)
+	SendToRan(amf, msg)
 }
 
 func HandleSCTPNotification(conn net.Conn, notification sctp.Notification) {
@@ -65,7 +65,7 @@ func HandleSCTPNotification(conn net.Conn, notification sctp.Notification) {
 	}
 }
 
-func SendToAmf(amf *context.LbAmf, msg []byte) {
+func SendToRan(amf *context.LbAmf, msg []byte) {
 	if n, err := amf.Conn.Write(msg); err != nil {
 		amf.Log.Errorf("Send error: %+v", err)
 		return
