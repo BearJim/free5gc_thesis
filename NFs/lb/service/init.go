@@ -256,8 +256,11 @@ func (lb *LB) Start() {
 	}
 
 	var NgapIp []string
+	var AmfIp []string
 	NgapIp[0] = "127.0.0.1"
-	ngap_service.Run(NgapIp, 38412, ngapHandler)
+	AmfIp[0] = "127.0.0.18"
+	ngap_service.DialToAmf(AmfIp, 38412)
+	ngap_service.Run(NgapIp, 38415, ngapHandler)
 
 	// Register to NRF
 	// var profile models.NfProfile

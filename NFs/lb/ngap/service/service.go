@@ -1,15 +1,18 @@
 package service
 
 import (
+	"crypto/rand"
 	"encoding/hex"
 	"io"
 	"net"
 	"sync"
 	"syscall"
+	"time"
 
 	"git.cs.nctu.edu.tw/calee/sctp"
 
-	"github.com/free5gc/amf/logger"
+	"loadbalance/logger"
+
 	"github.com/free5gc/ngap"
 )
 
@@ -52,6 +55,72 @@ func Run(addresses []string, port int, handler NGAPHandler) {
 	}
 
 	go listenAndServe(addr, handler)
+}
+
+func DialToAmf(addresses []string, port int) {
+	var laddr *sctp.SCTPAddr
+	sndbuf := 0
+	rcvbuf := 0
+	bufsize := 256
+	ips := []net.IPAddr{}
+
+	for _, addr := range addresses {
+		if netAddr, err := net.ResolveIPAddr("ip", addr); err != nil {
+			logger.NgapLog.Errorf("Error resolving address '%s': %v\n", addr, err)
+		} else {
+			logger.NgapLog.Debugf("Resolved address '%s' to %s\n", addr, netAddr)
+			ips = append(ips, *netAddr)
+		}
+	}
+
+	addr := &sctp.SCTPAddr{
+		IPAddrs: ips,
+		Port:    port,
+	}
+
+	var lport int
+	if lport != 0 {
+		laddr = &sctp.SCTPAddr{
+			Port: lport,
+		}
+	}
+
+	AMFconn, err := sctp.DialSCTP("sctp", laddr, addr)
+	if err != nil {
+		logger.NgapLog.Errorf("failed to dial: %v", err)
+	}
+	err = AMFconn.SetWriteBuffer(sndbuf)
+	if err != nil {
+		logger.NgapLog.Errorf("failed to set write buf: %v", err)
+	}
+	err = AMFconn.SetReadBuffer(rcvbuf)
+	if err != nil {
+		logger.NgapLog.Errorf("failed to set read buf: %v", err)
+	}
+	ppid := 0
+
+	for {
+		info := &sctp.SndRcvInfo{
+			Stream: uint16(ppid),
+			PPID:   uint32(ppid),
+		}
+		ppid += 1
+		AMFconn.SubscribeEvents(sctp.SCTP_EVENT_DATA_IO)
+		buf := make([]byte, bufsize)
+		n, err := rand.Read(buf)
+		if n != bufsize || err != nil {
+			logger.NgapLog.Errorf("failed to generate random string len: %d", bufsize)
+		}
+		n, err = AMFconn.SCTPWrite(buf, info)
+		if err != nil {
+			logger.NgapLog.Errorf("failed to write: %v", err)
+		}
+		n, info, _, err = AMFconn.SCTPRead(buf)
+		if err != nil {
+			logger.NgapLog.Errorf("failed to read: %v", err)
+		}
+		time.Sleep(time.Second)
+	}
 }
 
 func listenAndServe(addr *sctp.SCTPAddr, handler NGAPHandler) {
