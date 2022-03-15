@@ -257,8 +257,10 @@ func (lb *LB) Start() {
 
 	var NgapIp []string
 	var AmfIp []string
-	NgapIp[0] = "127.0.0.1"
+	NgapIp[0] = "127.0.0.21"
 	AmfIp[0] = "127.0.0.18"
+	AmfIp[1] = "127.0.0.19"
+	AmfIp[2] = "127.0.0.20"
 	ngap_service.DialToAmf(AmfIp, 38412)
 	ngap_service.Run(NgapIp, 38415, ngapHandler)
 
