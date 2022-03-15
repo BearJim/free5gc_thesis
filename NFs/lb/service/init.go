@@ -16,7 +16,6 @@ import (
 	"loadbalance/factory"
 
 	"loadbalance/logger"
-	"loadbalance/ngap"
 	ngap_service "loadbalance/ngap/service"
 
 	"github.com/free5gc/http2_util"
@@ -250,10 +249,10 @@ func (lb *LB) Start() {
 
 	// addr := fmt.Sprintf("%s:%d", self.BindingIPv4, self.SBIPort)
 
-	ngapHandler := ngap_service.NGAPHandler{
-		HandleMessage:      ngap.Dispatch,
-		HandleNotification: ngap.HandleSCTPNotification,
-	}
+	// ngapHandler := ngap_service.NGAPHandler{
+	// 	HandleMessage:      ngap.Dispatch,
+	// 	HandleNotification: ngap.HandleSCTPNotification,
+	// }
 
 	var NgapIp []string
 	var AmfIp []string
@@ -262,7 +261,7 @@ func (lb *LB) Start() {
 	AmfIp[1] = "127.0.0.19"
 	AmfIp[2] = "127.0.0.20"
 	ngap_service.DialToAmf(AmfIp, 38412)
-	ngap_service.Run(NgapIp, 38415, ngapHandler)
+	ngap_service.Run(NgapIp, 38415)
 
 	// Register to NRF
 	// var profile models.NfProfile
