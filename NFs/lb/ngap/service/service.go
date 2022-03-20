@@ -145,8 +145,8 @@ func listenAndServe(addr *sctp.SCTPAddr) {
 
 func DialToAmf(addresses []string, port int) {
 	var laddr *sctp.SCTPAddr
-	// sndbuf := 0
-	// rcvbuf := 0
+	sndbuf := 0
+	rcvbuf := 0
 	ips := []net.IPAddr{}
 
 	for _, addr := range addresses {
@@ -163,7 +163,9 @@ func DialToAmf(addresses []string, port int) {
 		Port:    port,
 	}
 
-	var lport int
+	logger.NgapLog.Infof("raw addr: %+v\n", addr.ToRawSockAddrBuf())
+
+	lport := 0
 	if lport != 0 {
 		laddr = &sctp.SCTPAddr{
 			Port: lport,
@@ -172,18 +174,20 @@ func DialToAmf(addresses []string, port int) {
 
 	amfConn, err = sctp.DialSCTP("sctp", laddr, addr)
 	if err != nil {
-		logger.NgapLog.Errorf("failed to dial 175: %v", err)
+		logger.NgapLog.Errorf("failed to dial 177: %v", err)
 	}
-	// err = amfConn.SetWriteBuffer(sndbuf)
-	// if err != nil {
-	// 	logger.NgapLog.Errorf("failed to set write buf: %v", err)
-	// }
-	// err = amfConn.SetReadBuffer(rcvbuf)
-	// if err != nil {
-	// 	logger.NgapLog.Errorf("failed to set read buf: %v", err)
-	// }
 
 	if amfConn != nil {
+		logger.NgapLog.Infof("Dail LocalAddr: %s; RemoteAddr: %s", amfConn.LocalAddr(), amfConn.RemoteAddr())
+
+		err = amfConn.SetWriteBuffer(sndbuf)
+		if err != nil {
+			logger.NgapLog.Errorf("failed to set write buf: %v", err)
+		}
+		err = amfConn.SetReadBuffer(rcvbuf)
+		if err != nil {
+			logger.NgapLog.Errorf("failed to set read buf: %v", err)
+		}
 		connections.Store(amfConn, amfConn)
 		go handleDownlinkConnection(amfConn, readBufSize)
 	}
@@ -312,7 +316,9 @@ func handleDownlinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 			logger.NgapLog.Tracef("Read %d bytes", n)
 			logger.NgapLog.Tracef("Packet content:\n%+v", hex.Dump(buf[:n]))
 		}
-		SendToRan(newConn, buf[:n], info)
+		if newConn != nil {
+			SendToRan(newConn, buf[:n], info)
+		}
 	}
 }
 

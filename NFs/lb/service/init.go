@@ -257,7 +257,7 @@ func (lb *LB) Start() {
 	// var NgapIp []string
 	// var AmfIp []string
 	NgapIp := []string{"127.0.0.21"}
-	AmfIp := []string{"127.0.0.18"}
+	AmfIp := []string{"127.0.0.1"}
 	// NgapIp[0] = "127.0.0.21"
 	// AmfIp[0] = "127.0.0.18"
 	// AmfIp[1] = "127.0.0.19"
