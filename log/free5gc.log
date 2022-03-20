@@ -139,3 +139,171 @@ time="2022-02-11T08:10:54Z" level=info msg="SCTP server closed" category=NGAP co
 time="2022-02-11T08:10:54Z" level=info msg="AMF terminated" category=Init component=AMF
 time="2022-02-11T08:10:58Z" level=info msg="Terminating NRF..." category=Init component=NRF
 time="2022-02-11T08:10:58Z" level=info msg="NRF terminated" category=Init component=NRF
+time="2022-03-16T07:13:44Z" level=info msg=lb category=App component=LB
+time="2022-03-16T07:13:44Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-16T07:13:44Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-16T07:13:44Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-16T07:32:02Z" level=info msg=lb category=App component=LB
+time="2022-03-16T07:32:02Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-16T07:32:02Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-16T07:32:02Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-16T07:32:02Z" level=error msg="failed to dial: connection refused" category=NGAP component=LB
+time="2022-03-16T08:24:23Z" level=info msg=lb category=App component=LB
+time="2022-03-16T08:24:23Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-16T08:24:23Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-16T08:24:23Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-16T08:24:23Z" level=error msg="failed to dial: connection refused" category=NGAP component=LB
+time="2022-03-16T08:24:23Z" level=info msg="Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-03-20T07:37:55Z" level=info msg=lb category=App component=LB
+time="2022-03-20T07:37:55Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-20T07:37:55Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-20T07:37:55Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-20T07:37:55Z" level=error msg="failed to dial: connection refused" category=NGAP component=LB
+time="2022-03-20T07:39:50Z" level=info msg=lb category=App component=LB
+time="2022-03-20T07:39:50Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-20T07:39:50Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-20T07:39:50Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-20T07:39:50Z" level=error msg="failed to dial 175: connection refused" category=NGAP component=LB
+time="2022-03-20T07:42:36Z" level=info msg=lb category=App component=LB
+time="2022-03-20T07:42:36Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-20T07:42:36Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-20T07:42:36Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-20T07:42:36Z" level=error msg="failed to dial 175: connection refused" category=NGAP component=LB
+time="2022-03-20T07:42:36Z" level=warning msg="Initialize HTTP server: create pre-master-secret log [free5gc/ausfsslkey.log] fail: open free5gc/ausfsslkey.log: no such file or directory" category=Init component=LB
+time="2022-03-20T07:45:28Z" level=info msg=lb category=App component=LB
+time="2022-03-20T07:45:28Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-20T07:45:28Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-20T07:45:28Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-20T07:45:28Z" level=error msg="failed to dial 175: connection refused" category=NGAP component=LB
+time="2022-03-20T07:45:28Z" level=info msg="Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-03-20T07:45:51Z" level=info msg=lb category=App component=LB
+time="2022-03-20T07:45:51Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-20T07:45:51Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-20T07:45:51Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-20T07:45:51Z" level=error msg="failed to dial 175: connection refused" category=NGAP component=LB
+time="2022-03-20T07:45:51Z" level=warning msg="Initialize HTTP server: create pre-master-secret log [free5gc/ausfsslkey.log] fail: open free5gc/ausfsslkey.log: no such file or directory" category=Init component=LB
+time="2022-03-20T07:45:51Z" level=info msg="Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-03-20T07:52:22Z" level=info msg=lb category=App component=LB
+time="2022-03-20T07:52:22Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-20T07:52:22Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-20T07:52:22Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-20T07:52:22Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-03-20T07:52:22Z" level=error msg="failed to dial 175: connection refused" category=NGAP component=LB
+time="2022-03-20T07:52:22Z" level=info msg=Run category=Init component=LB
+time="2022-03-20T07:54:07Z" level=info msg=lb category=App component=LB
+time="2022-03-20T07:54:07Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-20T07:54:07Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-20T07:54:07Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-20T07:54:07Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-03-20T07:54:07Z" level=info msg=Run category=Init component=LB
+time="2022-03-20T07:54:07Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-03-20T07:54:07Z" level=warning msg="Initialize HTTP server: create pre-master-secret log [free5gc/ausfsslkey.log] fail: open free5gc/ausfsslkey.log: no such file or directory" category=Init component=LB
+time="2022-03-20T07:54:13Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-03-20T07:54:13Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-03-20T07:54:13Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-03-20T07:54:13Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-03-20T08:00:53Z" level=info msg=lb category=App component=LB
+time="2022-03-20T08:00:53Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-20T08:00:53Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-20T08:00:53Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-20T08:00:53Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-03-20T08:00:53Z" level=info msg=Run category=Init component=LB
+time="2022-03-20T08:00:53Z" level=warning msg="Initialize HTTP server: create pre-master-secret log [free5gc/ausfsslkey.log] fail: open free5gc/ausfsslkey.log: no such file or directory" category=Init component=LB
+time="2022-03-20T08:00:53Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-03-20T08:00:58Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-03-20T08:00:58Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-03-20T08:00:58Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-03-20T08:00:58Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-03-20T08:04:02Z" level=info msg=lb category=App component=LB
+time="2022-03-20T08:04:02Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-20T08:04:02Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-20T08:04:02Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-20T08:04:02Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-03-20T08:04:02Z" level=error msg="failed to dial 175: connection refused" category=NGAP component=LB
+time="2022-03-20T08:04:02Z" level=info msg=Run category=Init component=LB
+time="2022-03-20T08:04:02Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-03-20T08:04:02Z" level=warning msg="Initialize HTTP server: create pre-master-secret log [free5gc/ausfsslkey.log] fail: open free5gc/ausfsslkey.log: no such file or directory" category=Init component=LB
+time="2022-03-20T08:04:09Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-03-20T08:04:09Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-03-20T08:04:09Z" level=error msg="bad file descriptor" category=NGAP component=LB
+time="2022-03-20T08:04:09Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-03-20T08:04:09Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-03-20T09:00:32Z" level=info msg=lb category=App component=LB
+time="2022-03-20T09:00:32Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-20T09:00:32Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-20T09:00:32Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-20T09:00:32Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-03-20T09:00:32Z" level=error msg="failed to dial 175: connection refused" category=NGAP component=LB
+time="2022-03-20T09:00:32Z" level=info msg=Run category=Init component=LB
+time="2022-03-20T09:00:32Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-03-20T09:00:32Z" level=warning msg="Initialize HTTP server: create pre-master-secret log [free5gc/lbsslkey.log] fail: open free5gc/lbsslkey.log: no such file or directory" category=Init component=LB
+time="2022-03-20T09:00:47Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-03-20T09:00:47Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-03-20T09:00:47Z" level=error msg="bad file descriptor" category=NGAP component=LB
+time="2022-03-20T09:00:47Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-03-20T09:00:47Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-03-20T09:02:07Z" level=info msg=lb category=App component=LB
+time="2022-03-20T09:02:07Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-20T09:02:07Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-20T09:02:07Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-20T09:02:07Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-03-20T09:02:07Z" level=error msg="failed to dial 175: connection refused" category=NGAP component=LB
+time="2022-03-20T09:02:07Z" level=info msg=Run category=Init component=LB
+time="2022-03-20T09:02:07Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-03-20T09:02:07Z" level=warning msg="Initialize HTTP server: create pre-master-secret log [free5gc/log/lbsslkey.log] fail: open free5gc/log/lbsslkey.log: no such file or directory" category=Init component=LB
+time="2022-03-20T09:02:08Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-03-20T09:02:08Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-03-20T09:02:08Z" level=error msg="bad file descriptor" category=NGAP component=LB
+time="2022-03-20T09:02:08Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-03-20T09:02:08Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-03-20T09:08:49Z" level=info msg=lb category=App component=LB
+time="2022-03-20T09:08:49Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-20T09:08:49Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-20T09:08:49Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-20T09:08:49Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-03-20T09:08:49Z" level=error msg="failed to dial 175: connection refused" category=NGAP component=LB
+time="2022-03-20T09:08:49Z" level=info msg=Run category=Init component=LB
+time="2022-03-20T09:08:49Z" level=warning msg="Initialize HTTP server: create pre-master-secret log [free5gc/log/lbsslkey.log] fail: open free5gc/log/lbsslkey.log: no such file or directory" category=Init component=LB
+time="2022-03-20T09:08:49Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-03-20T09:08:50Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-03-20T09:08:50Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-03-20T09:08:50Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-03-20T09:08:50Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-03-20T09:09:32Z" level=info msg=lb category=App component=LB
+time="2022-03-20T09:09:32Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-20T09:09:32Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-20T09:09:32Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-20T09:09:32Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-03-20T09:09:32Z" level=error msg="failed to dial 175: connection refused" category=NGAP component=LB
+time="2022-03-20T09:09:32Z" level=info msg=Run category=Init component=LB
+time="2022-03-20T09:09:32Z" level=warning msg="Initialize HTTP server: create pre-master-secret log [free5gc/log/nf/lbsslkey.log] fail: open free5gc/log/nf/lbsslkey.log: no such file or directory" category=Init component=LB
+time="2022-03-20T09:09:32Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-03-20T09:09:34Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-03-20T09:09:34Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-03-20T09:09:34Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-03-20T09:09:34Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-03-20T09:10:08Z" level=info msg=lb category=App component=LB
+time="2022-03-20T09:10:08Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-20T09:10:08Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-20T09:10:08Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-20T09:10:08Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-03-20T09:10:08Z" level=error msg="failed to dial 175: connection refused" category=NGAP component=LB
+time="2022-03-20T09:10:08Z" level=info msg=Run category=Init component=LB
+time="2022-03-20T09:10:08Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-03-20T09:10:08Z" level=warning msg="Initialize HTTP server: create pre-master-secret log [free5gc/log/nf/LB.log] fail: open free5gc/log/nf/LB.log: no such file or directory" category=Init component=LB
+time="2022-03-20T09:10:10Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-03-20T09:10:10Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-03-20T09:10:10Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-03-20T09:10:10Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-03-20T09:13:40Z" level=info msg=lb category=App component=LB
+time="2022-03-20T09:13:40Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-03-20T09:13:40Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-03-20T09:13:40Z" level=info msg="Server started" category=Init component=LB
+time="2022-03-20T09:13:40Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-03-20T09:13:40Z" level=error msg="failed to dial 175: connection refused" category=NGAP component=LB
+time="2022-03-20T09:13:40Z" level=info msg=Run category=Init component=LB
+time="2022-03-20T09:13:40Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-03-20T09:13:43Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-03-20T09:13:43Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-03-20T09:13:43Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-03-20T09:13:43Z" level=info msg="LB terminated" category=Init component=LB

@@ -254,13 +254,17 @@ func (lb *LB) Start() {
 	// 	HandleNotification: ngap.HandleSCTPNotification,
 	// }
 
-	var NgapIp []string
-	var AmfIp []string
-	NgapIp[0] = "127.0.0.21"
-	AmfIp[0] = "127.0.0.18"
+	// var NgapIp []string
+	// var AmfIp []string
+	NgapIp := []string{"127.0.0.21"}
+	AmfIp := []string{"127.0.0.18"}
+	// NgapIp[0] = "127.0.0.21"
+	// AmfIp[0] = "127.0.0.18"
 	// AmfIp[1] = "127.0.0.19"
 	// AmfIp[2] = "127.0.0.20"
+	initLog.Infoln("DialToAmf")
 	ngap_service.DialToAmf(AmfIp, 38412)
+	initLog.Infoln("Run")
 	ngap_service.Run(NgapIp, 38415)
 
 	// Register to NRF
@@ -286,8 +290,7 @@ func (lb *LB) Start() {
 	}()
 
 	addr := fmt.Sprintf("%s:%d", "127.0.0.21", 8000)
-	LbLogPath := "free5gc/ausfsslkey.log"
-	server, err := http2_util.NewServer(addr, LbLogPath, router)
+	server, err := http2_util.NewServer(addr, path_util.Free5gcPath("free5gc/lbsslkey.log"), router)
 
 	if server == nil {
 		initLog.Errorf("Initialize HTTP server failed: %+v", err)

@@ -68,7 +68,7 @@ func listenAndServe(addr *sctp.SCTPAddr) {
 		sctpListener = listener
 	}
 
-	logger.NgapLog.Infof("Listen on %s", sctpListener.Addr())
+	logger.NgapLog.Infof("71 Listen on %s", sctpListener.Addr())
 
 	for {
 		newConn, err = sctpListener.AcceptSCTP()
@@ -123,7 +123,7 @@ func listenAndServe(addr *sctp.SCTPAddr) {
 			}
 			continue
 		} else {
-			logger.NgapLog.Debugf("Set read buffer to %d bytes", readBufSize)
+			logger.NgapLog.Printf("Set read buffer to %d bytes", readBufSize)
 		}
 
 		if err := newConn.SetReadTimeout(readTimeout); err != nil {
@@ -145,8 +145,8 @@ func listenAndServe(addr *sctp.SCTPAddr) {
 
 func DialToAmf(addresses []string, port int) {
 	var laddr *sctp.SCTPAddr
-	sndbuf := 0
-	rcvbuf := 0
+	// sndbuf := 0
+	// rcvbuf := 0
 	ips := []net.IPAddr{}
 
 	for _, addr := range addresses {
@@ -172,25 +172,26 @@ func DialToAmf(addresses []string, port int) {
 
 	amfConn, err = sctp.DialSCTP("sctp", laddr, addr)
 	if err != nil {
-		logger.NgapLog.Errorf("failed to dial: %v", err)
+		logger.NgapLog.Errorf("failed to dial 175: %v", err)
 	}
-	err = amfConn.SetWriteBuffer(sndbuf)
-	if err != nil {
-		logger.NgapLog.Errorf("failed to set write buf: %v", err)
-	}
-	err = amfConn.SetReadBuffer(rcvbuf)
-	if err != nil {
-		logger.NgapLog.Errorf("failed to set read buf: %v", err)
-	}
+	// err = amfConn.SetWriteBuffer(sndbuf)
+	// if err != nil {
+	// 	logger.NgapLog.Errorf("failed to set write buf: %v", err)
+	// }
+	// err = amfConn.SetReadBuffer(rcvbuf)
+	// if err != nil {
+	// 	logger.NgapLog.Errorf("failed to set read buf: %v", err)
+	// }
 
-	connections.Store(amfConn, amfConn)
-
-	go handleDownlinkConnection(amfConn, readBufSize)
+	if amfConn != nil {
+		connections.Store(amfConn, amfConn)
+		go handleDownlinkConnection(amfConn, readBufSize)
+	}
 }
 
 func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 	defer func() {
-		// if AMF call Stop(), then conn.Close() will return EBADF because conn has been closed inside Stop()
+		// if LB call Stop(), then conn.Close() will return EBADF because conn has been closed inside Stop()
 		if err := conn.Close(); err != nil && err != syscall.EBADF {
 			logger.NgapLog.Errorf("close connection error: %+v", err)
 		}
@@ -204,8 +205,8 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 			PPID:   uint32(ppid),
 		}
 		ppid += 1
-		buf := make([]byte, bufsize)
-		n, info, notification, err := conn.SCTPRead(buf)
+		bufUp := make([]byte, bufsize)
+		n, info, notification, err := conn.SCTPRead(bufUp)
 		if err != nil {
 			switch err {
 			case io.EOF, io.ErrUnexpectedEOF:
@@ -230,10 +231,10 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 			}
 
 			logger.NgapLog.Tracef("Read %d bytes", n)
-			logger.NgapLog.Tracef("Packet content:\n%+v", hex.Dump(buf[:n]))
+			logger.NgapLog.Tracef("Packet content:\n%+v", hex.Dump(bufUp[:n]))
 
 			// TODO: concurrent on per-UE message
-			SendToAmf(amfConn, buf[:n], info)
+			SendToAmf(amfConn, bufUp[:n], info)
 			ppid += 1
 		}
 	}
@@ -263,6 +264,8 @@ func SendToAmf(conn *sctp.SCTPConn, msg []byte, info *sctp.SndRcvInfo) {
 	n, err = conn.SCTPWrite(msg, info)
 	if err != nil {
 		logger.NgapLog.Errorf("failed to write: %v", err)
+	} else {
+		logger.NgapLog.Info("write: len %d", n)
 	}
 }
 
@@ -281,7 +284,6 @@ func handleDownlinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 			PPID:   uint32(ppid),
 		}
 		ppid += 1
-		amfConn.SubscribeEvents(sctp.SCTP_EVENT_DATA_IO)
 		buf := make([]byte, bufsize)
 		n, info, notification, err := conn.SCTPRead(buf)
 		if err != nil {
@@ -339,6 +341,8 @@ func SendToRan(conn *sctp.SCTPConn, msg []byte, info *sctp.SndRcvInfo) {
 	n, err = conn.SCTPWrite(msg, info)
 	if err != nil {
 		logger.NgapLog.Errorf("failed to write: %v", err)
+	} else {
+		logger.NgapLog.Info("write: len %d", n)
 	}
 }
 
@@ -356,6 +360,5 @@ func Stop() {
 		}
 		return true
 	})
-
 	logger.NgapLog.Infof("SCTP server closed")
 }
