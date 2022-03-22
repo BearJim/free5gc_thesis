@@ -4,7 +4,7 @@ C_BUILD_PATH = build
 ROOT_PATH = $(shell pwd)
 
 NF = $(GO_NF) $(C_NF)
-GO_NF = amf ausf nrf nssf pcf smf udm udr n3iwf lb
+GO_NF = amf amf1 amf2 ausf nrf nssf pcf smf udm udr n3iwf lb
 C_NF = upf
 
 WEBCONSOLE = webconsole

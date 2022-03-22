@@ -5,7 +5,7 @@ info:
 configuration:
   lbName: LB # the name of this LB
   ngapIpList:  # the IP list of N2 interfaces on this LB
-    - 127.0.0.1
+    - 127.0.0.21
   sbi: # Service-based interface information
     scheme: http # the protocol for sbi (http or https)
     registerIPv4: 127.0.0.21 # IP used to register to NRF

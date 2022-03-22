@@ -8,3 +8,11 @@ time="2022-03-20T09:47:24Z" level=info msg="set log level : info" category=MonDB
 time="2022-03-20T09:47:24Z" level=info msg="set report call : false" category=MonDB component=LIB
 time="2022-03-20T09:55:52Z" level=info msg="set log level : info" category=MonDB component=LIB
 time="2022-03-20T09:55:52Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-03-22T07:42:32Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-03-22T07:42:32Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-03-22T07:43:44Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-03-22T07:43:44Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-03-22T08:01:35Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-03-22T08:01:35Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-03-22T08:07:48Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-03-22T08:07:48Z" level=info msg="set report call : false" category=MonDB component=LIB
