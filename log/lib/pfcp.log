@@ -1,0 +1,2 @@
+time="2022-03-22T11:16:58Z" level=info msg="set log level : info" category=PFCP component=LIB
+time="2022-03-22T11:16:58Z" level=info msg="set report call : false" category=PFCP component=LIB

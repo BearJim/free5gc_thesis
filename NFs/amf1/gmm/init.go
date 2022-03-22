@@ -1,8 +1,8 @@
 package gmm
 
 import (
-	"github.com/free5gc/amf/context"
-	"github.com/free5gc/amf/logger"
+	"github.com/free5gc/amf1/context"
+	"github.com/free5gc/amf1/logger"
 	"github.com/free5gc/fsm"
 )
 

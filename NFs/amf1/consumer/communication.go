@@ -5,8 +5,8 @@ import (
 	"context"
 	"fmt"
 
-	amf_context "github.com/free5gc/amf/context"
-	"github.com/free5gc/amf/logger"
+	amf_context "github.com/free5gc/amf1/context"
+	"github.com/free5gc/amf1/logger"
 	"github.com/free5gc/nas/nasMessage"
 	"github.com/free5gc/openapi"
 	"github.com/free5gc/openapi/Namf_Communication"

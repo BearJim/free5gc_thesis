@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/free5gc/amf/context"
-	"github.com/free5gc/amf/logger"
+	"github.com/free5gc/amf1/context"
+	"github.com/free5gc/amf1/logger"
 	"github.com/free5gc/http_wrapper"
 	"github.com/free5gc/openapi/models"
 )

@@ -3,9 +3,9 @@ package common
 import (
 	"fmt"
 
-	"github.com/free5gc/amf/consumer"
-	"github.com/free5gc/amf/context"
-	"github.com/free5gc/amf/logger"
+	"github.com/free5gc/amf2/consumer"
+	"github.com/free5gc/amf2/context"
+	"github.com/free5gc/amf2/logger"
 	"github.com/free5gc/openapi/models"
 )
 

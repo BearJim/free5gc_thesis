@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/free5gc/amf/logger"
+	"github.com/free5gc/amf1/logger"
 	"github.com/free5gc/openapi/models"
 )
 

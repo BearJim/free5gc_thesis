@@ -1,0 +1,5 @@
+time="2022-03-22T11:16:59Z" level=info msg="UDR Log level is set to [info] level" category=Init component=UDR
+time="2022-03-22T11:16:59Z" level=info msg="config version [1.0.0]" category=CFG component=UDR
+time="2022-03-22T11:16:59Z" level=info msg="UDR Config Info: Version[1.0.0] Description[UDR initial local configuration]" category=Init component=UDR
+time="2022-03-22T11:16:59Z" level=info msg="Server started" category=Init component=UDR
+time="2022-03-22T11:16:59Z" level=info msg="udrconfig Info: Version[1.0.0] Description[UDR initial local configuration]" category=Util component=UDR

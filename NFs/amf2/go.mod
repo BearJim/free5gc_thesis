@@ -1,4 +1,4 @@
-module github.com/free5gc/amf
+module github.com/free5gc/amf2
 
 go 1.14
 

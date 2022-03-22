@@ -14,7 +14,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/free5gc/amf/logger"
+	"github.com/free5gc/amf1/logger"
 )
 
 // EnableUeReachability - Namf_MT EnableUEReachability service Operation

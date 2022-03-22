@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/free5gc/amf/consumer"
-	"github.com/free5gc/amf/context"
-	gmm_common "github.com/free5gc/amf/gmm/common"
-	"github.com/free5gc/amf/logger"
+	"github.com/free5gc/amf2/consumer"
+	"github.com/free5gc/amf2/context"
+	gmm_common "github.com/free5gc/amf2/gmm/common"
+	"github.com/free5gc/amf2/logger"
 	"github.com/free5gc/http_wrapper"
 	"github.com/free5gc/openapi/models"
 )

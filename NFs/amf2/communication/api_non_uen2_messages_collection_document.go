@@ -14,7 +14,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/free5gc/amf/logger"
+	"github.com/free5gc/amf2/logger"
 )
 
 // NonUeN2MessageTransfer - Namf_Communication Non UE N2 Message Transfer service Operation

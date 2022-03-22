@@ -9,7 +9,7 @@ import (
 
 	"git.cs.nctu.edu.tw/calee/sctp"
 
-	"github.com/free5gc/amf/logger"
+	"github.com/free5gc/amf2/logger"
 	"github.com/free5gc/ngap"
 )
 

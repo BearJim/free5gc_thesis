@@ -1,0 +1,4 @@
+time="2022-03-22T11:16:59Z" level=info msg="PCF Log level is set to [info] level" category=Init component=PCF
+time="2022-03-22T11:16:59Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
+time="2022-03-22T11:16:59Z" level=info msg="Server started" category=Init component=PCF
+time="2022-03-22T11:16:59Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF

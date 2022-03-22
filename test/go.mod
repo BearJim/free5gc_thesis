@@ -64,6 +64,8 @@ require (
 
 replace (
 	github.com/free5gc/amf => ../NFs/amf
+	github.com/free5gc/amf1 => ../NFs/amf1
+	github.com/free5gc/amf2 => ../NFs/amf2
 	github.com/free5gc/ausf => ../NFs/ausf
 	github.com/free5gc/n3iwf => ../NFs/n3iwf
 	github.com/free5gc/nrf => ../NFs/nrf

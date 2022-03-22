@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"reflect"
 
-	"github.com/free5gc/amf/logger"
+	"github.com/free5gc/amf1/logger"
 )
 
 func MarshToJsonString(v interface{}) (result []string) {

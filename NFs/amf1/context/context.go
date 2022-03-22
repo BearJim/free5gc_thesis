@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/free5gc/amf/factory"
-	"github.com/free5gc/amf/logger"
+	"github.com/free5gc/amf1/factory"
+	"github.com/free5gc/amf1/logger"
 	"github.com/free5gc/idgenerator"
 	"github.com/free5gc/openapi/models"
 )

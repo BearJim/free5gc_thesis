@@ -1,0 +1,9 @@
+time="2022-03-22T11:16:58Z" level=info msg="SMF Log level is set to [info] level" category=Init component=SMF
+time="2022-03-22T11:16:58Z" level=info msg="SMF config version [1.0.2]" category=CFG component=SMF
+time="2022-03-22T11:16:58Z" level=info msg="UE-Routing config version [1.0.1]" category=CFG component=SMF
+time="2022-03-22T11:16:58Z" level=info msg="smfconfig Info: Version[1.0.2] Description[SMF initial local configuration]" category=CTX component=SMF
+time="2022-03-22T11:16:58Z" level=info msg="Endpoints: [10.200.200.102]" category=CTX component=SMF
+time="2022-03-22T11:16:58Z" level=info msg="Server started" category=Init component=SMF
+time="2022-03-22T11:16:58Z" level=info msg="SMF Registration to NRF {ebafbd90-52c3-4421-bb5a-4b6008aacccd SMF REGISTERED 0 0xc0002d9b20 0xc0002d9b60 [] []   [127.0.0.2] [] <nil> [] [] <nil> 0 0 0 area1 <nil> <nil> <nil> <nil> 0xc000032b40 <nil> <nil> <nil> <nil> <nil> map[] <nil> false 0xc0002d99a0 false false []}" category=Init component=SMF
+time="2022-03-22T11:16:58Z" level=info msg="Listen on 10.200.200.1:8805" category=PFCP component=SMF
+time="2022-03-22T11:16:58Z" level=info msg="Send PFCP Association Request to UPF[10.200.200.101]\n" category=App component=SMF

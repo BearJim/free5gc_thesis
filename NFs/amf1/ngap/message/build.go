@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/free5gc/amf/context"
-	"github.com/free5gc/amf/logger"
+	"github.com/free5gc/amf1/context"
+	"github.com/free5gc/amf1/logger"
 	"github.com/free5gc/aper"
 	"github.com/free5gc/ngap"
 	"github.com/free5gc/ngap/ngapConvert"

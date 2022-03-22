@@ -231,3 +231,8 @@ time="2022-03-22T08:10:39Z" level=info msg="Send AMF Status Indication to Notify
 time="2022-03-22T08:10:39Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
 time="2022-03-22T08:10:39Z" level=info msg="SCTP server closed" category=NGAP component=AMF
 time="2022-03-22T08:10:39Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-03-22T11:16:58Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-03-22T11:16:58Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-03-22T11:16:58Z" level=info msg="Server started" category=Init component=AMF
+time="2022-03-22T11:16:58Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-03-22T11:16:58Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF

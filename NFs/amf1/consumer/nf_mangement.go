@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	amf_context "github.com/free5gc/amf/context"
-	"github.com/free5gc/amf/logger"
-	"github.com/free5gc/amf/util"
+	amf_context "github.com/free5gc/amf1/context"
+	"github.com/free5gc/amf1/logger"
+	"github.com/free5gc/amf1/util"
 	"github.com/free5gc/openapi"
 	"github.com/free5gc/openapi/Nnrf_NFManagement"
 	"github.com/free5gc/openapi/models"

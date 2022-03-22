@@ -1,0 +1,4 @@
+time="2022-03-22T11:16:59Z" level=info msg="AUSF Log level is set to [info] level" category=Init component=AUSF
+time="2022-03-22T11:16:59Z" level=info msg="config version [1.0.0]" category=CFG component=AUSF
+time="2022-03-22T11:16:59Z" level=info msg="Server started" category=Init component=AUSF
+time="2022-03-22T11:16:59Z" level=info msg="ausfconfig Info: Version[1.0.0] Description[AUSF initial local configuration]\n" category=Init component=AUSF

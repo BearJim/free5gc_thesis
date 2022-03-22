@@ -3,9 +3,9 @@ package gmm
 import (
 	"fmt"
 
-	"github.com/free5gc/amf/context"
-	gmm_message "github.com/free5gc/amf/gmm/message"
-	"github.com/free5gc/amf/logger"
+	"github.com/free5gc/amf2/context"
+	gmm_message "github.com/free5gc/amf2/gmm/message"
+	"github.com/free5gc/amf2/logger"
 	"github.com/free5gc/fsm"
 	"github.com/free5gc/nas"
 	"github.com/free5gc/nas/nasMessage"

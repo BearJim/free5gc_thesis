@@ -1,0 +1,5 @@
+time="2022-03-22T11:16:59Z" level=info msg="UDM Log level is set to [info] level" category=Init component=UDM
+time="2022-03-22T11:16:59Z" level=info msg="config version [1.0.1]" category=CFG component=UDM
+time="2022-03-22T11:16:59Z" level=info msg="UDM Config Info: Version[1.0.1] Description[UDM initial local configuration]" category=Init component=UDM
+time="2022-03-22T11:16:59Z" level=info msg="Server started" category=Init component=UDM
+time="2022-03-22T11:16:59Z" level=info msg="udmconfig Info: Version[1.0.1] Description[UDM initial local configuration]" category=Util component=UDM

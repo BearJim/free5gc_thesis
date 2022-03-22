@@ -9,8 +9,8 @@ import (
 
 	"github.com/antihax/optional"
 
-	amf_context "github.com/free5gc/amf/context"
-	"github.com/free5gc/amf/logger"
+	amf_context "github.com/free5gc/amf2/context"
+	"github.com/free5gc/amf2/logger"
 	"github.com/free5gc/nas/nasType"
 	"github.com/free5gc/openapi"
 	"github.com/free5gc/openapi/Nausf_UEAuthentication"

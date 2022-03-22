@@ -8,7 +8,7 @@ import (
 	"github.com/mohae/deepcopy"
 	"github.com/sirupsen/logrus"
 
-	"github.com/free5gc/amf/logger"
+	"github.com/free5gc/amf1/logger"
 	"github.com/free5gc/ngap/ngapConvert"
 	"github.com/free5gc/ngap/ngapType"
 	"github.com/free5gc/openapi/models"
