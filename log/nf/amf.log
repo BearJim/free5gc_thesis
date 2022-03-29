@@ -236,3 +236,250 @@ time="2022-03-22T11:16:58Z" level=info msg="config version [1.0.2]" category=CFG
 time="2022-03-22T11:16:58Z" level=info msg="Server started" category=Init component=AMF
 time="2022-03-22T11:16:58Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
 time="2022-03-22T11:16:58Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-03-29T16:00:32Z" level=info msg=amf category=App component=AMF
+time="2022-03-29T16:00:32Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-03-29T16:00:32Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-03-29T16:00:32Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-03-29T16:00:32Z" level=info msg="Server started" category=Init component=AMF
+time="2022-03-29T16:00:32Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-03-29T16:00:32Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-03-29T16:00:43Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44158" category=NGAP component=AMF
+time="2022-03-29T16:03:18Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44158" category=NGAP component=AMF
+time="2022-03-29T16:03:18Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44158"
+time="2022-03-29T16:03:18Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44158"
+time="2022-03-29T16:12:00Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44158"
+time="2022-03-29T16:12:00Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44158"
+time="2022-03-29T16:15:31Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44158"
+time="2022-03-29T16:15:31Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44158"
+time="2022-03-29T16:24:34Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-03-29T16:24:34Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-03-29T16:24:35Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-03-29T16:24:35Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-03-29T16:24:35Z" level=info msg="Send AMF Status Indication" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44158"
+time="2022-03-29T16:24:35Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-03-29T16:24:35Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-03-29T16:24:35Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-03-29T16:24:54Z" level=info msg=amf category=App component=AMF
+time="2022-03-29T16:24:54Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-03-29T16:24:54Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-03-29T16:24:54Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-03-29T16:24:54Z" level=info msg="Server started" category=Init component=AMF
+time="2022-03-29T16:24:54Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-03-29T16:24:54Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-03-29T16:24:57Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:53965" category=NGAP component=AMF
+time="2022-03-29T16:25:13Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:53965" category=NGAP component=AMF
+time="2022-03-29T16:25:13Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:53965"
+time="2022-03-29T16:25:13Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:53965"
+time="2022-03-29T16:25:39Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-03-29T16:25:39Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:53965"
+time="2022-03-29T16:25:39Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:53965"
+time="2022-03-29T16:25:39Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-03-29T16:25:39Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-03-29T16:25:42Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-03-29T16:25:42Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-03-29T16:25:43Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-03-29T16:25:43Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-03-29T16:25:43Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-03-29T16:25:43Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-03-29T16:25:43Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-03-29T16:35:20Z" level=info msg=amf category=App component=AMF
+time="2022-03-29T16:35:20Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-03-29T16:35:20Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-03-29T16:35:20Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-03-29T16:35:20Z" level=info msg="Server started" category=Init component=AMF
+time="2022-03-29T16:35:20Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-03-29T16:35:20Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-03-29T16:35:24Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:42106" category=NGAP component=AMF
+time="2022-03-29T16:35:36Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:42106" category=NGAP component=AMF
+time="2022-03-29T16:35:36Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:42106"
+time="2022-03-29T16:35:36Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:42106"
+time="2022-03-29T16:35:36Z" level=info msg="Handle Initial UE Message" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:42106"
+time="2022-03-29T16:35:36Z" level=info msg="Handle Registration Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T16:35:36Z" level=info msg="Authentication procedure" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T16:35:36Z" level=error msg="Nausf_UEAU Authenticate Request Error: server no response" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T16:35:36Z" level=info msg="Handle Authentication Error" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T16:35:36Z" level=info msg="Send Registration Reject" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T16:35:36Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:42106"
+time="2022-03-29T16:35:59Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-03-29T16:35:59Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:42106"
+time="2022-03-29T16:35:59Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:42106"
+time="2022-03-29T16:35:59Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-03-29T16:35:59Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-03-29T16:36:01Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-03-29T16:36:01Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-03-29T16:36:02Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-03-29T16:36:02Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-03-29T16:36:02Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-03-29T16:36:02Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-03-29T16:36:02Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-03-29T16:39:46Z" level=info msg=amf category=App component=AMF
+time="2022-03-29T16:39:46Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-03-29T16:39:46Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-03-29T16:39:46Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-03-29T16:39:46Z" level=info msg="Server started" category=Init component=AMF
+time="2022-03-29T16:39:46Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-03-29T16:39:46Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-03-29T16:40:08Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:55314" category=NGAP component=AMF
+time="2022-03-29T16:40:25Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:55314" category=NGAP component=AMF
+time="2022-03-29T16:40:25Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:55314"
+time="2022-03-29T16:40:25Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:55314"
+time="2022-03-29T16:40:25Z" level=info msg="Handle Initial UE Message" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:55314"
+time="2022-03-29T16:40:25Z" level=info msg="Handle Registration Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T16:40:25Z" level=info msg="Authentication procedure" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T16:40:25Z" level=error msg="Nausf_UEAU Authenticate Request Failed: &{Type: Title: Status:500 Detail: Instance: Cause:AV_GENERATION_PROBLEM InvalidParams:[]}" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T16:40:58Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-03-29T16:40:58Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-03-29T16:40:59Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-03-29T16:40:59Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-03-29T16:40:59Z" level=info msg="Send AMF Status Indication" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:55314"
+time="2022-03-29T16:40:59Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-03-29T16:40:59Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-03-29T16:40:59Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-03-29T16:42:05Z" level=info msg=amf category=App component=AMF
+time="2022-03-29T16:42:05Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-03-29T16:42:05Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-03-29T16:42:05Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-03-29T16:42:05Z" level=info msg="Server started" category=Init component=AMF
+time="2022-03-29T16:42:05Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-03-29T16:42:05Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-03-29T16:42:22Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100" category=NGAP component=AMF
+time="2022-03-29T16:42:28Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100" category=NGAP component=AMF
+time="2022-03-29T16:42:28Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:42:28Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:42:28Z" level=info msg="Handle Initial UE Message" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:42:28Z" level=info msg="Handle Registration Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T16:42:28Z" level=info msg="Authentication procedure" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T16:42:28Z" level=info msg="Send Authentication Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T16:42:28Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:42:28Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:42:28Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:42:28Z" level=info msg="Handle Authentication Response" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T16:42:28Z" level=info msg="Send Security Mode Command" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:42:28Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:42:28Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:42:28Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:42:28Z" level=info msg="Handle Security Mode Complete" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:42:28Z" level=info msg="Handle InitialRegistration" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:42:28Z" level=info msg="Send Registration Accept" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:42:28Z" level=info msg="Send Initial Context Setup Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:42:28Z" level=info msg="Handle Initial Context Setup Response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:42:28Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:42:28Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:42:28Z" level=info msg="Handle Registration Complete" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:42:28Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:42:28Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:42:28Z" level=info msg="Handle UL NAS Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:42:28Z" level=info msg="Transport 5GSM Message to SMF" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:42:28Z" level=info msg="Select SMF [snssai: {Sst:1 Sd:010203}, dnn: internet]" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:42:28Z" level=error msg="Select SMF failed: NSSelection Get Error[NSSF No Response]" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:42:28Z" level=info msg="Send DL NAS Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:42:28Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:42:28Z" level=info msg="Handle PDU Session Resource Setup Response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:42:28Z" level=error msg="SmContext[PDU Session ID:10] not found" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:47100"
+time="2022-03-29T16:45:37Z" level=info msg=amf category=App component=AMF
+time="2022-03-29T16:45:37Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-03-29T16:45:37Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-03-29T16:45:37Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-03-29T16:45:37Z" level=info msg="Server started" category=Init component=AMF
+time="2022-03-29T16:45:37Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-03-29T16:45:37Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-03-29T16:46:03Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087" category=NGAP component=AMF
+time="2022-03-29T16:46:11Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087" category=NGAP component=AMF
+time="2022-03-29T16:46:11Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087"
+time="2022-03-29T16:46:11Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087"
+time="2022-03-29T16:46:11Z" level=info msg="Handle Initial UE Message" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087"
+time="2022-03-29T16:46:11Z" level=info msg="Handle Registration Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T16:46:11Z" level=info msg="Authentication procedure" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T16:46:11Z" level=info msg="Send Authentication Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T16:46:11Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087"
+time="2022-03-29T16:46:11Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087"
+time="2022-03-29T16:46:11Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087"
+time="2022-03-29T16:46:11Z" level=info msg="Handle Authentication Response" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T16:46:11Z" level=info msg="Send Security Mode Command" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:46:11Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087"
+time="2022-03-29T16:46:11Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087"
+time="2022-03-29T16:46:11Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087"
+time="2022-03-29T16:46:11Z" level=info msg="Handle Security Mode Complete" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:46:11Z" level=info msg="Handle InitialRegistration" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:46:12Z" level=info msg="Handle AMF Status Change Subscribe Request" category=Comm component=AMF
+time="2022-03-29T16:46:12Z" level=info msg="new AMF Status Subscription[1]" category=Comm component=AMF
+time="2022-03-29T16:46:12Z" level=info msg="| 201 |       127.0.0.1 | POST    | /namf-comm/v1/subscriptions | " category=GIN component=AMF
+time="2022-03-29T16:46:12Z" level=info msg="Send Registration Accept" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:46:12Z" level=info msg="Send Initial Context Setup Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087"
+time="2022-03-29T16:46:12Z" level=info msg="Handle Initial Context Setup Response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087"
+time="2022-03-29T16:46:12Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087"
+time="2022-03-29T16:46:12Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087"
+time="2022-03-29T16:46:12Z" level=info msg="Handle Registration Complete" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:46:12Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087"
+time="2022-03-29T16:46:12Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087"
+time="2022-03-29T16:46:12Z" level=info msg="Handle UL NAS Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:46:12Z" level=info msg="Transport 5GSM Message to SMF" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:46:12Z" level=info msg="Select SMF [snssai: {Sst:1 Sd:010203}, dnn: internet]" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:46:12Z" level=info msg="create smContext[pduSessionID: 10] Success" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T16:46:57Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-03-29T16:46:57Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087"
+time="2022-03-29T16:46:57Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:46087"
+time="2022-03-29T16:46:57Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-03-29T16:46:57Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-03-29T16:47:17Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-03-29T16:47:17Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-03-29T16:47:18Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-03-29T16:47:18Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-03-29T16:47:18Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-03-29T16:47:18Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-03-29T16:47:18Z" level=info msg="[AMF] Send Amf Status Change Notify to http://127.0.0.7:8000/npcf-callback/v1/amfstatus" category=Producer component=AMF
+time="2022-03-29T16:47:18Z" level=error msg="Post \"http://127.0.0.7:8000/npcf-callback/v1/amfstatus\": dial tcp 127.0.0.7:8000: connect: connection refused" category=HTTP component=AMF
+time="2022-03-29T16:47:18Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-03-29T17:04:35Z" level=info msg=amf category=App component=AMF
+time="2022-03-29T17:04:35Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-03-29T17:04:35Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-03-29T17:04:35Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-03-29T17:04:35Z" level=info msg="Server started" category=Init component=AMF
+time="2022-03-29T17:04:35Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-03-29T17:04:35Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-03-29T17:05:54Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708" category=NGAP component=AMF
+time="2022-03-29T17:06:08Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708" category=NGAP component=AMF
+time="2022-03-29T17:06:08Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:06:08Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:06:08Z" level=info msg="Handle Initial UE Message" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:06:08Z" level=info msg="Handle Registration Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T17:06:08Z" level=info msg="Authentication procedure" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T17:06:08Z" level=info msg="Send Authentication Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T17:06:08Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:06:08Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:06:08Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:06:08Z" level=info msg="Handle Authentication Response" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-03-29T17:06:08Z" level=info msg="Send Security Mode Command" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T17:06:08Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:06:08Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:06:08Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:06:08Z" level=info msg="Handle Security Mode Complete" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T17:06:08Z" level=info msg="Handle InitialRegistration" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T17:06:08Z" level=info msg="Send Registration Accept" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T17:06:08Z" level=info msg="Send Initial Context Setup Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:06:08Z" level=info msg="Handle Initial Context Setup Response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:06:08Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:06:08Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:06:08Z" level=info msg="Handle Registration Complete" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T17:06:08Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:06:08Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:06:08Z" level=info msg="Handle UL NAS Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T17:06:08Z" level=info msg="Transport 5GSM Message to SMF" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T17:06:08Z" level=info msg="Select SMF [snssai: {Sst:1 Sd:010203}, dnn: internet]" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T17:06:08Z" level=info msg="create smContext[pduSessionID: 10] Success" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-03-29T17:06:08Z" level=info msg="Handle N1N2 Message Transfer Request" category=Producer component=AMF
+time="2022-03-29T17:06:08Z" level=info msg="Send PDU Session Resource Setup Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:06:08Z" level=info msg="| 200 |       127.0.0.1 | POST    | /namf-comm/v1/ue-contexts/imsi-2089300007487/n1-n2-messages | " category=GIN component=AMF
+time="2022-03-29T17:06:08Z" level=info msg="Handle PDU Session Resource Setup Response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:08:09Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-03-29T17:08:09Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:08:09Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:44708"
+time="2022-03-29T17:08:09Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-03-29T17:08:09Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-03-29T17:08:25Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-03-29T17:08:25Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-03-29T17:08:26Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-03-29T17:08:26Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-03-29T17:08:26Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-03-29T17:08:26Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-03-29T17:08:26Z" level=info msg="AMF terminated" category=Init component=AMF

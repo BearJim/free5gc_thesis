@@ -35,9 +35,9 @@ import (
 
 const ranN2Ipv4Addr string = "127.0.0.1"
 
-const amfN2Ipv4Addr string = "127.0.0.1"
+// const amfN2Ipv4Addr string = "127.0.0.1"
 
-// const lbN2Ipv4Addr string = "127.0.0.21"
+const lbN2Ipv4Addr string = "127.0.0.21"
 const ranN3Ipv4Addr string = "10.200.200.1"
 const upfN3Ipv4Addr string = "10.200.200.102"
 
@@ -48,7 +48,7 @@ func TestRegistration(t *testing.T) {
 	var recvMsg = make([]byte, 2048)
 
 	// RAN connect to AMF
-	conn, err := test.ConnectToAmf(amfN2Ipv4Addr, ranN2Ipv4Addr, 38412, 9487)
+	conn, err := test.ConnectToAmf(lbN2Ipv4Addr, ranN2Ipv4Addr, 38415, 9487)
 	assert.Nil(t, err)
 
 	// RAN connect to UPF

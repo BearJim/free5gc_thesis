@@ -2,3 +2,73 @@ time="2022-03-22T11:16:59Z" level=info msg="AUSF Log level is set to [info] leve
 time="2022-03-22T11:16:59Z" level=info msg="config version [1.0.0]" category=CFG component=AUSF
 time="2022-03-22T11:16:59Z" level=info msg="Server started" category=Init component=AUSF
 time="2022-03-22T11:16:59Z" level=info msg="ausfconfig Info: Version[1.0.0] Description[AUSF initial local configuration]\n" category=Init component=AUSF
+time="2022-03-29T16:39:55Z" level=info msg="AUSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AUSF
+time="2022-03-29T16:39:55Z" level=info msg="AUSF Log level is set to [info] level" category=Init component=AUSF
+time="2022-03-29T16:39:55Z" level=info msg="config version [1.0.0]" category=CFG component=AUSF
+time="2022-03-29T16:39:55Z" level=info msg="Server started" category=Init component=AUSF
+time="2022-03-29T16:39:55Z" level=info msg="ausfconfig Info: Version[1.0.0] Description[AUSF initial local configuration]\n" category=Init component=AUSF
+time="2022-03-29T16:40:25Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-03-29T16:40:25Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-03-29T16:40:25Z" level=info msg="403 Forbidden" category=UeAuthPost component=AUSF
+time="2022-03-29T16:40:25Z" level=info msg="| 500 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-03-29T16:40:54Z" level=info msg="Terminating AUSF..." category=Init component=AUSF
+time="2022-03-29T16:40:54Z" level=info msg="Send Deregister NFInstance" category=App component=AUSF
+time="2022-03-29T16:40:55Z" level=info msg="Deregister from NRF successfully" category=Init component=AUSF
+time="2022-03-29T16:40:55Z" level=info msg="AUSF terminated" category=Init component=AUSF
+time="2022-03-29T16:42:10Z" level=info msg="AUSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AUSF
+time="2022-03-29T16:42:10Z" level=info msg="AUSF Log level is set to [info] level" category=Init component=AUSF
+time="2022-03-29T16:42:10Z" level=info msg="config version [1.0.0]" category=CFG component=AUSF
+time="2022-03-29T16:42:10Z" level=info msg="Server started" category=Init component=AUSF
+time="2022-03-29T16:42:10Z" level=info msg="ausfconfig Info: Version[1.0.0] Description[AUSF initial local configuration]\n" category=Init component=AUSF
+time="2022-03-29T16:42:28Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-03-29T16:42:28Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-03-29T16:42:28Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-03-29T16:42:28Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-03-29T16:42:28Z" level=info msg="XresStar = 3964346666323738343430373761663539646263616433373531306663303731\n" category=5gAkaAuth component=AUSF
+time="2022-03-29T16:42:28Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-03-29T16:42:28Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-03-29T16:42:28Z" level=info msg="res*: 3964346666323738343430373761663539646263616433373531306663303731\nXres*: 3964346666323738343430373761663539646263616433373531306663303731\n" category=5gAkaAuth component=AUSF
+time="2022-03-29T16:42:28Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-03-29T16:42:28Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-03-29T16:43:05Z" level=info msg="Terminating AUSF..." category=Init component=AUSF
+time="2022-03-29T16:43:05Z" level=info msg="Send Deregister NFInstance" category=App component=AUSF
+time="2022-03-29T16:43:05Z" level=error msg="Deregister NF instance Error[server no response]" category=Init component=AUSF
+time="2022-03-29T16:43:05Z" level=info msg="AUSF terminated" category=Init component=AUSF
+time="2022-03-29T16:45:43Z" level=info msg="AUSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AUSF
+time="2022-03-29T16:45:43Z" level=info msg="AUSF Log level is set to [info] level" category=Init component=AUSF
+time="2022-03-29T16:45:43Z" level=info msg="config version [1.0.0]" category=CFG component=AUSF
+time="2022-03-29T16:45:43Z" level=info msg="Server started" category=Init component=AUSF
+time="2022-03-29T16:45:43Z" level=info msg="ausfconfig Info: Version[1.0.0] Description[AUSF initial local configuration]\n" category=Init component=AUSF
+time="2022-03-29T16:46:11Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-03-29T16:46:11Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-03-29T16:46:11Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-03-29T16:46:11Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-03-29T16:46:11Z" level=info msg="XresStar = 3233623735643261323037323034303031323237313737333338373134363933\n" category=5gAkaAuth component=AUSF
+time="2022-03-29T16:46:11Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-03-29T16:46:11Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-03-29T16:46:11Z" level=info msg="res*: 3233623735643261323037323034303031323237313737333338373134363933\nXres*: 3233623735643261323037323034303031323237313737333338373134363933\n" category=5gAkaAuth component=AUSF
+time="2022-03-29T16:46:11Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-03-29T16:46:11Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-03-29T16:47:07Z" level=info msg="Terminating AUSF..." category=Init component=AUSF
+time="2022-03-29T16:47:07Z" level=info msg="Send Deregister NFInstance" category=App component=AUSF
+time="2022-03-29T16:47:08Z" level=info msg="Deregister from NRF successfully" category=Init component=AUSF
+time="2022-03-29T16:47:08Z" level=info msg="AUSF terminated" category=Init component=AUSF
+time="2022-03-29T17:04:41Z" level=info msg="AUSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AUSF
+time="2022-03-29T17:04:41Z" level=info msg="AUSF Log level is set to [info] level" category=Init component=AUSF
+time="2022-03-29T17:04:41Z" level=info msg="config version [1.0.0]" category=CFG component=AUSF
+time="2022-03-29T17:04:41Z" level=info msg="Server started" category=Init component=AUSF
+time="2022-03-29T17:04:41Z" level=info msg="ausfconfig Info: Version[1.0.0] Description[AUSF initial local configuration]\n" category=Init component=AUSF
+time="2022-03-29T17:06:08Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-03-29T17:06:08Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-03-29T17:06:08Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-03-29T17:06:08Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-03-29T17:06:08Z" level=info msg="XresStar = 6531373732303634303730376331373437333830313938663461636137313931\n" category=5gAkaAuth component=AUSF
+time="2022-03-29T17:06:08Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-03-29T17:06:08Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-03-29T17:06:08Z" level=info msg="res*: 6531373732303634303730376331373437333830313938663461636137313931\nXres*: 6531373732303634303730376331373437333830313938663461636137313931\n" category=5gAkaAuth component=AUSF
+time="2022-03-29T17:06:08Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-03-29T17:06:08Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-03-29T17:08:20Z" level=info msg="Terminating AUSF..." category=Init component=AUSF
+time="2022-03-29T17:08:20Z" level=info msg="Send Deregister NFInstance" category=App component=AUSF
+time="2022-03-29T17:08:21Z" level=info msg="Deregister from NRF successfully" category=Init component=AUSF
+time="2022-03-29T17:08:21Z" level=info msg="AUSF terminated" category=Init component=AUSF

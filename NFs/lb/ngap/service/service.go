@@ -214,13 +214,13 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 		if err != nil {
 			switch err {
 			case io.EOF, io.ErrUnexpectedEOF:
-				logger.NgapLog.Debugln("Read EOF from client")
+				logger.NgapLog.Errorf("Read EOF from client")
 				return
 			case syscall.EAGAIN:
-				logger.NgapLog.Debugln("SCTP read timeout")
+				logger.NgapLog.Errorf("SCTP read timeout")
 				continue
 			case syscall.EINTR:
-				logger.NgapLog.Debugf("SCTPRead: %+v", err)
+				logger.NgapLog.Errorf("SCTPRead: %+v", err)
 				continue
 			default:
 				logger.NgapLog.Errorf("Handle connection[addr: %+v] error: %+v", conn.RemoteAddr(), err)
@@ -239,7 +239,6 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 
 			// TODO: concurrent on per-UE message
 			SendToAmf(amfConn, bufUp[:n], info)
-			ppid += 1
 		}
 	}
 }
@@ -249,6 +248,7 @@ func SendToAmf(conn *sctp.SCTPConn, msg []byte, info *sctp.SndRcvInfo) {
 	lbSelf := context.LB_Self()
 
 	ran, ok := lbSelf.LbRanFindByConn(conn)
+	logger.NgapLog.Info("SendToAmf")
 	if !ok {
 		logger.NgapLog.Infof("Create a new NG connection for: %s", conn.RemoteAddr().String())
 		ran = lbSelf.NewLbRan(conn)
@@ -269,7 +269,7 @@ func SendToAmf(conn *sctp.SCTPConn, msg []byte, info *sctp.SndRcvInfo) {
 	if err != nil {
 		logger.NgapLog.Errorf("failed to write: %v", err)
 	} else {
-		logger.NgapLog.Info("write: len %d", n)
+		logger.NgapLog.Info("write to amf: len %d", n)
 	}
 }
 
@@ -289,7 +289,9 @@ func handleDownlinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 		}
 		ppid += 1
 		buf := make([]byte, bufsize)
+		logger.NgapLog.Info("Downlink before Read")
 		n, info, notification, err := conn.SCTPRead(buf)
+		logger.NgapLog.Info("Downlink after Read")
 		if err != nil {
 			switch err {
 			case io.EOF, io.ErrUnexpectedEOF:
@@ -310,7 +312,7 @@ func handleDownlinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 		if notification == nil {
 			if info == nil || info.PPID != ngap.PPID {
 				logger.NgapLog.Warnln("Received SCTP PPID != 60, discard this packet")
-				continue
+				// continue
 			}
 
 			logger.NgapLog.Tracef("Read %d bytes", n)

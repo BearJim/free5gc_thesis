@@ -2,3 +2,49 @@ time="2022-03-22T11:16:59Z" level=info msg="PCF Log level is set to [info] level
 time="2022-03-22T11:16:59Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
 time="2022-03-22T11:16:59Z" level=info msg="Server started" category=Init component=PCF
 time="2022-03-22T11:16:59Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF
+time="2022-03-29T16:39:59Z" level=info msg="PCF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=PCF
+time="2022-03-29T16:39:59Z" level=info msg="PCF Log level is set to [info] level" category=Init component=PCF
+time="2022-03-29T16:39:59Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
+time="2022-03-29T16:39:59Z" level=info msg="Server started" category=Init component=PCF
+time="2022-03-29T16:39:59Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF
+time="2022-03-29T16:40:51Z" level=info msg="Terminating PCF..." category=Init component=PCF
+time="2022-03-29T16:40:51Z" level=info msg="Send Deregister NFInstance" category=Consumer component=PCF
+time="2022-03-29T16:40:52Z" level=info msg="Deregister from NRF successfully" category=Init component=PCF
+time="2022-03-29T16:40:52Z" level=info msg="PCF terminated" category=Init component=PCF
+time="2022-03-29T16:42:13Z" level=info msg="PCF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=PCF
+time="2022-03-29T16:42:13Z" level=info msg="PCF Log level is set to [info] level" category=Init component=PCF
+time="2022-03-29T16:42:13Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
+time="2022-03-29T16:42:13Z" level=info msg="Server started" category=Init component=PCF
+time="2022-03-29T16:42:13Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF
+time="2022-03-29T16:42:28Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-03-29T16:42:28Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-03-29T16:43:10Z" level=info msg="Terminating PCF..." category=Init component=PCF
+time="2022-03-29T16:43:10Z" level=info msg="Send Deregister NFInstance" category=Consumer component=PCF
+time="2022-03-29T16:43:10Z" level=error msg="Deregister NF instance Error[server no response]" category=Init component=PCF
+time="2022-03-29T16:43:10Z" level=info msg="PCF terminated" category=Init component=PCF
+time="2022-03-29T16:45:45Z" level=info msg="PCF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=PCF
+time="2022-03-29T16:45:45Z" level=info msg="PCF Log level is set to [info] level" category=Init component=PCF
+time="2022-03-29T16:45:45Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
+time="2022-03-29T16:45:45Z" level=info msg="Server started" category=Init component=PCF
+time="2022-03-29T16:45:45Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF
+time="2022-03-29T16:46:11Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-03-29T16:46:12Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-03-29T16:46:12Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-03-29T16:46:12Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-03-29T16:47:05Z" level=info msg="Terminating PCF..." category=Init component=PCF
+time="2022-03-29T16:47:05Z" level=info msg="Send Deregister NFInstance" category=Consumer component=PCF
+time="2022-03-29T16:47:06Z" level=info msg="Deregister from NRF successfully" category=Init component=PCF
+time="2022-03-29T16:47:06Z" level=info msg="PCF terminated" category=Init component=PCF
+time="2022-03-29T17:04:43Z" level=info msg="PCF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=PCF
+time="2022-03-29T17:04:43Z" level=info msg="PCF Log level is set to [info] level" category=Init component=PCF
+time="2022-03-29T17:04:43Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
+time="2022-03-29T17:04:43Z" level=info msg="Server started" category=Init component=PCF
+time="2022-03-29T17:04:43Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF
+time="2022-03-29T17:06:08Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-03-29T17:06:08Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-03-29T17:06:08Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-03-29T17:06:08Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-03-29T17:08:18Z" level=info msg="Terminating PCF..." category=Init component=PCF
+time="2022-03-29T17:08:18Z" level=info msg="Send Deregister NFInstance" category=Consumer component=PCF
+time="2022-03-29T17:08:19Z" level=info msg="Deregister from NRF successfully" category=Init component=PCF
+time="2022-03-29T17:08:19Z" level=info msg="PCF terminated" category=Init component=PCF
