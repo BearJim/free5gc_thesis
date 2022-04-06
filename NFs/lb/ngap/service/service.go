@@ -30,7 +30,11 @@ var (
 	sctpListener *sctp.SCTPListener
 	connections  sync.Map
 	amfConn      *sctp.SCTPConn
+	amfConn0     *sctp.SCTPConn
+	amfConn1     *sctp.SCTPConn
+	amfConn2     *sctp.SCTPConn
 	newConn      *sctp.SCTPConn
+	goAmf        int
 	err          error
 )
 
@@ -143,7 +147,7 @@ func listenAndServe(addr *sctp.SCTPAddr) {
 	}
 }
 
-func DialToAmf(addresses []string, port int) {
+func DialToAmf(addresses []string, port int, nAmf int) {
 	var laddr *sctp.SCTPAddr
 	sndbuf := 0
 	rcvbuf := 0
@@ -177,6 +181,21 @@ func DialToAmf(addresses []string, port int) {
 		logger.NgapLog.Errorf("failed to dial 177: %v", err)
 	}
 
+	switch nAmf {
+	case 0:
+		amfConn0 = amfConn
+		connections.Store(amfConn0, amfConn0)
+		logger.NgapLog.Infof("this is amf 0")
+	case 1:
+		amfConn1 = amfConn
+		connections.Store(amfConn1, amfConn1)
+		logger.NgapLog.Infof("this is amf 1")
+	case 2:
+		amfConn2 = amfConn
+		connections.Store(amfConn2, amfConn2)
+		logger.NgapLog.Infof("this is amf 2")
+	}
+
 	if amfConn != nil {
 		logger.NgapLog.Infof("Dail LocalAddr: %s; RemoteAddr: %s", amfConn.LocalAddr(), amfConn.RemoteAddr())
 
@@ -188,7 +207,6 @@ func DialToAmf(addresses []string, port int) {
 		if err != nil {
 			logger.NgapLog.Errorf("failed to set read buf: %v", err)
 		}
-		connections.Store(amfConn, amfConn)
 		go handleDownlinkConnection(amfConn, readBufSize)
 	}
 }
@@ -237,8 +255,17 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 			logger.NgapLog.Tracef("Read %d bytes", n)
 			logger.NgapLog.Tracef("Packet content:\n%+v", hex.Dump(bufUp[:n]))
 
-			// TODO: concurrent on per-UE message
-			SendToAmf(amfConn, bufUp[:n], info)
+			goAmf = 0
+			switch goAmf {
+			case 0:
+				SendToAmf(amfConn0, bufUp[:n], info)
+			case 1:
+				SendToAmf(amfConn1, bufUp[:n], info)
+			case 2:
+				SendToAmf(amfConn2, bufUp[:n], info)
+			default:
+				SendToAmf(amfConn, bufUp[:n], info)
+			}
 		}
 	}
 }
