@@ -139,9 +139,9 @@ func (lb *LB) Start() {
 	initLog.Infoln("DialToAmf")
 	ngap_service.DialToAmf(AmfIp, 38412, 0)
 	// initLog.Infoln("DialToAmf1")
-	// ngap_service.DialToAmf(Amf1Ip, 38412, 1)
+	// ngap_service.DialToAmf(Amf1Ip, 38413, 1)
 	// initLog.Infoln("DialToAmf2")
-	// ngap_service.DialToAmf(Amf2Ip, 38412, 2)
+	// ngap_service.DialToAmf(Amf2Ip, 38414, 2)
 	initLog.Infoln("Run")
 	ngap_service.Run(NgapIp, 38415)
 

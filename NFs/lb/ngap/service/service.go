@@ -14,6 +14,7 @@ import (
 	"loadbalance/logger"
 
 	"github.com/free5gc/ngap"
+	"github.com/free5gc/ngap/ngapType"
 )
 
 type NGAPHandler struct {
@@ -44,6 +45,8 @@ var sctpConfig sctp.SocketConfig = sctp.SocketConfig{
 	AssocInfo: &sctp.AssocInfo{AsocMaxRxt: 4},
 }
 
+var mUEAMF map[*ngapType.RANUENGAPID]int
+
 func Run(addresses []string, port int) {
 	ips := []net.IPAddr{}
 
@@ -60,7 +63,7 @@ func Run(addresses []string, port int) {
 		IPAddrs: ips,
 		Port:    port,
 	}
-
+	mUEAMF = make(map[*ngapType.RANUENGAPID]int)
 	go listenAndServe(addr)
 }
 
@@ -221,6 +224,8 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 	}()
 
 	ppid := 0
+	// MDAF need to decide which AMF to go
+	goAmf = 0
 	for {
 		info := &sctp.SndRcvInfo{
 			Stream: uint16(ppid),
@@ -255,15 +260,101 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 			logger.NgapLog.Tracef("Read %d bytes", n)
 			logger.NgapLog.Tracef("Packet content:\n%+v", hex.Dump(bufUp[:n]))
 
-			goAmf = 0
+			msg := bufUp[:n]
+			pdu, err := ngap.Decoder(msg)
+			if err != nil {
+				logger.NgapLog.Errorf("NGAP decode error : %+v", err)
+				return
+			}
+
+			// decode nas for NGSETUP
+			switch pdu.Present {
+			case ngapType.NGAPPDUPresentInitiatingMessage:
+				initiatingMessage := pdu.InitiatingMessage
+				switch initiatingMessage.ProcedureCode.Value {
+				case ngapType.ProcedureCodeNGSetup:
+					logger.NgapLog.Infof("NGSETUP, send to AMF0")
+				case ngapType.ProcedureCodeInitialUEMessage:
+					for _, ie := range initiatingMessage.Value.InitialUEMessage.ProtocolIEs.List {
+						switch ie.Id.Value {
+						case ngapType.ProtocolIEIDRANUENGAPID:
+							rANUENGAPID := ie.Value.RANUENGAPID
+							value, isExist := mUEAMF[rANUENGAPID]
+							if !isExist {
+								mUEAMF[rANUENGAPID] = goAmf
+							} else {
+								goAmf = value
+							}
+							logger.NgapLog.Infof("mUEAMF key: %d , goAmf: %d", rANUENGAPID, mUEAMF[rANUENGAPID])
+							logger.NgapLog.Trace("Decode IE RANUENGAPID")
+							logger.NgapLog.Infof("RANUENGAPID: %d", rANUENGAPID)
+							if rANUENGAPID == nil {
+								logger.NgapLog.Error("RANUENGAPID is nil")
+								return
+							}
+						}
+					}
+				case ngapType.ProcedureCodeUplinkNASTransport:
+					for i := 0; i < len(initiatingMessage.Value.UplinkNASTransport.ProtocolIEs.List); i++ {
+						ie := initiatingMessage.Value.UplinkNASTransport.ProtocolIEs.List[i]
+						switch ie.Id.Value {
+						case ngapType.ProtocolIEIDRANUENGAPID:
+							rANUENGAPID := ie.Value.RANUENGAPID
+							value, isExist := mUEAMF[rANUENGAPID]
+							if !isExist {
+								mUEAMF[rANUENGAPID] = goAmf
+							} else {
+								goAmf = value
+							}
+							logger.NgapLog.Infof("mUEAMF key: %d , goAmf: %d", rANUENGAPID, mUEAMF[rANUENGAPID])
+							logger.NgapLog.Trace("Decode IE RANUENGAPID")
+							logger.NgapLog.Infof("RANUENGAPID: %d", rANUENGAPID)
+							if rANUENGAPID == nil {
+								logger.NgapLog.Error("RANUENGAPID is nil")
+								return
+							}
+						}
+					}
+				}
+			case ngapType.NGAPPDUPresentSuccessfulOutcome:
+				successfulOutcome := pdu.SuccessfulOutcome
+				switch successfulOutcome.ProcedureCode.Value {
+				case ngapType.ProcedureCodeInitialContextSetup:
+					initialContextSetupResponse := successfulOutcome.Value.InitialContextSetupResponse
+					for _, ie := range initialContextSetupResponse.ProtocolIEs.List {
+						switch ie.Id.Value {
+						case ngapType.ProtocolIEIDRANUENGAPID:
+							rANUENGAPID := ie.Value.RANUENGAPID
+							value, isExist := mUEAMF[rANUENGAPID]
+							if !isExist {
+								mUEAMF[rANUENGAPID] = goAmf
+							} else {
+								goAmf = value
+							}
+							logger.NgapLog.Infof("mUEAMF key: %d , goAmf: %d", rANUENGAPID, mUEAMF[rANUENGAPID])
+							logger.NgapLog.Trace("Decode IE RANUENGAPID")
+							logger.NgapLog.Infof("RANUENGAPID: %d", rANUENGAPID)
+							if rANUENGAPID == nil {
+								logger.NgapLog.Error("RANUENGAPID is nil")
+								return
+							}
+						}
+					}
+				}
+			}
+
 			switch goAmf {
 			case 0:
+				logger.NgapLog.Info("Send to AMf number: ", goAmf)
 				SendToAmf(amfConn0, bufUp[:n], info)
 			case 1:
+				logger.NgapLog.Info("Send to AMf number: ", goAmf)
 				SendToAmf(amfConn1, bufUp[:n], info)
 			case 2:
+				logger.NgapLog.Info("Send to AMf number: ", goAmf)
 				SendToAmf(amfConn2, bufUp[:n], info)
 			default:
+				logger.NgapLog.Info("Send to AMf number: Default, goAmf = ", goAmf)
 				SendToAmf(amfConn, bufUp[:n], info)
 			}
 		}
@@ -296,7 +387,7 @@ func SendToAmf(conn *sctp.SCTPConn, msg []byte, info *sctp.SndRcvInfo) {
 	if err != nil {
 		logger.NgapLog.Errorf("failed to write: %v", err)
 	} else {
-		logger.NgapLog.Info("write to amf: len %d", n)
+		logger.NgapLog.Infof("write to amf: len %d", n)
 	}
 }
 
@@ -377,7 +468,7 @@ func SendToRan(conn *sctp.SCTPConn, msg []byte, info *sctp.SndRcvInfo) {
 	if err != nil {
 		logger.NgapLog.Errorf("failed to write: %v", err)
 	} else {
-		logger.NgapLog.Info("write: len %d", n)
+		logger.NgapLog.Infof("write: len %d", n)
 	}
 }
 

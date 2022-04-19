@@ -17,3 +17,14 @@ time="2022-03-29T17:05:09Z" level=info msg="set report call : false" category=PF
 time="2022-03-29T17:05:09Z" level=info msg="Remove Request Transaction [1]\n" category=PFCP component=LIB
 time="2022-03-29T17:06:08Z" level=info msg="Remove Request Transaction [2]\n" category=PFCP component=LIB
 time="2022-03-29T17:06:08Z" level=info msg="Remove Request Transaction [3]\n" category=PFCP component=LIB
+time="2022-04-07T11:20:23Z" level=info msg="set log level : info" category=PFCP component=LIB
+time="2022-04-07T11:20:23Z" level=info msg="set report call : false" category=PFCP component=LIB
+time="2022-04-07T11:20:23Z" level=info msg="Remove Request Transaction [1]\n" category=PFCP component=LIB
+time="2022-04-19T18:04:06Z" level=info msg="set log level : info" category=PFCP component=LIB
+time="2022-04-19T18:04:06Z" level=info msg="set report call : false" category=PFCP component=LIB
+time="2022-04-19T18:04:06Z" level=info msg="Remove Request Transaction [1]\n" category=PFCP component=LIB
+time="2022-04-19T18:46:49Z" level=info msg="set log level : info" category=PFCP component=LIB
+time="2022-04-19T18:46:49Z" level=info msg="set report call : false" category=PFCP component=LIB
+time="2022-04-19T18:46:49Z" level=info msg="Remove Request Transaction [1]\n" category=PFCP component=LIB
+time="2022-04-19T19:28:41Z" level=info msg="Remove Request Transaction [2]\n" category=PFCP component=LIB
+time="2022-04-19T19:28:41Z" level=info msg="Remove Request Transaction [3]\n" category=PFCP component=LIB

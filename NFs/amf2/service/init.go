@@ -270,7 +270,7 @@ func (amf *AMF) Start() {
 		HandleMessage:      ngap.Dispatch,
 		HandleNotification: ngap.HandleSCTPNotification,
 	}
-	ngap_service.Run(self.NgapIpList, 38412, ngapHandler)
+	ngap_service.Run(self.NgapIpList, 38414, ngapHandler)
 
 	// Register to NRF
 	var profile models.NfProfile

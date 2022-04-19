@@ -44,3 +44,17 @@ time="2022-03-29T17:04:31Z" level=info msg="set log level : info" category=MonDB
 time="2022-03-29T17:04:31Z" level=info msg="set report call : false" category=MonDB component=LIB
 time="2022-03-29T17:04:49Z" level=info msg="set log level : info" category=MonDB component=LIB
 time="2022-03-29T17:04:49Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-04-07T11:19:11Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-04-07T11:19:11Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-04-07T11:20:07Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-04-07T11:20:07Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-04-07T11:20:33Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-04-07T11:20:33Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-04-19T18:03:29Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-04-19T18:03:29Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-04-19T18:04:13Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-04-19T18:04:13Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-04-19T18:46:40Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-04-19T18:46:40Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-04-19T18:46:57Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-04-19T18:46:57Z" level=info msg="set report call : false" category=MonDB component=LIB

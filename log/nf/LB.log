@@ -626,3 +626,357 @@ time="2022-03-29T17:08:09Z" level=info msg="Terminating LB..." category=Init com
 time="2022-03-29T17:08:09Z" level=info msg="Close SCTP server..." category=NGAP component=LB
 time="2022-03-29T17:08:09Z" level=info msg="SCTP server closed" category=NGAP component=LB
 time="2022-03-29T17:08:09Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-04-07T11:20:36Z" level=info msg=lb category=App component=LB
+time="2022-04-07T11:20:36Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-04-07T11:20:36Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-04-07T11:20:36Z" level=info msg="Server started" category=Init component=LB
+time="2022-04-07T11:20:36Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-04-07T11:20:36Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-07T11:20:36Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-04-07T11:20:36Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:53756; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-07T11:20:36Z" level=info msg=DialToAmf1 category=Init component=LB
+time="2022-04-07T11:20:36Z" level=info msg="raw addr: [2 0 150 12 127 0 0 19 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-07T11:20:36Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-07T11:20:36Z" level=error msg="failed to dial 177: connection refused" category=NGAP component=LB
+time="2022-04-07T11:20:36Z" level=info msg="this is amf 1" category=NGAP component=LB
+time="2022-04-07T11:20:36Z" level=info msg=DialToAmf2 category=Init component=LB
+time="2022-04-07T11:20:36Z" level=info msg="raw addr: [2 0 150 12 127 0 0 20 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-07T11:20:36Z" level=error msg="failed to dial 177: connection refused" category=NGAP component=LB
+time="2022-04-07T11:20:36Z" level=info msg="this is amf 2" category=NGAP component=LB
+time="2022-04-07T11:20:36Z" level=info msg=Run category=Init component=LB
+time="2022-04-07T11:20:36Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-04-07T11:20:54Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-04-07T11:20:54Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-04-07T11:20:54Z" level=error msg="bad file descriptor" category=NGAP component=LB
+time="2022-04-07T11:20:54Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-07T11:20:54Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-04-07T11:20:54Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-04-07T11:21:57Z" level=info msg=lb category=App component=LB
+time="2022-04-07T11:21:57Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-04-07T11:21:57Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-04-07T11:21:57Z" level=info msg="Server started" category=Init component=LB
+time="2022-04-07T11:21:57Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-04-07T11:21:57Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-07T11:21:57Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-04-07T11:21:57Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:57978; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-07T11:21:57Z" level=info msg=DialToAmf1 category=Init component=LB
+time="2022-04-07T11:21:57Z" level=info msg="raw addr: [2 0 150 13 127 0 0 19 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-07T11:21:57Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-07T11:21:57Z" level=info msg="this is amf 1" category=NGAP component=LB
+time="2022-04-07T11:21:57Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:53734; RemoteAddr: 127.0.0.19:38413" category=NGAP component=LB
+time="2022-04-07T11:21:57Z" level=info msg=DialToAmf2 category=Init component=LB
+time="2022-04-07T11:21:57Z" level=info msg="raw addr: [2 0 150 14 127 0 0 20 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-07T11:21:57Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-07T11:21:57Z" level=info msg="this is amf 2" category=NGAP component=LB
+time="2022-04-07T11:21:57Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:32894; RemoteAddr: 127.0.0.20:38414" category=NGAP component=LB
+time="2022-04-07T11:21:57Z" level=info msg=Run category=Init component=LB
+time="2022-04-07T11:21:57Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-07T11:21:57Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-04-07T11:24:46Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-04-07T11:24:46Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-07T11:24:46Z" level=info msg="Send to AMf number: %d0" category=NGAP component=LB
+time="2022-04-07T11:24:46Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-07T11:24:46Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-07T11:24:46Z" level=info msg="write to amf: len %d57" category=NGAP component=LB
+time="2022-04-07T11:24:46Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-07T11:24:46Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-07T11:24:46Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-07T11:24:46Z" level=info msg="write: len %d53" category=NGAP component=LB
+time="2022-04-07T11:24:46Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-07T11:24:46Z" level=info msg="Send to AMf number: %d1" category=NGAP component=LB
+time="2022-04-07T11:24:46Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-07T11:24:46Z" level=info msg="Create a new NG connection for: 127.0.0.19:38413" category=NGAP component=LB
+time="2022-04-07T11:24:46Z" level=info msg="write to amf: len %d69" category=NGAP component=LB
+time="2022-04-07T11:24:48Z" level=error msg="SCTP read timeout" category=NGAP component=LB
+time="2022-04-07T11:24:50Z" level=error msg="SCTP read timeout" category=NGAP component=LB
+time="2022-04-07T11:24:52Z" level=error msg="SCTP read timeout" category=NGAP component=LB
+time="2022-04-07T11:24:54Z" level=error msg="SCTP read timeout" category=NGAP component=LB
+time="2022-04-07T11:24:56Z" level=error msg="SCTP read timeout" category=NGAP component=LB
+time="2022-04-07T11:24:57Z" level=error msg="Read EOF from client" category=NGAP component=LB
+time="2022-04-07T11:25:20Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-04-07T11:25:20Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-04-07T11:25:20Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-07T11:25:20Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-07T11:25:20Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-04-07T11:25:20Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-04-19T18:04:22Z" level=info msg=lb category=App component=LB
+time="2022-04-19T18:04:22Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-04-19T18:04:22Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-04-19T18:04:22Z" level=info msg="Server started" category=Init component=LB
+time="2022-04-19T18:04:22Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-04-19T18:04:22Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-19T18:04:22Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-04-19T18:04:22Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:41131; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-19T18:04:22Z" level=info msg=Run category=Init component=LB
+time="2022-04-19T18:04:22Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-04-19T18:04:22Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T18:05:42Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-04-19T18:05:42Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-19T18:22:15Z" level=info msg=lb category=App component=LB
+time="2022-04-19T18:22:15Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-04-19T18:22:15Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-04-19T18:22:15Z" level=info msg="Server started" category=Init component=LB
+time="2022-04-19T18:22:15Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-04-19T18:22:15Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-19T18:22:15Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-04-19T18:22:15Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:35748; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-19T18:22:15Z" level=info msg=Run category=Init component=LB
+time="2022-04-19T18:22:15Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T18:22:15Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=info msg="NGSETUP, send to AMF0" category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=info msg="write to amf: len %d57" category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=info msg="write: len %d53" category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=info msg="Send to AMf number: %d0" category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=info msg="write: len %d53" category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T18:22:21Z" level=info msg="write to amf: len %d57" category=NGAP component=LB
+time="2022-04-19T18:24:38Z" level=info msg=lb category=App component=LB
+time="2022-04-19T18:24:38Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-04-19T18:24:38Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-04-19T18:24:38Z" level=info msg="Server started" category=Init component=LB
+time="2022-04-19T18:24:38Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-04-19T18:24:38Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-19T18:24:38Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-04-19T18:24:38Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:40818; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-19T18:24:38Z" level=info msg=Run category=Init component=LB
+time="2022-04-19T18:24:38Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-04-19T18:24:38Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=info msg="NGSETUP, send to AMF0" category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=info msg="write to amf: len %d57" category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=info msg="Send to AMf number: %d0" category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=info msg="write to amf: len %d57" category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=info msg="write: len %d53" category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=info msg="write: len %d53" category=NGAP component=LB
+time="2022-04-19T18:24:43Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T18:25:13Z" level=info msg=lb category=App component=LB
+time="2022-04-19T18:25:13Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-04-19T18:25:13Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-04-19T18:25:13Z" level=info msg="Server started" category=Init component=LB
+time="2022-04-19T18:25:13Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-04-19T18:25:13Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-19T18:25:13Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-04-19T18:25:13Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:57028; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-19T18:25:13Z" level=info msg=Run category=Init component=LB
+time="2022-04-19T18:25:13Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T18:25:13Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-04-19T18:25:19Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-04-19T18:25:19Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-19T18:25:19Z" level=info msg="NGSETUP, send to AMF0" category=NGAP component=LB
+time="2022-04-19T18:25:19Z" level=info msg="Send to AMf number: %d0" category=NGAP component=LB
+time="2022-04-19T18:25:19Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T18:25:19Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-19T18:25:19Z" level=info msg="write to amf: len %d57" category=NGAP component=LB
+time="2022-04-19T18:25:19Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T18:25:19Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T18:25:19Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-19T18:25:19Z" level=info msg="write: len %d53" category=NGAP component=LB
+time="2022-04-19T18:25:19Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T18:47:07Z" level=info msg=lb category=App component=LB
+time="2022-04-19T18:47:07Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-04-19T18:47:07Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-04-19T18:47:07Z" level=info msg="Server started" category=Init component=LB
+time="2022-04-19T18:47:07Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-04-19T18:47:07Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-19T18:47:07Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-04-19T18:47:07Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:50041; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-19T18:47:07Z" level=info msg=Run category=Init component=LB
+time="2022-04-19T18:47:07Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T18:47:07Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-04-19T18:47:14Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-04-19T18:47:14Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-19T18:47:14Z" level=info msg="NGSETUP, send to AMF0" category=NGAP component=LB
+time="2022-04-19T18:47:14Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-19T18:47:14Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T18:47:14Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-19T18:47:14Z" level=info msg="write to amf: len %d57" category=NGAP component=LB
+time="2022-04-19T18:47:14Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T18:47:14Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T18:47:14Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-19T18:47:14Z" level=info msg="write: len %d53" category=NGAP component=LB
+time="2022-04-19T18:47:14Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T18:56:34Z" level=info msg=lb category=App component=LB
+time="2022-04-19T18:56:34Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-04-19T18:56:34Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-04-19T18:56:34Z" level=info msg="Server started" category=Init component=LB
+time="2022-04-19T18:56:34Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-04-19T18:56:34Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-19T18:56:34Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-04-19T18:56:34Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:54792; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-19T18:56:34Z" level=info msg=Run category=Init component=LB
+time="2022-04-19T18:56:34Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T18:56:34Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg="NGSETUP, send to AMF0" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg="write to amf: len %d57" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg="write: len %d53" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=error msg="mUEAMF key: %d , goAmf: %d&{1} 0" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg="write to amf: len %d69" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg="write: len %d66" category=NGAP component=LB
+time="2022-04-19T18:56:39Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T19:15:01Z" level=info msg=lb category=App component=LB
+time="2022-04-19T19:15:01Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-04-19T19:15:01Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-04-19T19:15:01Z" level=info msg="Server started" category=Init component=LB
+time="2022-04-19T19:15:01Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-04-19T19:15:01Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-19T19:15:01Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-04-19T19:15:01Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:60860; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-19T19:15:01Z" level=info msg=Run category=Init component=LB
+time="2022-04-19T19:15:01Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T19:15:01Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="NGSETUP, send to AMF0" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="write: len 53" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="write to amf: len 69" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="write: len 66" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="write to amf: len 64" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="write: len 43" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="write to amf: len 93" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="write: len 176" category=NGAP component=LB
+time="2022-04-19T19:15:08Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T19:28:34Z" level=info msg=lb category=App component=LB
+time="2022-04-19T19:28:34Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-04-19T19:28:34Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-04-19T19:28:34Z" level=info msg="Server started" category=Init component=LB
+time="2022-04-19T19:28:34Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-04-19T19:28:34Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-19T19:28:34Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-04-19T19:28:34Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.17.0.1/172.18.0.1:34950; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-19T19:28:34Z" level=info msg=Run category=Init component=LB
+time="2022-04-19T19:28:34Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-04-19T19:28:34Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="NGSETUP, send to AMF0" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="write: len 53" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="write to amf: len 69" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="write: len 66" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="write to amf: len 64" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="write: len 43" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="write to amf: len 93" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="write: len 176" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="write to amf: len 19" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="write to amf: len 53" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T19:28:40Z" level=info msg="write to amf: len 96" category=NGAP component=LB
+time="2022-04-19T19:28:41Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T19:28:41Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T19:28:41Z" level=info msg="write: len 174" category=NGAP component=LB
+time="2022-04-19T19:28:41Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T19:28:41Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-19T19:28:41Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-19T19:28:41Z" level=info msg="write to amf: len 40" category=NGAP component=LB
+time="2022-04-19T19:28:43Z" level=error msg="Read EOF from client" category=NGAP component=LB
+time="2022-04-19T19:28:58Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T19:28:58Z" level=warning msg="Received SCTP PPID != 60, discard this packet" category=NGAP component=LB
+time="2022-04-19T19:28:58Z" level=error msg="failed to write: bad file descriptor" category=NGAP component=LB
+time="2022-04-19T19:28:58Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-19T19:28:58Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-19T19:29:12Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-04-19T19:29:12Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-04-19T19:29:12Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-04-19T19:29:12Z" level=info msg="LB terminated" category=Init component=LB
