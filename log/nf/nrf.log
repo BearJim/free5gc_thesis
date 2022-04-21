@@ -797,3 +797,17 @@ time="2022-04-19T19:28:41Z" level=info msg="Handle NFDiscoveryRequest" category=
 time="2022-04-19T19:28:41Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=SMF&target-nf-instance-id=93bc650a-6d06-4f40-a366-813f094f3025&target-nf-type=AMF | " category=GIN component=NRF
 time="2022-04-19T19:28:57Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
 time="2022-04-19T19:28:58Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/93bc650a-6d06-4f40-a366-813f094f3025 | " category=GIN component=NRF
+time="2022-04-19T21:21:58Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-19T21:21:59Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/47529981-edd4-4ad3-895e-f9455d0addb7 | " category=GIN component=NRF
+time="2022-04-19T21:22:00Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-19T21:22:01Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/e3c00615-d819-4c11-a500-666f0df981c3 | " category=GIN component=NRF
+time="2022-04-19T21:22:02Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-19T21:22:03Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/30ed7254-9c69-4b32-8e09-24ee1fa7d732 | " category=GIN component=NRF
+time="2022-04-19T21:22:04Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-19T21:22:05Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/8d82b63e-d44b-48c7-b5bb-2c7468d39a99 | " category=GIN component=NRF
+time="2022-04-19T21:22:05Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-19T21:22:06Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/1bb9dae4-e9ea-4232-ba48-d0a65ef356a0 | " category=GIN component=NRF
+time="2022-04-19T21:22:08Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-19T21:22:09Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/e1b00a79-2749-45cf-a2c1-1a073db89243 | " category=GIN component=NRF
+time="2022-04-19T21:22:18Z" level=info msg="Terminating NRF..." category=Init component=NRF
+time="2022-04-19T21:22:18Z" level=info msg="NRF terminated" category=Init component=NRF

@@ -165,3 +165,7 @@ time="2022-04-19T19:28:40Z" level=info msg="| 201 |       127.0.0.1 | POST    | 
 time="2022-04-19T19:28:40Z" level=info msg="Handle GetSmData" category=SDM component=UDM
 time="2022-04-19T19:28:40Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
 time="2022-04-19T19:28:41Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-19T21:22:00Z" level=info msg="Terminating UDM..." category=Init component=UDM
+time="2022-04-19T21:22:00Z" level=info msg="Send Deregister NFInstance" category=Consumer component=UDM
+time="2022-04-19T21:22:01Z" level=info msg="Deregister from NRF successfully" category=Init component=UDM
+time="2022-04-19T21:22:01Z" level=info msg="UDM terminated" category=Init component=UDM

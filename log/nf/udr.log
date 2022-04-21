@@ -177,3 +177,7 @@ time="2022-04-19T19:28:40Z" level=info msg="Handle QuerySmData" category=DRepo c
 time="2022-04-19T19:28:40Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
 time="2022-04-19T19:28:41Z" level=info msg="Handle PolicyDataUesUeIdSmDataGet" category=DRepo component=UDR
 time="2022-04-19T19:28:41Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/sm-data?dnn=internet&snssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-19T21:21:58Z" level=info msg="Terminating UDR..." category=Init component=UDR
+time="2022-04-19T21:21:58Z" level=info msg="Send Deregister NFInstance" category=Consumer component=UDR
+time="2022-04-19T21:21:59Z" level=info msg="Deregister from NRF successfully" category=Init component=UDR
+time="2022-04-19T21:21:59Z" level=info msg="UDR terminated" category=Init component=UDR

@@ -4086,3 +4086,41 @@ time="2022-04-19T19:29:12Z" level=info msg="Terminating LB..." category=Init com
 time="2022-04-19T19:29:12Z" level=info msg="Close SCTP server..." category=NGAP component=LB
 time="2022-04-19T19:29:12Z" level=info msg="SCTP server closed" category=NGAP component=LB
 time="2022-04-19T19:29:12Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-04-19T21:21:58Z" level=info msg="Terminating UDR..." category=Init component=UDR
+time="2022-04-19T21:21:58Z" level=info msg="Send Deregister NFInstance" category=Consumer component=UDR
+time="2022-04-19T21:21:58Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-19T21:21:59Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/47529981-edd4-4ad3-895e-f9455d0addb7 | " category=GIN component=NRF
+time="2022-04-19T21:21:59Z" level=info msg="Deregister from NRF successfully" category=Init component=UDR
+time="2022-04-19T21:21:59Z" level=info msg="UDR terminated" category=Init component=UDR
+time="2022-04-19T21:22:00Z" level=info msg="Terminating UDM..." category=Init component=UDM
+time="2022-04-19T21:22:00Z" level=info msg="Send Deregister NFInstance" category=Consumer component=UDM
+time="2022-04-19T21:22:00Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-19T21:22:01Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/e3c00615-d819-4c11-a500-666f0df981c3 | " category=GIN component=NRF
+time="2022-04-19T21:22:01Z" level=info msg="Deregister from NRF successfully" category=Init component=UDM
+time="2022-04-19T21:22:01Z" level=info msg="UDM terminated" category=Init component=UDM
+time="2022-04-19T21:22:02Z" level=info msg="Terminating PCF..." category=Init component=PCF
+time="2022-04-19T21:22:02Z" level=info msg="Send Deregister NFInstance" category=Consumer component=PCF
+time="2022-04-19T21:22:02Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-19T21:22:03Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/30ed7254-9c69-4b32-8e09-24ee1fa7d732 | " category=GIN component=NRF
+time="2022-04-19T21:22:03Z" level=info msg="Deregister from NRF successfully" category=Init component=PCF
+time="2022-04-19T21:22:03Z" level=info msg="PCF terminated" category=Init component=PCF
+time="2022-04-19T21:22:04Z" level=info msg="Terminating AUSF..." category=Init component=AUSF
+time="2022-04-19T21:22:04Z" level=info msg="Send Deregister NFInstance" category=App component=AUSF
+time="2022-04-19T21:22:04Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-19T21:22:05Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/8d82b63e-d44b-48c7-b5bb-2c7468d39a99 | " category=GIN component=NRF
+time="2022-04-19T21:22:05Z" level=info msg="Deregister from NRF successfully" category=Init component=AUSF
+time="2022-04-19T21:22:05Z" level=info msg="AUSF terminated" category=Init component=AUSF
+time="2022-04-19T21:22:05Z" level=info msg="Terminating NSSF..." category=Init component=NSSF
+time="2022-04-19T21:22:05Z" level=info msg="Send Deregister NFInstance" category=App component=NSSF
+time="2022-04-19T21:22:05Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-19T21:22:06Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/1bb9dae4-e9ea-4232-ba48-d0a65ef356a0 | " category=GIN component=NRF
+time="2022-04-19T21:22:06Z" level=info msg="Deregister from NRF successfully" category=Init component=NSSF
+time="2022-04-19T21:22:06Z" level=info msg="NSSF terminated" category=Init component=NSSF
+time="2022-04-19T21:22:08Z" level=info msg="Terminating SMF..." category=Init component=SMF
+time="2022-04-19T21:22:08Z" level=info msg="Send Deregister NFInstance" category=Consumer component=SMF
+time="2022-04-19T21:22:08Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-19T21:22:09Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/e1b00a79-2749-45cf-a2c1-1a073db89243 | " category=GIN component=NRF
+time="2022-04-19T21:22:09Z" level=info msg="Deregister from NRF successfully" category=Init component=SMF
+time="2022-04-19T21:22:10Z" level=info msg="Removing DNN routes" category=Util component=UPF
+time="2022-04-19T21:22:18Z" level=info msg="Terminating NRF..." category=Init component=NRF
+time="2022-04-19T21:22:18Z" level=info msg="NRF terminated" category=Init component=NRF

@@ -39,3 +39,7 @@ time="2022-04-19T18:46:50Z" level=info msg="config version [1.0.0]" category=CFG
 time="2022-04-19T18:46:50Z" level=info msg="Server started" category=Init component=NSSF
 time="2022-04-19T19:28:40Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
 time="2022-04-19T19:28:40Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=93bc650a-6d06-4f40-a366-813f094f3025&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-19T21:22:05Z" level=info msg="Terminating NSSF..." category=Init component=NSSF
+time="2022-04-19T21:22:05Z" level=info msg="Send Deregister NFInstance" category=App component=NSSF
+time="2022-04-19T21:22:06Z" level=info msg="Deregister from NRF successfully" category=Init component=NSSF
+time="2022-04-19T21:22:06Z" level=info msg="NSSF terminated" category=Init component=NSSF

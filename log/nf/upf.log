@@ -94,3 +94,4 @@ time="2022-04-19T19:28:41Z" level=info msg="[PFCP] Handle PFCP session establish
 time="2022-04-19T19:28:41Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
 time="2022-04-19T19:28:41Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
 time="2022-04-19T19:28:41Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-19T21:22:10Z" level=info msg="Removing DNN routes" category=Util component=UPF

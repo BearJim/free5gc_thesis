@@ -66,3 +66,7 @@ time="2022-04-19T19:28:40Z" level=info msg="Handle AM Policy Create Request" cat
 time="2022-04-19T19:28:40Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
 time="2022-04-19T19:28:41Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
 time="2022-04-19T19:28:41Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-19T21:22:02Z" level=info msg="Terminating PCF..." category=Init component=PCF
+time="2022-04-19T21:22:02Z" level=info msg="Send Deregister NFInstance" category=Consumer component=PCF
+time="2022-04-19T21:22:03Z" level=info msg="Deregister from NRF successfully" category=Init component=PCF
+time="2022-04-19T21:22:03Z" level=info msg="PCF terminated" category=Init component=PCF

@@ -272,9 +272,9 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 			case ngapType.NGAPPDUPresentInitiatingMessage:
 				initiatingMessage := pdu.InitiatingMessage
 				switch initiatingMessage.ProcedureCode.Value {
-				case ngapType.ProcedureCodeNGSetup:
+				case ngapType.ProcedureCodeNGSetup: //NGSETUP
 					logger.NgapLog.Infof("NGSETUP, send to AMF0")
-				case ngapType.ProcedureCodeInitialUEMessage:
+				case ngapType.ProcedureCodeInitialUEMessage: // initail UE message
 					for _, ie := range initiatingMessage.Value.InitialUEMessage.ProtocolIEs.List {
 						switch ie.Id.Value {
 						case ngapType.ProtocolIEIDRANUENGAPID:
@@ -294,7 +294,7 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 							}
 						}
 					}
-				case ngapType.ProcedureCodeUplinkNASTransport:
+				case ngapType.ProcedureCodeUplinkNASTransport: // Uplink NAS Transport
 					for i := 0; i < len(initiatingMessage.Value.UplinkNASTransport.ProtocolIEs.List); i++ {
 						ie := initiatingMessage.Value.UplinkNASTransport.ProtocolIEs.List[i]
 						switch ie.Id.Value {
@@ -429,7 +429,7 @@ func handleDownlinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 
 		if notification == nil {
 			if info == nil || info.PPID != ngap.PPID {
-				logger.NgapLog.Warnln("Received SCTP PPID != 60, discard this packet")
+				logger.NgapLog.Infoln("Received SCTP PPID != 60")
 				// continue
 			}
 

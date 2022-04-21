@@ -178,3 +178,6 @@ time="2022-04-19T19:28:41Z" level=info msg="In HandlePfcpSessionModificationResp
 time="2022-04-19T19:28:41Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
 time="2022-04-19T19:28:41Z" level=info msg="PFCP Session Modification Success[1]\n" category=PFCP component=SMF
 time="2022-04-19T19:28:41Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:9ea15c71-7b3c-4092-bb3a-274faa38ae2b/modify | " category=GIN component=SMF
+time="2022-04-19T21:22:08Z" level=info msg="Terminating SMF..." category=Init component=SMF
+time="2022-04-19T21:22:08Z" level=info msg="Send Deregister NFInstance" category=Consumer component=SMF
+time="2022-04-19T21:22:09Z" level=info msg="Deregister from NRF successfully" category=Init component=SMF

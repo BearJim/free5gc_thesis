@@ -117,3 +117,7 @@ time="2022-04-19T19:28:40Z" level=info msg=Auth5gAkaComfirmRequest category=5gAk
 time="2022-04-19T19:28:40Z" level=info msg="res*: 6334663035666438383335313531643034353437313862383534666433333933\nXres*: 6334663035666438383335313531643034353437313862383534666433333933\n" category=5gAkaAuth component=AUSF
 time="2022-04-19T19:28:40Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
 time="2022-04-19T19:28:40Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-19T21:22:04Z" level=info msg="Terminating AUSF..." category=Init component=AUSF
+time="2022-04-19T21:22:04Z" level=info msg="Send Deregister NFInstance" category=App component=AUSF
+time="2022-04-19T21:22:05Z" level=info msg="Deregister from NRF successfully" category=Init component=AUSF
+time="2022-04-19T21:22:05Z" level=info msg="AUSF terminated" category=Init component=AUSF
