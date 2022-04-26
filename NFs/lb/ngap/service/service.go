@@ -28,15 +28,16 @@ const readBufSize uint32 = 8192
 var readTimeout syscall.Timeval = syscall.Timeval{Sec: 2, Usec: 0}
 
 var (
-	sctpListener *sctp.SCTPListener
-	connections  sync.Map
-	amfConn      *sctp.SCTPConn
-	amfConn0     *sctp.SCTPConn
-	amfConn1     *sctp.SCTPConn
-	amfConn2     *sctp.SCTPConn
-	newConn      *sctp.SCTPConn
-	goAmf        int
-	err          error
+	sctpListener    *sctp.SCTPListener
+	connections     sync.Map
+	amfConn         *sctp.SCTPConn
+	amfConn0        *sctp.SCTPConn
+	amfConn1        *sctp.SCTPConn
+	amfConn2        *sctp.SCTPConn
+	newConn         *sctp.SCTPConn
+	goAmf           int
+	err             error
+	NGsetupResponse bool
 )
 
 var sctpConfig sctp.SocketConfig = sctp.SocketConfig{
@@ -64,6 +65,7 @@ func Run(addresses []string, port int) {
 		Port:    port,
 	}
 	mUEAMF = make(map[*ngapType.RANUENGAPID]int)
+	NGsetupResponse = false
 	go listenAndServe(addr)
 }
 
@@ -273,8 +275,10 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 				initiatingMessage := pdu.InitiatingMessage
 				switch initiatingMessage.ProcedureCode.Value {
 				case ngapType.ProcedureCodeNGSetup: //NGSETUP
-					logger.NgapLog.Infof("NGSETUP, send to AMF0")
+					goAmf = 3
+					logger.NgapLog.Infof("NGSETUP, send to AMF0 AMF1 AMF2, goAmf: ", goAmf)
 				case ngapType.ProcedureCodeInitialUEMessage: // initail UE message
+					goAmf = 0
 					for _, ie := range initiatingMessage.Value.InitialUEMessage.ProtocolIEs.List {
 						switch ie.Id.Value {
 						case ngapType.ProtocolIEIDRANUENGAPID:
@@ -353,6 +357,11 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 			case 2:
 				logger.NgapLog.Info("Send to AMf number: ", goAmf)
 				SendToAmf(amfConn2, bufUp[:n], info)
+			case 3:
+				logger.NgapLog.Info("NGSetup send to all AMfs")
+				SendToAmf(amfConn0, bufUp[:n], info)
+				SendToAmf(amfConn1, bufUp[:n], info)
+				SendToAmf(amfConn2, bufUp[:n], info)
 			default:
 				logger.NgapLog.Info("Send to AMf number: Default, goAmf = ", goAmf)
 				SendToAmf(amfConn, bufUp[:n], info)
@@ -429,15 +438,35 @@ func handleDownlinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 
 		if notification == nil {
 			if info == nil || info.PPID != ngap.PPID {
-				logger.NgapLog.Infoln("Received SCTP PPID != 60")
+				logger.NgapLog.Tracef("Received SCTP PPID != 60")
 				// continue
 			}
 
-			logger.NgapLog.Tracef("Read %d bytes", n)
-			logger.NgapLog.Tracef("Packet content:\n%+v", hex.Dump(buf[:n]))
-		}
-		if newConn != nil {
-			SendToRan(newConn, buf[:n], info)
+			msg := buf[:n]
+			pdu, err := ngap.Decoder(msg)
+			if err != nil {
+				logger.NgapLog.Errorf("NGAP decode error : %+v", err)
+				return
+			}
+			switch pdu.Present {
+			case ngapType.NGAPPDUPresentSuccessfulOutcome:
+				successfulOutcome := pdu.SuccessfulOutcome
+				switch successfulOutcome.ProcedureCode.Value {
+				case ngapType.ProcedureCodeNGSetup:
+					if !NGsetupResponse { //NGsetupResponse = false, send 1 response to RAN
+						NGsetupResponse = true
+						if newConn != nil {
+							SendToRan(newConn, buf[:n], info)
+						}
+					} else { //NGsetupResponse = ture, drop other response
+						logger.NgapLog.Infof("NGSETUP response drop")
+					}
+				}
+			default:
+				if newConn != nil {
+					SendToRan(newConn, buf[:n], info)
+				}
+			}
 		}
 	}
 }

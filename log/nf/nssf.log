@@ -43,3 +43,12 @@ time="2022-04-19T21:22:05Z" level=info msg="Terminating NSSF..." category=Init c
 time="2022-04-19T21:22:05Z" level=info msg="Send Deregister NFInstance" category=App component=NSSF
 time="2022-04-19T21:22:06Z" level=info msg="Deregister from NRF successfully" category=Init component=NSSF
 time="2022-04-19T21:22:06Z" level=info msg="NSSF terminated" category=Init component=NSSF
+time="2022-04-26T15:24:18Z" level=info msg="NSSF Log level is set to [info] level" category=Init component=NSSF
+time="2022-04-26T15:24:18Z" level=info msg="config version [1.0.0]" category=CFG component=NSSF
+time="2022-04-26T15:24:18Z" level=info msg="Server started" category=Init component=NSSF
+time="2022-04-26T15:41:18Z" level=info msg="NSSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NSSF
+time="2022-04-26T15:41:18Z" level=info msg="NSSF Log level is set to [info] level" category=Init component=NSSF
+time="2022-04-26T15:41:18Z" level=info msg="config version [1.0.0]" category=CFG component=NSSF
+time="2022-04-26T15:41:18Z" level=info msg="Server started" category=Init component=NSSF
+time="2022-04-26T15:47:55Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T15:47:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=68c420a5-4958-4977-b47a-bdbd67858a88&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF

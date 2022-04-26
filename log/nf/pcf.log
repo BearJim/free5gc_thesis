@@ -70,3 +70,18 @@ time="2022-04-19T21:22:02Z" level=info msg="Terminating PCF..." category=Init co
 time="2022-04-19T21:22:02Z" level=info msg="Send Deregister NFInstance" category=Consumer component=PCF
 time="2022-04-19T21:22:03Z" level=info msg="Deregister from NRF successfully" category=Init component=PCF
 time="2022-04-19T21:22:03Z" level=info msg="PCF terminated" category=Init component=PCF
+time="2022-04-26T15:24:18Z" level=info msg="PCF Log level is set to [info] level" category=Init component=PCF
+time="2022-04-26T15:24:18Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
+time="2022-04-26T15:24:18Z" level=info msg="Server started" category=Init component=PCF
+time="2022-04-26T15:24:18Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF
+time="2022-04-26T15:41:16Z" level=info msg="PCF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=PCF
+time="2022-04-26T15:41:16Z" level=info msg="PCF Log level is set to [info] level" category=Init component=PCF
+time="2022-04-26T15:41:16Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
+time="2022-04-26T15:41:16Z" level=info msg="Server started" category=Init component=PCF
+time="2022-04-26T15:41:16Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF
+time="2022-04-26T15:47:54Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T15:47:54Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T15:47:55Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T15:47:55Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T15:50:39Z" level=warning msg="[PCF] Handle Amf Status Change Notify is not implemented." category=Callback component=PCF
+time="2022-04-26T15:50:39Z" level=info msg="| 204 |       127.0.0.1 | POST    | /npcf-callback/v1/amfstatus | " category=GIN component=PCF

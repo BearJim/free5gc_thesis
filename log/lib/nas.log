@@ -94,3 +94,23 @@ time="2022-04-19T19:28:31Z" level=info msg="set log level : info" category=NAS c
 time="2022-04-19T19:28:31Z" level=info msg="set report call : false" category=NAS component=LIB
 time="2022-04-19T19:28:40Z" level=info msg="Encode ExtendedProtocolConfigurationOptions in EncodePDUSessionEstablishmentRequest" category=Message component=NAS
 time="2022-04-19T19:28:41Z" level=info msg="ProtocolOrContainerList:  [0xc0003a8e60 0xc0003a8ea0 0xc0003a8ee0]" category=Convert component=NAS
+time="2022-04-26T15:24:17Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:24:17Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:41:09Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:41:09Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:41:25Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:41:25Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:41:27Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:41:27Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:41:29Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:41:29Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:47:41Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:47:41Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:47:44Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:47:44Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:47:46Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:47:46Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:47:54Z" level=info msg="Encode ExtendedProtocolConfigurationOptions in EncodePDUSessionEstablishmentRequest" category=Message component=NAS
+time="2022-04-26T15:47:55Z" level=info msg="ProtocolOrContainerList:  [0xc00000cac0 0xc00000cb00 0xc00000cb40]" category=Convert component=NAS

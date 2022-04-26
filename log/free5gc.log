@@ -4124,3 +4124,935 @@ time="2022-04-19T21:22:09Z" level=info msg="Deregister from NRF successfully" ca
 time="2022-04-19T21:22:10Z" level=info msg="Removing DNN routes" category=Util component=UPF
 time="2022-04-19T21:22:18Z" level=info msg="Terminating NRF..." category=Init component=NRF
 time="2022-04-19T21:22:18Z" level=info msg="NRF terminated" category=Init component=NRF
+time="2022-04-26T15:24:03Z" level=info msg="Config: /home/bearjim/thesis/experiment/free5gc/NFs/upf/build/config/upfcfg.test.yaml" category=Util component=UPF
+time="2022-04-26T15:24:03Z" level=info msg="UPF config version [1.0.0]" category=Util component=UPF
+time="2022-04-26T15:24:03Z" level=info msg="Set log level: info" category=Util component=UPF
+time="2022-04-26T15:24:03Z" level=info msg="DNN routes added, main routing table:" category=Util component=UPF
+time="2022-04-26T15:24:03Z" level=info msg="DstIp               Gateway        Iface     Priority RtProto   Type       " category=Util component=UPF
+time="2022-04-26T15:24:03Z" level=info msg="60.60.0.0 /24       0.0.0.0        upfgtp    0        static    unicast    " category=Util component=UPF
+time="2022-04-26T15:24:03Z" level=info msg="10.200.200.0 /24    0.0.0.0        veth1     0        kernel    unicast    " category=Util component=UPF
+time="2022-04-26T15:24:17Z" level=info msg="NRF Log level is set to [info] level" category=Init component=NRF
+time="2022-04-26T15:24:17Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:24:17Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:24:17Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-04-26T15:24:17Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-04-26T15:24:17Z" level=info msg="config version [1.0.0]" category=CFG component=NRF
+time="2022-04-26T15:24:17Z" level=info msg="Server started" category=Init component=NRF
+time="2022-04-26T15:24:17Z" level=info msg="nrfconfig Info: Version[1.0.0] Description[NRF initial local configuration]" category=Init component=NRF
+time="2022-04-26T15:24:17Z" level=info msg="Binding addr: [127.0.0.10:8000]" category=Init component=NRF
+time="2022-04-26T15:24:17Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-04-26T15:24:17Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:24:17Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:24:17Z" level=info msg="set log level : info" category=NGAP component=LIB
+time="2022-04-26T15:24:17Z" level=info msg="set report call : false" category=NGAP component=LIB
+time="2022-04-26T15:24:17Z" level=info msg="set log level : info" category=FSM component=LIB
+time="2022-04-26T15:24:17Z" level=info msg="set report call : false" category=FSM component=LIB
+time="2022-04-26T15:24:17Z" level=info msg="set log level : info" category=Aper component=LIB
+time="2022-04-26T15:24:17Z" level=info msg="set report call : false" category=Aper component=LIB
+time="2022-04-26T15:24:17Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:24:17Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:24:17Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-04-26T15:24:17Z" level=info msg="Server started" category=Init component=AMF
+time="2022-04-26T15:24:17Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-04-26T15:24:17Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-04-26T15:24:17Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:24:17Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:24:17Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:24:17Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/1ebcfed4-8b63-40b5-9d4b-e3654d0b2bda" category=MGMT component=NRF
+time="2022-04-26T15:24:17Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/1ebcfed4-8b63-40b5-9d4b-e3654d0b2bda | " category=GIN component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="SMF Log level is set to [info] level" category=Init component=SMF
+time="2022-04-26T15:24:18Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="set log level : info" category=NGAP component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="set report call : false" category=NGAP component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="set log level : info" category=Aper component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="set report call : false" category=Aper component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="set log level : info" category=PFCP component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="set report call : false" category=PFCP component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="SMF config version [1.0.2]" category=CFG component=SMF
+time="2022-04-26T15:24:18Z" level=info msg="UE-Routing config version [1.0.1]" category=CFG component=SMF
+time="2022-04-26T15:24:18Z" level=info msg="smfconfig Info: Version[1.0.2] Description[SMF initial local configuration]" category=CTX component=SMF
+time="2022-04-26T15:24:18Z" level=info msg="Endpoints: [10.200.200.102]" category=CTX component=SMF
+time="2022-04-26T15:24:18Z" level=info msg="Server started" category=Init component=SMF
+time="2022-04-26T15:24:18Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/f01e6943-d4e3-428c-96e4-10a2ac9fd1c1" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/f01e6943-d4e3-428c-96e4-10a2ac9fd1c1 | " category=GIN component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="SMF Registration to NRF {f01e6943-d4e3-428c-96e4-10a2ac9fd1c1 SMF REGISTERED 0 0xc0002ceac0 0xc0002ceb40 [] []   [127.0.0.2] [] <nil> [] [] <nil> 0 0 0 area1 <nil> <nil> <nil> <nil> 0xc000498880 <nil> <nil> <nil> <nil> <nil> map[] <nil> false 0xc0002ce180 false false []}" category=Init component=SMF
+time="2022-04-26T15:24:18Z" level=info msg="Listen on 10.200.200.1:8805" category=PFCP component=SMF
+time="2022-04-26T15:24:18Z" level=info msg="Send PFCP Association Request to UPF[10.200.200.101]\n" category=App component=SMF
+time="2022-04-26T15:24:18Z" level=info msg="[PFCP] Handle PFCP association setup request" category=Util component=UPF
+time="2022-04-26T15:24:18Z" level=info msg="[PFCP] Association Setup Response" category=Util component=UPF
+time="2022-04-26T15:24:18Z" level=info msg="In HandlePfcpAssociationSetupResponse" category=PFCP component=SMF
+time="2022-04-26T15:24:18Z" level=info msg="Handle PFCP Association Setup Response with NodeID[10.200.200.101]" category=PFCP component=SMF
+time="2022-04-26T15:24:18Z" level=info msg="UPF(10.200.200.101)[internet] setup association" category=PFCP component=SMF
+time="2022-04-26T15:24:18Z" level=info msg="Remove Request Transaction [1]\n" category=PFCP component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="UDR Log level is set to [info] level" category=Init component=UDR
+time="2022-04-26T15:24:18Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="config version [1.0.0]" category=CFG component=UDR
+time="2022-04-26T15:24:18Z" level=info msg="UDR Config Info: Version[1.0.0] Description[UDR initial local configuration]" category=Init component=UDR
+time="2022-04-26T15:24:18Z" level=info msg="Server started" category=Init component=UDR
+time="2022-04-26T15:24:18Z" level=info msg="udrconfig Info: Version[1.0.0] Description[UDR initial local configuration]" category=Util component=UDR
+time="2022-04-26T15:24:18Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/99ead9e7-29b5-453f-83e3-da515edce94c" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/99ead9e7-29b5-453f-83e3-da515edce94c | " category=GIN component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="PCF Log level is set to [info] level" category=Init component=PCF
+time="2022-04-26T15:24:18Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
+time="2022-04-26T15:24:18Z" level=info msg="Server started" category=Init component=PCF
+time="2022-04-26T15:24:18Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF
+time="2022-04-26T15:24:18Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/aa59c946-58e1-4117-b45a-7873f727a32f" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/aa59c946-58e1-4117-b45a-7873f727a32f | " category=GIN component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=PCF&service-names=nudr-dr&target-nf-type=UDR | " category=GIN component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="UDM Log level is set to [info] level" category=Init component=UDM
+time="2022-04-26T15:24:18Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="config version [1.0.1]" category=CFG component=UDM
+time="2022-04-26T15:24:18Z" level=info msg="UDM Config Info: Version[1.0.1] Description[UDM initial local configuration]" category=Init component=UDM
+time="2022-04-26T15:24:18Z" level=info msg="Server started" category=Init component=UDM
+time="2022-04-26T15:24:18Z" level=info msg="udmconfig Info: Version[1.0.1] Description[UDM initial local configuration]" category=Util component=UDM
+time="2022-04-26T15:24:18Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/10eb9160-5aac-4deb-a7ff-3bac25b623a2" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/10eb9160-5aac-4deb-a7ff-3bac25b623a2 | " category=GIN component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="NSSF Log level is set to [info] level" category=Init component=NSSF
+time="2022-04-26T15:24:18Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:24:18Z" level=info msg="config version [1.0.0]" category=CFG component=NSSF
+time="2022-04-26T15:24:18Z" level=info msg="Server started" category=Init component=NSSF
+time="2022-04-26T15:24:18Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/9c7f9371-df54-494b-ba0e-f9580c9484d7" category=MGMT component=NRF
+time="2022-04-26T15:24:18Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/9c7f9371-df54-494b-ba0e-f9580c9484d7 | " category=GIN component=NRF
+time="2022-04-26T15:24:19Z" level=info msg="AUSF Log level is set to [info] level" category=Init component=AUSF
+time="2022-04-26T15:24:19Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:24:19Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:24:19Z" level=info msg="config version [1.0.0]" category=CFG component=AUSF
+time="2022-04-26T15:24:19Z" level=info msg="Server started" category=Init component=AUSF
+time="2022-04-26T15:24:19Z" level=info msg="ausfconfig Info: Version[1.0.0] Description[AUSF initial local configuration]\n" category=Init component=AUSF
+time="2022-04-26T15:24:19Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:24:19Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:24:19Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:24:19Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/23163586-7582-4582-bca5-50736faccb31" category=MGMT component=NRF
+time="2022-04-26T15:24:19Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/23163586-7582-4582-bca5-50736faccb31 | " category=GIN component=NRF
+time="2022-04-26T15:24:22Z" level=info msg="Removing DNN routes" category=Util component=UPF
+time="2022-04-26T15:40:59Z" level=info msg="NRF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NRF
+time="2022-04-26T15:40:59Z" level=info msg="NRF Log level is set to [info] level" category=Init component=NRF
+time="2022-04-26T15:40:59Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:40:59Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:40:59Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-04-26T15:40:59Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-04-26T15:40:59Z" level=info msg="config version [1.0.0]" category=CFG component=NRF
+time="2022-04-26T15:40:59Z" level=info msg="Server started" category=Init component=NRF
+time="2022-04-26T15:40:59Z" level=info msg="nrfconfig Info: Version[1.0.0] Description[NRF initial local configuration]" category=Init component=NRF
+time="2022-04-26T15:40:59Z" level=info msg="Binding addr: [127.0.0.10:8000]" category=Init component=NRF
+time="2022-04-26T15:41:06Z" level=info msg="Config: /home/bearjim/thesis/experiment/free5gc/NFs/upf/build/config/upfcfg.yaml" category=Util component=UPF
+time="2022-04-26T15:41:06Z" level=info msg="UPF config version [1.0.0]" category=Util component=UPF
+time="2022-04-26T15:41:06Z" level=info msg="Set log level: info" category=Util component=UPF
+time="2022-04-26T15:41:06Z" level=info msg="DNN routes added, main routing table:" category=Util component=UPF
+time="2022-04-26T15:41:06Z" level=info msg="DstIp               Gateway        Iface     Priority RtProto   Type       " category=Util component=UPF
+time="2022-04-26T15:41:06Z" level=info msg="172.18.0.0 /16      0.0.0.0        br-21a4135ca5800        kernel    unicast    " category=Util component=UPF
+time="2022-04-26T15:41:06Z" level=info msg="172.17.0.0 /16      0.0.0.0        docker0   0        kernel    unicast    " category=Util component=UPF
+time="2022-04-26T15:41:06Z" level=info msg="60.60.0.0 /24       0.0.0.0        upfgtp    0        static    unicast    " category=Util component=UPF
+time="2022-04-26T15:41:06Z" level=info msg="10.10.0.1 /32       0.0.0.0        ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-04-26T15:41:06Z" level=info msg="10.10.0.0 /24       0.0.0.0        ens18     0        kernel    unicast    " category=Util component=UPF
+time="2022-04-26T15:41:06Z" level=info msg="0.0.0.0 /0          10.10.0.1      ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-04-26T15:41:09Z" level=info msg="SMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=SMF
+time="2022-04-26T15:41:09Z" level=info msg="SMF Log level is set to [info] level" category=Init component=SMF
+time="2022-04-26T15:41:09Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:41:09Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:41:09Z" level=info msg="set log level : info" category=NGAP component=LIB
+time="2022-04-26T15:41:09Z" level=info msg="set report call : false" category=NGAP component=LIB
+time="2022-04-26T15:41:09Z" level=info msg="set log level : info" category=Aper component=LIB
+time="2022-04-26T15:41:09Z" level=info msg="set report call : false" category=Aper component=LIB
+time="2022-04-26T15:41:09Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:41:09Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:41:09Z" level=info msg="set log level : info" category=PFCP component=LIB
+time="2022-04-26T15:41:09Z" level=info msg="set report call : false" category=PFCP component=LIB
+time="2022-04-26T15:41:09Z" level=info msg="SMF config version [1.0.2]" category=CFG component=SMF
+time="2022-04-26T15:41:09Z" level=info msg="UE-Routing config version [1.0.1]" category=CFG component=SMF
+time="2022-04-26T15:41:09Z" level=info msg="smfconfig Info: Version[1.0.2] Description[SMF initial local configuration]" category=CTX component=SMF
+time="2022-04-26T15:41:10Z" level=info msg="Endpoints: [127.0.0.8]" category=CTX component=SMF
+time="2022-04-26T15:41:10Z" level=info msg="Server started" category=Init component=SMF
+time="2022-04-26T15:41:10Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:41:10Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:41:10Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:41:10Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/72e43296-23a4-4bb6-a38a-7f4b376dd7e2" category=MGMT component=NRF
+time="2022-04-26T15:41:10Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/72e43296-23a4-4bb6-a38a-7f4b376dd7e2 | " category=GIN component=NRF
+time="2022-04-26T15:41:10Z" level=info msg="SMF Registration to NRF {72e43296-23a4-4bb6-a38a-7f4b376dd7e2 SMF REGISTERED 0 0xc000309160 0xc0003091a0 [] []   [127.0.0.2] [] <nil> [] [] <nil> 0 0 0 area1 <nil> <nil> <nil> <nil> 0xc00030e900 <nil> <nil> <nil> <nil> <nil> map[] <nil> false 0xc000308fe0 false false []}" category=Init component=SMF
+time="2022-04-26T15:41:10Z" level=info msg="Listen on 127.0.0.1:8805" category=PFCP component=SMF
+time="2022-04-26T15:41:10Z" level=info msg="Send PFCP Association Request to UPF[127.0.0.8]\n" category=App component=SMF
+time="2022-04-26T15:41:10Z" level=info msg="[PFCP] Handle PFCP association setup request" category=Util component=UPF
+time="2022-04-26T15:41:10Z" level=info msg="[PFCP] Association Setup Response" category=Util component=UPF
+time="2022-04-26T15:41:10Z" level=info msg="Remove Request Transaction [1]\n" category=PFCP component=LIB
+time="2022-04-26T15:41:10Z" level=info msg="In HandlePfcpAssociationSetupResponse" category=PFCP component=SMF
+time="2022-04-26T15:41:10Z" level=info msg="Handle PFCP Association Setup Response with NodeID[127.0.0.8]" category=PFCP component=SMF
+time="2022-04-26T15:41:10Z" level=info msg="UPF(127.0.0.8)[internet] setup association" category=PFCP component=SMF
+time="2022-04-26T15:41:14Z" level=info msg="AUSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AUSF
+time="2022-04-26T15:41:14Z" level=info msg="AUSF Log level is set to [info] level" category=Init component=AUSF
+time="2022-04-26T15:41:14Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:41:14Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:41:14Z" level=info msg="config version [1.0.0]" category=CFG component=AUSF
+time="2022-04-26T15:41:14Z" level=info msg="Server started" category=Init component=AUSF
+time="2022-04-26T15:41:14Z" level=info msg="ausfconfig Info: Version[1.0.0] Description[AUSF initial local configuration]\n" category=Init component=AUSF
+time="2022-04-26T15:41:14Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:41:14Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:41:14Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:41:14Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/f0c679ba-57c1-4e55-b05f-ddde8c725482" category=MGMT component=NRF
+time="2022-04-26T15:41:14Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/f0c679ba-57c1-4e55-b05f-ddde8c725482 | " category=GIN component=NRF
+time="2022-04-26T15:41:16Z" level=info msg="PCF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=PCF
+time="2022-04-26T15:41:16Z" level=info msg="PCF Log level is set to [info] level" category=Init component=PCF
+time="2022-04-26T15:41:16Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:41:16Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:41:16Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
+time="2022-04-26T15:41:16Z" level=info msg="Server started" category=Init component=PCF
+time="2022-04-26T15:41:16Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF
+time="2022-04-26T15:41:16Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:41:16Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:41:16Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:41:16Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/bbb9af7e-87cd-4397-ab41-8d881a3879c0" category=MGMT component=NRF
+time="2022-04-26T15:41:16Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/bbb9af7e-87cd-4397-ab41-8d881a3879c0 | " category=GIN component=NRF
+time="2022-04-26T15:41:16Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:41:16Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=PCF&service-names=nudr-dr&target-nf-type=UDR | " category=GIN component=NRF
+time="2022-04-26T15:41:18Z" level=info msg="NSSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NSSF
+time="2022-04-26T15:41:18Z" level=info msg="NSSF Log level is set to [info] level" category=Init component=NSSF
+time="2022-04-26T15:41:18Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:41:18Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:41:18Z" level=info msg="config version [1.0.0]" category=CFG component=NSSF
+time="2022-04-26T15:41:18Z" level=info msg="Server started" category=Init component=NSSF
+time="2022-04-26T15:41:18Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:41:18Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:41:18Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:41:18Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/d2927d27-2881-4c4c-8aab-d01bdac95a9a" category=MGMT component=NRF
+time="2022-04-26T15:41:18Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/d2927d27-2881-4c4c-8aab-d01bdac95a9a | " category=GIN component=NRF
+time="2022-04-26T15:41:20Z" level=info msg="UDM version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=UDM
+time="2022-04-26T15:41:20Z" level=info msg="UDM Log level is set to [info] level" category=Init component=UDM
+time="2022-04-26T15:41:20Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:41:20Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:41:20Z" level=info msg="config version [1.0.1]" category=CFG component=UDM
+time="2022-04-26T15:41:20Z" level=info msg="UDM Config Info: Version[1.0.1] Description[UDM initial local configuration]" category=Init component=UDM
+time="2022-04-26T15:41:20Z" level=info msg="Server started" category=Init component=UDM
+time="2022-04-26T15:41:20Z" level=info msg="udmconfig Info: Version[1.0.1] Description[UDM initial local configuration]" category=Util component=UDM
+time="2022-04-26T15:41:20Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:41:20Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:41:20Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:41:20Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/9565488f-851b-4b51-b46a-fe5cf8882920" category=MGMT component=NRF
+time="2022-04-26T15:41:20Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/9565488f-851b-4b51-b46a-fe5cf8882920 | " category=GIN component=NRF
+time="2022-04-26T15:41:22Z" level=info msg=udr category=App component=UDR
+time="2022-04-26T15:41:22Z" level=info msg="UDR version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=UDR
+time="2022-04-26T15:41:22Z" level=info msg="UDR Log level is set to [info] level" category=Init component=UDR
+time="2022-04-26T15:41:22Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:41:22Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:41:22Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-04-26T15:41:22Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-04-26T15:41:22Z" level=info msg="config version [1.0.0]" category=CFG component=UDR
+time="2022-04-26T15:41:22Z" level=info msg="UDR Config Info: Version[1.0.0] Description[UDR initial local configuration]" category=Init component=UDR
+time="2022-04-26T15:41:22Z" level=info msg="Server started" category=Init component=UDR
+time="2022-04-26T15:41:22Z" level=info msg="udrconfig Info: Version[1.0.0] Description[UDR initial local configuration]" category=Util component=UDR
+time="2022-04-26T15:41:22Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:41:22Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:41:22Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:41:22Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/5a1b7c1d-4122-4de6-b2c1-fe5c99a02a31" category=MGMT component=NRF
+time="2022-04-26T15:41:22Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/5a1b7c1d-4122-4de6-b2c1-fe5c99a02a31 | " category=GIN component=NRF
+time="2022-04-26T15:41:25Z" level=info msg=amf category=App component=AMF
+time="2022-04-26T15:41:25Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-04-26T15:41:25Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-04-26T15:41:25Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:41:25Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:41:25Z" level=info msg="set log level : info" category=NGAP component=LIB
+time="2022-04-26T15:41:25Z" level=info msg="set report call : false" category=NGAP component=LIB
+time="2022-04-26T15:41:25Z" level=info msg="set log level : info" category=FSM component=LIB
+time="2022-04-26T15:41:25Z" level=info msg="set report call : false" category=FSM component=LIB
+time="2022-04-26T15:41:25Z" level=info msg="set log level : info" category=Aper component=LIB
+time="2022-04-26T15:41:25Z" level=info msg="set report call : false" category=Aper component=LIB
+time="2022-04-26T15:41:25Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:41:25Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:41:25Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-04-26T15:41:25Z" level=info msg="Server started" category=Init component=AMF
+time="2022-04-26T15:41:25Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-04-26T15:41:25Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-04-26T15:41:25Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:41:25Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:41:25Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:41:25Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/398dbfb7-5a53-4e71-a0f3-3893b6d7693e" category=MGMT component=NRF
+time="2022-04-26T15:41:25Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/398dbfb7-5a53-4e71-a0f3-3893b6d7693e | " category=GIN component=NRF
+time="2022-04-26T15:41:27Z" level=info msg=amf category=App component=AMF
+time="2022-04-26T15:41:27Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-04-26T15:41:27Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-04-26T15:41:27Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:41:27Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:41:27Z" level=info msg="set log level : info" category=NGAP component=LIB
+time="2022-04-26T15:41:27Z" level=info msg="set report call : false" category=NGAP component=LIB
+time="2022-04-26T15:41:27Z" level=info msg="set log level : info" category=FSM component=LIB
+time="2022-04-26T15:41:27Z" level=info msg="set report call : false" category=FSM component=LIB
+time="2022-04-26T15:41:27Z" level=info msg="set log level : info" category=Aper component=LIB
+time="2022-04-26T15:41:27Z" level=info msg="set report call : false" category=Aper component=LIB
+time="2022-04-26T15:41:27Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:41:27Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:41:27Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-04-26T15:41:27Z" level=info msg="Server started" category=Init component=AMF
+time="2022-04-26T15:41:27Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-04-26T15:41:27Z" level=info msg="Listen on 127.0.0.19:38413" category=NGAP component=AMF
+time="2022-04-26T15:41:27Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:41:27Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:41:27Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:41:27Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/daae76d3-1326-4219-981b-70808a5dae51" category=MGMT component=NRF
+time="2022-04-26T15:41:27Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/daae76d3-1326-4219-981b-70808a5dae51 | " category=GIN component=NRF
+time="2022-04-26T15:41:29Z" level=info msg=amf category=App component=AMF
+time="2022-04-26T15:41:29Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-04-26T15:41:29Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-04-26T15:41:29Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:41:29Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:41:29Z" level=info msg="set log level : info" category=NGAP component=LIB
+time="2022-04-26T15:41:29Z" level=info msg="set report call : false" category=NGAP component=LIB
+time="2022-04-26T15:41:29Z" level=info msg="set log level : info" category=FSM component=LIB
+time="2022-04-26T15:41:29Z" level=info msg="set report call : false" category=FSM component=LIB
+time="2022-04-26T15:41:29Z" level=info msg="set log level : info" category=Aper component=LIB
+time="2022-04-26T15:41:29Z" level=info msg="set report call : false" category=Aper component=LIB
+time="2022-04-26T15:41:29Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:41:29Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:41:29Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-04-26T15:41:29Z" level=info msg="Server started" category=Init component=AMF
+time="2022-04-26T15:41:29Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-04-26T15:41:29Z" level=info msg="Listen on 127.0.0.20:38414" category=NGAP component=AMF
+time="2022-04-26T15:41:29Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:41:29Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:41:29Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:41:29Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/c3b688c6-1f28-442a-988b-1c4c4568c4d1" category=MGMT component=NRF
+time="2022-04-26T15:41:29Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/c3b688c6-1f28-442a-988b-1c4c4568c4d1 | " category=GIN component=NRF
+time="2022-04-26T15:41:37Z" level=info msg=lb category=App component=LB
+time="2022-04-26T15:41:37Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-04-26T15:41:37Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-04-26T15:41:37Z" level=info msg="Server started" category=Init component=LB
+time="2022-04-26T15:41:37Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-04-26T15:41:37Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-26T15:41:37Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-04-26T15:41:37Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:51323" category=NGAP component=AMF
+time="2022-04-26T15:41:37Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:51323; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-26T15:41:37Z" level=info msg=DialToAmf1 category=Init component=LB
+time="2022-04-26T15:41:37Z" level=info msg="raw addr: [2 0 150 13 127 0 0 19 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-26T15:41:37Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:41:37Z" level=info msg="this is amf 1" category=NGAP component=LB
+time="2022-04-26T15:41:37Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:60474; RemoteAddr: 127.0.0.19:38413" category=NGAP component=LB
+time="2022-04-26T15:41:37Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:60474" category=NGAP component=AMF
+time="2022-04-26T15:41:37Z" level=info msg=DialToAmf2 category=Init component=LB
+time="2022-04-26T15:41:37Z" level=info msg="raw addr: [2 0 150 14 127 0 0 20 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-26T15:41:37Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:41:37Z" level=info msg="this is amf 2" category=NGAP component=LB
+time="2022-04-26T15:41:37Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47221; RemoteAddr: 127.0.0.20:38414" category=NGAP component=LB
+time="2022-04-26T15:41:37Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47221" category=NGAP component=AMF
+time="2022-04-26T15:41:37Z" level=info msg=Run category=Init component=LB
+time="2022-04-26T15:41:37Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:41:37Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="NGSETUP, send to AMF0 AMF1 AMF2, goAmf: %!(EXTRA int=3)" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Create a new NG connection for: 127.0.0.19:38413" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Create a new NG connection for: 127.0.0.20:38414" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:60474" category=NGAP component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:51323" category=NGAP component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:60474"
+time="2022-04-26T15:41:47Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:51323"
+time="2022-04-26T15:41:47Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:60474"
+time="2022-04-26T15:41:47Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47221" category=NGAP component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:51323"
+time="2022-04-26T15:41:47Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="write: len 53" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47221"
+time="2022-04-26T15:41:47Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="NGSETUP response drop" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47221"
+time="2022-04-26T15:41:47Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="NGSETUP response drop" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="mUEAMF key: &{1} , goAmf: 3" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="write to amf: len 69" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="write to amf: len 69" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="write to amf: len 69" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Handle Initial UE Message" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:60474"
+time="2022-04-26T15:41:47Z" level=info msg="Handle Initial UE Message" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47221"
+time="2022-04-26T15:41:47Z" level=info msg="Handle Initial UE Message" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:51323"
+time="2022-04-26T15:41:47Z" level=info msg="Handle Registration Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Authentication procedure" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Handle Registration Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Authentication procedure" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&target-nf-type=AUSF | " category=GIN component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="Handle Registration Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Authentication procedure" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&target-nf-type=AUSF | " category=GIN component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:41:47Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&target-nf-type=AUSF | " category=GIN component=NRF
+time="2022-04-26T15:41:47Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AUSF&service-names=nudm-ueau&target-nf-type=UDM | " category=GIN component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AUSF&service-names=nudm-ueau&target-nf-type=UDM | " category=GIN component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T15:41:47Z" level=info msg="suciPart: [suci 0 208 93 0 0 0 00007487]" category=3GPP component=LIB
+time="2022-04-26T15:41:47Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T15:41:47Z" level=info msg="scheme 0\n" category=3GPP component=LIB
+time="2022-04-26T15:41:47Z" level=info msg="suciPart: [suci 0 208 93 0 0 0 00007487]" category=3GPP component=LIB
+time="2022-04-26T15:41:47Z" level=info msg="scheme 0\n" category=3GPP component=LIB
+time="2022-04-26T15:41:47Z" level=info msg="SUPI type is IMSI\n" category=3GPP component=LIB
+time="2022-04-26T15:41:47Z" level=info msg="SUPI type is IMSI\n" category=3GPP component=LIB
+time="2022-04-26T15:41:47Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AUSF&service-names=nudm-ueau&target-nf-type=UDM | " category=GIN component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T15:41:47Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=UDM&target-nf-type=UDR | " category=GIN component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="suciPart: [suci 0 208 93 0 0 0 00007487]" category=3GPP component=LIB
+time="2022-04-26T15:41:47Z" level=info msg="scheme 0\n" category=3GPP component=LIB
+time="2022-04-26T15:41:47Z" level=info msg="SUPI type is IMSI\n" category=3GPP component=LIB
+time="2022-04-26T15:41:47Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=UDM&target-nf-type=UDR | " category=GIN component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=UDM&target-nf-type=UDR | " category=GIN component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T15:41:47Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T15:41:47Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T15:41:47Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T15:41:47Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T15:41:47Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T15:41:47Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T15:41:47Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T15:41:47Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T15:41:47Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T15:41:47Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T15:41:47Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="XresStar = 3537303334313138383832386666393133633837643462636137363565373964\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T15:41:47Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T15:41:47Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T15:41:47Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="XresStar = 6637366239396433633764383034313432636637636363396232363661656165\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="Send Authentication Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:51323"
+time="2022-04-26T15:41:47Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T15:41:47Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="XresStar = 3162653932326439646262316231316233663162363830326563383065343738\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="write: len 66" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Send Authentication Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47221"
+time="2022-04-26T15:41:47Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="mUEAMF key: &{1} , goAmf: 3" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="write to amf: len 64" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="write to amf: len 64" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="write to amf: len 64" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:51323"
+time="2022-04-26T15:41:47Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:51323"
+time="2022-04-26T15:41:47Z" level=info msg="Handle Authentication Response" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="res*: 6637366239396433633764383034313432636637636363396232363661656165\nXres*: 3162653932326439646262316231316233663162363830326563383065343738\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="5G AKA confirmation failed" category=5gAkaAuth component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="write: len 66" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47221"
+time="2022-04-26T15:41:47Z" level=info msg="Send Authentication Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47221"
+time="2022-04-26T15:41:47Z" level=info msg="Handle Authentication Response" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=error msg="HRES* Validation Failure (received: d9eec068810644393a32935356074eb0, expected: c337f13f14426d69e54bec7df9f8bb01)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Send Authentication Reject" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47221"
+time="2022-04-26T15:41:47Z" level=warning msg="Reject authentication" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="write: len 27" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:60474"
+time="2022-04-26T15:41:47Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="write: len 66" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=error msg="Read EOF from client" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T15:41:47Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=UDM&target-nf-type=UDR | " category=GIN component=NRF
+time="2022-04-26T15:41:47Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:60474"
+time="2022-04-26T15:41:47Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:60474"
+time="2022-04-26T15:41:47Z" level=info msg="Handle Authentication Response" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=error msg="HRES* Validation Failure (received: 897b1a1022921b545b9cef5ebb528f14, expected: 930a14a722d3c234e74d964159006a3c)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Send Authentication Reject" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:60474"
+time="2022-04-26T15:41:47Z" level=warning msg="Reject authentication" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T15:41:47Z" level=error msg="failed to write: bad file descriptor" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/suci-0-208-93-0-0-0-00007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T15:41:47Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T15:41:47Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T15:41:47Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T15:41:47Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T15:41:47Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T15:41:47Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T15:41:47Z" level=info msg="Send Authentication Reject" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:51323"
+time="2022-04-26T15:41:47Z" level=warning msg="Reject authentication" category=GMM component=AMF
+time="2022-04-26T15:41:47Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=error msg="failed to write: bad file descriptor" category=NGAP component=LB
+time="2022-04-26T15:41:47Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:42:11Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-04-26T15:42:11Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-04-26T15:42:11Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:42:12Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/daae76d3-1326-4219-981b-70808a5dae51 | " category=GIN component=NRF
+time="2022-04-26T15:42:12Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-04-26T15:42:12Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-04-26T15:42:12Z" level=info msg="Send AMF Status Indication" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:60474"
+time="2022-04-26T15:42:12Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-04-26T15:42:12Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-04-26T15:42:12Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:42:12Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-04-26T15:42:12Z" level=error msg="failed to write: bad file descriptor" category=NGAP component=LB
+time="2022-04-26T15:42:12Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:42:12Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:42:12Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-04-26T15:42:12Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-04-26T15:42:12Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:42:13Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/c3b688c6-1f28-442a-988b-1c4c4568c4d1 | " category=GIN component=NRF
+time="2022-04-26T15:42:13Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-04-26T15:42:13Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-04-26T15:42:13Z" level=info msg="Send AMF Status Indication" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47221"
+time="2022-04-26T15:42:13Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-04-26T15:42:13Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:42:13Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-04-26T15:42:13Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-04-26T15:42:13Z" level=error msg="failed to write: bad file descriptor" category=NGAP component=LB
+time="2022-04-26T15:42:13Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:42:13Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:42:16Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-04-26T15:42:16Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-04-26T15:42:16Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-04-26T15:42:16Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:51323"
+time="2022-04-26T15:42:16Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:51323"
+time="2022-04-26T15:42:16Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-04-26T15:42:16Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-04-26T15:42:16Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-04-26T15:42:16Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:42:16Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-04-26T15:45:26Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-04-26T15:45:26Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-04-26T15:45:26Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:45:27Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/398dbfb7-5a53-4e71-a0f3-3893b6d7693e | " category=GIN component=NRF
+time="2022-04-26T15:45:27Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-04-26T15:45:27Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-04-26T15:45:27Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-04-26T15:45:27Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-04-26T15:45:27Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-04-26T15:47:41Z" level=info msg=amf category=App component=AMF
+time="2022-04-26T15:47:41Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-04-26T15:47:41Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-04-26T15:47:41Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:47:41Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:47:41Z" level=info msg="set log level : info" category=NGAP component=LIB
+time="2022-04-26T15:47:41Z" level=info msg="set report call : false" category=NGAP component=LIB
+time="2022-04-26T15:47:41Z" level=info msg="set log level : info" category=FSM component=LIB
+time="2022-04-26T15:47:41Z" level=info msg="set report call : false" category=FSM component=LIB
+time="2022-04-26T15:47:41Z" level=info msg="set log level : info" category=Aper component=LIB
+time="2022-04-26T15:47:41Z" level=info msg="set report call : false" category=Aper component=LIB
+time="2022-04-26T15:47:41Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:47:41Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:47:41Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-04-26T15:47:41Z" level=info msg="Server started" category=Init component=AMF
+time="2022-04-26T15:47:41Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-04-26T15:47:41Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-04-26T15:47:41Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:47:41Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:47:41Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:47:41Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/68c420a5-4958-4977-b47a-bdbd67858a88" category=MGMT component=NRF
+time="2022-04-26T15:47:41Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/68c420a5-4958-4977-b47a-bdbd67858a88 | " category=GIN component=NRF
+time="2022-04-26T15:47:44Z" level=info msg=amf category=App component=AMF
+time="2022-04-26T15:47:44Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-04-26T15:47:44Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-04-26T15:47:44Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:47:44Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:47:44Z" level=info msg="set log level : info" category=NGAP component=LIB
+time="2022-04-26T15:47:44Z" level=info msg="set report call : false" category=NGAP component=LIB
+time="2022-04-26T15:47:44Z" level=info msg="set log level : info" category=FSM component=LIB
+time="2022-04-26T15:47:44Z" level=info msg="set report call : false" category=FSM component=LIB
+time="2022-04-26T15:47:44Z" level=info msg="set log level : info" category=Aper component=LIB
+time="2022-04-26T15:47:44Z" level=info msg="set report call : false" category=Aper component=LIB
+time="2022-04-26T15:47:44Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:47:44Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:47:44Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-04-26T15:47:44Z" level=info msg="Server started" category=Init component=AMF
+time="2022-04-26T15:47:44Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-04-26T15:47:44Z" level=info msg="Listen on 127.0.0.19:38413" category=NGAP component=AMF
+time="2022-04-26T15:47:44Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:47:44Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:47:44Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:47:44Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/3f6ad95b-3063-46d1-ba91-395a8a92d6c0" category=MGMT component=NRF
+time="2022-04-26T15:47:44Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/3f6ad95b-3063-46d1-ba91-395a8a92d6c0 | " category=GIN component=NRF
+time="2022-04-26T15:47:46Z" level=info msg=amf category=App component=AMF
+time="2022-04-26T15:47:46Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-04-26T15:47:46Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-04-26T15:47:46Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T15:47:46Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T15:47:46Z" level=info msg="set log level : info" category=NGAP component=LIB
+time="2022-04-26T15:47:46Z" level=info msg="set report call : false" category=NGAP component=LIB
+time="2022-04-26T15:47:46Z" level=info msg="set log level : info" category=FSM component=LIB
+time="2022-04-26T15:47:46Z" level=info msg="set report call : false" category=FSM component=LIB
+time="2022-04-26T15:47:46Z" level=info msg="set log level : info" category=Aper component=LIB
+time="2022-04-26T15:47:46Z" level=info msg="set report call : false" category=Aper component=LIB
+time="2022-04-26T15:47:46Z" level=info msg="set log level : info" category=OAPI component=LIB
+time="2022-04-26T15:47:46Z" level=info msg="set report call : false" category=OAPI component=LIB
+time="2022-04-26T15:47:46Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-04-26T15:47:46Z" level=info msg="Server started" category=Init component=AMF
+time="2022-04-26T15:47:46Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-04-26T15:47:46Z" level=info msg="Listen on 127.0.0.20:38414" category=NGAP component=AMF
+time="2022-04-26T15:47:46Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:47:46Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T15:47:46Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T15:47:46Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/b6966b83-f1c3-469d-b71f-de0a2d423cd0" category=MGMT component=NRF
+time="2022-04-26T15:47:46Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/b6966b83-f1c3-469d-b71f-de0a2d423cd0 | " category=GIN component=NRF
+time="2022-04-26T15:47:48Z" level=info msg=lb category=App component=LB
+time="2022-04-26T15:47:48Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-04-26T15:47:48Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-04-26T15:47:48Z" level=info msg="Server started" category=Init component=LB
+time="2022-04-26T15:47:48Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-04-26T15:47:48Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-26T15:47:48Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-04-26T15:47:48Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397" category=NGAP component=AMF
+time="2022-04-26T15:47:48Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-26T15:47:48Z" level=info msg=DialToAmf1 category=Init component=LB
+time="2022-04-26T15:47:48Z" level=info msg="raw addr: [2 0 150 13 127 0 0 19 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-26T15:47:48Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:47:48Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:52041" category=NGAP component=AMF
+time="2022-04-26T15:47:48Z" level=info msg="this is amf 1" category=NGAP component=LB
+time="2022-04-26T15:47:48Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:52041; RemoteAddr: 127.0.0.19:38413" category=NGAP component=LB
+time="2022-04-26T15:47:48Z" level=info msg=DialToAmf2 category=Init component=LB
+time="2022-04-26T15:47:48Z" level=info msg="raw addr: [2 0 150 14 127 0 0 20 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-04-26T15:47:48Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:47:48Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47269" category=NGAP component=AMF
+time="2022-04-26T15:47:48Z" level=info msg="this is amf 2" category=NGAP component=LB
+time="2022-04-26T15:47:48Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47269; RemoteAddr: 127.0.0.20:38414" category=NGAP component=LB
+time="2022-04-26T15:47:48Z" level=info msg=Run category=Init component=LB
+time="2022-04-26T15:47:48Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-04-26T15:47:48Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="NGSETUP, send to AMF0 AMF1 AMF2, goAmf: %!(EXTRA int=3)" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397" category=NGAP component=AMF
+time="2022-04-26T15:47:54Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:47:54Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:47:54Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Create a new NG connection for: 127.0.0.19:38413" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Create a new NG connection for: 127.0.0.20:38414" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:52041" category=NGAP component=AMF
+time="2022-04-26T15:47:54Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47269" category=NGAP component=AMF
+time="2022-04-26T15:47:54Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:52041"
+time="2022-04-26T15:47:54Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:52041"
+time="2022-04-26T15:47:54Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47269"
+time="2022-04-26T15:47:54Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47269"
+time="2022-04-26T15:47:54Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="write: len 53" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="NGSETUP response drop" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="NGSETUP response drop" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="write to amf: len 69" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Handle Initial UE Message" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:47:54Z" level=info msg="Handle Registration Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:47:54Z" level=info msg="Authentication procedure" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:47:54Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&target-nf-type=AUSF | " category=GIN component=NRF
+time="2022-04-26T15:47:54Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T15:47:54Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T15:47:54Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AUSF&service-names=nudm-ueau&target-nf-type=UDM | " category=GIN component=NRF
+time="2022-04-26T15:47:54Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T15:47:54Z" level=info msg="suciPart: [suci 0 208 93 0 0 0 00007487]" category=3GPP component=LIB
+time="2022-04-26T15:47:54Z" level=info msg="scheme 0\n" category=3GPP component=LIB
+time="2022-04-26T15:47:54Z" level=info msg="SUPI type is IMSI\n" category=3GPP component=LIB
+time="2022-04-26T15:47:54Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T15:47:54Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T15:47:54Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T15:47:54Z" level=info msg="XresStar = 6531623636373065326433653765366561653033303066316561303231323464\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T15:47:54Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T15:47:54Z" level=info msg="Send Authentication Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:47:54Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:47:54Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="write: len 66" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="write to amf: len 64" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:47:54Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:47:54Z" level=info msg="Handle Authentication Response" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-04-26T15:47:54Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T15:47:54Z" level=info msg="res*: 6531623636373065326433653765366561653033303066316561303231323464\nXres*: 6531623636373065326433653765366561653033303066316561303231323464\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T15:47:54Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T15:47:54Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T15:47:54Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T15:47:54Z" level=info msg="Send Security Mode Command" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-04-26T15:47:54Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:47:54Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="write: len 43" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="write to amf: len 93" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:47:54Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:47:54Z" level=info msg="Handle Security Mode Complete" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-04-26T15:47:54Z" level=info msg="Handle InitialRegistration" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-04-26T15:47:54Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&supi=imsi-2089300007487&target-nf-type=UDM | " category=GIN component=NRF
+time="2022-04-26T15:47:54Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T15:47:54Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T15:47:54Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&supi=imsi-2089300007487&target-nf-type=UDM | " category=GIN component=NRF
+time="2022-04-26T15:47:54Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T15:47:54Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T15:47:54Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T15:47:54Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T15:47:54Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T15:47:54Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T15:47:54Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T15:47:54Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T15:47:54Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T15:47:54Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T15:47:54Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T15:47:54Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&supi=imsi-2089300007487&target-nf-type=PCF | " category=GIN component=NRF
+time="2022-04-26T15:47:54Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T15:47:54Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=PCF&target-nf-type=UDR | " category=GIN component=NRF
+time="2022-04-26T15:47:54Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T15:47:54Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?guami=%7B%22plmnId%22%3A%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D%2C%22amfId%22%3A%22cafe00%22%7D&requester-nf-type=PCF&target-nf-type=AMF | " category=GIN component=NRF
+time="2022-04-26T15:47:54Z" level=info msg="Handle AMF Status Change Subscribe Request" category=Comm component=AMF
+time="2022-04-26T15:47:54Z" level=info msg="new AMF Status Subscription[1]" category=Comm component=AMF
+time="2022-04-26T15:47:54Z" level=info msg="| 201 |       127.0.0.1 | POST    | /namf-comm/v1/subscriptions | " category=GIN component=AMF
+time="2022-04-26T15:47:54Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T15:47:54Z" level=info msg="Send Registration Accept" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-04-26T15:47:54Z" level=info msg="Send Initial Context Setup Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:47:54Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="write: len 176" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="write to amf: len 19" category=NGAP component=LB
+time="2022-04-26T15:47:54Z" level=info msg="Handle Initial Context Setup Response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:47:54Z" level=info msg="Encode ExtendedProtocolConfigurationOptions in EncodePDUSessionEstablishmentRequest" category=Message component=NAS
+time="2022-04-26T15:47:55Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-04-26T15:47:55Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-26T15:47:55Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-26T15:47:55Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:47:55Z" level=info msg="write to amf: len 53" category=NGAP component=LB
+time="2022-04-26T15:47:55Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-04-26T15:47:55Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-04-26T15:47:55Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-26T15:47:55Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:47:55Z" level=info msg="write to amf: len 96" category=NGAP component=LB
+time="2022-04-26T15:47:55Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:47:55Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:47:55Z" level=info msg="Handle Registration Complete" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-04-26T15:47:55Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:47:55Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:47:55Z" level=info msg="Handle UL NAS Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-04-26T15:47:55Z" level=info msg="Transport 5GSM Message to SMF" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-04-26T15:47:55Z" level=info msg="Select SMF [snssai: {Sst:1 Sd:010203}, dnn: internet]" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-04-26T15:47:55Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:47:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&target-nf-type=NSSF | " category=GIN component=NRF
+time="2022-04-26T15:47:55Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T15:47:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=68c420a5-4958-4977-b47a-bdbd67858a88&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T15:47:55Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:47:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?dnn=internet&preferred-locality=area1&requester-nf-type=AMF&service-names=nsmf-pdusession&snssais=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D&target-nf-type=SMF&target-plmn-list=%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D | " category=GIN component=NRF
+time="2022-04-26T15:47:55Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:47:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=SMF&target-nf-type=UDM | " category=GIN component=NRF
+time="2022-04-26T15:47:55Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="Allocated UE IP address: 60.60.0.1" category=CTX component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.1]" category=PduSess component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T15:47:55Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T15:47:55Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T15:47:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T15:47:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T15:47:55Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="ProtocolOrContainerList:  [0xc00000cac0 0xc00000cb00 0xc00000cb40]" category=Convert component=NAS
+time="2022-04-26T15:47:55Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="&{[0xc00000cac0 0xc00000cb00 0xc00000cb40]}" category=GSM component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:47:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=SMF&target-nf-type=PCF | " category=GIN component=NRF
+time="2022-04-26T15:47:55Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T15:47:55Z" level=info msg="Handle PolicyDataUesUeIdSmDataGet" category=DRepo component=UDR
+time="2022-04-26T15:47:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/sm-data?dnn=internet&snssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T15:47:55Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T15:47:55Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T15:47:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=SMF&target-nf-instance-id=68c420a5-4958-4977-b47a-bdbd67858a88&target-nf-type=AMF | " category=GIN component=NRF
+time="2022-04-26T15:47:55Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="create smContext[pduSessionID: 10] Success" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-04-26T15:47:55Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T15:47:55Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T15:47:55Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T15:47:55Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="Remove Request Transaction [2]\n" category=PFCP component=LIB
+time="2022-04-26T15:47:55Z" level=info msg="Handle N1N2 Message Transfer Request" category=Producer component=AMF
+time="2022-04-26T15:47:55Z" level=info msg="Send PDU Session Resource Setup Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:47:55Z" level=info msg="| 200 |       127.0.0.1 | POST    | /namf-comm/v1/ue-contexts/imsi-2089300007487/n1-n2-messages | " category=GIN component=AMF
+time="2022-04-26T15:47:55Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:47:55Z" level=info msg="write: len 174" category=NGAP component=LB
+time="2022-04-26T15:47:55Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-04-26T15:47:55Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-04-26T15:47:55Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-04-26T15:47:55Z" level=info msg="write to amf: len 40" category=NGAP component=LB
+time="2022-04-26T15:47:55Z" level=info msg="Handle PDU Session Resource Setup Response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:47:55Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T15:47:55Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T15:47:55Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="PFCP Session Modification Success[1]\n" category=PFCP component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:37b947d4-f3c4-402c-b2bb-f04ee97cae87/modify | " category=GIN component=SMF
+time="2022-04-26T15:47:55Z" level=info msg="Remove Request Transaction [3]\n" category=PFCP component=LIB
+time="2022-04-26T15:47:57Z" level=error msg="Read EOF from client" category=NGAP component=LB
+time="2022-04-26T15:50:19Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-04-26T15:50:19Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-04-26T15:50:19Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-04-26T15:50:19Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-04-26T15:50:19Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:50:19Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-04-26T15:50:19Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-04-26T15:50:19Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-04-26T15:50:19Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-04-26T15:50:19Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:52041"
+time="2022-04-26T15:50:19Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:52041"
+time="2022-04-26T15:50:19Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-04-26T15:50:19Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-04-26T15:50:19Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47269"
+time="2022-04-26T15:50:19Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47269"
+time="2022-04-26T15:50:19Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:50:19Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:48397"
+time="2022-04-26T15:50:19Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-04-26T15:50:19Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-04-26T15:50:19Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-04-26T15:50:19Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-04-26T15:50:38Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-04-26T15:50:38Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-04-26T15:50:38Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:50:39Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/68c420a5-4958-4977-b47a-bdbd67858a88 | " category=GIN component=NRF
+time="2022-04-26T15:50:39Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-04-26T15:50:39Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-04-26T15:50:39Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-04-26T15:50:39Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-04-26T15:50:39Z" level=info msg="[AMF] Send Amf Status Change Notify to http://127.0.0.7:8000/npcf-callback/v1/amfstatus" category=Producer component=AMF
+time="2022-04-26T15:50:39Z" level=warning msg="[PCF] Handle Amf Status Change Notify is not implemented." category=Callback component=PCF
+time="2022-04-26T15:50:39Z" level=info msg="| 204 |       127.0.0.1 | POST    | /npcf-callback/v1/amfstatus | " category=GIN component=PCF
+time="2022-04-26T15:50:39Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-04-26T15:50:46Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-04-26T15:50:46Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-04-26T15:50:46Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:50:47Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/b6966b83-f1c3-469d-b71f-de0a2d423cd0 | " category=GIN component=NRF
+time="2022-04-26T15:50:47Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-04-26T15:50:47Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-04-26T15:50:47Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-04-26T15:50:47Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-04-26T15:50:47Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-04-26T15:50:49Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-04-26T15:50:49Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-04-26T15:50:49Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-26T15:50:50Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/3f6ad95b-3063-46d1-ba91-395a8a92d6c0 | " category=GIN component=NRF
+time="2022-04-26T15:50:50Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-04-26T15:50:50Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-04-26T15:50:50Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-04-26T15:50:50Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-04-26T15:50:50Z" level=info msg="AMF terminated" category=Init component=AMF
