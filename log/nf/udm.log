@@ -210,3 +210,593 @@ time="2022-04-26T15:47:54Z" level=info msg="| 201 |       127.0.0.1 | POST    | 
 time="2022-04-26T15:47:55Z" level=info msg="Handle GetSmData" category=SDM component=UDM
 time="2022-04-26T15:47:55Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
 time="2022-04-26T15:47:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T17:25:13Z" level=info msg="Terminating UDM..." category=Init component=UDM
+time="2022-04-26T17:25:13Z" level=info msg="Send Deregister NFInstance" category=Consumer component=UDM
+time="2022-04-26T17:25:13Z" level=error msg="Deregister NF instance Error[server no response]" category=Init component=UDM
+time="2022-04-26T17:25:13Z" level=info msg="UDM terminated" category=Init component=UDM
+time="2022-04-26T18:08:50Z" level=info msg="UDM version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=UDM
+time="2022-04-26T18:08:50Z" level=info msg="UDM Log level is set to [info] level" category=Init component=UDM
+time="2022-04-26T18:08:50Z" level=info msg="config version [1.0.1]" category=CFG component=UDM
+time="2022-04-26T18:08:50Z" level=info msg="UDM Config Info: Version[1.0.1] Description[UDM initial local configuration]" category=Init component=UDM
+time="2022-04-26T18:08:50Z" level=info msg="Server started" category=Init component=UDM
+time="2022-04-26T18:08:50Z" level=info msg="udmconfig Info: Version[1.0.1] Description[UDM initial local configuration]" category=Util component=UDM
+time="2022-04-26T18:20:45Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:20:45Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T18:20:45Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:20:45Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T18:20:45Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T18:20:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:20:45Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T18:20:45Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T18:20:45Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T18:20:45Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T18:20:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:20:45Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T18:20:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:20:45Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T18:20:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T18:20:45Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T18:20:45Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T18:20:46Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T18:20:46Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T18:20:46Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T18:20:46Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:20:46Z" level=error msg="Return from UDR QueryAuthSubsData error" category=UEAU component=UDM
+time="2022-04-26T18:20:46Z" level=info msg="| 403 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007486/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T18:30:01Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T18:30:01Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T18:30:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T18:30:02Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:30:02Z" level=error msg="Return from UDR QueryAuthSubsData error" category=UEAU component=UDM
+time="2022-04-26T18:30:02Z" level=info msg="| 403 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007486/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T18:41:55Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:41:55Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T18:41:55Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:41:55Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T18:41:55Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T18:41:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:41:55Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T18:41:55Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T18:41:55Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T18:41:55Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T18:41:55Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T18:41:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:41:55Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T18:41:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:41:55Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T18:41:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007488/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007488/auth-events | " category=GIN component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="UEID: imsi-2089300007488" category=UECM component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007488/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T18:41:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007488/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T18:41:57Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T18:41:57Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007488] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T18:41:57Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T18:47:02Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007488/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007488/auth-events | " category=GIN component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="UEID: imsi-2089300007488" category=UECM component=UDM
+time="2022-04-26T18:47:02Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007488/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T18:47:02Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007488/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T18:47:03Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T18:47:03Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007488] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T18:47:03Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T18:54:05Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007488/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007488/auth-events | " category=GIN component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="UEID: imsi-2089300007488" category=UECM component=UDM
+time="2022-04-26T18:54:05Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007488/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T18:54:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007488/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T18:54:06Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T18:54:06Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007488] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T18:54:06Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T19:14:44Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007488/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007488/auth-events | " category=GIN component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="UEID: imsi-2089300007488" category=UECM component=UDM
+time="2022-04-26T19:14:44Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007488/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T19:14:44Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007488/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T19:14:45Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T19:14:45Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007488] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T19:14:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T19:19:49Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T19:19:49Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T19:20:55Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:20:55Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T19:20:55Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:20:55Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T19:20:55Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T19:20:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:20:55Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T19:20:55Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T19:20:55Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T19:20:55Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T19:20:55Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T19:20:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:20:55Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T19:20:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:20:55Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T19:20:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T19:20:55Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T19:20:55Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T19:20:56Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T19:20:56Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T19:20:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T19:23:17Z" level=info msg="Terminating UDM..." category=Init component=UDM
+time="2022-04-26T19:23:17Z" level=info msg="Send Deregister NFInstance" category=Consumer component=UDM
+time="2022-04-26T19:23:18Z" level=info msg="Deregister from NRF successfully" category=Init component=UDM
+time="2022-04-26T19:23:18Z" level=info msg="UDM terminated" category=Init component=UDM
+time="2022-04-26T19:29:52Z" level=info msg="UDM version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=UDM
+time="2022-04-26T19:29:52Z" level=info msg="UDM Log level is set to [info] level" category=Init component=UDM
+time="2022-04-26T19:29:52Z" level=info msg="config version [1.0.1]" category=CFG component=UDM
+time="2022-04-26T19:29:52Z" level=info msg="UDM Config Info: Version[1.0.1] Description[UDM initial local configuration]" category=Init component=UDM
+time="2022-04-26T19:29:52Z" level=info msg="Server started" category=Init component=UDM
+time="2022-04-26T19:29:52Z" level=info msg="udmconfig Info: Version[1.0.1] Description[UDM initial local configuration]" category=Util component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007488/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007488/auth-events | " category=GIN component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="UEID: imsi-2089300007488" category=UECM component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007488/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T19:30:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007488/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T19:30:08Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T19:30:08Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007488] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T19:30:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T19:35:56Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T19:35:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007488/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007488/auth-events | " category=GIN component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="UEID: imsi-2089300007488" category=UECM component=UDM
+time="2022-04-26T19:35:57Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007488/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007488/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007488] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T19:35:57Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T19:38:04Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:38:04Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T19:38:04Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:38:04Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T19:38:04Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T19:38:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:38:04Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T19:38:04Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T19:38:04Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T19:38:04Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T19:38:04Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T19:38:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:38:04Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T19:38:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:38:04Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T19:38:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T19:38:04Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T19:38:04Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T19:38:05Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T19:38:05Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T19:38:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T19:38:05Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:38:05Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007488/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T19:43:07Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T19:43:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T19:43:08Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:43:08Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007488/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T19:54:06Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007488/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T20:05:38Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007488/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T20:20:11Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T20:20:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T20:20:12Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:20:12Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007488/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T20:23:45Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:23:45Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T20:23:45Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:23:45Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T20:23:45Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T20:23:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:23:45Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T20:23:45Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T20:23:45Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T20:23:45Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T20:23:45Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T20:23:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:23:45Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T20:23:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:23:45Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T20:23:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T20:23:45Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T20:23:45Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T20:23:46Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T20:23:46Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T20:23:46Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T20:23:46Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:23:46Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007488/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T20:39:11Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T20:39:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T20:39:36Z" level=info msg="Terminating UDM..." category=Init component=UDM
+time="2022-04-26T20:39:36Z" level=info msg="Send Deregister NFInstance" category=Consumer component=UDM
+time="2022-04-26T20:39:37Z" level=info msg="Deregister from NRF successfully" category=Init component=UDM
+time="2022-04-26T20:39:37Z" level=info msg="UDM terminated" category=Init component=UDM
+time="2022-04-26T20:40:50Z" level=info msg="UDM version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=UDM
+time="2022-04-26T20:40:50Z" level=info msg="UDM Log level is set to [info] level" category=Init component=UDM
+time="2022-04-26T20:40:50Z" level=info msg="config version [1.0.1]" category=CFG component=UDM
+time="2022-04-26T20:40:50Z" level=info msg="UDM Config Info: Version[1.0.1] Description[UDM initial local configuration]" category=Init component=UDM
+time="2022-04-26T20:40:50Z" level=info msg="Server started" category=Init component=UDM
+time="2022-04-26T20:40:50Z" level=info msg="udmconfig Info: Version[1.0.1] Description[UDM initial local configuration]" category=Util component=UDM
+time="2022-04-26T20:41:04Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:41:04Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T20:41:04Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:41:04Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T20:41:04Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T20:41:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:41:04Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T20:41:04Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T20:41:04Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T20:41:04Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T20:41:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:41:04Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T20:41:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:41:04Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T20:41:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T20:41:04Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T20:41:04Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T20:41:05Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T20:41:05Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T20:41:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T20:41:05Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:41:05Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007488/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007487/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007487/auth-events | " category=GIN component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="UEID: imsi-2089300007487" category=UECM component=UDM
+time="2022-04-26T20:45:07Z" level=error msg="unsupported scheme[]" category=HTTP component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007487/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007487/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007487] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T20:45:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007487/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="Handle GenerateAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nudm-ueau/v1/suci-0-208-93-0-0-0-00007488/security-information/generate-auth-data | " category=GIN component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="Handle ConfirmAuthDataRequest" category=UEAU component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-ueau/v1/imsi-2089300007488/auth-events | " category=GIN component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="Handle GetNssai" category=SDM component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/nssai?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="Handle RegistrationAmf3gppAccess" category=UECM component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="UEID: imsi-2089300007488" category=UECM component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nudm-uecm/v1/imsi-2089300007488/registrations/amf-3gpp-access | " category=GIN component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="Handle GetAmData" category=SDM component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/am-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="Handle GetSmfSelectData" category=SDM component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/smf-select-data?plmn-id=20893 | " category=GIN component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="Handle GetUeContextInSmfData" category=SDM component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/ue-context-in-smf-data | " category=GIN component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="Handle Subscribe" category=SDM component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudm-sdm/v1/imsi-2089300007488/sdm-subscriptions | " category=GIN component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="Handle GetSmData" category=SDM component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="getSmDataProcedure: SUPI[imsi-2089300007488] PLMNID[20893] DNN[internet] SNssai[{\"sst\":1,\"sd\":\"010203\"}]" category=SDM component=UDM
+time="2022-04-26T20:45:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudm-sdm/v1/imsi-2089300007488/sm-data?dnn=internet&plmn-id=20893&single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDM

@@ -162,3 +162,340 @@ time="2022-04-26T15:47:54Z" level=info msg=Auth5gAkaComfirmRequest category=5gAk
 time="2022-04-26T15:47:54Z" level=info msg="res*: 6531623636373065326433653765366561653033303066316561303231323464\nXres*: 6531623636373065326433653765366561653033303066316561303231323464\n" category=5gAkaAuth component=AUSF
 time="2022-04-26T15:47:54Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
 time="2022-04-26T15:47:54Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T17:25:07Z" level=info msg="Terminating AUSF..." category=Init component=AUSF
+time="2022-04-26T17:25:07Z" level=info msg="Send Deregister NFInstance" category=App component=AUSF
+time="2022-04-26T17:25:07Z" level=error msg="Deregister NF instance Error[server no response]" category=Init component=AUSF
+time="2022-04-26T17:25:07Z" level=info msg="AUSF terminated" category=Init component=AUSF
+time="2022-04-26T18:08:43Z" level=info msg="AUSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AUSF
+time="2022-04-26T18:08:43Z" level=info msg="AUSF Log level is set to [info] level" category=Init component=AUSF
+time="2022-04-26T18:08:43Z" level=info msg="config version [1.0.0]" category=CFG component=AUSF
+time="2022-04-26T18:08:43Z" level=info msg="Server started" category=Init component=AUSF
+time="2022-04-26T18:08:43Z" level=info msg="ausfconfig Info: Version[1.0.0] Description[AUSF initial local configuration]\n" category=Init component=AUSF
+time="2022-04-26T18:20:45Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T18:20:45Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T18:20:45Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T18:20:45Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T18:20:45Z" level=info msg="XresStar = 3238366665356539396137653931373035376462626133373334326239343762\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:20:45Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T18:20:45Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T18:20:45Z" level=info msg="res*: 3238366665356539396137653931373035376462626133373334326239343762\nXres*: 3238366665356539396137653931373035376462626133373334326239343762\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:20:45Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:20:45Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T18:20:46Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T18:20:46Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T18:20:46Z" level=info msg="403 Forbidden" category=UeAuthPost component=AUSF
+time="2022-04-26T18:20:46Z" level=info msg="| 500 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T18:30:01Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T18:30:01Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T18:30:01Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T18:30:01Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T18:30:01Z" level=info msg="XresStar = 3439656330393665653937383862666436623537393833646562353331363035\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:30:01Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T18:30:01Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T18:30:01Z" level=info msg="res*: 3439656330393665653937383862666436623537393833646562353331363035\nXres*: 3439656330393665653937383862666436623537393833646562353331363035\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:30:01Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:30:01Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T18:30:02Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T18:30:02Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T18:30:02Z" level=info msg="403 Forbidden" category=UeAuthPost component=AUSF
+time="2022-04-26T18:30:02Z" level=info msg="| 500 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T18:41:55Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T18:41:55Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T18:41:55Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T18:41:55Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T18:41:55Z" level=info msg="XresStar = 6138643362616137343562366134303536643531383962656231333336383232\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:41:55Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T18:41:55Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T18:41:55Z" level=info msg="res*: 6138643362616137343562366134303536643531383962656231333336383232\nXres*: 6138643362616137343562366134303536643531383962656231333336383232\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:41:55Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:41:55Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T18:41:56Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T18:41:56Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T18:41:56Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007488, imsi-2089300007488) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T18:41:56Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T18:41:56Z" level=info msg="XresStar = 3639386638366237396161353064303232353630333166376563386232373932\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:41:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T18:41:56Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T18:41:56Z" level=info msg="res*: 3639386638366237396161353064303232353630333166376563386232373932\nXres*: 3639386638366237396161353064303232353630333166376563386232373932\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:41:56Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:41:56Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007488/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg="XresStar = 3865333233323064386336303438666138336534663064353063653462613165\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg="res*: 3865333233323064386336303438666138336534663064353063653462613165\nXres*: 3865333233323064386336303438666138336534663064353063653462613165\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007488, imsi-2089300007488) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg="XresStar = 3939643538643866636134366465366335666138366139306130656339363333\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg="res*: 3939643538643866636134366465366335666138366139306130656339363333\nXres*: 3939643538643866636134366465366335666138366139306130656339363333\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007488/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg="XresStar = 3765373661373065623439346262376435633830396433656563363566313432\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg="res*: 3765373661373065623439346262376435633830396433656563363566313432\nXres*: 3765373661373065623439346262376435633830396433656563363566313432\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007488, imsi-2089300007488) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg="XresStar = 6231663862646633636564353262663865316163373038326265323965633334\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg="res*: 6231663862646633636564353262663865316163373038326265323965633334\nXres*: 6231663862646633636564353262663865316163373038326265323965633334\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007488/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg="XresStar = 3037623334333865363162373232373033383532343336623437386237353161\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg="res*: 3037623334333865363162373232373033383532343336623437386237353161\nXres*: 3037623334333865363162373232373033383532343336623437386237353161\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007488, imsi-2089300007488) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg="XresStar = 3966636439306131623837646165356565663530386438646639386463333432\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg="res*: 3966636439306131623837646165356565663530386438646639386463333432\nXres*: 3966636439306131623837646165356565663530386438646639386463333432\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007488/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T19:19:49Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T19:19:49Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T19:19:49Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T19:19:49Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T19:19:49Z" level=info msg="XresStar = 3034616365623035363864346362346632656265356165643664326661656638\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:19:49Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T19:19:49Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T19:19:49Z" level=info msg="res*: 3034616365623035363864346362346632656265356165643664326661656638\nXres*: 3034616365623035363864346362346632656265356165643664326661656638\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:19:49Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:19:49Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T19:20:55Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T19:20:55Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T19:20:55Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T19:20:55Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T19:20:55Z" level=info msg="XresStar = 3738656436636635663034383165316162633564313966656466396337616634\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:20:55Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T19:20:55Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T19:20:55Z" level=info msg="res*: 3738656436636635663034383165316162633564313966656466396337616634\nXres*: 3738656436636635663034383165316162633564313966656466396337616634\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:20:55Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:20:55Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T19:23:13Z" level=info msg="Terminating AUSF..." category=Init component=AUSF
+time="2022-04-26T19:23:13Z" level=info msg="Send Deregister NFInstance" category=App component=AUSF
+time="2022-04-26T19:23:14Z" level=info msg="Deregister from NRF successfully" category=Init component=AUSF
+time="2022-04-26T19:23:14Z" level=info msg="AUSF terminated" category=Init component=AUSF
+time="2022-04-26T19:29:46Z" level=info msg="AUSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AUSF
+time="2022-04-26T19:29:46Z" level=info msg="AUSF Log level is set to [info] level" category=Init component=AUSF
+time="2022-04-26T19:29:46Z" level=info msg="config version [1.0.0]" category=CFG component=AUSF
+time="2022-04-26T19:29:46Z" level=info msg="Server started" category=Init component=AUSF
+time="2022-04-26T19:29:46Z" level=info msg="ausfconfig Info: Version[1.0.0] Description[AUSF initial local configuration]\n" category=Init component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg="XresStar = 3364333765633934396465666564656266383135373661643237353235303261\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg="res*: 3364333765633934396465666564656266383135373661643237353235303261\nXres*: 3364333765633934396465666564656266383135373661643237353235303261\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007488, imsi-2089300007488) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg="XresStar = 3334323730313334646438323565316134663137383034343233343537353530\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg="res*: 3334323730313334646438323565316134663137383034343233343537353530\nXres*: 3334323730313334646438323565316134663137383034343233343537353530\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007488/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T19:35:56Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T19:35:56Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T19:35:56Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T19:35:56Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T19:35:56Z" level=info msg="XresStar = 3433613830663034366133376637386163396236303638353563353931663361\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:35:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T19:35:56Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T19:35:56Z" level=info msg="res*: 3433613830663034366133376637386163396236303638353563353931663361\nXres*: 3433613830663034366133376637386163396236303638353563353931663361\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:35:56Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:35:56Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T19:35:57Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T19:35:57Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T19:35:57Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007488, imsi-2089300007488) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T19:35:57Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T19:35:57Z" level=info msg="XresStar = 6632343537333439306336306463663164386630396134383332653331663765\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:35:57Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T19:35:57Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T19:35:57Z" level=info msg="res*: 6632343537333439306336306463663164386630396134383332653331663765\nXres*: 6632343537333439306336306463663164386630396134383332653331663765\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:35:57Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:35:57Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007488/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T19:38:04Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T19:38:04Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T19:38:04Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T19:38:04Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T19:38:04Z" level=info msg="XresStar = 6436663965353962306531653638343938663166323763393030383630613763\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:38:04Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T19:38:04Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T19:38:04Z" level=info msg="res*: 6436663965353962306531653638343938663166323763393030383630613763\nXres*: 6436663965353962306531653638343938663166323763393030383630613763\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:38:04Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:38:04Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T19:38:05Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T19:38:05Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T19:38:05Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007488, imsi-2089300007488) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T19:38:05Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T19:38:05Z" level=info msg="XresStar = 3434326336666464356537313936653631303230386536303334313562383562\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:38:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T19:43:07Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T19:43:07Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T19:43:07Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T19:43:07Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T19:43:07Z" level=info msg="XresStar = 3734353066393532363431383836396431303332613533643439353937356537\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:43:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T19:43:07Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T19:43:07Z" level=info msg="res*: 3734353066393532363431383836396431303332613533643439353937356537\nXres*: 3734353066393532363431383836396431303332613533643439353937356537\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:43:07Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:43:07Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T19:43:08Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T19:43:08Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T19:43:08Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007488, imsi-2089300007488) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T19:43:08Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T19:43:08Z" level=info msg="XresStar = 3137636233656339636331623565656663323233643063363861336465626537\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:43:08Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T19:54:06Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T19:54:06Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T19:54:06Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T19:54:06Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T19:54:06Z" level=info msg="XresStar = 3931666162333066666236653264336131356464643635323230393738633263\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:54:06Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T19:54:06Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T19:54:06Z" level=info msg="res*: 3931666162333066666236653264336131356464643635323230393738633263\nXres*: 3931666162333066666236653264336131356464643635323230393738633263\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:54:06Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T19:54:06Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T19:54:06Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T19:54:06Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007488, imsi-2089300007488) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T19:54:06Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T19:54:06Z" level=info msg="XresStar = 6335383531333062633361346563306666363137613530353332313162356638\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T19:54:06Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T20:05:38Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T20:05:38Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T20:05:38Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T20:05:38Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T20:05:38Z" level=info msg="XresStar = 6434636165643965343931373832613966626561396466356637326466356134\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:05:38Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T20:05:38Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T20:05:38Z" level=info msg="res*: 6434636165643965343931373832613966626561396466356637326466356134\nXres*: 6434636165643965343931373832613966626561396466356637326466356134\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:05:38Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T20:05:38Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T20:05:38Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T20:05:38Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007488, imsi-2089300007488) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T20:05:38Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T20:05:38Z" level=info msg="XresStar = 6633613662366662356136353936653062623138643933626461656632646137\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:05:38Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T20:20:11Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T20:20:11Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T20:20:11Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T20:20:11Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T20:20:11Z" level=info msg="XresStar = 6462356532376239666466303363626363336237643430396334663762313965\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:20:11Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T20:20:11Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T20:20:11Z" level=info msg="res*: 6462356532376239666466303363626363336237643430396334663762313965\nXres*: 6462356532376239666466303363626363336237643430396334663762313965\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:20:11Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:20:11Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T20:20:12Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T20:20:12Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T20:20:12Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007488, imsi-2089300007488) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T20:20:12Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T20:20:12Z" level=info msg="XresStar = 3133376166303930636135383232313833323632323139643162393462313337\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:20:12Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T20:23:45Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T20:23:45Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T20:23:45Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T20:23:45Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T20:23:45Z" level=info msg="XresStar = 3064343335316639336562646235303538626438396264643466613535626666\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:23:45Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T20:23:45Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T20:23:45Z" level=info msg="res*: 3064343335316639336562646235303538626438396264643466613535626666\nXres*: 3064343335316639336562646235303538626438396264643466613535626666\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:23:45Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:23:45Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T20:23:46Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T20:23:46Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T20:23:46Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007488, imsi-2089300007488) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T20:23:46Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T20:23:46Z" level=info msg="XresStar = 3238643065383837336539366431613538316432643462633034636365383139\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:23:46Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T20:39:11Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T20:39:11Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T20:39:11Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T20:39:11Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T20:39:11Z" level=info msg="XresStar = 3534346166396566633637653461323930623537363031366162663764333731\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:39:11Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T20:39:11Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T20:39:11Z" level=info msg="res*: 3534346166396566633637653461323930623537363031366162663764333731\nXres*: 3534346166396566633637653461323930623537363031366162663764333731\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:39:11Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:39:11Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T20:39:43Z" level=info msg="Terminating AUSF..." category=Init component=AUSF
+time="2022-04-26T20:39:43Z" level=info msg="Send Deregister NFInstance" category=App component=AUSF
+time="2022-04-26T20:39:44Z" level=info msg="Deregister from NRF successfully" category=Init component=AUSF
+time="2022-04-26T20:39:44Z" level=info msg="AUSF terminated" category=Init component=AUSF
+time="2022-04-26T20:40:45Z" level=info msg="AUSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AUSF
+time="2022-04-26T20:40:45Z" level=info msg="AUSF Log level is set to [info] level" category=Init component=AUSF
+time="2022-04-26T20:40:45Z" level=info msg="config version [1.0.0]" category=CFG component=AUSF
+time="2022-04-26T20:40:45Z" level=info msg="Server started" category=Init component=AUSF
+time="2022-04-26T20:40:45Z" level=info msg="ausfconfig Info: Version[1.0.0] Description[AUSF initial local configuration]\n" category=Init component=AUSF
+time="2022-04-26T20:41:04Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T20:41:04Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T20:41:04Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T20:41:04Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T20:41:04Z" level=info msg="XresStar = 6337666465303739633961386334636438633361633734323135616535653463\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:41:04Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T20:41:04Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T20:41:04Z" level=info msg="res*: 6337666465303739633961386334636438633361633734323135616535653463\nXres*: 6337666465303739633961386334636438633361633734323135616535653463\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:41:04Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:41:04Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T20:41:05Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T20:41:05Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T20:41:05Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007488, imsi-2089300007488) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T20:41:05Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T20:41:05Z" level=info msg="XresStar = 3563396464666263623162633537393761363737306639626164633164616338\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:41:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T20:45:07Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T20:45:07Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T20:45:07Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007487, imsi-2089300007487) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T20:45:07Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T20:45:07Z" level=info msg="XresStar = 3534663762653535633033656663396131633639333336353835643932343465\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:45:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T20:45:07Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T20:45:07Z" level=info msg="res*: 3534663762653535633033656663396131633639333336353835643932343465\nXres*: 3534663762653535633033656663396131633639333336353835643932343465\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:45:07Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:45:07Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007487/5g-aka-confirmation | " category=GIN component=AUSF
+time="2022-04-26T20:45:08Z" level=info msg=HandleUeAuthPostRequest category=UeAuthPost component=AUSF
+time="2022-04-26T20:45:08Z" level=info msg="Serving network authorized" category=UeAuthPost component=AUSF
+time="2022-04-26T20:45:08Z" level=info msg="Add SuciSupiPair (suci-0-208-93-0-0-0-00007488, imsi-2089300007488) to map.\n" category=UeAuthPost component=AUSF
+time="2022-04-26T20:45:08Z" level=info msg="Use 5G AKA auth method" category=UeAuthPost component=AUSF
+time="2022-04-26T20:45:08Z" level=info msg="XresStar = 3633346538386339343138323562386433303762306264386366343430313063\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:45:08Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nausf-auth/v1/ue-authentications | " category=GIN component=AUSF
+time="2022-04-26T20:45:08Z" level=info msg=Auth5gAkaComfirmRequest category=5gAkaAuth component=AUSF
+time="2022-04-26T20:45:08Z" level=info msg="res*: 3633346538386339343138323562386433303762306264386366343430313063\nXres*: 3633346538386339343138323562386433303762306264386366343430313063\n" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:45:08Z" level=info msg="5G AKA confirmation succeeded" category=5gAkaAuth component=AUSF
+time="2022-04-26T20:45:08Z" level=info msg="| 200 |       127.0.0.1 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0-0-0-00007488/5g-aka-confirmation | " category=GIN component=AUSF

@@ -52,3 +52,79 @@ time="2022-04-26T15:41:18Z" level=info msg="config version [1.0.0]" category=CFG
 time="2022-04-26T15:41:18Z" level=info msg="Server started" category=Init component=NSSF
 time="2022-04-26T15:47:55Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
 time="2022-04-26T15:47:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=68c420a5-4958-4977-b47a-bdbd67858a88&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T17:25:11Z" level=info msg="Terminating NSSF..." category=Init component=NSSF
+time="2022-04-26T17:25:11Z" level=info msg="Send Deregister NFInstance" category=App component=NSSF
+time="2022-04-26T17:25:11Z" level=error msg="Deregister NF instance Error[server no response]" category=Init component=NSSF
+time="2022-04-26T17:25:11Z" level=info msg="NSSF terminated" category=Init component=NSSF
+time="2022-04-26T18:08:48Z" level=info msg="NSSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NSSF
+time="2022-04-26T18:08:48Z" level=info msg="NSSF Log level is set to [info] level" category=Init component=NSSF
+time="2022-04-26T18:08:48Z" level=info msg="config version [1.0.0]" category=CFG component=NSSF
+time="2022-04-26T18:08:48Z" level=info msg="Server started" category=Init component=NSSF
+time="2022-04-26T18:20:46Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T18:20:46Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=5a0e1d54-4c9f-4da9-ade4-942737270835&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T18:30:01Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T18:30:01Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=0cbc019e-14ee-4801-b307-52cd80ce935b&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T18:41:56Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T18:41:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=d2be9196-cc34-41e7-9136-9a71744b49da&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T18:41:57Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T18:41:57Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=d2be9196-cc34-41e7-9136-9a71744b49da&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T18:47:02Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=af51d5b9-1b21-4a17-8e5f-a9d0a585bec4&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T18:47:03Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T18:47:03Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=af51d5b9-1b21-4a17-8e5f-a9d0a585bec4&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T18:54:05Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=3780e7ca-62a7-409b-8bd2-d333f8f5db8c&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T18:54:06Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T18:54:06Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=3780e7ca-62a7-409b-8bd2-d333f8f5db8c&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T19:14:44Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=fbffc1f8-af05-4c77-9323-ca4ccf870a66&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T19:14:45Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T19:14:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=fbffc1f8-af05-4c77-9323-ca4ccf870a66&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T19:19:49Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T19:19:49Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=5b4b3ad2-dcee-4673-8265-e680dd9c69aa&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T19:20:56Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T19:20:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=ce0cb3c3-aeff-4c33-b70c-b2fc98e19ed4&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T19:23:16Z" level=info msg="Terminating NSSF..." category=Init component=NSSF
+time="2022-04-26T19:23:16Z" level=info msg="Send Deregister NFInstance" category=App component=NSSF
+time="2022-04-26T19:23:17Z" level=info msg="Deregister from NRF successfully" category=Init component=NSSF
+time="2022-04-26T19:23:17Z" level=info msg="NSSF terminated" category=Init component=NSSF
+time="2022-04-26T19:29:50Z" level=info msg="NSSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NSSF
+time="2022-04-26T19:29:50Z" level=info msg="NSSF Log level is set to [info] level" category=Init component=NSSF
+time="2022-04-26T19:29:50Z" level=info msg="config version [1.0.0]" category=CFG component=NSSF
+time="2022-04-26T19:29:50Z" level=info msg="Server started" category=Init component=NSSF
+time="2022-04-26T19:30:07Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=fdce85c1-8ab3-4b20-a281-a60c255cf17d&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T19:30:08Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T19:30:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=fdce85c1-8ab3-4b20-a281-a60c255cf17d&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T19:35:56Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T19:35:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=d1b816b2-bb1c-4e69-8906-926b065a2760&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T19:35:57Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T19:35:57Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=d1b816b2-bb1c-4e69-8906-926b065a2760&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T19:38:05Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T19:38:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=498c5f35-480f-4a0d-969d-962efe96aad6&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T19:43:07Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T19:43:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=7ed66c34-9829-4ad5-8979-fc878f8f3bac&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T19:54:06Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=45cdf232-3854-4c3d-ad82-348bedb51487&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T20:05:38Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=3fb99c94-d3f4-476c-9900-ad7ca3a68351&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T20:20:11Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T20:20:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=d6505827-c388-4a7c-82e5-4a7ec4e29f8b&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T20:23:46Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T20:23:46Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=db152d6d-94f1-4f59-b6a8-e0472cbe08d1&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T20:39:11Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T20:39:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=562108ad-11b2-4ae2-88ab-639efb568e7b&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T20:39:38Z" level=info msg="Terminating NSSF..." category=Init component=NSSF
+time="2022-04-26T20:39:38Z" level=info msg="Send Deregister NFInstance" category=App component=NSSF
+time="2022-04-26T20:39:39Z" level=info msg="Deregister from NRF successfully" category=Init component=NSSF
+time="2022-04-26T20:39:39Z" level=info msg="NSSF terminated" category=Init component=NSSF
+time="2022-04-26T20:40:48Z" level=info msg="NSSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NSSF
+time="2022-04-26T20:40:48Z" level=info msg="NSSF Log level is set to [info] level" category=Init component=NSSF
+time="2022-04-26T20:40:48Z" level=info msg="config version [1.0.0]" category=CFG component=NSSF
+time="2022-04-26T20:40:48Z" level=info msg="Server started" category=Init component=NSSF
+time="2022-04-26T20:41:05Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T20:41:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=1be1795a-f5f2-4e22-a759-f795f80ef19d&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T20:45:07Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T20:45:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=256991ea-0ff1-41d7-8241-98df7d6cb21f&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-04-26T20:45:08Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-04-26T20:45:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=156d81a6-d136-4837-b63c-136fc949a1a7&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF

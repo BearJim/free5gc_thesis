@@ -2,7 +2,6 @@ package service
 
 import (
 	"crypto/rand"
-	"encoding/hex"
 	"io"
 	"net"
 	"sync"
@@ -38,6 +37,7 @@ var (
 	goAmf           int
 	err             error
 	NGsetupResponse bool
+	initailMsgCount int
 )
 
 var sctpConfig sctp.SocketConfig = sctp.SocketConfig{
@@ -46,7 +46,7 @@ var sctpConfig sctp.SocketConfig = sctp.SocketConfig{
 	AssocInfo: &sctp.AssocInfo{AsocMaxRxt: 4},
 }
 
-var mUEAMF map[*ngapType.RANUENGAPID]int
+// var mUEAMF map[*ngapType.RANUENGAPID]int
 
 func Run(addresses []string, port int) {
 	ips := []net.IPAddr{}
@@ -64,8 +64,8 @@ func Run(addresses []string, port int) {
 		IPAddrs: ips,
 		Port:    port,
 	}
-	mUEAMF = make(map[*ngapType.RANUENGAPID]int)
 	NGsetupResponse = false
+	initailMsgCount = 0
 	go listenAndServe(addr)
 }
 
@@ -225,15 +225,16 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 		connections.Delete(conn)
 	}()
 
+	mUEAMF := make(map[ngapType.RANUENGAPID]int)
 	ppid := 0
 	// MDAF need to decide which AMF to go
-	goAmf = 0
 	for {
 		info := &sctp.SndRcvInfo{
 			Stream: uint16(ppid),
 			PPID:   uint32(ppid),
 		}
 		ppid += 1
+		goAmf = 0
 		bufUp := make([]byte, bufsize)
 		n, info, notification, err := conn.SCTPRead(bufUp)
 		if err != nil {
@@ -259,9 +260,6 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 				continue
 			}
 
-			logger.NgapLog.Tracef("Read %d bytes", n)
-			logger.NgapLog.Tracef("Packet content:\n%+v", hex.Dump(bufUp[:n]))
-
 			msg := bufUp[:n]
 			pdu, err := ngap.Decoder(msg)
 			if err != nil {
@@ -278,25 +276,34 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 					goAmf = 3
 					logger.NgapLog.Infof("NGSETUP, send to AMF0 AMF1 AMF2, goAmf: ", goAmf)
 				case ngapType.ProcedureCodeInitialUEMessage: // initail UE message
-					goAmf = 0
+					logger.NgapLog.Errorln("initail UE message: ", initailMsgCount)
 					for _, ie := range initiatingMessage.Value.InitialUEMessage.ProtocolIEs.List {
 						switch ie.Id.Value {
 						case ngapType.ProtocolIEIDRANUENGAPID:
 							rANUENGAPID := ie.Value.RANUENGAPID
-							value, isExist := mUEAMF[rANUENGAPID]
+							value, isExist := mUEAMF[*rANUENGAPID]
 							if !isExist {
-								mUEAMF[rANUENGAPID] = goAmf
+								logger.NgapLog.Errorln("is not Exist")
+								mUEAMF[*rANUENGAPID] = goAmf + initailMsgCount
+								goAmf = mUEAMF[*rANUENGAPID]
 							} else {
+								logger.NgapLog.Errorln("is Exist")
 								goAmf = value
 							}
-							logger.NgapLog.Infof("mUEAMF key: %d , goAmf: %d", rANUENGAPID, mUEAMF[rANUENGAPID])
+							logger.NgapLog.Errorf("mUEAMF: ", mUEAMF)
+							logger.NgapLog.Errorf("mUEAMF[rANUENGAPID]: %d", mUEAMF[*rANUENGAPID])
+							logger.NgapLog.Infof("mUEAMF key: %v , goAmf: %d", rANUENGAPID, goAmf)
 							logger.NgapLog.Trace("Decode IE RANUENGAPID")
-							logger.NgapLog.Infof("RANUENGAPID: %d", rANUENGAPID)
 							if rANUENGAPID == nil {
 								logger.NgapLog.Error("RANUENGAPID is nil")
 								return
 							}
 						}
+					}
+					if initailMsgCount >= 2 {
+						initailMsgCount = 0
+					} else {
+						initailMsgCount += 1
 					}
 				case ngapType.ProcedureCodeUplinkNASTransport: // Uplink NAS Transport
 					for i := 0; i < len(initiatingMessage.Value.UplinkNASTransport.ProtocolIEs.List); i++ {
@@ -304,15 +311,13 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 						switch ie.Id.Value {
 						case ngapType.ProtocolIEIDRANUENGAPID:
 							rANUENGAPID := ie.Value.RANUENGAPID
-							value, isExist := mUEAMF[rANUENGAPID]
-							if !isExist {
-								mUEAMF[rANUENGAPID] = goAmf
-							} else {
-								goAmf = value
-							}
-							logger.NgapLog.Infof("mUEAMF key: %d , goAmf: %d", rANUENGAPID, mUEAMF[rANUENGAPID])
+							value, isExist := mUEAMF[*rANUENGAPID]
+							logger.NgapLog.Infof("Uplink NAS Transport is Exist?: %v", isExist)
+							goAmf = value
+
+							logger.NgapLog.Errorf("mUEAMF: ", mUEAMF)
+							logger.NgapLog.Infof("mUEAMF key: %v , goAmf: %d", rANUENGAPID, goAmf)
 							logger.NgapLog.Trace("Decode IE RANUENGAPID")
-							logger.NgapLog.Infof("RANUENGAPID: %d", rANUENGAPID)
 							if rANUENGAPID == nil {
 								logger.NgapLog.Error("RANUENGAPID is nil")
 								return
@@ -329,13 +334,9 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 						switch ie.Id.Value {
 						case ngapType.ProtocolIEIDRANUENGAPID:
 							rANUENGAPID := ie.Value.RANUENGAPID
-							value, isExist := mUEAMF[rANUENGAPID]
-							if !isExist {
-								mUEAMF[rANUENGAPID] = goAmf
-							} else {
-								goAmf = value
-							}
-							logger.NgapLog.Infof("mUEAMF key: %d , goAmf: %d", rANUENGAPID, mUEAMF[rANUENGAPID])
+							value := mUEAMF[*rANUENGAPID]
+							goAmf = value
+							logger.NgapLog.Infof("mUEAMF key: %d , goAmf: %d", rANUENGAPID, value)
 							logger.NgapLog.Trace("Decode IE RANUENGAPID")
 							logger.NgapLog.Infof("RANUENGAPID: %d", rANUENGAPID)
 							if rANUENGAPID == nil {

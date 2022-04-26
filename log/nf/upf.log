@@ -122,3 +122,217 @@ time="2022-04-26T15:47:55Z" level=info msg="[PFCP] Handle PFCP session establish
 time="2022-04-26T15:47:55Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
 time="2022-04-26T15:47:55Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
 time="2022-04-26T15:47:55Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T17:24:33Z" level=info msg="Removing DNN routes" category=Util component=UPF
+time="2022-04-26T18:08:37Z" level=info msg="Config: /home/bearjim/thesis/experiment/free5gc/NFs/upf/build/config/upfcfg.yaml" category=Util component=UPF
+time="2022-04-26T18:08:37Z" level=info msg="UPF config version [1.0.0]" category=Util component=UPF
+time="2022-04-26T18:08:37Z" level=info msg="Set log level: info" category=Util component=UPF
+time="2022-04-26T18:08:37Z" level=info msg="DNN routes added, main routing table:" category=Util component=UPF
+time="2022-04-26T18:08:37Z" level=info msg="DstIp               Gateway        Iface     Priority RtProto   Type       " category=Util component=UPF
+time="2022-04-26T18:08:37Z" level=info msg="172.18.0.0 /16      0.0.0.0        br-21a4135ca5800        kernel    unicast    " category=Util component=UPF
+time="2022-04-26T18:08:37Z" level=info msg="172.17.0.0 /16      0.0.0.0        docker0   0        kernel    unicast    " category=Util component=UPF
+time="2022-04-26T18:08:37Z" level=info msg="60.60.0.0 /24       0.0.0.0        upfgtp    0        static    unicast    " category=Util component=UPF
+time="2022-04-26T18:08:37Z" level=info msg="10.10.0.1 /32       0.0.0.0        ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-04-26T18:08:37Z" level=info msg="10.10.0.0 /24       0.0.0.0        ens18     0        kernel    unicast    " category=Util component=UPF
+time="2022-04-26T18:08:37Z" level=info msg="0.0.0.0 /0          10.10.0.1      ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-04-26T18:08:41Z" level=info msg="[PFCP] Handle PFCP association setup request" category=Util component=UPF
+time="2022-04-26T18:08:41Z" level=info msg="[PFCP] Association Setup Response" category=Util component=UPF
+time="2022-04-26T18:20:46Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T18:20:46Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T18:20:46Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T18:20:46Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T18:30:02Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T18:30:02Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T18:30:02Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T18:30:02Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T18:41:56Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T18:41:56Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T18:41:56Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T18:41:56Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T18:41:57Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T18:41:57Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T18:41:57Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T18:41:57Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T18:47:02Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T18:47:02Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T18:47:02Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T18:47:02Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T18:47:03Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T18:47:03Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T18:47:03Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T18:47:03Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T18:54:05Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T18:54:05Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T18:54:05Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T18:54:05Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T18:54:06Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T18:54:06Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T18:54:06Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T18:54:06Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T19:14:44Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T19:14:44Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T19:14:44Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T19:14:44Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T19:14:45Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T19:14:45Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T19:14:45Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T19:14:45Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T19:19:49Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T19:19:49Z" level=warning msg="Pool is empty" category=Util component=UPF
+time="2022-04-26T19:19:49Z" level=error msg="bufPool64 is empty" category=Util component=UPF
+time="2022-04-26T19:19:49Z" level=error msg="buffer block alloc error" category=Util component=UPF
+time="2022-04-26T19:19:49Z" level=warning msg="Pool is empty" category=Util component=UPF
+time="2022-04-26T19:19:49Z" level=error msg="bufPool64 is empty" category=Util component=UPF
+time="2022-04-26T19:19:49Z" level=error msg="buffer block alloc error" category=Util component=UPF
+time="2022-04-26T19:19:49Z" level=warning msg="Pool is empty" category=Util component=UPF
+time="2022-04-26T19:19:49Z" level=error msg="bufPool64 is empty" category=Util component=UPF
+time="2022-04-26T19:19:49Z" level=error msg="buffer block alloc error" category=Util component=UPF
+time="2022-04-26T19:19:49Z" level=warning msg="Pool is empty" category=Util component=UPF
+time="2022-04-26T19:19:49Z" level=error msg="bufPool64 is empty" category=Util component=UPF
+time="2022-04-26T19:19:49Z" level=error msg="buffer block alloc error" category=Util component=UPF
+time="2022-04-26T19:19:49Z" level=error msg="pfcpXact update TX error" category=Util component=UPF
+time="2022-04-26T19:19:52Z" level=warning msg="[22] remote Request Duplicated. Discard!  for step 1 type 50 peer [127.0.0.1]:8805" category=Util component=UPF
+time="2022-04-26T19:19:53Z" level=error msg="Index Pool is full, it may not belong to this pool" category=Util component=UPF
+time="2022-04-26T19:19:55Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T19:19:55Z" level=error msg="FAR ID[21] does exist in UPF Context" category=Util component=UPF
+time="2022-04-26T19:19:55Z" level=error msg="Create FAR error" category=Util component=UPF
+time="2022-04-26T19:19:55Z" level=error msg="FAR ID[22] does exist in UPF Context" category=Util component=UPF
+time="2022-04-26T19:19:55Z" level=error msg="Create FAR error" category=Util component=UPF
+time="2022-04-26T19:19:55Z" level=error msg="PDR ID[21] does exist in UPF Context" category=Util component=UPF
+time="2022-04-26T19:19:55Z" level=error msg="Create PDR Error" category=Util component=UPF
+time="2022-04-26T19:19:55Z" level=error msg="PDR ID[22] does exist in UPF Context" category=Util component=UPF
+time="2022-04-26T19:19:55Z" level=error msg="Create PDR Error" category=Util component=UPF
+time="2022-04-26T19:19:55Z" level=warning msg="Pool is empty" category=Util component=UPF
+time="2022-04-26T19:19:55Z" level=error msg="bufPool64 is empty" category=Util component=UPF
+time="2022-04-26T19:19:55Z" level=error msg="buffer block alloc error" category=Util component=UPF
+time="2022-04-26T19:19:55Z" level=error msg="buffer block pointer error" category=Util component=UPF
+time="2022-04-26T19:19:55Z" level=error msg="build msg faild" category=Util component=UPF
+time="2022-04-26T19:19:55Z" level=error msg="N4 build error" category=Util component=UPF
+time="2022-04-26T19:20:56Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T19:20:56Z" level=warning msg="Pool is empty" category=Util component=UPF
+time="2022-04-26T19:20:56Z" level=error msg="bufPool64 is empty" category=Util component=UPF
+time="2022-04-26T19:20:56Z" level=error msg="UTLT_Malloc fail" category=Util component=UPF
+time="2022-04-26T19:28:46Z" level=info msg="Config: /home/bearjim/thesis/experiment/free5gc/NFs/upf/build/config/upfcfg.yaml" category=Util component=UPF
+time="2022-04-26T19:28:46Z" level=info msg="UPF config version [1.0.0]" category=Util component=UPF
+time="2022-04-26T19:28:46Z" level=info msg="Set log level: info" category=Util component=UPF
+time="2022-04-26T19:28:46Z" level=error msg="gtp5g device named upfgtp created fail" category=Util component=UPF
+time="2022-04-26T19:28:46Z" level=error msg="Gtp5gDeviceAdd failed" category=Util component=UPF
+time="2022-04-26T19:28:51Z" level=info msg="Removing DNN routes" category=Util component=UPF
+time="2022-04-26T19:28:51Z" level=error msg="UPDK epoll deregister error" category=Util component=UPF
+time="2022-04-26T19:29:28Z" level=info msg="Config: /home/bearjim/thesis/experiment/free5gc/NFs/upf/build/config/upfcfg.yaml" category=Util component=UPF
+time="2022-04-26T19:29:28Z" level=info msg="UPF config version [1.0.0]" category=Util component=UPF
+time="2022-04-26T19:29:28Z" level=info msg="Set log level: info" category=Util component=UPF
+time="2022-04-26T19:29:28Z" level=info msg="DNN routes added, main routing table:" category=Util component=UPF
+time="2022-04-26T19:29:28Z" level=info msg="DstIp               Gateway        Iface     Priority RtProto   Type       " category=Util component=UPF
+time="2022-04-26T19:29:28Z" level=info msg="172.18.0.0 /16      0.0.0.0        br-21a4135ca5800        kernel    unicast    " category=Util component=UPF
+time="2022-04-26T19:29:28Z" level=info msg="172.17.0.0 /16      0.0.0.0        docker0   0        kernel    unicast    " category=Util component=UPF
+time="2022-04-26T19:29:28Z" level=info msg="60.60.0.0 /24       0.0.0.0        upfgtp    0        static    unicast    " category=Util component=UPF
+time="2022-04-26T19:29:28Z" level=info msg="10.10.0.1 /32       0.0.0.0        ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-04-26T19:29:28Z" level=info msg="10.10.0.0 /24       0.0.0.0        ens18     0        kernel    unicast    " category=Util component=UPF
+time="2022-04-26T19:29:28Z" level=info msg="0.0.0.0 /0          10.10.0.1      ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-04-26T19:29:41Z" level=info msg="Config: /home/bearjim/thesis/experiment/free5gc/NFs/upf/build/config/upfcfg.yaml" category=Util component=UPF
+time="2022-04-26T19:29:41Z" level=info msg="UPF config version [1.0.0]" category=Util component=UPF
+time="2022-04-26T19:29:41Z" level=info msg="Set log level: info" category=Util component=UPF
+time="2022-04-26T19:29:41Z" level=info msg="DNN routes added, main routing table:" category=Util component=UPF
+time="2022-04-26T19:29:41Z" level=info msg="DstIp               Gateway        Iface     Priority RtProto   Type       " category=Util component=UPF
+time="2022-04-26T19:29:41Z" level=info msg="172.18.0.0 /16      0.0.0.0        br-21a4135ca5800        kernel    unicast    " category=Util component=UPF
+time="2022-04-26T19:29:41Z" level=info msg="172.17.0.0 /16      0.0.0.0        docker0   0        kernel    unicast    " category=Util component=UPF
+time="2022-04-26T19:29:41Z" level=info msg="60.60.0.0 /24       0.0.0.0        upfgtp    0        static    unicast    " category=Util component=UPF
+time="2022-04-26T19:29:41Z" level=info msg="10.10.0.1 /32       0.0.0.0        ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-04-26T19:29:41Z" level=info msg="10.10.0.0 /24       0.0.0.0        ens18     0        kernel    unicast    " category=Util component=UPF
+time="2022-04-26T19:29:41Z" level=info msg="0.0.0.0 /0          10.10.0.1      ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-04-26T19:29:44Z" level=info msg="[PFCP] Handle PFCP association setup request" category=Util component=UPF
+time="2022-04-26T19:29:44Z" level=info msg="[PFCP] Association Setup Response" category=Util component=UPF
+time="2022-04-26T19:30:07Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T19:30:07Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T19:30:07Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T19:30:07Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T19:30:08Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T19:30:08Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T19:30:08Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T19:30:08Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T19:35:56Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T19:35:56Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T19:35:56Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T19:35:56Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T19:35:57Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T19:35:57Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T19:35:57Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T19:35:57Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T19:38:05Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T19:38:05Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T19:38:05Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T19:38:05Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T19:43:07Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T19:43:07Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T19:43:08Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T19:43:08Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T19:54:06Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T19:54:06Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T19:54:06Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T19:54:06Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T20:05:38Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T20:05:38Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T20:05:38Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T20:05:38Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T20:20:11Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T20:20:11Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T20:20:11Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T20:20:11Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T20:23:46Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T20:23:46Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T20:23:46Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T20:23:46Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T20:39:11Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T20:39:11Z" level=warning msg="Pool is empty" category=Util component=UPF
+time="2022-04-26T20:39:11Z" level=error msg="bufPool64 is empty" category=Util component=UPF
+time="2022-04-26T20:39:11Z" level=error msg="buffer block alloc error" category=Util component=UPF
+time="2022-04-26T20:39:11Z" level=warning msg="Pool is empty" category=Util component=UPF
+time="2022-04-26T20:39:11Z" level=error msg="bufPool64 is empty" category=Util component=UPF
+time="2022-04-26T20:39:11Z" level=error msg="buffer block alloc error" category=Util component=UPF
+time="2022-04-26T20:39:11Z" level=warning msg="Pool is empty" category=Util component=UPF
+time="2022-04-26T20:39:11Z" level=error msg="bufPool64 is empty" category=Util component=UPF
+time="2022-04-26T20:39:11Z" level=error msg="buffer block alloc error" category=Util component=UPF
+time="2022-04-26T20:39:11Z" level=warning msg="Pool is empty" category=Util component=UPF
+time="2022-04-26T20:39:11Z" level=error msg="bufPool64 is empty" category=Util component=UPF
+time="2022-04-26T20:39:11Z" level=error msg="buffer block alloc error" category=Util component=UPF
+time="2022-04-26T20:39:11Z" level=error msg="pfcpXact update TX error" category=Util component=UPF
+time="2022-04-26T20:39:14Z" level=warning msg="[22] remote Request Duplicated. Discard!  for step 1 type 50 peer [127.0.0.1]:8805" category=Util component=UPF
+time="2022-04-26T20:39:15Z" level=error msg="Index Pool is full, it may not belong to this pool" category=Util component=UPF
+time="2022-04-26T20:39:17Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T20:39:17Z" level=error msg="FAR ID[21] does exist in UPF Context" category=Util component=UPF
+time="2022-04-26T20:39:17Z" level=error msg="Create FAR error" category=Util component=UPF
+time="2022-04-26T20:39:17Z" level=error msg="FAR ID[22] does exist in UPF Context" category=Util component=UPF
+time="2022-04-26T20:39:17Z" level=error msg="Create FAR error" category=Util component=UPF
+time="2022-04-26T20:39:17Z" level=error msg="PDR ID[21] does exist in UPF Context" category=Util component=UPF
+time="2022-04-26T20:39:17Z" level=error msg="Create PDR Error" category=Util component=UPF
+time="2022-04-26T20:39:17Z" level=error msg="PDR ID[22] does exist in UPF Context" category=Util component=UPF
+time="2022-04-26T20:39:17Z" level=error msg="Create PDR Error" category=Util component=UPF
+time="2022-04-26T20:39:17Z" level=warning msg="Pool is empty" category=Util component=UPF
+time="2022-04-26T20:39:17Z" level=error msg="bufPool64 is empty" category=Util component=UPF
+time="2022-04-26T20:39:17Z" level=error msg="buffer block alloc error" category=Util component=UPF
+time="2022-04-26T20:39:17Z" level=error msg="buffer block pointer error" category=Util component=UPF
+time="2022-04-26T20:39:17Z" level=error msg="build msg faild" category=Util component=UPF
+time="2022-04-26T20:39:17Z" level=error msg="N4 build error" category=Util component=UPF
+time="2022-04-26T20:40:40Z" level=info msg="Config: /home/bearjim/thesis/experiment/free5gc/NFs/upf/build/config/upfcfg.yaml" category=Util component=UPF
+time="2022-04-26T20:40:40Z" level=info msg="UPF config version [1.0.0]" category=Util component=UPF
+time="2022-04-26T20:40:40Z" level=info msg="Set log level: info" category=Util component=UPF
+time="2022-04-26T20:40:40Z" level=info msg="DNN routes added, main routing table:" category=Util component=UPF
+time="2022-04-26T20:40:40Z" level=info msg="DstIp               Gateway        Iface     Priority RtProto   Type       " category=Util component=UPF
+time="2022-04-26T20:40:40Z" level=info msg="172.18.0.0 /16      0.0.0.0        br-21a4135ca5800        kernel    unicast    " category=Util component=UPF
+time="2022-04-26T20:40:40Z" level=info msg="172.17.0.0 /16      0.0.0.0        docker0   0        kernel    unicast    " category=Util component=UPF
+time="2022-04-26T20:40:40Z" level=info msg="60.60.0.0 /24       0.0.0.0        upfgtp    0        static    unicast    " category=Util component=UPF
+time="2022-04-26T20:40:40Z" level=info msg="10.10.0.1 /32       0.0.0.0        ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-04-26T20:40:40Z" level=info msg="10.10.0.0 /24       0.0.0.0        ens18     0        kernel    unicast    " category=Util component=UPF
+time="2022-04-26T20:40:40Z" level=info msg="0.0.0.0 /0          10.10.0.1      ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-04-26T20:40:43Z" level=info msg="[PFCP] Handle PFCP association setup request" category=Util component=UPF
+time="2022-04-26T20:40:43Z" level=info msg="[PFCP] Association Setup Response" category=Util component=UPF
+time="2022-04-26T20:41:05Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T20:41:05Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T20:41:05Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T20:41:05Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T20:45:07Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T20:45:07Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T20:45:07Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T20:45:07Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T20:45:08Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T20:45:08Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF

@@ -85,3 +85,140 @@ time="2022-04-26T15:47:55Z" level=info msg="Handle CreateSmPolicy" category=SMpo
 time="2022-04-26T15:47:55Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
 time="2022-04-26T15:50:39Z" level=warning msg="[PCF] Handle Amf Status Change Notify is not implemented." category=Callback component=PCF
 time="2022-04-26T15:50:39Z" level=info msg="| 204 |       127.0.0.1 | POST    | /npcf-callback/v1/amfstatus | " category=GIN component=PCF
+time="2022-04-26T17:25:09Z" level=info msg="Terminating PCF..." category=Init component=PCF
+time="2022-04-26T17:25:09Z" level=info msg="Send Deregister NFInstance" category=Consumer component=PCF
+time="2022-04-26T17:25:09Z" level=error msg="Deregister NF instance Error[server no response]" category=Init component=PCF
+time="2022-04-26T17:25:09Z" level=info msg="PCF terminated" category=Init component=PCF
+time="2022-04-26T18:08:46Z" level=info msg="PCF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=PCF
+time="2022-04-26T18:08:46Z" level=info msg="PCF Log level is set to [info] level" category=Init component=PCF
+time="2022-04-26T18:08:46Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
+time="2022-04-26T18:08:46Z" level=info msg="Server started" category=Init component=PCF
+time="2022-04-26T18:08:46Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF
+time="2022-04-26T18:20:45Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T18:20:45Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T18:20:46Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T18:20:46Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T18:21:20Z" level=warning msg="[PCF] Handle Amf Status Change Notify is not implemented." category=Callback component=PCF
+time="2022-04-26T18:21:20Z" level=info msg="| 204 |       127.0.0.1 | POST    | /npcf-callback/v1/amfstatus | " category=GIN component=PCF
+time="2022-04-26T18:30:01Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T18:30:01Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T18:30:02Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T18:30:02Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T18:41:56Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T18:41:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T18:41:56Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T18:41:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T18:41:56Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T18:41:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T18:41:57Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T18:41:57Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T18:47:02Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T18:47:02Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T18:47:02Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T18:47:02Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T18:47:02Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T18:47:02Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T18:47:03Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T18:47:03Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T18:54:05Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T18:54:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T18:54:05Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T18:54:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T18:54:05Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T18:54:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T18:54:06Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T18:54:06Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T19:14:44Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T19:14:44Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T19:14:44Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T19:14:44Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T19:14:44Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T19:14:44Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T19:14:45Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T19:14:45Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T19:19:49Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T19:19:49Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T19:19:49Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T19:19:49Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T19:20:55Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T19:20:55Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T19:20:56Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T19:20:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T19:23:14Z" level=info msg="Terminating PCF..." category=Init component=PCF
+time="2022-04-26T19:23:14Z" level=info msg="Send Deregister NFInstance" category=Consumer component=PCF
+time="2022-04-26T19:23:15Z" level=info msg="Deregister from NRF successfully" category=Init component=PCF
+time="2022-04-26T19:23:15Z" level=info msg="PCF terminated" category=Init component=PCF
+time="2022-04-26T19:29:48Z" level=info msg="PCF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=PCF
+time="2022-04-26T19:29:48Z" level=info msg="PCF Log level is set to [info] level" category=Init component=PCF
+time="2022-04-26T19:29:48Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
+time="2022-04-26T19:29:48Z" level=info msg="Server started" category=Init component=PCF
+time="2022-04-26T19:29:48Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF
+time="2022-04-26T19:30:07Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T19:30:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T19:30:07Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T19:30:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T19:30:07Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T19:30:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T19:30:08Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T19:30:08Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T19:30:18Z" level=warning msg="[PCF] Handle Amf Status Change Notify is not implemented." category=Callback component=PCF
+time="2022-04-26T19:30:18Z" level=info msg="| 204 |       127.0.0.1 | POST    | /npcf-callback/v1/amfstatus | " category=GIN component=PCF
+time="2022-04-26T19:35:56Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T19:35:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T19:35:56Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T19:35:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T19:35:57Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T19:35:57Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T19:35:57Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T19:35:57Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T19:38:04Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T19:38:04Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T19:38:05Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T19:38:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T19:43:07Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T19:43:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T19:43:07Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T19:43:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T19:54:06Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T19:54:06Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T19:54:06Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T19:54:06Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T20:05:38Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T20:05:38Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T20:05:38Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T20:05:38Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T20:20:11Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T20:20:11Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T20:20:11Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T20:20:11Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T20:23:45Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T20:23:45Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T20:23:46Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T20:23:46Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T20:39:11Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T20:39:11Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T20:39:11Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T20:39:11Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T20:39:41Z" level=info msg="Terminating PCF..." category=Init component=PCF
+time="2022-04-26T20:39:41Z" level=info msg="Send Deregister NFInstance" category=Consumer component=PCF
+time="2022-04-26T20:39:42Z" level=info msg="Deregister from NRF successfully" category=Init component=PCF
+time="2022-04-26T20:39:42Z" level=info msg="PCF terminated" category=Init component=PCF
+time="2022-04-26T20:40:46Z" level=info msg="PCF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=PCF
+time="2022-04-26T20:40:46Z" level=info msg="PCF Log level is set to [info] level" category=Init component=PCF
+time="2022-04-26T20:40:46Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
+time="2022-04-26T20:40:46Z" level=info msg="Server started" category=Init component=PCF
+time="2022-04-26T20:40:46Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF
+time="2022-04-26T20:41:04Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T20:41:04Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T20:41:05Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T20:41:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T20:41:20Z" level=warning msg="[PCF] Handle Amf Status Change Notify is not implemented." category=Callback component=PCF
+time="2022-04-26T20:41:20Z" level=info msg="| 204 |       127.0.0.1 | POST    | /npcf-callback/v1/amfstatus | " category=GIN component=PCF
+time="2022-04-26T20:45:07Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T20:45:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T20:45:07Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T20:45:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T20:45:08Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T20:45:08Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T20:45:08Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T20:45:08Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF

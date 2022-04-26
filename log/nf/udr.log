@@ -233,3 +233,652 @@ time="2022-04-26T15:47:55Z" level=info msg="Handle QuerySmData" category=DRepo c
 time="2022-04-26T15:47:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
 time="2022-04-26T15:47:55Z" level=info msg="Handle PolicyDataUesUeIdSmDataGet" category=DRepo component=UDR
 time="2022-04-26T15:47:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/sm-data?dnn=internet&snssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T17:25:15Z" level=info msg="Terminating UDR..." category=Init component=UDR
+time="2022-04-26T17:25:15Z" level=info msg="Send Deregister NFInstance" category=Consumer component=UDR
+time="2022-04-26T17:25:15Z" level=error msg="Deregister NF instance Error[server no response]" category=Init component=UDR
+time="2022-04-26T17:25:15Z" level=info msg="UDR terminated" category=Init component=UDR
+time="2022-04-26T18:08:52Z" level=info msg=udr category=App component=UDR
+time="2022-04-26T18:08:52Z" level=info msg="UDR version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=UDR
+time="2022-04-26T18:08:52Z" level=info msg="UDR Log level is set to [info] level" category=Init component=UDR
+time="2022-04-26T18:08:52Z" level=info msg="config version [1.0.0]" category=CFG component=UDR
+time="2022-04-26T18:08:52Z" level=info msg="UDR Config Info: Version[1.0.0] Description[UDR initial local configuration]" category=Init component=UDR
+time="2022-04-26T18:08:52Z" level=info msg="Server started" category=Init component=UDR
+time="2022-04-26T18:08:52Z" level=info msg="udrconfig Info: Version[1.0.0] Description[UDR initial local configuration]" category=Util component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T18:20:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T18:20:46Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T18:20:46Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T18:20:46Z" level=info msg="Handle PolicyDataUesUeIdSmDataGet" category=DRepo component=UDR
+time="2022-04-26T18:20:46Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/sm-data?dnn=internet&snssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T18:20:46Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T18:20:46Z" level=info msg="| 404 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007486/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T18:30:01Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T18:30:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T18:30:02Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T18:30:02Z" level=info msg="| 404 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007486/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:41:55Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T18:41:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:41:55Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T18:41:55Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:41:55Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T18:41:55Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T18:41:55Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T18:41:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:41:55Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T18:41:55Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T18:41:55Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T18:41:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T18:41:55Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T18:41:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:41:55Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T18:41:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T18:41:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007488/am-data | " category=GIN component=UDR
+time="2022-04-26T18:41:57Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T18:41:57Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T18:41:57Z" level=info msg="Handle PolicyDataUesUeIdSmDataGet" category=DRepo component=UDR
+time="2022-04-26T18:41:57Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007488/sm-data?dnn=internet&snssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007488/am-data | " category=GIN component=UDR
+time="2022-04-26T18:47:03Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T18:47:03Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007488/am-data | " category=GIN component=UDR
+time="2022-04-26T18:54:06Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T18:54:06Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007488/am-data | " category=GIN component=UDR
+time="2022-04-26T19:14:45Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T19:14:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T19:19:49Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T19:20:55Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T19:20:56Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T19:20:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T19:23:18Z" level=info msg="Terminating UDR..." category=Init component=UDR
+time="2022-04-26T19:23:18Z" level=info msg="Send Deregister NFInstance" category=Consumer component=UDR
+time="2022-04-26T19:23:19Z" level=info msg="Deregister from NRF successfully" category=Init component=UDR
+time="2022-04-26T19:23:19Z" level=info msg="UDR terminated" category=Init component=UDR
+time="2022-04-26T19:29:53Z" level=info msg=udr category=App component=UDR
+time="2022-04-26T19:29:53Z" level=info msg="UDR version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=UDR
+time="2022-04-26T19:29:53Z" level=info msg="UDR Log level is set to [info] level" category=Init component=UDR
+time="2022-04-26T19:29:53Z" level=info msg="config version [1.0.0]" category=CFG component=UDR
+time="2022-04-26T19:29:53Z" level=info msg="UDR Config Info: Version[1.0.0] Description[UDR initial local configuration]" category=Init component=UDR
+time="2022-04-26T19:29:53Z" level=info msg="Server started" category=Init component=UDR
+time="2022-04-26T19:29:53Z" level=info msg="udrconfig Info: Version[1.0.0] Description[UDR initial local configuration]" category=Util component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle PolicyDataUesUeIdSmDataGet" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/sm-data?dnn=internet&snssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007488/am-data | " category=GIN component=UDR
+time="2022-04-26T19:30:08Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T19:30:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T19:30:08Z" level=info msg="Handle PolicyDataUesUeIdSmDataGet" category=DRepo component=UDR
+time="2022-04-26T19:30:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007488/sm-data?dnn=internet&snssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T19:35:56Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007488/am-data | " category=GIN component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T19:35:57Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T19:38:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T19:38:05Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T19:38:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T19:38:05Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T19:38:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:38:05Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T19:38:05Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T19:43:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T19:43:08Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T19:43:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:43:08Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T19:43:08Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T19:54:06Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T20:05:38Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T20:20:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T20:20:12Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T20:20:12Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:20:12Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T20:20:12Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T20:23:45Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T20:23:46Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T20:23:46Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T20:23:46Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T20:23:46Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:23:46Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T20:23:46Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T20:39:11Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T20:39:35Z" level=info msg="Terminating UDR..." category=Init component=UDR
+time="2022-04-26T20:39:35Z" level=info msg="Send Deregister NFInstance" category=Consumer component=UDR
+time="2022-04-26T20:39:36Z" level=info msg="Deregister from NRF successfully" category=Init component=UDR
+time="2022-04-26T20:39:36Z" level=info msg="UDR terminated" category=Init component=UDR
+time="2022-04-26T20:40:51Z" level=info msg=udr category=App component=UDR
+time="2022-04-26T20:40:51Z" level=info msg="UDR version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=UDR
+time="2022-04-26T20:40:51Z" level=info msg="UDR Log level is set to [info] level" category=Init component=UDR
+time="2022-04-26T20:40:51Z" level=info msg="config version [1.0.0]" category=CFG component=UDR
+time="2022-04-26T20:40:51Z" level=info msg="UDR Config Info: Version[1.0.0] Description[UDR initial local configuration]" category=Init component=UDR
+time="2022-04-26T20:40:51Z" level=info msg="Server started" category=Init component=UDR
+time="2022-04-26T20:40:51Z" level=info msg="udrconfig Info: Version[1.0.0] Description[UDR initial local configuration]" category=Util component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T20:41:04Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T20:41:05Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T20:41:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T20:41:05Z" level=info msg="Handle PolicyDataUesUeIdSmDataGet" category=DRepo component=UDR
+time="2022-04-26T20:41:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/sm-data?dnn=internet&snssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T20:41:05Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T20:41:05Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:41:05Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T20:41:05Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007487/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007487/am-data | " category=GIN component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T20:45:07Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007487/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="Handle QueryAuthSubsData" category=DRepo component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="Handle ModifyAuthentication" category=DRepo component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="| 204 |       127.0.0.1 | PATCH   | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-subscription | " category=GIN component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="Handle CreateAuthenticationStatus" category=DRepo component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007488/authentication-data/authentication-status | " category=GIN component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/am-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="Handle CreateAmfContext3gpp" category=DRepo component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="| 204 |       127.0.0.1 | PUT     | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/amf-3gpp-access | " category=GIN component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="Handle QueryAmData" category=DRepo component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/am-data?supported-features=20893 | " category=GIN component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="Handle QuerySmfSelectData" category=DRepo component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/smf-selection-subscription-data?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="Handle QuerySmfRegList" category=DRepo component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/smf-registrations?supported-features= | " category=GIN component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="Handle CreateSdmSubscriptions" category=DRepo component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nudr-dr/v1/subscription-data/imsi-2089300007488/context-data/sdm-subscriptions | " category=GIN component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="Handle PolicyDataUesUeIdAmDataGet" category=DRepo component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007488/am-data | " category=GIN component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="Handle QuerySmData" category=DRepo component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/subscription-data/imsi-2089300007488/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="Handle PolicyDataUesUeIdSmDataGet" category=DRepo component=UDR
+time="2022-04-26T20:45:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nudr-dr/v1/policy-data/ues/imsi-2089300007488/sm-data?dnn=internet&snssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D | " category=GIN component=UDR

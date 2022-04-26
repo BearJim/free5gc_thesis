@@ -228,3 +228,593 @@ time="2022-04-26T15:47:55Z" level=info msg="In HandlePfcpSessionModificationResp
 time="2022-04-26T15:47:55Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
 time="2022-04-26T15:47:55Z" level=info msg="PFCP Session Modification Success[1]\n" category=PFCP component=SMF
 time="2022-04-26T15:47:55Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:37b947d4-f3c4-402c-b2bb-f04ee97cae87/modify | " category=GIN component=SMF
+time="2022-04-26T17:25:04Z" level=info msg="Terminating SMF..." category=Init component=SMF
+time="2022-04-26T17:25:04Z" level=info msg="Send Deregister NFInstance" category=Consumer component=SMF
+time="2022-04-26T17:25:04Z" level=error msg="Deregister NF instance Error[server no response]" category=Init component=SMF
+time="2022-04-26T18:08:41Z" level=info msg="SMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=SMF
+time="2022-04-26T18:08:41Z" level=info msg="SMF Log level is set to [info] level" category=Init component=SMF
+time="2022-04-26T18:08:41Z" level=info msg="SMF config version [1.0.2]" category=CFG component=SMF
+time="2022-04-26T18:08:41Z" level=info msg="UE-Routing config version [1.0.1]" category=CFG component=SMF
+time="2022-04-26T18:08:41Z" level=info msg="smfconfig Info: Version[1.0.2] Description[SMF initial local configuration]" category=CTX component=SMF
+time="2022-04-26T18:08:41Z" level=info msg="Endpoints: [127.0.0.8]" category=CTX component=SMF
+time="2022-04-26T18:08:41Z" level=info msg="Server started" category=Init component=SMF
+time="2022-04-26T18:08:41Z" level=info msg="SMF Registration to NRF {76563e3c-53da-414c-b4e2-cfd6779b7eb5 SMF REGISTERED 0 0xc00000c2a0 0xc00000c2e0 [] []   [127.0.0.2] [] <nil> [] [] <nil> 0 0 0 area1 <nil> <nil> <nil> <nil> 0xc00006a180 <nil> <nil> <nil> <nil> <nil> map[] <nil> false 0xc00000c120 false false []}" category=Init component=SMF
+time="2022-04-26T18:08:41Z" level=info msg="Listen on 127.0.0.1:8805" category=PFCP component=SMF
+time="2022-04-26T18:08:41Z" level=info msg="Send PFCP Association Request to UPF[127.0.0.8]\n" category=App component=SMF
+time="2022-04-26T18:08:41Z" level=info msg="In HandlePfcpAssociationSetupResponse" category=PFCP component=SMF
+time="2022-04-26T18:08:41Z" level=info msg="Handle PFCP Association Setup Response with NodeID[127.0.0.8]" category=PFCP component=SMF
+time="2022-04-26T18:08:41Z" level=info msg="UPF(127.0.0.8)[internet] setup association" category=PFCP component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="Allocated UE IP address: 60.60.0.1" category=CTX component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.1]" category=PduSess component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="&{[0xc0003e3d60 0xc0003e3da0 0xc0003e3de0]}" category=GSM component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T18:20:46Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="PFCP Session Modification Success[1]\n" category=PFCP component=SMF
+time="2022-04-26T18:20:46Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:ce27b4e9-80e8-4cbf-9f1e-75954cc792a8/modify | " category=GIN component=SMF
+time="2022-04-26T18:30:01Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T18:30:01Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T18:30:01Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T18:30:01Z" level=info msg="Allocated UE IP address: 60.60.0.2" category=CTX component=SMF
+time="2022-04-26T18:30:01Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T18:30:01Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.2]" category=PduSess component=SMF
+time="2022-04-26T18:30:02Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T18:30:02Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T18:30:02Z" level=info msg="&{[0xc0000ac240 0xc0000ac280 0xc0000ac2c0]}" category=GSM component=SMF
+time="2022-04-26T18:30:02Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T18:30:02Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T18:30:02Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T18:30:02Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T18:30:02Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T18:30:02Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T18:30:02Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T18:30:02Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T18:30:02Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T18:30:02Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T18:30:02Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T18:30:02Z" level=info msg="PFCP Session Modification Success[2]\n" category=PFCP component=SMF
+time="2022-04-26T18:30:02Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:8bb6a931-c213-4a66-b73d-e05297c697a4/modify | " category=GIN component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="Allocated UE IP address: 60.60.0.3" category=CTX component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.3]" category=PduSess component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="&{[0xc0002fa1c0 0xc0002fa200 0xc0002fa240]}" category=GSM component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T18:41:56Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="PFCP Session Modification Success[3]\n" category=PFCP component=SMF
+time="2022-04-26T18:41:56Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:47d82da6-3cfb-41c4-8203-7a56d79fa09d/modify | " category=GIN component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="Allocated UE IP address: 60.60.0.4" category=CTX component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="UE[imsi-2089300007488] PDUSessionID[10] IP[60.60.0.4]" category=PduSess component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="&{[0xc0000ac9e0 0xc0000aca40 0xc0000acaa0]}" category=GSM component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007488] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="SUPI[imsi-2089300007488] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T18:41:57Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="PFCP Session Modification Success[4]\n" category=PFCP component=SMF
+time="2022-04-26T18:41:57Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:5cc4768c-7d00-4eec-9dce-2531a4f3034f/modify | " category=GIN component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="Allocated UE IP address: 60.60.0.5" category=CTX component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.5]" category=PduSess component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="&{[0xc0000ac0e0 0xc0000ac160 0xc0000ac1a0]}" category=GSM component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T18:47:02Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="PFCP Session Modification Success[5]\n" category=PFCP component=SMF
+time="2022-04-26T18:47:02Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:5a4934eb-18f1-4ec8-80fe-fe36556a9e49/modify | " category=GIN component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="Allocated UE IP address: 60.60.0.6" category=CTX component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="UE[imsi-2089300007488] PDUSessionID[10] IP[60.60.0.6]" category=PduSess component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="&{[0xc00041b860 0xc00041b8c0 0xc00041b900]}" category=GSM component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007488] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="SUPI[imsi-2089300007488] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T18:47:03Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="PFCP Session Modification Success[6]\n" category=PFCP component=SMF
+time="2022-04-26T18:47:03Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:a34e6e93-f12d-4aad-919f-c54a40ba8d56/modify | " category=GIN component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="Allocated UE IP address: 60.60.0.7" category=CTX component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.7]" category=PduSess component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="&{[0xc0000ac2c0 0xc0000ac300 0xc0000ac380]}" category=GSM component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T18:54:05Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="PFCP Session Modification Success[7]\n" category=PFCP component=SMF
+time="2022-04-26T18:54:05Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:22ad802c-5f7a-4891-8404-bb220b465cb5/modify | " category=GIN component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="Allocated UE IP address: 60.60.0.8" category=CTX component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="UE[imsi-2089300007488] PDUSessionID[10] IP[60.60.0.8]" category=PduSess component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="&{[0xc00000c2c0 0xc00000c300 0xc00000c340]}" category=GSM component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007488] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="SUPI[imsi-2089300007488] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T18:54:06Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="PFCP Session Modification Success[8]\n" category=PFCP component=SMF
+time="2022-04-26T18:54:06Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:f8cbf6c7-c9de-400e-bc72-2eb506a5f7bf/modify | " category=GIN component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="Allocated UE IP address: 60.60.0.9" category=CTX component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.9]" category=PduSess component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="&{[0xc0003e2a40 0xc0003e2aa0 0xc0003e2ae0]}" category=GSM component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T19:14:44Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="PFCP Session Modification Success[9]\n" category=PFCP component=SMF
+time="2022-04-26T19:14:44Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:cbd6c5bc-c357-4632-9ff2-dd122ed58ad5/modify | " category=GIN component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="Allocated UE IP address: 60.60.0.10" category=CTX component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="UE[imsi-2089300007488] PDUSessionID[10] IP[60.60.0.10]" category=PduSess component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="&{[0xc00041b1e0 0xc00041b220 0xc00041b280]}" category=GSM component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007488] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="SUPI[imsi-2089300007488] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T19:14:45Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="PFCP Session Modification Success[10]\n" category=PFCP component=SMF
+time="2022-04-26T19:14:45Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:b990ce07-8510-4564-a86b-794889e534e9/modify | " category=GIN component=SMF
+time="2022-04-26T19:19:49Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:19:49Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T19:19:49Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T19:19:49Z" level=info msg="Allocated UE IP address: 60.60.0.11" category=CTX component=SMF
+time="2022-04-26T19:19:49Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T19:19:49Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.11]" category=PduSess component=SMF
+time="2022-04-26T19:19:49Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T19:19:49Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T19:19:49Z" level=info msg="&{[0xc0003e3520 0xc0003e3560 0xc0003e35a0]}" category=GSM component=SMF
+time="2022-04-26T19:19:49Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T19:19:49Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T19:19:49Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T19:19:49Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T19:19:49Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T19:20:56Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:20:56Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T19:20:56Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T19:20:56Z" level=info msg="Allocated UE IP address: 60.60.0.12" category=CTX component=SMF
+time="2022-04-26T19:20:56Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T19:20:56Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.12]" category=PduSess component=SMF
+time="2022-04-26T19:20:56Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T19:20:56Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T19:20:56Z" level=info msg="&{[0xc0003e2d60 0xc0003e2da0 0xc0003e2e00]}" category=GSM component=SMF
+time="2022-04-26T19:20:56Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T19:20:56Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T19:20:56Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T19:20:56Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T19:20:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T19:23:12Z" level=info msg="Terminating SMF..." category=Init component=SMF
+time="2022-04-26T19:23:12Z" level=info msg="Send Deregister NFInstance" category=Consumer component=SMF
+time="2022-04-26T19:23:13Z" level=info msg="Deregister from NRF successfully" category=Init component=SMF
+time="2022-04-26T19:29:44Z" level=info msg="SMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=SMF
+time="2022-04-26T19:29:44Z" level=info msg="SMF Log level is set to [info] level" category=Init component=SMF
+time="2022-04-26T19:29:44Z" level=info msg="SMF config version [1.0.2]" category=CFG component=SMF
+time="2022-04-26T19:29:44Z" level=info msg="UE-Routing config version [1.0.1]" category=CFG component=SMF
+time="2022-04-26T19:29:44Z" level=info msg="smfconfig Info: Version[1.0.2] Description[SMF initial local configuration]" category=CTX component=SMF
+time="2022-04-26T19:29:44Z" level=info msg="Endpoints: [127.0.0.8]" category=CTX component=SMF
+time="2022-04-26T19:29:44Z" level=info msg="Server started" category=Init component=SMF
+time="2022-04-26T19:29:44Z" level=info msg="SMF Registration to NRF {7f2cd978-c937-46c6-965c-a788c93dfe72 SMF REGISTERED 0 0xc000419c60 0xc000419ca0 [] []   [127.0.0.2] [] <nil> [] [] <nil> 0 0 0 area1 <nil> <nil> <nil> <nil> 0xc000360f00 <nil> <nil> <nil> <nil> <nil> map[] <nil> false 0xc000419ae0 false false []}" category=Init component=SMF
+time="2022-04-26T19:29:44Z" level=info msg="Listen on 127.0.0.1:8805" category=PFCP component=SMF
+time="2022-04-26T19:29:44Z" level=info msg="Send PFCP Association Request to UPF[127.0.0.8]\n" category=App component=SMF
+time="2022-04-26T19:29:44Z" level=info msg="In HandlePfcpAssociationSetupResponse" category=PFCP component=SMF
+time="2022-04-26T19:29:44Z" level=info msg="Handle PFCP Association Setup Response with NodeID[127.0.0.8]" category=PFCP component=SMF
+time="2022-04-26T19:29:44Z" level=info msg="UPF(127.0.0.8)[internet] setup association" category=PFCP component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="Allocated UE IP address: 60.60.0.1" category=CTX component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.1]" category=PduSess component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="&{[0xc00047e880 0xc00047e8c0 0xc00047e900]}" category=GSM component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T19:30:07Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="PFCP Session Modification Success[1]\n" category=PFCP component=SMF
+time="2022-04-26T19:30:07Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:fa6d9ea2-32f2-4e80-a118-9b74f4afedea/modify | " category=GIN component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="Allocated UE IP address: 60.60.0.2" category=CTX component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="UE[imsi-2089300007488] PDUSessionID[10] IP[60.60.0.2]" category=PduSess component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="&{[0xc000419160 0xc0004191e0 0xc000419220]}" category=GSM component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007488] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="SUPI[imsi-2089300007488] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T19:30:08Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="PFCP Session Modification Success[2]\n" category=PFCP component=SMF
+time="2022-04-26T19:30:08Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:9e15c859-5884-4817-9760-129d872a92fd/modify | " category=GIN component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="Allocated UE IP address: 60.60.0.3" category=CTX component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.3]" category=PduSess component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="&{[0xc00047ea20 0xc00047ea60 0xc00047eaa0]}" category=GSM component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T19:35:56Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="PFCP Session Modification Success[3]\n" category=PFCP component=SMF
+time="2022-04-26T19:35:56Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:341bbc6f-77f3-4a52-82f1-851588be41af/modify | " category=GIN component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="Allocated UE IP address: 60.60.0.4" category=CTX component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="UE[imsi-2089300007488] PDUSessionID[10] IP[60.60.0.4]" category=PduSess component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="&{[0xc00000d140 0xc00000d180 0xc00000d1c0]}" category=GSM component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007488] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="SUPI[imsi-2089300007488] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T19:35:57Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="PFCP Session Modification Success[4]\n" category=PFCP component=SMF
+time="2022-04-26T19:35:57Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:18ef22e1-852b-4042-af41-2852db81fc9c/modify | " category=GIN component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="Allocated UE IP address: 60.60.0.5" category=CTX component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.5]" category=PduSess component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="&{[0xc0000a4500 0xc0000a4540 0xc0000a4580]}" category=GSM component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T19:38:05Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="PFCP Session Modification Success[5]\n" category=PFCP component=SMF
+time="2022-04-26T19:38:05Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:cd286ad7-772b-4c50-bda8-a90c0385c335/modify | " category=GIN component=SMF
+time="2022-04-26T19:43:07Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:43:07Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T19:43:07Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T19:43:07Z" level=info msg="Allocated UE IP address: 60.60.0.6" category=CTX component=SMF
+time="2022-04-26T19:43:07Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T19:43:07Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.6]" category=PduSess component=SMF
+time="2022-04-26T19:43:07Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T19:43:07Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T19:43:07Z" level=info msg="&{[0xc0004b1720 0xc0004b1760 0xc0004b17c0]}" category=GSM component=SMF
+time="2022-04-26T19:43:07Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T19:43:07Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T19:43:07Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T19:43:07Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T19:43:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T19:43:07Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T19:43:07Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T19:43:07Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:43:08Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T19:43:08Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T19:43:08Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T19:43:08Z" level=info msg="PFCP Session Modification Success[6]\n" category=PFCP component=SMF
+time="2022-04-26T19:43:08Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:8f67f412-19ea-4df8-8742-a12f1e57b6d9/modify | " category=GIN component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="Allocated UE IP address: 60.60.0.7" category=CTX component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.7]" category=PduSess component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="&{[0xc00047eea0 0xc00047ef20 0xc00047ef60]}" category=GSM component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T19:54:06Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="PFCP Session Modification Success[7]\n" category=PFCP component=SMF
+time="2022-04-26T19:54:06Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:4474ab81-9a69-49f9-852f-5c9bf65308bb/modify | " category=GIN component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="Allocated UE IP address: 60.60.0.8" category=CTX component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.8]" category=PduSess component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="&{[0xc00013c2a0 0xc00013c300 0xc00013c3c0]}" category=GSM component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T20:05:38Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="PFCP Session Modification Success[8]\n" category=PFCP component=SMF
+time="2022-04-26T20:05:38Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:6a320b8a-9d28-4119-a5cb-a29ca0e1ffa9/modify | " category=GIN component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="Allocated UE IP address: 60.60.0.9" category=CTX component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.9]" category=PduSess component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="&{[0xc00000c7c0 0xc00000c800 0xc00000c840]}" category=GSM component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T20:20:11Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="PFCP Session Modification Success[9]\n" category=PFCP component=SMF
+time="2022-04-26T20:20:11Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:5b8b917a-727f-45cd-881f-ac321c68c3e4/modify | " category=GIN component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="Allocated UE IP address: 60.60.0.10" category=CTX component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.10]" category=PduSess component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="&{[0xc00047e360 0xc00047e3c0 0xc00047e400]}" category=GSM component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T20:23:46Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="PFCP Session Modification Success[10]\n" category=PFCP component=SMF
+time="2022-04-26T20:23:46Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:f918bfe8-3ef6-4f62-9f12-ea88e0080143/modify | " category=GIN component=SMF
+time="2022-04-26T20:39:11Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T20:39:11Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T20:39:11Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T20:39:11Z" level=info msg="Allocated UE IP address: 60.60.0.11" category=CTX component=SMF
+time="2022-04-26T20:39:11Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T20:39:11Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.11]" category=PduSess component=SMF
+time="2022-04-26T20:39:11Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T20:39:11Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T20:39:11Z" level=info msg="&{[0xc00047e480 0xc00047e540 0xc00047e580]}" category=GSM component=SMF
+time="2022-04-26T20:39:11Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T20:39:11Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T20:39:11Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T20:39:11Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T20:39:11Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T20:39:45Z" level=info msg="Terminating SMF..." category=Init component=SMF
+time="2022-04-26T20:39:45Z" level=info msg="Send Deregister NFInstance" category=Consumer component=SMF
+time="2022-04-26T20:39:46Z" level=info msg="Deregister from NRF successfully" category=Init component=SMF
+time="2022-04-26T20:40:42Z" level=info msg="SMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=SMF
+time="2022-04-26T20:40:43Z" level=info msg="SMF Log level is set to [info] level" category=Init component=SMF
+time="2022-04-26T20:40:43Z" level=info msg="SMF config version [1.0.2]" category=CFG component=SMF
+time="2022-04-26T20:40:43Z" level=info msg="UE-Routing config version [1.0.1]" category=CFG component=SMF
+time="2022-04-26T20:40:43Z" level=info msg="smfconfig Info: Version[1.0.2] Description[SMF initial local configuration]" category=CTX component=SMF
+time="2022-04-26T20:40:43Z" level=info msg="Endpoints: [127.0.0.8]" category=CTX component=SMF
+time="2022-04-26T20:40:43Z" level=info msg="Server started" category=Init component=SMF
+time="2022-04-26T20:40:43Z" level=info msg="SMF Registration to NRF {0600dfb5-ee8e-4000-a84f-09414dc891f8 SMF REGISTERED 0 0xc000262ee0 0xc000262f20 [] []   [127.0.0.2] [] <nil> [] [] <nil> 0 0 0 area1 <nil> <nil> <nil> <nil> 0xc0002d7780 <nil> <nil> <nil> <nil> <nil> map[] <nil> false 0xc000262d60 false false []}" category=Init component=SMF
+time="2022-04-26T20:40:43Z" level=info msg="Listen on 127.0.0.1:8805" category=PFCP component=SMF
+time="2022-04-26T20:40:43Z" level=info msg="Send PFCP Association Request to UPF[127.0.0.8]\n" category=App component=SMF
+time="2022-04-26T20:40:43Z" level=info msg="In HandlePfcpAssociationSetupResponse" category=PFCP component=SMF
+time="2022-04-26T20:40:43Z" level=info msg="Handle PFCP Association Setup Response with NodeID[127.0.0.8]" category=PFCP component=SMF
+time="2022-04-26T20:40:43Z" level=info msg="UPF(127.0.0.8)[internet] setup association" category=PFCP component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="Allocated UE IP address: 60.60.0.1" category=CTX component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.1]" category=PduSess component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="&{[0xc0000ad2c0 0xc0000ad300 0xc0000ad340]}" category=GSM component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T20:41:05Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="PFCP Session Modification Success[1]\n" category=PFCP component=SMF
+time="2022-04-26T20:41:05Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:4493a34d-7eb1-4ff4-8feb-610757f130f1/modify | " category=GIN component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="Allocated UE IP address: 60.60.0.2" category=CTX component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="UE[imsi-2089300007487] PDUSessionID[10] IP[60.60.0.2]" category=PduSess component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="&{[0xc000400800 0xc000400860 0xc0004008c0]}" category=GSM component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007487] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="SUPI[imsi-2089300007487] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T20:45:07Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="Recieve Update SM Context Request" category=PduSess component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="In HandlePDUSessionSMContextUpdate" category=PduSess component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="In HandlePfcpSessionModificationResponse" category=PFCP component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="[SMF] PFCP Modification Resonse Accept" category=PduSess component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="PFCP Session Modification Success[2]\n" category=PFCP component=SMF
+time="2022-04-26T20:45:07Z" level=info msg="| 200 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:64b23712-92d7-4c2f-b100-446b5b748ed9/modify | " category=GIN component=SMF
+time="2022-04-26T20:45:08Z" level=info msg="Recieve Create SM Context Request" category=PduSess component=SMF
+time="2022-04-26T20:45:08Z" level=info msg="In HandlePDUSessionSMContextCreate" category=PduSess component=SMF
+time="2022-04-26T20:45:08Z" level=info msg="Send NF Discovery Serving UDM Successfully" category=PduSess component=SMF
+time="2022-04-26T20:45:08Z" level=info msg="Allocated UE IP address: 60.60.0.3" category=CTX component=SMF
+time="2022-04-26T20:45:08Z" level=info msg="Selected UPF: UPF" category=CTX component=SMF
+time="2022-04-26T20:45:08Z" level=info msg="UE[imsi-2089300007488] PDUSessionID[10] IP[60.60.0.3]" category=PduSess component=SMF
+time="2022-04-26T20:45:08Z" level=info msg="In HandlePDUSessionEstablishmentRequest" category=GSM component=SMF
+time="2022-04-26T20:45:08Z" level=info msg="Protocol Configuration Options" category=GSM component=SMF
+time="2022-04-26T20:45:08Z" level=info msg="&{[0xc0003c42a0 0xc0003c42e0 0xc0003c4320]}" category=GSM component=SMF
+time="2022-04-26T20:45:08Z" level=info msg="Didn't Implement container type IPAddressAllocationViaNASSignallingUL" category=GSM component=SMF
+time="2022-04-26T20:45:08Z" level=info msg="PCF Selection for SMContext SUPI[imsi-2089300007488] PDUSessionID[10]\n" category=PduSess component=SMF
+time="2022-04-26T20:45:08Z" level=info msg="SUPI[imsi-2089300007488] has no pre-config route" category=PduSess component=SMF
+time="2022-04-26T20:45:08Z" level=info msg="SendNFDiscoveryServingAMF ok" category=Consumer component=SMF
+time="2022-04-26T20:45:08Z" level=info msg="| 201 |       127.0.0.1 | POST    | /nsmf-pdusession/v1/sm-contexts | " category=GIN component=SMF
+time="2022-04-26T20:45:08Z" level=info msg="In HandlePfcpSessionEstablishmentResponse" category=PFCP component=SMF
+time="2022-04-26T20:45:08Z" level=warning msg="Error while adding DNS IPv6 Addr:  The DNS IP should be IPv6 in AddDNSServerIPv6Address!" category=GSM component=SMF
