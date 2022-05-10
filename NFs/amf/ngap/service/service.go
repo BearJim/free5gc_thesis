@@ -9,6 +9,7 @@ import (
 
 	"git.cs.nctu.edu.tw/calee/sctp"
 
+	"github.com/free5gc/amf/consumer"
 	"github.com/free5gc/amf/logger"
 	"github.com/free5gc/ngap"
 )
@@ -70,6 +71,12 @@ func listenAndServe(addr *sctp.SCTPAddr, handler NGAPHandler) {
 			switch err {
 			case syscall.EINTR, syscall.EAGAIN:
 				logger.NgapLog.Debugf("AcceptSCTP: %+v", err)
+				problemDetails, errMdaf := consumer.MdafMsg()
+				if problemDetails != nil {
+					logger.NgapLog.Errorf("MdafMsg() Failed Problem[%+v]", problemDetails)
+				} else if errMdaf != nil {
+					logger.NgapLog.Errorf("MdafMsg() Error[%+v]", errMdaf)
+				}
 			default:
 				logger.NgapLog.Errorf("Failed to accept: %+v", err)
 			}

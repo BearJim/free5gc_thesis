@@ -227,16 +227,16 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 
 	mUEAMF := make(map[ngapType.RANUENGAPID]int)
 	ppid := 0
-	// MDAF need to decide which AMF to go
 	for {
 		info := &sctp.SndRcvInfo{
 			Stream: uint16(ppid),
 			PPID:   uint32(ppid),
 		}
 		ppid += 1
-		goAmf = 0
 		bufUp := make([]byte, bufsize)
 		n, info, notification, err := conn.SCTPRead(bufUp)
+		// MDAF need to decide which AMF to go
+		goAmf = 0 //call MDAF
 		if err != nil {
 			switch err {
 			case io.EOF, io.ErrUnexpectedEOF:

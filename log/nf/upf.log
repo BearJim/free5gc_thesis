@@ -336,3 +336,9 @@ time="2022-04-26T20:45:07Z" level=info msg="[PFCP] Handle PFCP session modificat
 time="2022-04-26T20:45:07Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
 time="2022-04-26T20:45:08Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
 time="2022-04-26T20:45:08Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T21:10:17Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T21:10:17Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-04-26T21:10:17Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-04-26T21:10:17Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-04-26T21:10:18Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-04-26T21:10:18Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF

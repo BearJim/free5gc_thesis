@@ -2151,3 +2151,64 @@ time="2022-04-26T20:45:36Z" level=info msg="Handle NFDeregisterRequest" category
 time="2022-04-26T20:45:37Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/156d81a6-d136-4837-b63c-136fc949a1a7 | " category=GIN component=NRF
 time="2022-04-26T20:45:37Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
 time="2022-04-26T20:45:38Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/256991ea-0ff1-41d7-8241-98df7d6cb21f | " category=GIN component=NRF
+time="2022-04-26T21:10:06Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T21:10:06Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T21:10:06Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T21:10:06Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/ceb7ed74-ad82-457d-bac7-62abbd69f735" category=MGMT component=NRF
+time="2022-04-26T21:10:06Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/ceb7ed74-ad82-457d-bac7-62abbd69f735 | " category=GIN component=NRF
+time="2022-04-26T21:10:08Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T21:10:08Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T21:10:08Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T21:10:08Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/05844cc9-5f5c-4387-8282-32aebbade1b4" category=MGMT component=NRF
+time="2022-04-26T21:10:08Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/05844cc9-5f5c-4387-8282-32aebbade1b4 | " category=GIN component=NRF
+time="2022-04-26T21:10:10Z" level=info msg="Handle NFRegisterRequest" category=MGMT component=NRF
+time="2022-04-26T21:10:10Z" level=info msg="urilist update" category=MGMT component=NRF
+time="2022-04-26T21:10:10Z" level=info msg="Create NF Profile" category=MGMT component=NRF
+time="2022-04-26T21:10:10Z" level=info msg="Location header:  http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/9fafb6a8-2bb1-47e7-8fc2-1ea8726e5811" category=MGMT component=NRF
+time="2022-04-26T21:10:10Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nnrf-nfm/v1/nf-instances/9fafb6a8-2bb1-47e7-8fc2-1ea8726e5811 | " category=GIN component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&target-nf-type=AUSF | " category=GIN component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AUSF&service-names=nudm-ueau&target-nf-type=UDM | " category=GIN component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&supi=imsi-2089300007487&target-nf-type=UDM | " category=GIN component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&supi=imsi-2089300007487&target-nf-type=UDM | " category=GIN component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&supi=imsi-2089300007487&target-nf-type=PCF | " category=GIN component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&target-nf-type=NSSF | " category=GIN component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?dnn=internet&preferred-locality=area1&requester-nf-type=AMF&service-names=nsmf-pdusession&snssais=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D&target-nf-type=SMF&target-plmn-list=%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D | " category=GIN component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=SMF&target-nf-type=UDM | " category=GIN component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=SMF&target-nf-type=PCF | " category=GIN component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=SMF&target-nf-instance-id=ceb7ed74-ad82-457d-bac7-62abbd69f735&target-nf-type=AMF | " category=GIN component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&target-nf-type=AUSF | " category=GIN component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AUSF&service-names=nudm-ueau&target-nf-type=UDM | " category=GIN component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&supi=imsi-2089300007488&target-nf-type=UDM | " category=GIN component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&supi=imsi-2089300007488&target-nf-type=UDM | " category=GIN component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:17Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&supi=imsi-2089300007488&target-nf-type=PCF | " category=GIN component=NRF
+time="2022-04-26T21:10:18Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:18Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&target-nf-type=NSSF | " category=GIN component=NRF
+time="2022-04-26T21:10:18Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:18Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?dnn=internet&preferred-locality=area1&requester-nf-type=AMF&service-names=nsmf-pdusession&snssais=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D&target-nf-type=SMF&target-plmn-list=%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D | " category=GIN component=NRF
+time="2022-04-26T21:10:18Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:18Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=SMF&target-nf-type=UDM | " category=GIN component=NRF
+time="2022-04-26T21:10:18Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:18Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=SMF&target-nf-type=PCF | " category=GIN component=NRF
+time="2022-04-26T21:10:18Z" level=info msg="Handle NFDiscoveryRequest" category=DSCV component=NRF
+time="2022-04-26T21:10:18Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=SMF&target-nf-instance-id=05844cc9-5f5c-4387-8282-32aebbade1b4&target-nf-type=AMF | " category=GIN component=NRF
+time="2022-04-26T21:10:44Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-26T21:10:45Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/ceb7ed74-ad82-457d-bac7-62abbd69f735 | " category=GIN component=NRF
+time="2022-04-26T21:10:46Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-26T21:10:47Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/05844cc9-5f5c-4387-8282-32aebbade1b4 | " category=GIN component=NRF
+time="2022-04-26T21:10:47Z" level=info msg="Handle NFDeregisterRequest" category=MGMT component=NRF
+time="2022-04-26T21:10:48Z" level=info msg="| 204 |       127.0.0.1 | DELETE  | /nnrf-nfm/v1/nf-instances/9fafb6a8-2bb1-47e7-8fc2-1ea8726e5811 | " category=GIN component=NRF

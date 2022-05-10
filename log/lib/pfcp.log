@@ -93,3 +93,6 @@ time="2022-04-26T20:41:05Z" level=info msg="Remove Request Transaction [3]\n" ca
 time="2022-04-26T20:45:07Z" level=info msg="Remove Request Transaction [4]\n" category=PFCP component=LIB
 time="2022-04-26T20:45:07Z" level=info msg="Remove Request Transaction [5]\n" category=PFCP component=LIB
 time="2022-04-26T20:45:08Z" level=info msg="Remove Request Transaction [6]\n" category=PFCP component=LIB
+time="2022-04-26T21:10:17Z" level=info msg="Remove Request Transaction [7]\n" category=PFCP component=LIB
+time="2022-04-26T21:10:17Z" level=info msg="Remove Request Transaction [8]\n" category=PFCP component=LIB
+time="2022-04-26T21:10:18Z" level=info msg="Remove Request Transaction [9]\n" category=PFCP component=LIB

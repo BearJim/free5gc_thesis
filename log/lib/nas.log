@@ -296,3 +296,13 @@ time="2022-04-26T20:45:07Z" level=info msg="Encode ExtendedProtocolConfiguration
 time="2022-04-26T20:45:07Z" level=info msg="ProtocolOrContainerList:  [0xc000400800 0xc000400860 0xc0004008c0]" category=Convert component=NAS
 time="2022-04-26T20:45:08Z" level=info msg="Encode ExtendedProtocolConfigurationOptions in EncodePDUSessionEstablishmentRequest" category=Message component=NAS
 time="2022-04-26T20:45:08Z" level=info msg="ProtocolOrContainerList:  [0xc0003c42a0 0xc0003c42e0 0xc0003c4320]" category=Convert component=NAS
+time="2022-04-26T21:10:06Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T21:10:06Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T21:10:08Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T21:10:08Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T21:10:10Z" level=info msg="set log level : info" category=NAS component=LIB
+time="2022-04-26T21:10:10Z" level=info msg="set report call : false" category=NAS component=LIB
+time="2022-04-26T21:10:17Z" level=info msg="Encode ExtendedProtocolConfigurationOptions in EncodePDUSessionEstablishmentRequest" category=Message component=NAS
+time="2022-04-26T21:10:17Z" level=info msg="ProtocolOrContainerList:  [0xc00058a860 0xc00058a8a0 0xc00058a8e0]" category=Convert component=NAS
+time="2022-04-26T21:10:18Z" level=info msg="Encode ExtendedProtocolConfigurationOptions in EncodePDUSessionEstablishmentRequest" category=Message component=NAS
+time="2022-04-26T21:10:18Z" level=info msg="ProtocolOrContainerList:  [0xc000470ce0 0xc000470d20 0xc000470d60]" category=Convert component=NAS

@@ -222,3 +222,11 @@ time="2022-04-26T20:45:08Z" level=info msg="Handle AM Policy Create Request" cat
 time="2022-04-26T20:45:08Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
 time="2022-04-26T20:45:08Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
 time="2022-04-26T20:45:08Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T21:10:17Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T21:10:17Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T21:10:17Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T21:10:17Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF
+time="2022-04-26T21:10:17Z" level=info msg="Handle AM Policy Create Request" category=Ampolicy component=PCF
+time="2022-04-26T21:10:17Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-am-policy-control/v1/policies | " category=GIN component=PCF
+time="2022-04-26T21:10:18Z" level=info msg="Handle CreateSmPolicy" category=SMpolicy component=PCF
+time="2022-04-26T21:10:18Z" level=info msg="| 201 |       127.0.0.1 | POST    | /npcf-smpolicycontrol/v1/sm-policies | " category=GIN component=PCF

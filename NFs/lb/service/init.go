@@ -13,6 +13,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli"
 
+	mdaf "loadbalance/MDAF"
 	"loadbalance/factory"
 
 	"loadbalance/logger"
@@ -107,20 +108,7 @@ func (lb *LB) Start() {
 		MaxAge:           86400,
 	}))
 
-	// httpcallback.AddService(router)
-	// oam.AddService(router)
-	// for _, serviceName := range factory.LbConfig.Configuration.ServiceNameList {
-	// 	switch models.ServiceName(serviceName) {
-	// 	case models.ServiceName_NAMF_COMM:
-	// 		communication.AddService(router)
-	// 	case models.ServiceName_NAMF_EVTS:
-	// 		eventexposure.AddService(router)
-	// 	case models.ServiceName_NAMF_MT:
-	// 		mt.AddService(router)
-	// 	case models.ServiceName_NAMF_LOC:
-	// 		location.AddService(router)
-	// 	}
-	// }
+	mdaf.AddService(router)
 
 	// self := context.LB_Self()
 	// util.InitAmfContext(self)
@@ -131,19 +119,6 @@ func (lb *LB) Start() {
 	// 	HandleMessage:      ngap.Dispatch,
 	// 	HandleNotification: ngap.HandleSCTPNotification,
 	// }
-
-	NgapIp := []string{"127.0.0.21"}
-	AmfIp := []string{"127.0.0.18"}
-	Amf1Ip := []string{"127.0.0.19"}
-	Amf2Ip := []string{"127.0.0.20"}
-	initLog.Infoln("DialToAmf")
-	ngap_service.DialToAmf(AmfIp, 38412, 0)
-	initLog.Infoln("DialToAmf1")
-	ngap_service.DialToAmf(Amf1Ip, 38413, 1)
-	initLog.Infoln("DialToAmf2")
-	ngap_service.DialToAmf(Amf2Ip, 38414, 2)
-	initLog.Infoln("Run")
-	ngap_service.Run(NgapIp, 38415)
 
 	// Register to NRF
 	// var profile models.NfProfile
@@ -187,6 +162,19 @@ func (lb *LB) Start() {
 	if err != nil {
 		initLog.Fatalf("HTTP server setup failed: %+v", err)
 	}
+
+	NgapIp := []string{"127.0.0.21"}
+	AmfIp := []string{"127.0.0.18"}
+	Amf1Ip := []string{"127.0.0.19"}
+	Amf2Ip := []string{"127.0.0.20"}
+	initLog.Infoln("DialToAmf")
+	ngap_service.DialToAmf(AmfIp, 38412, 0)
+	initLog.Infoln("DialToAmf1")
+	ngap_service.DialToAmf(Amf1Ip, 38413, 1)
+	initLog.Infoln("DialToAmf2")
+	ngap_service.DialToAmf(Amf2Ip, 38414, 2)
+	initLog.Infoln("Run")
+	ngap_service.Run(NgapIp, 38415)
 }
 
 func (lb *LB) Exec(c *cli.Context) error {
