@@ -62,7 +62,7 @@ func HTTPNotifyAmf(ctx *gin.Context) {
 
 }
 
-func HandleHTTPNotifyAmf(request *http_wrapper.Request) int {
+func HandleHTTPNotifyAmf(request *http_wrapper.Request) *http_wrapper.Response {
 	// step 1: log
 	logger.HttpLog.Infof("Handle AMF HTTP Notify")
 
@@ -70,6 +70,15 @@ func HandleHTTPNotifyAmf(request *http_wrapper.Request) int {
 	registerRequest := request.Body.(amfData)
 
 	// step 3: handle the message
-	toAmf := MDAFProcedure(registerRequest)
-	return toAmf
+	header, response, problemDetails := MDAFProcedure(registerRequest)
+
+	// step 4: process the return value from step 3
+	if response != nil {
+		// status code is based on SPEC, and option headers
+		return http_wrapper.NewResponse(http.StatusCreated, header, response)
+	} else if problemDetails != nil {
+		return http_wrapper.NewResponse(int(problemDetails.Status), nil, problemDetails)
+	} else {
+		return http_wrapper.NewResponse(http.StatusNoContent, nil, nil)
+	}
 }

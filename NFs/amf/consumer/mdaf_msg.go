@@ -145,14 +145,14 @@ func NewAPIClient(cfg *Configuration) *APIClient {
 }
 
 func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context,
-	amfData amfData) (models.Amf3GppAccessRegistration, *http.Response, error) {
+	tempamfData amfData) (amfData, *http.Response, error) {
 	var (
 		localVarHTTPMethod   = strings.ToUpper("Put")
 		localVarPostBody     interface{}
 		localVarFormFileName string
 		localVarFileName     string
 		localVarFileBytes    []byte
-		localVarReturnValue  models.Amf3GppAccessRegistration
+		localVarReturnValue  amfData
 	)
 
 	// create path and map variables
@@ -177,7 +177,7 @@ func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context,
 	}
 
 	// body params
-	localVarPostBody = &amfData
+	localVarPostBody = &tempamfData
 
 	r, err := openapi.PrepareRequest(ctx, a.client.cfg, localVarPath, localVarHTTPMethod,
 		localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams,
