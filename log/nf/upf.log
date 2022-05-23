@@ -342,3 +342,62 @@ time="2022-04-26T21:10:17Z" level=info msg="[PFCP] Handle PFCP session modificat
 time="2022-04-26T21:10:17Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
 time="2022-04-26T21:10:18Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
 time="2022-04-26T21:10:18Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-05-17T13:55:31Z" level=info msg="Config: /home/bearjim/thesis/experiment/free5gc/NFs/upf/build/config/upfcfg.yaml" category=Util component=UPF
+time="2022-05-17T13:55:31Z" level=info msg="UPF config version [1.0.0]" category=Util component=UPF
+time="2022-05-17T13:55:31Z" level=info msg="Set log level: info" category=Util component=UPF
+time="2022-05-17T13:55:31Z" level=info msg="DNN routes added, main routing table:" category=Util component=UPF
+time="2022-05-17T13:55:31Z" level=info msg="DstIp               Gateway        Iface     Priority RtProto   Type       " category=Util component=UPF
+time="2022-05-17T13:55:31Z" level=info msg="172.18.0.0 /16      0.0.0.0        br-21a4135ca5800        kernel    unicast    " category=Util component=UPF
+time="2022-05-17T13:55:31Z" level=info msg="172.17.0.0 /16      0.0.0.0        docker0   0        kernel    unicast    " category=Util component=UPF
+time="2022-05-17T13:55:31Z" level=info msg="60.60.0.0 /24       0.0.0.0        upfgtp    0        static    unicast    " category=Util component=UPF
+time="2022-05-17T13:55:31Z" level=info msg="10.10.0.1 /32       0.0.0.0        ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-05-17T13:55:31Z" level=info msg="10.10.0.0 /24       0.0.0.0        ens18     0        kernel    unicast    " category=Util component=UPF
+time="2022-05-17T13:55:31Z" level=info msg="0.0.0.0 /0          10.10.0.1      ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-05-17T13:55:35Z" level=info msg="[PFCP] Handle PFCP association setup request" category=Util component=UPF
+time="2022-05-17T13:55:35Z" level=info msg="[PFCP] Association Setup Response" category=Util component=UPF
+time="2022-05-17T16:04:09Z" level=info msg="[PFCP] Handle PFCP session establishment request" category=Util component=UPF
+time="2022-05-17T16:04:09Z" level=info msg="[PFCP] Session Establishment Response" category=Util component=UPF
+time="2022-05-17T16:04:09Z" level=info msg="[PFCP] Handle PFCP session modification request" category=Util component=UPF
+time="2022-05-17T16:04:09Z" level=info msg="[PFCP] Session Modification Response" category=Util component=UPF
+time="2022-05-17T17:30:10Z" level=info msg="Removing DNN routes" category=Util component=UPF
+time="2022-05-23T13:51:38Z" level=info msg="Config: /home/bearjim/thesis/experiment/free5gc/NFs/upf/build/config/upfcfg.yaml" category=Util component=UPF
+time="2022-05-23T13:51:38Z" level=info msg="UPF config version [1.0.0]" category=Util component=UPF
+time="2022-05-23T13:51:38Z" level=info msg="Set log level: info" category=Util component=UPF
+time="2022-05-23T13:51:38Z" level=info msg="DNN routes added, main routing table:" category=Util component=UPF
+time="2022-05-23T13:51:38Z" level=info msg="DstIp               Gateway        Iface     Priority RtProto   Type       " category=Util component=UPF
+time="2022-05-23T13:51:38Z" level=info msg="172.18.0.0 /16      0.0.0.0        br-21a4135ca5800        kernel    unicast    " category=Util component=UPF
+time="2022-05-23T13:51:38Z" level=info msg="172.17.0.0 /16      0.0.0.0        docker0   0        kernel    unicast    " category=Util component=UPF
+time="2022-05-23T13:51:38Z" level=info msg="60.60.0.0 /24       0.0.0.0        upfgtp    0        static    unicast    " category=Util component=UPF
+time="2022-05-23T13:51:38Z" level=info msg="10.10.0.1 /32       0.0.0.0        ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-05-23T13:51:38Z" level=info msg="10.10.0.0 /24       0.0.0.0        ens18     0        kernel    unicast    " category=Util component=UPF
+time="2022-05-23T13:51:38Z" level=info msg="0.0.0.0 /0          10.10.0.1      ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-05-23T13:51:42Z" level=info msg="[PFCP] Handle PFCP association setup request" category=Util component=UPF
+time="2022-05-23T13:51:42Z" level=info msg="[PFCP] Association Setup Response" category=Util component=UPF
+time="2022-05-23T13:53:20Z" level=info msg="Removing DNN routes" category=Util component=UPF
+time="2022-05-23T15:08:15Z" level=info msg="Config: /home/bearjim/thesis/experiment/free5gc/NFs/upf/build/config/upfcfg.yaml" category=Util component=UPF
+time="2022-05-23T15:08:15Z" level=info msg="UPF config version [1.0.0]" category=Util component=UPF
+time="2022-05-23T15:08:15Z" level=info msg="Set log level: info" category=Util component=UPF
+time="2022-05-23T15:08:15Z" level=info msg="DNN routes added, main routing table:" category=Util component=UPF
+time="2022-05-23T15:08:15Z" level=info msg="DstIp               Gateway        Iface     Priority RtProto   Type       " category=Util component=UPF
+time="2022-05-23T15:08:15Z" level=info msg="172.18.0.0 /16      0.0.0.0        br-21a4135ca5800        kernel    unicast    " category=Util component=UPF
+time="2022-05-23T15:08:15Z" level=info msg="172.17.0.0 /16      0.0.0.0        docker0   0        kernel    unicast    " category=Util component=UPF
+time="2022-05-23T15:08:15Z" level=info msg="60.60.0.0 /24       0.0.0.0        upfgtp    0        static    unicast    " category=Util component=UPF
+time="2022-05-23T15:08:15Z" level=info msg="10.10.0.1 /32       0.0.0.0        ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-05-23T15:08:15Z" level=info msg="10.10.0.0 /24       0.0.0.0        ens18     0        kernel    unicast    " category=Util component=UPF
+time="2022-05-23T15:08:15Z" level=info msg="0.0.0.0 /0          10.10.0.1      ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-05-23T15:08:17Z" level=info msg="[PFCP] Handle PFCP association setup request" category=Util component=UPF
+time="2022-05-23T15:08:17Z" level=info msg="[PFCP] Association Setup Response" category=Util component=UPF
+time="2022-05-23T15:12:52Z" level=info msg="Removing DNN routes" category=Util component=UPF
+time="2022-05-23T16:37:05Z" level=info msg="Config: /home/bearjim/thesis/experiment/free5gc/NFs/upf/build/config/upfcfg.yaml" category=Util component=UPF
+time="2022-05-23T16:37:05Z" level=info msg="UPF config version [1.0.0]" category=Util component=UPF
+time="2022-05-23T16:37:05Z" level=info msg="Set log level: info" category=Util component=UPF
+time="2022-05-23T16:37:05Z" level=info msg="DNN routes added, main routing table:" category=Util component=UPF
+time="2022-05-23T16:37:05Z" level=info msg="DstIp               Gateway        Iface     Priority RtProto   Type       " category=Util component=UPF
+time="2022-05-23T16:37:05Z" level=info msg="172.18.0.0 /16      0.0.0.0        br-21a4135ca5800        kernel    unicast    " category=Util component=UPF
+time="2022-05-23T16:37:05Z" level=info msg="172.17.0.0 /16      0.0.0.0        docker0   0        kernel    unicast    " category=Util component=UPF
+time="2022-05-23T16:37:05Z" level=info msg="60.60.0.0 /24       0.0.0.0        upfgtp    0        static    unicast    " category=Util component=UPF
+time="2022-05-23T16:37:05Z" level=info msg="10.10.0.1 /32       0.0.0.0        ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-05-23T16:37:05Z" level=info msg="10.10.0.0 /24       0.0.0.0        ens18     0        kernel    unicast    " category=Util component=UPF
+time="2022-05-23T16:37:05Z" level=info msg="0.0.0.0 /0          10.10.0.1      ens18     100      dhcp      unicast    " category=Util component=UPF
+time="2022-05-23T16:37:08Z" level=info msg="[PFCP] Handle PFCP association setup request" category=Util component=UPF
+time="2022-05-23T16:37:08Z" level=info msg="[PFCP] Association Setup Response" category=Util component=UPF

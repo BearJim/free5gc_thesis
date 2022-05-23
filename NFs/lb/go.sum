@@ -84,6 +84,7 @@ github.com/free5gc/logger_conf v1.0.0 h1:cMqqB8L4HjE57tP36mBmiVUPIcHv8Ayr12jKfei
 github.com/free5gc/logger_conf v1.0.0/go.mod h1:DHecLXVV1qA5Z+lSoUvZdZ6tCtZidTNmtx99jsCfgLE=
 github.com/free5gc/logger_util v1.0.0 h1:hLTCTnKlEqJURrBwooNFQLavWPdJzS0o9KGIYUNKdJI=
 github.com/free5gc/logger_util v1.0.0/go.mod h1:TK/bAJbm/l2TMNmbsKn83+xUmDNqts69IEir/nCa8w0=
+github.com/free5gc/milenage v1.0.0/go.mod h1:QJYEh/7FTg2AXCo80BOrdwbAvm3q8OpVckR3SjwTvw8=
 github.com/free5gc/nas v1.0.0/go.mod h1:aZkA9pzIy6D1I4mTYExoUsr1pBwC81+aLvhs382TlD0=
 github.com/free5gc/nas v1.0.6 h1:cUAHp4YJ25jl+/IcOtXvFRCbFjW/y0DqPh5gmq8tRWg=
 github.com/free5gc/nas v1.0.6/go.mod h1:qPj0gxFk81cH9zIkg4hm3ID0hkYofBlzZzcciBnJxwY=
@@ -95,6 +96,8 @@ github.com/free5gc/openapi v1.0.4 h1:bC6oqXy8Z+3e532xLMFmrTHvdyv4sNGDPezQSslw5gQ
 github.com/free5gc/openapi v1.0.4/go.mod h1:KRCnnp0GeK0Bl4gnrX79cQAidKXNENf8VRdG0y9R0Fc=
 github.com/free5gc/path_util v1.0.0 h1:vJPGTymaWtavz6fJ/7k6WKEYv5BQLAq/O04RP54sab0=
 github.com/free5gc/path_util v1.0.0/go.mod h1:OpmcebEKrMPnH7Jg5lZ8y9ZWJNAjQ4l9FGWXUv58Mo0=
+github.com/free5gc/udm v1.3.0 h1:TEYnAWRWBF/piQzVaJdEKnCmQmo8NIpL0s4QvLz7NP4=
+github.com/free5gc/udm v1.3.0/go.mod h1:f1lVQFMXgOoiJm2MvL09Gartxo/qO2HKzZ1xfgqCKAU=
 github.com/free5gc/util_3gpp v1.0.0/go.mod h1:6uI6CB6SD/yWpalo17gc5eWUVFMAIKkWDiQpkOX3+c8=
 github.com/free5gc/version v1.0.0 h1:Kn4uOhyHT1IAgerBgWRHag4xLMDXrRsqubLeMv5Nb/w=
 github.com/free5gc/version v1.0.0/go.mod h1:wOTwzjk7sqeysX1b/Z4x+pWBHFuZOPtQj3h+IJXSpmQ=

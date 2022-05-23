@@ -4,6 +4,7 @@ go 1.14
 
 require (
 	git.cs.nctu.edu.tw/calee/sctp v1.1.0
+	github.com/antihax/optional v1.0.0
 	github.com/antonfisher/nested-logrus-formatter v1.3.1
 	github.com/free5gc/UeauCommon v1.0.0
 	github.com/free5gc/ausf v1.3.0
@@ -17,6 +18,7 @@ require (
 	github.com/free5gc/ngap v1.0.5
 	github.com/free5gc/openapi v1.0.4
 	github.com/free5gc/path_util v1.0.0
+	github.com/free5gc/udm v1.3.0
 	github.com/free5gc/version v1.0.0
 	github.com/gin-contrib/cors v1.3.1
 	github.com/gin-gonic/gin v1.7.7

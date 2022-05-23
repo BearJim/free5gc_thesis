@@ -41,6 +41,33 @@ const lbN2Ipv4Addr string = "127.0.0.21"
 const ranN3Ipv4Addr string = "10.200.200.1"
 const upfN3Ipv4Addr string = "10.200.200.102"
 
+func TestNGsetup(t *testing.T) {
+	var n int
+	var sendMsg []byte
+	var recvMsg = make([]byte, 2048)
+
+	// RAN connect to AMF
+	conn, err := test.ConnectToAmf(lbN2Ipv4Addr, ranN2Ipv4Addr, 38415, 9487)
+	assert.Nil(t, err)
+
+	// RAN connect to UPF
+	// upfConn, err := test.ConnectToUpf(ranN3Ipv4Addr, upfN3Ipv4Addr, 2152, 2152)
+	// assert.Nil(t, err)
+
+	// send NGSetupRequest Msg
+	sendMsg, err = test.GetNGSetupRequest([]byte("\x00\x01\x02"), 24, "free5gc")
+	assert.Nil(t, err)
+	_, err = conn.Write(sendMsg)
+	assert.Nil(t, err)
+
+	// receive NGSetupResponse Msg
+	n, err = conn.Read(recvMsg)
+	assert.Nil(t, err)
+	ngapPdu, err := ngap.Decoder(recvMsg[:n])
+	assert.Nil(t, err)
+	assert.True(t, ngapPdu.Present == ngapType.NGAPPDUPresentSuccessfulOutcome && ngapPdu.SuccessfulOutcome.ProcedureCode.Value == ngapType.ProcedureCodeNGSetup, "No NGSetupResponse received.")
+}
+
 // Registration
 func TestRegistration(t *testing.T) {
 	var n int

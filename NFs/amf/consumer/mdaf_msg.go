@@ -10,6 +10,7 @@ import (
 	"time"
 
 	amf_context "github.com/free5gc/amf/context"
+	"github.com/free5gc/amf/logger"
 	"github.com/free5gc/openapi"
 	"github.com/free5gc/openapi/models"
 	"github.com/shirou/gopsutil/cpu"
@@ -44,6 +45,7 @@ type amfData struct {
 type AMFMdafMsgService service
 
 func MdafMsg() (*models.ProblemDetails, error) {
+	logger.HttpLog.Infoln("Start MdafMsg")
 	configuration := NewConfiguration()
 	configuration.SetBasePath("http://127.0.0.21:8000") //TH LB http IP
 	client := NewAPIClient(configuration)
@@ -61,6 +63,8 @@ func MdafMsg() (*models.ProblemDetails, error) {
 		cpuRate: tempCpuRate[0],
 	}
 
+	logger.HttpLog.Infoln("===Start AmfMdafMsg===")
+	logger.HttpLog.Infof("amfNum: %v ueNum: %v cpuRate: %v", amfDataBody.amfNum, amfDataBody.ueNum, amfDataBody.cpuRate)
 	_, httpResp, localErr := client.AMFMdafMsgApi.AmfMdafMsg(context.Background(), amfDataBody)
 	if localErr == nil {
 		return nil, nil
@@ -144,8 +148,8 @@ func NewAPIClient(cfg *Configuration) *APIClient {
 	return c
 }
 
-func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context,
-	tempamfData amfData) (amfData, *http.Response, error) {
+func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context, tempamfData amfData) (amfData, *http.Response, error) {
+	logger.HttpLog.Infoln("===In AmfMdafMsg===")
 	var (
 		localVarHTTPMethod   = strings.ToUpper("Put")
 		localVarPostBody     interface{}
@@ -156,7 +160,7 @@ func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context,
 	)
 
 	// create path and map variables
-	localVarPath := a.client.cfg.BasePath()
+	localVarPath := a.client.cfg.BasePath() + "/notify"
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -183,17 +187,20 @@ func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context,
 		localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams,
 		localVarFormFileName, localVarFileName, localVarFileBytes)
 	if err != nil {
+		logger.HttpLog.Errorln("===PrepareRequest===")
 		return localVarReturnValue, nil, err
 	}
 
 	localVarHTTPResponse, err := openapi.CallAPI(a.client.cfg, r)
 	if err != nil || localVarHTTPResponse == nil {
+		logger.HttpLog.Errorln("===CallAPI===")
 		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
 	localVarBody, err := ioutil.ReadAll(localVarHTTPResponse.Body)
-	err = localVarHTTPResponse.Body.Close()
+	// err = localVarHTTPResponse.Body.Close()
 	if err != nil {
+		logger.HttpLog.Errorln("===ReadAll===")
 		return localVarReturnValue, localVarHTTPResponse, err
 	}
 
@@ -202,6 +209,7 @@ func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context,
 		ErrorStatus: localVarHTTPResponse.Status,
 	}
 
+	logger.HttpLog.Infoln("===Switch case===")
 	switch localVarHTTPResponse.StatusCode {
 	case 201:
 		err = openapi.Deserialize(&localVarReturnValue, localVarBody, localVarHTTPResponse.Header.Get("Content-Type"))
@@ -236,6 +244,7 @@ func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context,
 		apiError.ErrorModel = v
 		return localVarReturnValue, localVarHTTPResponse, apiError
 	case 404:
+		logger.HttpLog.Infoln("===Switch case: case 404===")
 		var v models.ProblemDetails
 		err = openapi.Deserialize(&v, localVarBody, localVarHTTPResponse.Header.Get("Content-Type"))
 		if err != nil {

@@ -145,6 +145,15 @@ func HandleNGSetupRequest(ran *context.AmfRan, message *ngapType.NGAPPDU) {
 	} else {
 		ngap_message.SendNGSetupFailure(ran, cause)
 	}
+
+	logger.NgapLog.Infoln("======start MdafMsg======")
+	problemDetails, errMdaf := consumer.MdafMsg()
+	if problemDetails != nil {
+		logger.NgapLog.Errorf("MdafMsg() Failed Problem[%+v]", problemDetails)
+	} else if errMdaf != nil {
+		logger.NgapLog.Errorf("MdafMsg() Error[%+v]", errMdaf)
+	}
+	logger.NgapLog.Infoln("======after MdafMsg======")
 }
 
 func HandleUplinkNasTransport(ran *context.AmfRan, message *ngapType.NGAPPDU) {

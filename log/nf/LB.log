@@ -4029,3 +4029,774 @@ time="2022-04-26T21:10:49Z" level=info msg="Terminating LB..." category=Init com
 time="2022-04-26T21:10:49Z" level=info msg="Close SCTP server..." category=NGAP component=LB
 time="2022-04-26T21:10:49Z" level=info msg="SCTP server closed" category=NGAP component=LB
 time="2022-04-26T21:10:49Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T13:55:51Z" level=info msg=lb category=App component=LB
+time="2022-05-17T13:55:51Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T13:55:51Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T13:55:51Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T13:56:21Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T13:56:21Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T13:58:02Z" level=info msg=lb category=App component=LB
+time="2022-05-17T13:58:02Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T13:58:02Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T13:58:02Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T13:59:57Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T13:59:57Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T14:01:39Z" level=info msg=lb category=App component=LB
+time="2022-05-17T14:01:39Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T14:01:39Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T14:01:39Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T14:01:39Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T14:01:45Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T14:01:45Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T14:05:51Z" level=info msg=lb category=App component=LB
+time="2022-05-17T14:05:51Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T14:05:51Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T14:05:51Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T14:05:51Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T14:05:51Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T14:05:51Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T14:05:51Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T14:05:51Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T14:05:51Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:40254; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T14:05:51Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T14:05:51Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T14:05:51Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T14:08:24Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T14:08:24Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T14:08:24Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T14:08:24Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T14:08:33Z" level=info msg=lb category=App component=LB
+time="2022-05-17T14:08:33Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T14:08:33Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T14:08:33Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T14:08:33Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T14:08:33Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T14:08:33Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T14:08:33Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T14:08:33Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T14:08:33Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:49208; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T14:08:33Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T14:08:33Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T14:08:33Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T14:08:33Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T14:10:45Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T14:10:47Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T14:10:47Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T14:10:47Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T14:10:47Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T14:10:52Z" level=info msg=lb category=App component=LB
+time="2022-05-17T14:10:52Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T14:10:52Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T14:10:52Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T14:10:52Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T14:10:52Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T14:10:52Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T14:10:52Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T14:10:52Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T14:10:52Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:49858; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T14:10:52Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T14:10:52Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T14:10:52Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T14:10:52Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T14:11:02Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T14:11:03Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T14:11:03Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T14:11:03Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T14:11:03Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T14:14:39Z" level=info msg=lb category=App component=LB
+time="2022-05-17T14:14:39Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T14:14:39Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T14:14:39Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T14:14:39Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T14:14:39Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T14:14:39Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T14:14:39Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T14:14:39Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T14:14:39Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47752; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T14:14:39Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T14:14:39Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T14:14:39Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T14:14:39Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T14:14:49Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T14:14:50Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T14:14:50Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T14:14:50Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T14:14:50Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T14:15:09Z" level=info msg=lb category=App component=LB
+time="2022-05-17T14:15:09Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T14:15:09Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T14:15:09Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T14:15:09Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T14:15:09Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T14:15:09Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T14:15:09Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T14:15:09Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T14:15:09Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:56458; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T14:15:09Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T14:15:09Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T14:15:09Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T14:15:09Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T14:15:19Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T14:15:20Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T14:15:20Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T14:15:20Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T14:15:20Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T14:16:39Z" level=info msg=lb category=App component=LB
+time="2022-05-17T14:16:39Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T14:16:39Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T14:16:39Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T14:16:39Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T14:16:39Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T14:16:39Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T14:16:39Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T14:16:39Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T14:16:39Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:50242; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T14:16:39Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T14:16:39Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T14:16:39Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T14:16:39Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T14:16:42Z" level=info msg="| 404 |       127.0.0.1 | PUT     | /nmdaf-msg/v1 | " category=GIN component=LB
+time="2022-05-17T14:16:57Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T14:16:59Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T14:16:59Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T14:16:59Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T14:16:59Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T14:27:03Z" level=info msg=lb category=App component=LB
+time="2022-05-17T14:27:03Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T14:27:03Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T14:27:03Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T14:27:03Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T14:27:03Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T14:27:03Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T14:27:03Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T14:27:03Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T14:27:03Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:41998; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T14:27:03Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T14:27:03Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T14:27:03Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T14:27:03Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T14:27:06Z" level=info msg="| 404 |       127.0.0.1 | PUT     | /nmdaf-msg/v1 | " category=GIN component=LB
+time="2022-05-17T14:27:14Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T14:27:14Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T14:27:14Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T14:27:14Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T14:29:39Z" level=info msg=lb category=App component=LB
+time="2022-05-17T14:29:39Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T14:29:39Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T14:29:39Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T14:29:39Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T14:29:39Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T14:29:39Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T14:29:39Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T14:29:39Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T14:29:39Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:57254; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T14:29:39Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T14:29:39Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T14:29:39Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T14:29:39Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T14:29:42Z" level=info msg="| 404 |       127.0.0.1 | PUT     | /nmdaf-msg/v1 | " category=GIN component=LB
+time="2022-05-17T14:29:56Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T14:30:00Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T14:30:00Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T14:30:00Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T14:30:00Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T14:37:42Z" level=info msg=lb category=App component=LB
+time="2022-05-17T14:37:42Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T14:37:42Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T14:37:42Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T14:37:42Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T14:37:42Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T14:37:42Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T14:37:42Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T14:37:42Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T14:37:42Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:36913; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T14:37:42Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T14:37:42Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T14:37:42Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T14:37:42Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T14:37:45Z" level=info msg="| 404 |       127.0.0.1 | PUT     | /nmdaf-msg/v1 | " category=GIN component=LB
+time="2022-05-17T14:37:51Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T14:37:52Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T14:37:52Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T14:37:52Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T14:37:52Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T14:39:20Z" level=info msg=lb category=App component=LB
+time="2022-05-17T14:39:20Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T14:39:20Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T14:39:20Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T14:39:20Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T14:39:20Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T14:39:20Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T14:39:20Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T14:39:20Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T14:39:20Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:52934; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T14:39:20Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T14:39:20Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T14:39:20Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T14:39:20Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T14:39:23Z" level=info msg="| 404 |       127.0.0.1 | PUT     | /nmdaf-msg/v1 | " category=GIN component=LB
+time="2022-05-17T14:39:28Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T14:39:31Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T14:39:31Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T14:39:31Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T14:39:31Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T14:41:39Z" level=info msg=lb category=App component=LB
+time="2022-05-17T14:41:39Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T14:41:39Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T14:41:39Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T14:41:39Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T14:41:39Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T14:41:39Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T14:41:39Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T14:41:39Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T14:41:39Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:41003; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T14:41:39Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T14:41:39Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T14:41:39Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T14:41:39Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T14:41:42Z" level=info msg="| 404 |       127.0.0.1 | PUT     | /nmdaf-msg/v1 | " category=GIN component=LB
+time="2022-05-17T14:41:50Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T14:41:51Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T14:41:51Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T14:41:51Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T14:41:51Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T14:43:00Z" level=info msg=lb category=App component=LB
+time="2022-05-17T14:43:00Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T14:43:00Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T14:43:00Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T14:43:00Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T14:43:00Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T14:43:15Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T14:43:15Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T15:03:27Z" level=info msg=lb category=App component=LB
+time="2022-05-17T15:03:27Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T15:03:27Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T15:03:27Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T15:03:27Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T15:03:27Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T15:03:27Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T15:03:27Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T15:03:27Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T15:03:27Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:35935; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T15:03:27Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T15:03:27Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T15:03:27Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T15:03:27Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T15:03:42Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T15:03:43Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T15:03:43Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T15:03:43Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T15:03:43Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T15:57:01Z" level=info msg=lb category=App component=LB
+time="2022-05-17T15:57:01Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T15:57:01Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T15:57:01Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T15:57:01Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T15:57:01Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T15:57:01Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T15:57:01Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T15:57:01Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T15:57:01Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:39424; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T15:57:01Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T15:57:01Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T15:57:01Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T15:57:01Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T15:57:07Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T15:57:08Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T15:57:08Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T15:57:08Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T15:57:08Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T16:01:45Z" level=info msg=lb category=App component=LB
+time="2022-05-17T16:01:45Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T16:01:45Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T16:01:45Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T16:01:45Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T16:01:45Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T16:01:45Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T16:01:45Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T16:01:45Z" level=error msg="failed to dial 177: connection refused" category=NGAP component=LB
+time="2022-05-17T16:01:45Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T16:01:45Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T16:01:45Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T16:01:45Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T16:01:49Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T16:01:49Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T16:01:49Z" level=error msg="bad file descriptor" category=NGAP component=LB
+time="2022-05-17T16:01:49Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T16:01:49Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T16:01:59Z" level=info msg=lb category=App component=LB
+time="2022-05-17T16:01:59Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T16:01:59Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T16:01:59Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T16:01:59Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T16:01:59Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T16:01:59Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T16:01:59Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T16:01:59Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T16:01:59Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:46599; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T16:01:59Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T16:01:59Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T16:01:59Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T16:01:59Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T16:02:42Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-05-17T16:02:42Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-17T16:02:42Z" level=info msg="NGSETUP, send to AMF0 AMF1 AMF2, goAmf: %!(EXTRA int=3)" category=NGAP component=LB
+time="2022-05-17T16:02:42Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-05-17T16:02:42Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-17T16:02:42Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T16:02:42Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-05-17T16:02:42Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-17T16:02:42Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T16:03:59Z" level=info msg=lb category=App component=LB
+time="2022-05-17T16:03:59Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T16:03:59Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T16:03:59Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T16:03:59Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T16:03:59Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T16:03:59Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T16:03:59Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T16:03:59Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T16:03:59Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T16:03:59Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T16:03:59Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T16:03:59Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T16:03:59Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=info msg="NGSETUP, send to AMF0 AMF1 AMF2, goAmf: %!(EXTRA int=3)" category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=info msg="write: len 53" category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=error msg="initail UE message:  0" category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=error msg="is not Exist" category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=error msg="mUEAMF: %!(EXTRA map[ngapType.RANUENGAPID]int=map[{1}:0])" category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=error msg="mUEAMF[rANUENGAPID]: 0" category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-17T16:04:05Z" level=info msg="write to amf: len 69" category=NGAP component=LB
+time="2022-05-17T16:04:07Z" level=error msg="SCTP read timeout" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="| 404 |       127.0.0.1 | PUT     | /nmdaf-msg/v1 | " category=GIN component=LB
+time="2022-05-17T16:04:08Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="write: len 66" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="Uplink NAS Transport is Exist?: true" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=error msg="mUEAMF: %!(EXTRA map[ngapType.RANUENGAPID]int=map[{1}:0])" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="write to amf: len 64" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="write: len 43" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="Uplink NAS Transport is Exist?: true" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=error msg="mUEAMF: %!(EXTRA map[ngapType.RANUENGAPID]int=map[{1}:0])" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="write to amf: len 93" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="write: len 176" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="RANUENGAPID: &{1}" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="write to amf: len 19" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="Uplink NAS Transport is Exist?: true" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=error msg="mUEAMF: %!(EXTRA map[ngapType.RANUENGAPID]int=map[{1}:0])" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="write to amf: len 53" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="Uplink NAS Transport is Exist?: true" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=error msg="mUEAMF: %!(EXTRA map[ngapType.RANUENGAPID]int=map[{1}:0])" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="mUEAMF key: &{1} , goAmf: 0" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-17T16:04:08Z" level=info msg="write to amf: len 96" category=NGAP component=LB
+time="2022-05-17T16:04:09Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T16:04:09Z" level=info msg="write: len 174" category=NGAP component=LB
+time="2022-05-17T16:04:09Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T16:04:09Z" level=info msg="Send to AMf number: 0" category=NGAP component=LB
+time="2022-05-17T16:04:09Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-17T16:04:09Z" level=info msg="write to amf: len 40" category=NGAP component=LB
+time="2022-05-17T16:04:09Z" level=error msg="initail UE message:  1" category=NGAP component=LB
+time="2022-05-17T16:04:09Z" level=error msg="is not Exist" category=NGAP component=LB
+time="2022-05-17T16:04:09Z" level=error msg="mUEAMF: %!(EXTRA map[ngapType.RANUENGAPID]int=map[{1}:0 {2}:1])" category=NGAP component=LB
+time="2022-05-17T16:04:09Z" level=error msg="mUEAMF[rANUENGAPID]: 1" category=NGAP component=LB
+time="2022-05-17T16:04:09Z" level=info msg="mUEAMF key: &{2} , goAmf: 1" category=NGAP component=LB
+time="2022-05-17T16:04:09Z" level=info msg="Send to AMf number: 1" category=NGAP component=LB
+time="2022-05-17T16:04:09Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-17T16:09:19Z" level=info msg=lb category=App component=LB
+time="2022-05-17T16:09:19Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T16:09:19Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T16:09:19Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T16:09:19Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T16:09:19Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T16:09:19Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T16:09:19Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T16:09:19Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T16:09:19Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:38786; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T16:09:19Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T16:09:19Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T16:09:19Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T16:09:19Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T16:09:56Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-05-17T16:09:56Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-17T16:09:56Z" level=info msg="NGSETUP, send to AMF0 AMF1 AMF2, goAmf: %!(EXTRA int=3)" category=NGAP component=LB
+time="2022-05-17T16:09:56Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-05-17T16:09:56Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-17T16:09:56Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T16:09:56Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-05-17T16:09:56Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T16:09:56Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-17T16:09:56Z" level=info msg="write: len 53" category=NGAP component=LB
+time="2022-05-17T16:09:56Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T16:09:56Z" level=error msg="Read EOF from client" category=NGAP component=LB
+time="2022-05-17T16:09:59Z" level=info msg="| 404 |       127.0.0.1 | PUT     | /nmdaf-msg/v1 | " category=GIN component=LB
+time="2022-05-17T16:11:04Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T16:11:04Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T16:11:04Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T16:11:04Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T16:13:20Z" level=info msg=lb category=App component=LB
+time="2022-05-17T16:13:20Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T16:13:20Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T16:13:20Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T16:13:20Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T16:13:20Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T16:13:20Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T16:13:20Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T16:13:20Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T16:13:20Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:57654; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T16:13:20Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T16:13:20Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T16:13:20Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T16:13:20Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T16:13:28Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-05-17T16:13:28Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-17T16:13:28Z" level=info msg="NGSETUP, send to AMF0 AMF1 AMF2, goAmf: %!(EXTRA int=3)" category=NGAP component=LB
+time="2022-05-17T16:13:28Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-05-17T16:13:28Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-17T16:13:28Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T16:13:28Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-05-17T16:13:28Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T16:13:28Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-17T16:13:28Z" level=info msg="write: len 53" category=NGAP component=LB
+time="2022-05-17T16:13:28Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T16:13:28Z" level=error msg="Read EOF from client" category=NGAP component=LB
+time="2022-05-17T16:13:31Z" level=info msg="| 404 |       127.0.0.1 | PUT     | /nmdaf-msg/v1 | " category=GIN component=LB
+time="2022-05-17T16:13:38Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T16:13:38Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T16:13:38Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T16:13:38Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T16:58:24Z" level=info msg=lb category=App component=LB
+time="2022-05-17T16:58:24Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T16:58:24Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T16:58:24Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T16:58:24Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T16:58:24Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T16:58:24Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T16:58:24Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T16:58:24Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T16:58:24Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37390; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T16:58:24Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T16:58:24Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T16:58:24Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T16:58:24Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T16:58:32Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-05-17T16:58:32Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-17T16:58:32Z" level=info msg="NGSETUP, send to AMF0 AMF1 AMF2, goAmf: %!(EXTRA int=3)" category=NGAP component=LB
+time="2022-05-17T16:58:32Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-05-17T16:58:32Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-17T16:58:32Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T16:58:32Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-05-17T16:58:32Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T16:58:32Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-17T16:58:32Z" level=info msg="write: len 53" category=NGAP component=LB
+time="2022-05-17T16:58:32Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T16:58:32Z" level=error msg="Read EOF from client" category=NGAP component=LB
+time="2022-05-17T16:58:35Z" level=info msg="| 404 |       127.0.0.1 | PUT     | /nmdaf-msg/v1 | " category=GIN component=LB
+time="2022-05-17T16:58:45Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T16:58:45Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T16:58:45Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T16:58:45Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T17:04:30Z" level=info msg=lb category=App component=LB
+time="2022-05-17T17:04:30Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T17:04:30Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T17:04:30Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T17:04:30Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T17:04:30Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T17:04:30Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T17:04:30Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T17:04:30Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T17:04:30Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:41638; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T17:04:30Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T17:04:30Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T17:04:30Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T17:04:30Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T17:04:37Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-05-17T17:04:37Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-17T17:04:37Z" level=info msg="NGSETUP, send to AMF0 AMF1 AMF2, goAmf: %!(EXTRA int=3)" category=NGAP component=LB
+time="2022-05-17T17:04:37Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-05-17T17:04:37Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-17T17:04:37Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T17:04:37Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-05-17T17:04:37Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T17:04:37Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-17T17:04:37Z" level=info msg="write: len 53" category=NGAP component=LB
+time="2022-05-17T17:04:37Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T17:04:37Z" level=error msg="Read EOF from client" category=NGAP component=LB
+time="2022-05-17T17:04:40Z" level=info msg="| 404 |       127.0.0.1 | PUT     | /nmdaf-msg/v1 | " category=GIN component=LB
+time="2022-05-17T17:04:55Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T17:04:55Z" level=error msg="failed to write: bad file descriptor" category=NGAP component=LB
+time="2022-05-17T17:04:55Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T17:04:55Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T17:04:57Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T17:04:57Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T17:04:57Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T17:04:57Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T17:12:52Z" level=info msg=lb category=App component=LB
+time="2022-05-17T17:12:52Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T17:12:52Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T17:12:52Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T17:12:52Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T17:12:52Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T17:12:52Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T17:12:52Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T17:12:52Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T17:12:52Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37162; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T17:12:52Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T17:12:52Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T17:12:52Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T17:12:52Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T17:13:08Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-05-17T17:13:08Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-17T17:13:08Z" level=info msg="NGSETUP, send to AMF0 AMF1 AMF2, goAmf: %!(EXTRA int=3)" category=NGAP component=LB
+time="2022-05-17T17:13:08Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-05-17T17:13:08Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-17T17:13:08Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T17:13:08Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T17:13:08Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-05-17T17:13:08Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-17T17:13:08Z" level=info msg="write: len 53" category=NGAP component=LB
+time="2022-05-17T17:13:08Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T17:13:08Z" level=error msg="Read EOF from client" category=NGAP component=LB
+time="2022-05-17T17:13:22Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T17:13:22Z" level=error msg="failed to write: bad file descriptor" category=NGAP component=LB
+time="2022-05-17T17:13:22Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T17:13:22Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T17:13:22Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T17:13:22Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T17:13:22Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T17:13:22Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-17T17:18:45Z" level=info msg=lb category=App component=LB
+time="2022-05-17T17:18:45Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-17T17:18:45Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-17T17:18:45Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-17T17:18:45Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-17T17:18:45Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-17T17:18:45Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-17T17:18:45Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-17T17:18:45Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-17T17:18:45Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:58394; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T17:18:45Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-17T17:18:45Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-17T17:18:45Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T17:18:45Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-17T17:18:51Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-05-17T17:18:51Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-17T17:18:51Z" level=info msg="NGSETUP, send to AMF0 AMF1 AMF2, goAmf: %!(EXTRA int=3)" category=NGAP component=LB
+time="2022-05-17T17:18:51Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-05-17T17:18:51Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-17T17:18:51Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-17T17:18:51Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-05-17T17:18:51Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T17:18:51Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-17T17:18:51Z" level=info msg="write: len 53" category=NGAP component=LB
+time="2022-05-17T17:18:51Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T17:18:51Z" level=error msg="Read EOF from client" category=NGAP component=LB
+time="2022-05-17T17:18:54Z" level=info msg="| 404 |       127.0.0.1 | PUT     | /nmdaf-msg/v1 | " category=GIN component=LB
+time="2022-05-17T17:19:05Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T17:19:05Z" level=error msg="failed to write: bad file descriptor" category=NGAP component=LB
+time="2022-05-17T17:19:05Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-17T17:19:05Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-17T17:19:06Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-17T17:19:06Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-17T17:19:06Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-17T17:19:06Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-23T13:51:59Z" level=info msg=lb category=App component=LB
+time="2022-05-23T13:51:59Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-23T13:51:59Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-23T13:51:59Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-23T13:51:59Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-23T13:51:59Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-23T13:51:59Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-23T13:51:59Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-23T13:51:59Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-23T13:51:59Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:50295; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-23T13:51:59Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-23T13:51:59Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-23T13:51:59Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-23T13:51:59Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-23T13:52:29Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-05-23T13:52:29Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-23T13:52:29Z" level=info msg="NGSETUP, send to AMF0 AMF1 AMF2, goAmf: %!(EXTRA int=3)" category=NGAP component=LB
+time="2022-05-23T13:52:29Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-05-23T13:52:29Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-23T13:52:29Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-23T13:52:29Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-05-23T13:52:29Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-23T13:52:29Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-23T13:52:29Z" level=info msg="write: len 53" category=NGAP component=LB
+time="2022-05-23T13:52:29Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-23T13:52:29Z" level=error msg="Read EOF from client" category=NGAP component=LB
+time="2022-05-23T13:52:32Z" level=info msg="| 404 |       127.0.0.1 | PUT     | /nmdaf-msg/v1 | " category=GIN component=LB
+time="2022-05-23T13:52:36Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-23T13:52:36Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-23T13:52:36Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-23T13:52:36Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-23T15:08:36Z" level=info msg=lb category=App component=LB
+time="2022-05-23T15:08:36Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-23T15:08:36Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-23T15:08:36Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-23T15:08:36Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-23T15:08:36Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-23T15:08:36Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-23T15:08:36Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-23T15:08:36Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-23T15:08:36Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59559; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-23T15:08:36Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-23T15:08:36Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-23T15:08:36Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-23T15:08:36Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-23T15:09:11Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-05-23T15:09:11Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-23T15:09:11Z" level=info msg="NGSETUP, send to AMF0 AMF1 AMF2, goAmf: %!(EXTRA int=3)" category=NGAP component=LB
+time="2022-05-23T15:09:11Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-05-23T15:09:11Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-23T15:09:11Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-23T15:09:11Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-05-23T15:09:11Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-23T15:09:11Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-23T15:09:11Z" level=info msg="write: len 53" category=NGAP component=LB
+time="2022-05-23T15:09:11Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-23T15:09:11Z" level=error msg="Read EOF from client" category=NGAP component=LB
+time="2022-05-23T15:09:14Z" level=error msg="===Start HTTPNotifyAmf===" category=HTTP component=LB
+time="2022-05-23T15:09:14Z" level=info msg="===Start HandleHTTPNotifyAmf===" category=App component=LB
+time="2022-05-23T15:09:14Z" level=info msg="Handle AMF HTTP Notify" category=HTTP component=LB
+time="2022-05-23T15:09:14Z" level=info msg="| 500 |       127.0.0.1 | PUT     | /nmdaf-msg/v1/notify | " category=GIN component=LB
+time="2022-05-23T15:09:28Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-23T15:09:28Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-23T15:09:28Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-23T15:09:28Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-23T15:09:28Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-23T16:37:21Z" level=info msg=lb category=App component=LB
+time="2022-05-23T16:37:21Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-23T16:37:21Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-23T16:37:21Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-23T16:37:21Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-23T16:37:21Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-23T16:37:21Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-23T16:37:21Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-23T16:37:21Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-23T16:37:21Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37747; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-23T16:37:21Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-23T16:37:21Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-23T16:37:21Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-23T16:37:21Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-23T16:37:27Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-05-23T16:37:27Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-23T16:37:27Z" level=info msg="NGSETUP, send to AMF0 AMF1 AMF2, goAmf: %!(EXTRA int=3)" category=NGAP component=LB
+time="2022-05-23T16:37:27Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-05-23T16:37:27Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-23T16:37:27Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-23T16:37:27Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-05-23T16:37:27Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-23T16:37:27Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-23T16:37:27Z" level=info msg="write: len 53" category=NGAP component=LB
+time="2022-05-23T16:37:27Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-23T16:37:27Z" level=error msg="Read EOF from client" category=NGAP component=LB
+time="2022-05-23T16:37:30Z" level=error msg="===Start HTTPNotifyAmf===" category=HTTP component=LB
+time="2022-05-23T16:37:30Z" level=info msg="===Start HandleHTTPNotifyAmf===" category=App component=LB
+time="2022-05-23T16:37:30Z" level=info msg="Handle AMF HTTP Notify" category=HTTP component=LB
+time="2022-05-23T16:37:30Z" level=info msg="| 500 |       127.0.0.1 | PUT     | /nmdaf-msg/v1/notify | " category=GIN component=LB
+time="2022-05-23T16:37:39Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-23T16:37:39Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-23T16:37:39Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-23T16:37:39Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-23T16:41:23Z" level=info msg=lb category=App component=LB
+time="2022-05-23T16:41:23Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-23T16:41:23Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-23T16:41:23Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-23T16:41:23Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-23T16:41:23Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-23T16:41:23Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-23T16:41:23Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-23T16:41:23Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-23T16:41:23Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:54765; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-23T16:41:23Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-23T16:41:23Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-23T16:41:23Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-23T16:41:23Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-23T16:41:29Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-05-23T16:41:29Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-23T16:41:29Z" level=info msg="NGSETUP, send to AMF0 AMF1 AMF2, goAmf: %!(EXTRA int=3)" category=NGAP component=LB
+time="2022-05-23T16:41:29Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-05-23T16:41:29Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-23T16:41:29Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-23T16:41:29Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-05-23T16:41:29Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-23T16:41:29Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-23T16:41:29Z" level=info msg="write: len 53" category=NGAP component=LB
+time="2022-05-23T16:41:29Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-23T16:41:29Z" level=error msg="===Start HTTPNotifyAmf===" category=HTTP component=LB
+time="2022-05-23T16:41:29Z" level=info msg="===Start HandleHTTPNotifyAmf===" category=App component=LB
+time="2022-05-23T16:41:29Z" level=info msg="Handle AMF HTTP Notify" category=HTTP component=LB
+time="2022-05-23T16:41:29Z" level=info msg="| 500 |       127.0.0.1 | PUT     | /nmdaf-msg/v1/notify | " category=GIN component=LB
+time="2022-05-23T16:41:29Z" level=error msg="Read EOF from client" category=NGAP component=LB
+time="2022-05-23T16:41:39Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-23T16:41:39Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-23T16:41:39Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-23T16:41:39Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-23T16:41:39Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-23T16:43:55Z" level=info msg=lb category=App component=LB
+time="2022-05-23T16:43:55Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-23T16:43:55Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-23T16:43:55Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-23T16:43:55Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-23T16:43:55Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-23T16:43:55Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-23T16:43:55Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-23T16:43:55Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-23T16:43:55Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:36978; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-23T16:43:55Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-23T16:43:55Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-23T16:43:55Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-23T16:43:55Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-23T16:44:02Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-05-23T16:44:02Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-23T16:44:02Z" level=info msg="NGSETUP, send to AMF0 AMF1 AMF2, goAmf: %!(EXTRA int=3)" category=NGAP component=LB
+time="2022-05-23T16:44:02Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-05-23T16:44:02Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-23T16:44:02Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-23T16:44:02Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-05-23T16:44:02Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-23T16:44:02Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-23T16:44:02Z" level=info msg="write: len 53" category=NGAP component=LB
+time="2022-05-23T16:44:02Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-23T16:44:02Z" level=error msg="===Start HTTPNotifyAmf===" category=HTTP component=LB
+time="2022-05-23T16:44:02Z" level=info msg="===Start HandleHTTPNotifyAmf===" category=App component=LB
+time="2022-05-23T16:44:02Z" level=info msg="Handle AMF HTTP Notify" category=HTTP component=LB
+time="2022-05-23T16:44:02Z" level=info msg="========MDAFProcedure========" category=HTTP component=LB
+time="2022-05-23T16:44:02Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nmdaf-msg/v1/notify | " category=GIN component=LB
+time="2022-05-23T16:44:02Z" level=error msg="Read EOF from client" category=NGAP component=LB
+time="2022-05-23T16:44:25Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-23T16:44:25Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-23T16:44:25Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-23T16:44:25Z" level=info msg="LB terminated" category=Init component=LB

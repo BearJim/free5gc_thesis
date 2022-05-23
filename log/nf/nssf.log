@@ -132,3 +132,33 @@ time="2022-04-26T21:10:17Z" level=info msg="Handle NSSelectionGet" category=NsSe
 time="2022-04-26T21:10:17Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=ceb7ed74-ad82-457d-bac7-62abbd69f735&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
 time="2022-04-26T21:10:18Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
 time="2022-04-26T21:10:18Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=05844cc9-5f5c-4387-8282-32aebbade1b4&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-05-17T13:55:40Z" level=info msg="NSSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NSSF
+time="2022-05-17T13:55:40Z" level=info msg="NSSF Log level is set to [info] level" category=Init component=NSSF
+time="2022-05-17T13:55:40Z" level=info msg="config version [1.0.0]" category=CFG component=NSSF
+time="2022-05-17T13:55:40Z" level=info msg="Server started" category=Init component=NSSF
+time="2022-05-17T16:04:08Z" level=info msg="Handle NSSelectionGet" category=NsSelect component=NSSF
+time="2022-05-17T16:04:08Z" level=info msg="| 200 |       127.0.0.1 | GET     | /nnssf-nsselection/v1/network-slice-information?nf-id=51d55538-b178-4d04-bf99-55981dca5c8f&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D | " category=GIN component=NSSF
+time="2022-05-17T17:30:21Z" level=info msg="Terminating NSSF..." category=Init component=NSSF
+time="2022-05-17T17:30:21Z" level=info msg="Send Deregister NFInstance" category=App component=NSSF
+time="2022-05-17T17:30:21Z" level=error msg="Deregister NF instance Error[server no response]" category=Init component=NSSF
+time="2022-05-17T17:30:21Z" level=info msg="NSSF terminated" category=Init component=NSSF
+time="2022-05-23T13:51:46Z" level=info msg="NSSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NSSF
+time="2022-05-23T13:51:46Z" level=info msg="NSSF Log level is set to [info] level" category=Init component=NSSF
+time="2022-05-23T13:51:46Z" level=info msg="config version [1.0.0]" category=CFG component=NSSF
+time="2022-05-23T13:51:46Z" level=info msg="Server started" category=Init component=NSSF
+time="2022-05-23T13:53:14Z" level=info msg="Terminating NSSF..." category=Init component=NSSF
+time="2022-05-23T13:53:14Z" level=info msg="Send Deregister NFInstance" category=App component=NSSF
+time="2022-05-23T13:53:15Z" level=info msg="Deregister from NRF successfully" category=Init component=NSSF
+time="2022-05-23T13:53:15Z" level=info msg="NSSF terminated" category=Init component=NSSF
+time="2022-05-23T15:08:23Z" level=info msg="NSSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NSSF
+time="2022-05-23T15:08:23Z" level=info msg="NSSF Log level is set to [info] level" category=Init component=NSSF
+time="2022-05-23T15:08:23Z" level=info msg="config version [1.0.0]" category=CFG component=NSSF
+time="2022-05-23T15:08:23Z" level=info msg="Server started" category=Init component=NSSF
+time="2022-05-23T15:12:48Z" level=info msg="Terminating NSSF..." category=Init component=NSSF
+time="2022-05-23T15:12:48Z" level=info msg="Send Deregister NFInstance" category=App component=NSSF
+time="2022-05-23T15:12:49Z" level=info msg="Deregister from NRF successfully" category=Init component=NSSF
+time="2022-05-23T15:12:49Z" level=info msg="NSSF terminated" category=Init component=NSSF
+time="2022-05-23T16:37:11Z" level=info msg="NSSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NSSF
+time="2022-05-23T16:37:11Z" level=info msg="NSSF Log level is set to [info] level" category=Init component=NSSF
+time="2022-05-23T16:37:11Z" level=info msg="config version [1.0.0]" category=CFG component=NSSF
+time="2022-05-23T16:37:11Z" level=info msg="Server started" category=Init component=NSSF

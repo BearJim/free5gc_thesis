@@ -3341,3 +3341,828 @@ time="2022-04-26T21:10:48Z" level=info msg="Send AMF Status Indication" category
 time="2022-04-26T21:10:48Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
 time="2022-04-26T21:10:48Z" level=info msg="SCTP server closed" category=NGAP component=AMF
 time="2022-04-26T21:10:48Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T13:55:49Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T13:55:49Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T13:55:49Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T13:55:49Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T13:55:49Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T13:55:49Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T13:55:49Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T13:56:18Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T13:56:18Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T13:56:19Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T13:56:19Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T13:56:19Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T13:56:19Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T13:56:19Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T13:57:59Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T13:57:59Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T13:57:59Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T13:57:59Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T13:57:59Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T13:57:59Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T13:57:59Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T13:59:59Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T13:59:59Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T14:00:00Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T14:00:00Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T14:00:00Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T14:00:00Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T14:00:00Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T14:01:36Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T14:01:36Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T14:01:36Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T14:01:36Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T14:01:36Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T14:01:36Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T14:01:36Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T14:01:47Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T14:01:47Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T14:01:48Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T14:01:48Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T14:01:48Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T14:01:48Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T14:01:48Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T14:05:47Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T14:05:47Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T14:05:47Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T14:05:47Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T14:05:47Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T14:05:47Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T14:05:47Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T14:05:51Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:40254" category=NGAP component=AMF
+time="2022-05-17T14:08:24Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T14:08:24Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T14:08:24Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T14:08:24Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T14:08:27Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T14:08:27Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T14:08:28Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T14:08:28Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T14:08:28Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T14:08:28Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T14:08:28Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T14:08:30Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T14:08:30Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T14:08:30Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T14:08:30Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T14:08:30Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T14:08:30Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T14:08:30Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T14:08:33Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:49208" category=NGAP component=AMF
+time="2022-05-17T14:10:44Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T14:10:44Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T14:10:45Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T14:10:45Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T14:10:45Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T14:10:45Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T14:10:45Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T14:10:50Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T14:10:50Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T14:10:50Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T14:10:50Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T14:10:50Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T14:10:50Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T14:10:50Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T14:10:52Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:49858" category=NGAP component=AMF
+time="2022-05-17T14:11:01Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T14:11:01Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T14:11:02Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T14:11:02Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T14:11:02Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T14:11:02Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T14:11:02Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T14:14:33Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T14:14:33Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T14:14:33Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T14:14:33Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T14:14:33Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T14:14:33Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T14:14:33Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T14:14:39Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:47752" category=NGAP component=AMF
+time="2022-05-17T14:14:48Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T14:14:48Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T14:14:49Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T14:14:49Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T14:14:49Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T14:14:49Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T14:14:49Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T14:15:06Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T14:15:06Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T14:15:06Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T14:15:06Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T14:15:06Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T14:15:06Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T14:15:06Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T14:15:09Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:56458" category=NGAP component=AMF
+time="2022-05-17T14:15:18Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T14:15:18Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T14:15:19Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T14:15:19Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T14:15:19Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T14:15:19Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T14:15:19Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T14:16:37Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T14:16:37Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T14:16:37Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T14:16:37Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T14:16:37Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T14:16:37Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T14:16:37Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T14:16:39Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-17T14:16:42Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T14:16:42Z" level=error msg="MdafMsg() Error[undefined response type]" category=NGAP component=AMF
+time="2022-05-17T14:16:42Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:50242" category=NGAP component=AMF
+time="2022-05-17T14:16:56Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T14:16:56Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T14:16:57Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T14:16:57Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T14:16:57Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T14:16:57Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T14:16:57Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T14:27:00Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T14:27:00Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T14:27:00Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T14:27:00Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T14:27:00Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T14:27:00Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T14:27:00Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T14:27:03Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-17T14:27:06Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T14:27:06Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 0.9166666666767721" category=HTTP component=AMF
+time="2022-05-17T14:27:06Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T14:27:06Z" level=error msg="MdafMsg() Error[undefined response type]" category=NGAP component=AMF
+time="2022-05-17T14:27:06Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:41998" category=NGAP component=AMF
+time="2022-05-17T14:27:14Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T14:27:14Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T14:27:14Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T14:27:14Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T14:27:15Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T14:27:15Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T14:27:16Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T14:27:16Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T14:27:16Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T14:27:16Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T14:27:16Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T14:29:36Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T14:29:36Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T14:29:36Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T14:29:36Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T14:29:36Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T14:29:36Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T14:29:36Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T14:29:39Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-17T14:29:42Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T14:29:42Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 0.916666666635946" category=HTTP component=AMF
+time="2022-05-17T14:29:42Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T14:29:42Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T14:29:42Z" level=error msg="MdafMsg() Error[undefined response type]" category=NGAP component=AMF
+time="2022-05-17T14:29:42Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:57254" category=NGAP component=AMF
+time="2022-05-17T14:29:55Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T14:29:55Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T14:29:56Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T14:29:56Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T14:29:56Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T14:29:56Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T14:29:56Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T14:37:39Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T14:37:39Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T14:37:39Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T14:37:39Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T14:37:39Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T14:37:39Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T14:37:39Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T14:37:42Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-17T14:37:45Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T14:37:45Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 1.4987510407993592" category=HTTP component=AMF
+time="2022-05-17T14:37:45Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T14:37:45Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T14:37:45Z" level=error msg="MdafMsg() Error[undefined response type]" category=NGAP component=AMF
+time="2022-05-17T14:37:45Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:36913" category=NGAP component=AMF
+time="2022-05-17T14:37:50Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T14:37:50Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T14:37:51Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T14:37:51Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T14:37:51Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T14:37:51Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T14:37:51Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T14:39:17Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T14:39:17Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T14:39:17Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T14:39:17Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T14:39:17Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T14:39:17Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T14:39:17Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T14:39:20Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-17T14:39:23Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T14:39:23Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 1.167639699768518" category=HTTP component=AMF
+time="2022-05-17T14:39:23Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T14:39:23Z" level=info msg="===Switch case===" category=HTTP component=AMF
+time="2022-05-17T14:39:23Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T14:39:23Z" level=error msg="MdafMsg() Error[undefined response type]" category=NGAP component=AMF
+time="2022-05-17T14:39:23Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:52934" category=NGAP component=AMF
+time="2022-05-17T14:39:27Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T14:39:27Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T14:39:28Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T14:39:28Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T14:39:28Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T14:39:28Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T14:39:28Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T14:41:37Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T14:41:37Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T14:41:37Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T14:41:37Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T14:41:37Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T14:41:37Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T14:41:37Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T14:41:39Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-17T14:41:42Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T14:41:42Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 0.9991673605042627" category=HTTP component=AMF
+time="2022-05-17T14:41:42Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T14:41:42Z" level=info msg="===Switch case===" category=HTTP component=AMF
+time="2022-05-17T14:41:42Z" level=error msg="MdafMsg() Error[undefined response type]" category=NGAP component=AMF
+time="2022-05-17T14:41:42Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T14:41:42Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:41003" category=NGAP component=AMF
+time="2022-05-17T14:41:49Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T14:41:49Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T14:41:50Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T14:41:50Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T14:41:50Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T14:41:50Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T14:41:50Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T14:42:58Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T14:42:58Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T14:42:58Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T14:42:58Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T14:42:58Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T14:42:58Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T14:42:58Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T14:43:13Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T14:43:13Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T14:43:14Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T14:43:14Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T14:43:14Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T14:43:14Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T14:43:14Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T15:03:24Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T15:03:24Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T15:03:25Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T15:03:25Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T15:03:25Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T15:03:25Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T15:03:25Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T15:03:27Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:35935" category=NGAP component=AMF
+time="2022-05-17T15:03:41Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T15:03:41Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T15:03:42Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T15:03:42Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T15:03:42Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T15:03:42Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T15:03:42Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T15:10:56Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T15:10:56Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T15:10:56Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T15:10:56Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T15:10:56Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T15:10:56Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T15:10:56Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T15:11:01Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T15:11:01Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T15:11:02Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T15:11:02Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T15:11:02Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T15:11:02Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T15:11:02Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T15:40:55Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T15:40:55Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T15:40:55Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T15:40:55Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T15:40:55Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T15:40:55Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T15:40:55Z" level=info msg="======start MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T15:40:55Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-17T15:40:55Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T15:40:58Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T15:40:58Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 1.1666666666618162" category=HTTP component=AMF
+time="2022-05-17T15:40:58Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T15:40:58Z" level=error msg="===CallAPI===" category=HTTP component=AMF
+time="2022-05-17T15:40:58Z" level=error msg="MdafMsg() Error[server no response]" category=NGAP component=AMF
+time="2022-05-17T15:40:58Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T15:40:58Z" level=info msg="===Before http server===" category=Init component=AMF
+time="2022-05-17T15:41:08Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T15:41:08Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T15:41:09Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T15:41:09Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T15:41:09Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T15:41:09Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T15:41:09Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T15:42:38Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T15:42:38Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T15:42:38Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T15:42:38Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T15:42:38Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T15:42:38Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T15:42:38Z" level=info msg="======start MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T15:42:38Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-17T15:42:38Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T15:42:41Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T15:42:41Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 1.0016694490748577" category=HTTP component=AMF
+time="2022-05-17T15:42:41Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T15:42:41Z" level=error msg="===CallAPI===" category=HTTP component=AMF
+time="2022-05-17T15:42:41Z" level=error msg="MdafMsg() Error[server no response]" category=NGAP component=AMF
+time="2022-05-17T15:42:41Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T15:42:41Z" level=info msg="===Before http server===" category=Init component=AMF
+time="2022-05-17T15:42:49Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T15:42:49Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T15:42:50Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T15:42:50Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T15:42:50Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T15:42:50Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T15:42:50Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T15:56:45Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T15:56:45Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T15:56:45Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T15:56:45Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T15:56:45Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T15:56:45Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T15:56:45Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T15:56:45Z" level=info msg="===Before http server===" category=Init component=AMF
+time="2022-05-17T15:56:45Z" level=info msg="===after http server===" category=Init component=AMF
+time="2022-05-17T15:57:01Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:39424" category=NGAP component=AMF
+time="2022-05-17T15:57:06Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T15:57:06Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T15:57:07Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T15:57:07Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T15:57:07Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T15:57:07Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T15:57:07Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T15:57:44Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T15:57:44Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T15:57:44Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T15:57:44Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T15:57:44Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T15:57:44Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T15:57:44Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T15:57:44Z" level=info msg="===Before http server===" category=Init component=AMF
+time="2022-05-17T15:57:44Z" level=info msg="======start MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T15:57:44Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-17T15:57:47Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T15:57:47Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 1.8410041841532037" category=HTTP component=AMF
+time="2022-05-17T15:57:47Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T15:57:47Z" level=error msg="===CallAPI===" category=HTTP component=AMF
+time="2022-05-17T15:57:47Z" level=error msg="MdafMsg() Error[server no response]" category=NGAP component=AMF
+time="2022-05-17T15:57:47Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T15:58:06Z" level=info msg="AcceptSCTP: interrupted system call" category=NGAP component=AMF
+time="2022-05-17T15:58:06Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T15:58:06Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T15:58:07Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T15:58:07Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T15:58:07Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T15:58:07Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T15:58:07Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T16:01:54Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T16:01:54Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T16:01:54Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T16:01:54Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T16:01:54Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T16:01:54Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T16:01:54Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T16:01:54Z" level=info msg="===Before http server===" category=Init component=AMF
+time="2022-05-17T16:01:59Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:46599" category=NGAP component=AMF
+time="2022-05-17T16:02:42Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:46599" category=NGAP component=AMF
+time="2022-05-17T16:02:42Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:46599"
+time="2022-05-17T16:02:42Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:46599"
+time="2022-05-17T16:02:42Z" level=info msg="======start MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T16:02:42Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-17T16:02:45Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T16:02:45Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 1.6652789342585326" category=HTTP component=AMF
+time="2022-05-17T16:02:45Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T16:02:45Z" level=error msg="===CallAPI===" category=HTTP component=AMF
+time="2022-05-17T16:02:45Z" level=error msg="MdafMsg() Error[server no response]" category=NGAP component=AMF
+time="2022-05-17T16:02:45Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T16:02:45Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T16:02:45Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:46599"
+time="2022-05-17T16:02:45Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:46599"
+time="2022-05-17T16:02:45Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T16:02:45Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T16:02:58Z" level=info msg="AcceptSCTP: interrupted system call" category=NGAP component=AMF
+time="2022-05-17T16:02:58Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T16:02:58Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T16:02:59Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T16:02:59Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T16:02:59Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T16:02:59Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T16:02:59Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T16:03:57Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T16:03:57Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T16:03:57Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T16:03:57Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T16:03:57Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T16:03:57Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T16:03:57Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T16:03:57Z" level=info msg="===Before http server===" category=Init component=AMF
+time="2022-05-17T16:03:59Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435" category=NGAP component=AMF
+time="2022-05-17T16:04:05Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435" category=NGAP component=AMF
+time="2022-05-17T16:04:05Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:05Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:05Z" level=info msg="======start MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T16:04:05Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-17T16:04:08Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T16:04:08Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 1.3344453711165283" category=HTTP component=AMF
+time="2022-05-17T16:04:08Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T16:04:08Z" level=info msg="===Switch case===" category=HTTP component=AMF
+time="2022-05-17T16:04:08Z" level=error msg="MdafMsg() Error[undefined response type]" category=NGAP component=AMF
+time="2022-05-17T16:04:08Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T16:04:08Z" level=info msg="Handle Initial UE Message" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:08Z" level=info msg="Handle Registration Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-05-17T16:04:08Z" level=info msg="Authentication procedure" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-05-17T16:04:08Z" level=info msg="Send Authentication Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-05-17T16:04:08Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:08Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:08Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:08Z" level=info msg="Handle Authentication Response" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF
+time="2022-05-17T16:04:08Z" level=info msg="Send Security Mode Command" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-05-17T16:04:08Z" level=info msg="Send Downlink Nas Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:08Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:08Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:08Z" level=info msg="Handle Security Mode Complete" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-05-17T16:04:08Z" level=info msg="Handle InitialRegistration" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-05-17T16:04:08Z" level=info msg="Start of UE Number: +v%1" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-05-17T16:04:08Z" level=info msg="Handle AMF Status Change Subscribe Request" category=Comm component=AMF
+time="2022-05-17T16:04:08Z" level=info msg="new AMF Status Subscription[1]" category=Comm component=AMF
+time="2022-05-17T16:04:08Z" level=info msg="| 201 |       127.0.0.1 | POST    | /namf-comm/v1/subscriptions | " category=GIN component=AMF
+time="2022-05-17T16:04:08Z" level=info msg="Send Registration Accept" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-05-17T16:04:08Z" level=info msg="Send Initial Context Setup Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:08Z" level=info msg="Handle Initial Context Setup Response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:08Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:08Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:08Z" level=info msg="Handle Registration Complete" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-05-17T16:04:08Z" level=info msg="End of UE Number: +v%0" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-05-17T16:04:08Z" level=info msg="Handle Uplink Nas Transport" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:08Z" level=info msg="Uplink NAS Transport (RAN UE NGAP ID: 1)" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:08Z" level=info msg="Handle UL NAS Transport" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-05-17T16:04:08Z" level=info msg="Transport 5GSM Message to SMF" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-05-17T16:04:08Z" level=info msg="Select SMF [snssai: {Sst:1 Sd:010203}, dnn: internet]" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-05-17T16:04:09Z" level=info msg="create smContext[pduSessionID: 10] Success" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=GMM component=AMF supi="SUPI:imsi-2089300007487"
+time="2022-05-17T16:04:09Z" level=info msg="Handle N1N2 Message Transfer Request" category=Producer component=AMF
+time="2022-05-17T16:04:09Z" level=info msg="Send PDU Session Resource Setup Request" amf_ue_ngap_id="AMF_UE_NGAP_ID:1" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:09Z" level=info msg="| 200 |       127.0.0.1 | POST    | /namf-comm/v1/ue-contexts/imsi-2089300007487/n1-n2-messages | " category=GIN component=AMF
+time="2022-05-17T16:04:09Z" level=info msg="Handle PDU Session Resource Setup Response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:09Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T16:04:09Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:09Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59435"
+time="2022-05-17T16:04:09Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T16:04:09Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T16:04:58Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T16:04:58Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T16:04:59Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T16:04:59Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T16:04:59Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T16:04:59Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T16:04:59Z" level=info msg="[AMF] Send Amf Status Change Notify to http://127.0.0.7:8000/npcf-callback/v1/amfstatus" category=Producer component=AMF
+time="2022-05-17T16:04:59Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T16:09:17Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T16:09:17Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T16:09:17Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T16:09:17Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T16:09:17Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T16:09:17Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T16:09:17Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T16:09:17Z" level=info msg="===Before http server===" category=Init component=AMF
+time="2022-05-17T16:09:19Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:38786" category=NGAP component=AMF
+time="2022-05-17T16:09:56Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:38786" category=NGAP component=AMF
+time="2022-05-17T16:09:56Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:38786"
+time="2022-05-17T16:09:56Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:38786"
+time="2022-05-17T16:09:56Z" level=info msg="======start MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T16:09:56Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-17T16:09:59Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T16:09:59Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 1.0851419031821432" category=HTTP component=AMF
+time="2022-05-17T16:09:59Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T16:09:59Z" level=info msg="===Switch case===" category=HTTP component=AMF
+time="2022-05-17T16:09:59Z" level=error msg="MdafMsg() Error[undefined response type]" category=NGAP component=AMF
+time="2022-05-17T16:09:59Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T16:11:04Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T16:11:04Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:38786"
+time="2022-05-17T16:11:04Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:38786"
+time="2022-05-17T16:11:04Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T16:11:04Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T16:11:07Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T16:11:07Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T16:11:08Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T16:11:08Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T16:11:08Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T16:11:08Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T16:11:08Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T16:13:17Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T16:13:17Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T16:13:17Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T16:13:17Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T16:13:17Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T16:13:17Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T16:13:17Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T16:13:17Z" level=info msg="===Before http server===" category=Init component=AMF
+time="2022-05-17T16:13:20Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:57654" category=NGAP component=AMF
+time="2022-05-17T16:13:28Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:57654" category=NGAP component=AMF
+time="2022-05-17T16:13:28Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:57654"
+time="2022-05-17T16:13:28Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:57654"
+time="2022-05-17T16:13:28Z" level=info msg="======start MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T16:13:28Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-17T16:13:31Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T16:13:31Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 2.1666666667374055" category=HTTP component=AMF
+time="2022-05-17T16:13:31Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T16:13:31Z" level=info msg="===Switch case===" category=HTTP component=AMF
+time="2022-05-17T16:13:31Z" level=info msg="===Switch case: case 404===" category=HTTP component=AMF
+time="2022-05-17T16:13:31Z" level=error msg="MdafMsg() Error[undefined response type]" category=NGAP component=AMF
+time="2022-05-17T16:13:31Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T16:13:38Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T16:13:38Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:57654"
+time="2022-05-17T16:13:38Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:57654"
+time="2022-05-17T16:13:38Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T16:13:38Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T16:13:40Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T16:13:40Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T16:13:41Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T16:13:41Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T16:13:41Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T16:13:41Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T16:13:41Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T16:58:22Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T16:58:22Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T16:58:22Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T16:58:22Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T16:58:22Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T16:58:22Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T16:58:22Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T16:58:22Z" level=info msg="===Before http server===" category=Init component=AMF
+time="2022-05-17T16:58:24Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37390" category=NGAP component=AMF
+time="2022-05-17T16:58:32Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37390" category=NGAP component=AMF
+time="2022-05-17T16:58:32Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37390"
+time="2022-05-17T16:58:32Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37390"
+time="2022-05-17T16:58:32Z" level=info msg="======start MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T16:58:32Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-17T16:58:35Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T16:58:35Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 1.24999999998181" category=HTTP component=AMF
+time="2022-05-17T16:58:35Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T16:58:35Z" level=info msg="===Switch case===" category=HTTP component=AMF
+time="2022-05-17T16:58:35Z" level=info msg="===Switch case: case 404===" category=HTTP component=AMF
+time="2022-05-17T16:58:35Z" level=error msg="MdafMsg() Error[undefined response type]" category=NGAP component=AMF
+time="2022-05-17T16:58:35Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T16:58:45Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T16:58:45Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37390"
+time="2022-05-17T16:58:45Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37390"
+time="2022-05-17T16:58:45Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T16:58:45Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-17T16:58:48Z" level=info msg="AcceptSCTP: interrupted system call" category=NGAP component=AMF
+time="2022-05-17T16:58:48Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T16:58:48Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T16:58:49Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T16:58:49Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T16:58:49Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T16:58:49Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T16:58:49Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T17:04:28Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T17:04:28Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T17:04:28Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T17:04:28Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T17:04:28Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T17:04:28Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T17:04:28Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T17:04:28Z" level=info msg="===Before http server===" category=Init component=AMF
+time="2022-05-17T17:04:30Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:41638" category=NGAP component=AMF
+time="2022-05-17T17:04:37Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:41638" category=NGAP component=AMF
+time="2022-05-17T17:04:37Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:41638"
+time="2022-05-17T17:04:37Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:41638"
+time="2022-05-17T17:04:37Z" level=info msg="======start MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T17:04:37Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-17T17:04:40Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T17:04:40Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 1.4154870941000635" category=HTTP component=AMF
+time="2022-05-17T17:04:40Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T17:04:40Z" level=info msg="===Switch case===" category=HTTP component=AMF
+time="2022-05-17T17:04:40Z" level=info msg="===Switch case: case 404===" category=HTTP component=AMF
+time="2022-05-17T17:04:40Z" level=error msg="MdafMsg() Error[undefined response type]" category=NGAP component=AMF
+time="2022-05-17T17:04:40Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T17:04:54Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T17:04:54Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T17:04:55Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T17:04:55Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T17:04:55Z" level=info msg="Send AMF Status Indication" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:41638"
+time="2022-05-17T17:04:55Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T17:04:55Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T17:04:55Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T17:12:49Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T17:12:49Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T17:12:49Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T17:12:49Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T17:12:49Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T17:12:49Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T17:12:49Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T17:12:49Z" level=info msg="===Before http server===" category=Init component=AMF
+time="2022-05-17T17:12:52Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37162" category=NGAP component=AMF
+time="2022-05-17T17:13:08Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37162" category=NGAP component=AMF
+time="2022-05-17T17:13:08Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37162"
+time="2022-05-17T17:13:08Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37162"
+time="2022-05-17T17:13:08Z" level=info msg="======start MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T17:13:08Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-17T17:13:11Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T17:13:11Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 1.000834028329811" category=HTTP component=AMF
+time="2022-05-17T17:13:11Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T17:13:11Z" level=error msg="===CallAPI===" category=HTTP component=AMF
+time="2022-05-17T17:13:11Z" level=error msg="MdafMsg() Error[server no response]" category=NGAP component=AMF
+time="2022-05-17T17:13:11Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T17:13:21Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T17:13:21Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T17:13:22Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T17:13:22Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T17:13:22Z" level=info msg="Send AMF Status Indication" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37162"
+time="2022-05-17T17:13:22Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T17:13:22Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T17:13:22Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-17T17:18:42Z" level=info msg=amf category=App component=AMF
+time="2022-05-17T17:18:42Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-17T17:18:42Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-17T17:18:42Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-17T17:18:42Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-17T17:18:42Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-17T17:18:42Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-17T17:18:42Z" level=info msg="===Before http server===" category=Init component=AMF
+time="2022-05-17T17:18:45Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:58394" category=NGAP component=AMF
+time="2022-05-17T17:18:51Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:58394" category=NGAP component=AMF
+time="2022-05-17T17:18:51Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:58394"
+time="2022-05-17T17:18:51Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:58394"
+time="2022-05-17T17:18:51Z" level=info msg="======start MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T17:18:51Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-17T17:18:54Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T17:18:54Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 1.5012510424795455" category=HTTP component=AMF
+time="2022-05-17T17:18:54Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-17T17:18:54Z" level=info msg="===Switch case===" category=HTTP component=AMF
+time="2022-05-17T17:18:54Z" level=info msg="===Switch case: case 404===" category=HTTP component=AMF
+time="2022-05-17T17:18:54Z" level=error msg="MdafMsg() Error[undefined response type]" category=NGAP component=AMF
+time="2022-05-17T17:18:54Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-17T17:19:04Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-17T17:19:04Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-17T17:19:05Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-17T17:19:05Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-17T17:19:05Z" level=info msg="Send AMF Status Indication" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:58394"
+time="2022-05-17T17:19:05Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-17T17:19:05Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-17T17:19:05Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-23T13:51:57Z" level=info msg=amf category=App component=AMF
+time="2022-05-23T13:51:57Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-23T13:51:57Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-23T13:51:57Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-23T13:51:57Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-23T13:51:57Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-23T13:51:57Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-23T13:51:57Z" level=info msg="===Before http server===" category=Init component=AMF
+time="2022-05-23T13:51:59Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:50295" category=NGAP component=AMF
+time="2022-05-23T13:52:29Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:50295" category=NGAP component=AMF
+time="2022-05-23T13:52:29Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:50295"
+time="2022-05-23T13:52:29Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:50295"
+time="2022-05-23T13:52:29Z" level=info msg="======start MdafMsg======" category=NGAP component=AMF
+time="2022-05-23T13:52:29Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-23T13:52:32Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-23T13:52:32Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 1.6680567140631541" category=HTTP component=AMF
+time="2022-05-23T13:52:32Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-23T13:52:32Z" level=info msg="===Switch case===" category=HTTP component=AMF
+time="2022-05-23T13:52:32Z" level=info msg="===Switch case: case 404===" category=HTTP component=AMF
+time="2022-05-23T13:52:32Z" level=error msg="MdafMsg() Error[undefined response type]" category=NGAP component=AMF
+time="2022-05-23T13:52:32Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-23T13:52:36Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-23T13:52:36Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:50295"
+time="2022-05-23T13:52:36Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:50295"
+time="2022-05-23T13:52:36Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-23T13:52:36Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-23T13:52:39Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-23T13:52:39Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-23T13:52:40Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-23T13:52:40Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-23T13:52:40Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-23T13:52:40Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-23T13:52:40Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-23T15:08:34Z" level=info msg=amf category=App component=AMF
+time="2022-05-23T15:08:34Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-23T15:08:34Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-23T15:08:34Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-23T15:08:34Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-23T15:08:34Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-23T15:08:34Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-23T15:08:34Z" level=info msg="===Before http server===" category=Init component=AMF
+time="2022-05-23T15:08:36Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59559" category=NGAP component=AMF
+time="2022-05-23T15:09:11Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59559" category=NGAP component=AMF
+time="2022-05-23T15:09:11Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59559"
+time="2022-05-23T15:09:11Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59559"
+time="2022-05-23T15:09:11Z" level=info msg="======start MdafMsg======" category=NGAP component=AMF
+time="2022-05-23T15:09:11Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-23T15:09:14Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-23T15:09:14Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 1.0833333333115056" category=HTTP component=AMF
+time="2022-05-23T15:09:14Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-23T15:09:14Z" level=info msg="===Switch case===" category=HTTP component=AMF
+time="2022-05-23T15:09:14Z" level=error msg="MdafMsg() Error[undefined response type]" category=NGAP component=AMF
+time="2022-05-23T15:09:14Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-23T15:09:28Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-23T15:09:28Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59559"
+time="2022-05-23T15:09:28Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:59559"
+time="2022-05-23T15:09:28Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-23T15:09:28Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-23T15:09:30Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-23T15:09:30Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-23T15:09:31Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-23T15:09:31Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-23T15:09:31Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-23T15:09:31Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-23T15:09:31Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-23T16:37:19Z" level=info msg=amf category=App component=AMF
+time="2022-05-23T16:37:19Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-23T16:37:19Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-23T16:37:19Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-23T16:37:19Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-23T16:37:19Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-23T16:37:19Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-23T16:37:19Z" level=info msg="===Before http server===" category=Init component=AMF
+time="2022-05-23T16:37:21Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37747" category=NGAP component=AMF
+time="2022-05-23T16:37:27Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37747" category=NGAP component=AMF
+time="2022-05-23T16:37:27Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37747"
+time="2022-05-23T16:37:27Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37747"
+time="2022-05-23T16:37:27Z" level=info msg="======start MdafMsg======" category=NGAP component=AMF
+time="2022-05-23T16:37:27Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-23T16:37:30Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-23T16:37:30Z" level=info msg="amfNum: 0 ueNum: 0 cpuRate: 1.2468827930385722" category=HTTP component=AMF
+time="2022-05-23T16:37:30Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-23T16:37:30Z" level=info msg="===Switch case===" category=HTTP component=AMF
+time="2022-05-23T16:37:30Z" level=error msg="MdafMsg() Error[undefined response type]" category=NGAP component=AMF
+time="2022-05-23T16:37:30Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-23T16:37:39Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-23T16:37:39Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37747"
+time="2022-05-23T16:37:39Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:37747"
+time="2022-05-23T16:37:39Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-23T16:37:39Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-23T16:37:42Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-23T16:37:42Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-23T16:37:43Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-23T16:37:43Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-23T16:37:43Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-23T16:37:43Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-23T16:37:43Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-23T16:41:21Z" level=info msg=amf category=App component=AMF
+time="2022-05-23T16:41:21Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-23T16:41:21Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-23T16:41:21Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-23T16:41:21Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-23T16:41:21Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-23T16:41:21Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-23T16:41:21Z" level=info msg="===Before http server===" category=Init component=AMF
+time="2022-05-23T16:41:23Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:54765" category=NGAP component=AMF
+time="2022-05-23T16:41:29Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:54765" category=NGAP component=AMF
+time="2022-05-23T16:41:29Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:54765"
+time="2022-05-23T16:41:29Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:54765"
+time="2022-05-23T16:41:29Z" level=info msg="======start MdafMsg======" category=NGAP component=AMF
+time="2022-05-23T16:41:29Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-23T16:41:29Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-23T16:41:29Z" level=info msg="amfNum: 0 ueNum: 1 cpuRate: 1.555" category=HTTP component=AMF
+time="2022-05-23T16:41:29Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-23T16:41:29Z" level=info msg="===Switch case===" category=HTTP component=AMF
+time="2022-05-23T16:41:29Z" level=error msg="MdafMsg() Error[undefined response type]" category=NGAP component=AMF
+time="2022-05-23T16:41:29Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-23T16:41:39Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-23T16:41:39Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:54765"
+time="2022-05-23T16:41:39Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:54765"
+time="2022-05-23T16:41:39Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-23T16:41:39Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-23T16:41:42Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-23T16:41:42Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-23T16:41:43Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-23T16:41:43Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-23T16:41:43Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-23T16:41:43Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-23T16:41:43Z" level=info msg="AMF terminated" category=Init component=AMF
+time="2022-05-23T16:43:53Z" level=info msg=amf category=App component=AMF
+time="2022-05-23T16:43:53Z" level=info msg="AMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AMF
+time="2022-05-23T16:43:53Z" level=info msg="AMF Log level is set to [info] level" category=Init component=AMF
+time="2022-05-23T16:43:53Z" level=info msg="config version [1.0.2]" category=CFG component=AMF
+time="2022-05-23T16:43:53Z" level=info msg="Server started" category=Init component=AMF
+time="2022-05-23T16:43:53Z" level=info msg="amfconfig Info: Version[1.0.2] Description[AMF initial local configuration]" category=Util component=AMF
+time="2022-05-23T16:43:53Z" level=info msg="Listen on 127.0.0.18:38412" category=NGAP component=AMF
+time="2022-05-23T16:43:53Z" level=info msg="===Before http server===" category=Init component=AMF
+time="2022-05-23T16:43:55Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:36978" category=NGAP component=AMF
+time="2022-05-23T16:44:02Z" level=info msg="Create a new NG connection for: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:36978" category=NGAP component=AMF
+time="2022-05-23T16:44:02Z" level=info msg="Handle NG Setup request" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:36978"
+time="2022-05-23T16:44:02Z" level=info msg="Send NG-Setup response" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:36978"
+time="2022-05-23T16:44:02Z" level=info msg="======start MdafMsg======" category=NGAP component=AMF
+time="2022-05-23T16:44:02Z" level=info msg="Start MdafMsg" category=HTTP component=AMF
+time="2022-05-23T16:44:02Z" level=info msg="===Start AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-23T16:44:02Z" level=info msg="amfNum: 0 ueNum: 1 cpuRate: 1.555" category=HTTP component=AMF
+time="2022-05-23T16:44:02Z" level=info msg="===In AmfMdafMsg===" category=HTTP component=AMF
+time="2022-05-23T16:44:02Z" level=info msg="===Switch case===" category=HTTP component=AMF
+time="2022-05-23T16:44:02Z" level=info msg="======after MdafMsg======" category=NGAP component=AMF
+time="2022-05-23T16:44:25Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-23T16:44:25Z" level=info msg="SCTP_SHUTDOWN_EVENT notification, close the connection" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:36978"
+time="2022-05-23T16:44:25Z" level=info msg="Remove RAN Context[ID: <PlmnID: {Mcc:208 Mnc:93}, GNbID: 000102>]" category=NGAP component=AMF ran_addr="127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:36978"
+time="2022-05-23T16:44:25Z" level=info msg="Handle SCTP Notification[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-23T16:44:25Z" level=warning msg="RAN context has been removed[addr: <nil>]" category=NGAP component=AMF
+time="2022-05-23T16:44:27Z" level=info msg="Terminating AMF..." category=Init component=AMF
+time="2022-05-23T16:44:27Z" level=info msg="[AMF] Send Deregister NFInstance" category=Consumer component=AMF
+time="2022-05-23T16:44:28Z" level=info msg="[AMF] Deregister from NRF successfully" category=Init component=AMF
+time="2022-05-23T16:44:28Z" level=info msg="Send AMF Status Indication to Notify RANs due to AMF terminating" category=Init component=AMF
+time="2022-05-23T16:44:28Z" level=info msg="Close SCTP server..." category=NGAP component=AMF
+time="2022-05-23T16:44:28Z" level=info msg="SCTP server closed" category=NGAP component=AMF
+time="2022-05-23T16:44:28Z" level=info msg="AMF terminated" category=Init component=AMF

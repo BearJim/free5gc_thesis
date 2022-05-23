@@ -9,7 +9,6 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/gin-contrib/cors"
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli"
 
@@ -96,43 +95,34 @@ func (lb *LB) Start() {
 	initLog.Infoln("Server started")
 
 	router := logger_util.NewGinWithLogrus(logger.GinLog)
-	router.Use(cors.New(cors.Config{
-		AllowMethods: []string{"GET", "POST", "OPTIONS", "PUT", "PATCH", "DELETE"},
-		AllowHeaders: []string{
-			"Origin", "Content-Length", "Content-Type", "User-Agent", "Referrer", "Host",
-			"Token", "X-Requested-With",
-		},
-		ExposeHeaders:    []string{"Content-Length"},
-		AllowCredentials: true,
-		AllowAllOrigins:  true,
-		MaxAge:           86400,
-	}))
+	// router.Use(cors.New(cors.Config{
+	// 	AllowMethods: []string{"GET", "POST", "OPTIONS", "PUT", "PATCH", "DELETE"},
+	// 	AllowHeaders: []string{
+	// 		"Origin", "Content-Length", "Content-Type", "User-Agent", "Referrer", "Host",
+	// 		"Token", "X-Requested-With",
+	// 	},
+	// 	ExposeHeaders:    []string{"Content-Length"},
+	// 	AllowCredentials: true,
+	// 	AllowAllOrigins:  true,
+	// 	MaxAge:           86400,
+	// }))
 
+	initLog.Infoln("before add service")
 	mdaf.AddService(router)
 
-	// self := context.LB_Self()
-	// util.InitAmfContext(self)
-
-	// addr := fmt.Sprintf("%s:%d", self.BindingIPv4, self.SBIPort)
-
-	// ngapHandler := ngap_service.NGAPHandler{
-	// 	HandleMessage:      ngap.Dispatch,
-	// 	HandleNotification: ngap.HandleSCTPNotification,
-	// }
-
-	// Register to NRF
-	// var profile models.NfProfile
-	// if profileTmp, err := consumer.BuildNFInstance(self); err != nil {
-	// 	initLog.Error("Build LB Profile Error")
-	// } else {
-	// 	profile = profileTmp
-	// }
-
-	// if _, nfId, err := consumer.SendRegisterNFInstance(self.NrfUri, self.NfId, profile); err != nil {
-	// 	initLog.Warnf("Send Register NF Instance failed: %+v", err)
-	// } else {
-	// 	self.NfId = nfId
-	// }
+	initLog.Infoln("before ngap service")
+	NgapIp := []string{"127.0.0.21"}
+	AmfIp := []string{"127.0.0.18"}
+	// Amf1Ip := []string{"127.0.0.19"}
+	// Amf2Ip := []string{"127.0.0.20"}
+	initLog.Infoln("DialToAmf")
+	ngap_service.DialToAmf(AmfIp, 38412, 0)
+	// initLog.Infoln("DialToAmf1")
+	// ngap_service.DialToAmf(Amf1Ip, 38413, 1)
+	// initLog.Infoln("DialToAmf2")
+	// ngap_service.DialToAmf(Amf2Ip, 38414, 2)
+	initLog.Infoln("Run ngap")
+	ngap_service.Run(NgapIp, 38415)
 
 	signalChannel := make(chan os.Signal, 1)
 	signal.Notify(signalChannel, os.Interrupt, syscall.SIGTERM)
@@ -142,6 +132,7 @@ func (lb *LB) Start() {
 		os.Exit(0)
 	}()
 
+	initLog.Infoln("before http server")
 	addr := fmt.Sprintf("%s:%d", "127.0.0.21", 8000)
 	server, err := http2_util.NewServer(addr, path_util.Free5gcPath("free5gc/lbsslkey.log"), router)
 
@@ -163,18 +154,6 @@ func (lb *LB) Start() {
 		initLog.Fatalf("HTTP server setup failed: %+v", err)
 	}
 
-	NgapIp := []string{"127.0.0.21"}
-	AmfIp := []string{"127.0.0.18"}
-	Amf1Ip := []string{"127.0.0.19"}
-	Amf2Ip := []string{"127.0.0.20"}
-	initLog.Infoln("DialToAmf")
-	ngap_service.DialToAmf(AmfIp, 38412, 0)
-	initLog.Infoln("DialToAmf1")
-	ngap_service.DialToAmf(Amf1Ip, 38413, 1)
-	initLog.Infoln("DialToAmf2")
-	ngap_service.DialToAmf(Amf2Ip, 38414, 2)
-	initLog.Infoln("Run")
-	ngap_service.Run(NgapIp, 38415)
 }
 
 func (lb *LB) Exec(c *cli.Context) error {
