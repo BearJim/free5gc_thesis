@@ -37,11 +37,11 @@ type service struct {
 	client *APIClient
 }
 
-type amfData struct {
-	amfNum  string `json:"amfId" bson:"amfId"`
-	ueNum   string `json:"ueNum" bson:"UeNum"`
-	cpuRate string `json:"cpuRate" bson:"cpuRate"`
-}
+// type amfData struct {
+// 	amfNum  string `json:"amfId" bson:"amfId"`
+// 	ueNum   string `json:"ueNum" bson:"UeNum"`
+// 	cpuRate string `json:"cpuRate" bson:"cpuRate"`
+// }
 
 type AMFMdafMsgService service
 

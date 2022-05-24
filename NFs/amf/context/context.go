@@ -69,13 +69,14 @@ type AMFContext struct {
 	T3512Value                      int      // unit is second
 	Non3gppDeregistrationTimerValue int      // unit is second
 	// read-only fields
-	T3513Cfg factory.TimerValue
-	T3522Cfg factory.TimerValue
-	T3550Cfg factory.TimerValue
-	T3560Cfg factory.TimerValue
-	T3565Cfg factory.TimerValue
-	Locality string
-	UeNum    int
+	T3513Cfg       factory.TimerValue
+	T3522Cfg       factory.TimerValue
+	T3550Cfg       factory.TimerValue
+	T3560Cfg       factory.TimerValue
+	T3565Cfg       factory.TimerValue
+	TimerToMdafCfg factory.TimerValue
+	Locality       string
+	UeNum          int
 }
 
 type AMFContextEventSubscription struct {

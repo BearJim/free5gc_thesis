@@ -26,15 +26,17 @@ const (
 	DefaultT3502                      int   = 720  // 12 min
 	DefaultT3512                      int   = 3240 // 54 min
 	DefaultNon3gppDeregistrationTimer int   = 3240 // 54 min
+	MaxTimerToMdafRetryTimes          int   = 10
 )
 
 // timers at AMF side, defined in TS 24.501 table 10.2.2
 const (
-	TimeT3513 time.Duration = 6 * time.Second
-	TimeT3522 time.Duration = 6 * time.Second
-	TimeT3550 time.Duration = 6 * time.Second
-	TimeT3560 time.Duration = 6 * time.Second
-	TimeT3565 time.Duration = 6 * time.Second
+	TimeT3513   time.Duration = 6 * time.Second
+	TimeT3522   time.Duration = 6 * time.Second
+	TimeT3550   time.Duration = 6 * time.Second
+	TimeT3560   time.Duration = 6 * time.Second
+	TimeT3565   time.Duration = 6 * time.Second
+	TimerToMdaf time.Duration = 6 * time.Second
 )
 
 type LADN struct {

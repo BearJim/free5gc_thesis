@@ -168,16 +168,6 @@ type LbUe struct {
 	NetworkSlicingSubscriptionChanged bool
 	SdmSubscriptionId                 string
 	UeCmRegistered                    bool
-	/* T3513(Paging) */
-	T3513 *Timer // for paging
-	/* T3565(Notification) */
-	T3565 *Timer // for NAS Notification
-	/* T3560 (for authentication request/security mode command retransmission) */
-	T3560 *Timer
-	/* T3550 (for registration accept retransmission) */
-	T3550 *Timer
-	/* T3522 (for deregistration request) */
-	T3522 *Timer
 	/* Ue Context Release Cause */
 	ReleaseCause map[models.AccessType]*CauseAll
 	/* T3502 (Assigned by LB, and used by UE to initialize registration procedure) */

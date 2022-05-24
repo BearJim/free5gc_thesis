@@ -153,7 +153,21 @@ func HandleNGSetupRequest(ran *context.AmfRan, message *ngapType.NGAPPDU) {
 	} else if errMdaf != nil {
 		logger.NgapLog.Errorf("MdafMsg() Error[%+v]", errMdaf)
 	}
-	logger.NgapLog.Infoln("======after MdafMsg======")
+	logger.NgapLog.Infoln("======Start timer======")
+	cfg := context.AMF_Self().TimerToMdafCfg
+	logger.NgapLog.Infof("timer ExpireTime: %v, MaxRetryTimes: %v", cfg.ExpireTime, cfg.MaxRetryTimes)
+	ran.TimerToMdaf = context.NewTimer(cfg.ExpireTime, cfg.MaxRetryTimes, func(expireTimes int32) {
+		logger.ContextLog.Infof("timerToMdaf expires, retransmit Registration Accept (retry: %d)", expireTimes)
+		problemDetails, errMdaf := consumer.MdafMsg()
+		if problemDetails != nil {
+			logger.NgapLog.Errorf("MdafMsg() Failed Problem[%+v]", problemDetails)
+		} else if errMdaf != nil {
+			logger.NgapLog.Errorf("MdafMsg() Error[%+v]", errMdaf)
+		}
+	}, func() {
+		logger.ContextLog.Warnf("T3550 Expires %d times, abort retransmission of Registration Accept", cfg.MaxRetryTimes)
+		ran.TimerToMdaf = nil // clear the timer
+	})
 }
 
 func HandleUplinkNasTransport(ran *context.AmfRan, message *ngapType.NGAPPDU) {

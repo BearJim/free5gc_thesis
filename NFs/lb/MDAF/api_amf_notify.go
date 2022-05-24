@@ -19,7 +19,7 @@ import (
 // }
 
 func HTTPNotifyAmf(ctx *gin.Context) {
-	logger.HttpLog.Errorln("===Start HTTPNotifyAmf===")
+	logger.HttpLog.Infoln("===Start HTTPNotifyAmf===")
 	// var amfData amfData
 	var amf3GppAccessRegistration models.Amf3GppAccessRegistration
 
@@ -36,7 +36,6 @@ func HTTPNotifyAmf(ctx *gin.Context) {
 		ctx.JSON(http.StatusInternalServerError, problemDetail)
 		return
 	}
-	logger.HttpLog.Errorln("requestBody: ", requestBody)
 
 	// step 2: convert requestBody to openapi models
 	// err = openapi.Deserialize(&amfData, requestBody, "application/json")
@@ -53,7 +52,7 @@ func HTTPNotifyAmf(ctx *gin.Context) {
 		return
 	}
 	// logger.AppLog.Infoln("~~amfData: ", amfData)
-	logger.AppLog.Errorln("amf3GppAccessRegistration: ", amf3GppAccessRegistration)
+	logger.AppLog.Infoln("AMF data Info msg: ", amf3GppAccessRegistration)
 
 	// req := http_wrapper.NewRequest(ctx.Request, amfData)
 	req := http_wrapper.NewRequest(ctx.Request, amf3GppAccessRegistration)
