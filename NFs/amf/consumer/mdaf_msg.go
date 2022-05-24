@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"net/url"
+	"strconv"
 	"strings"
 	"time"
 
@@ -37,9 +38,9 @@ type service struct {
 }
 
 type amfData struct {
-	amfNum  int
-	ueNum   int
-	cpuRate float64
+	amfNum  string `json:"amfId" bson:"amfId"`
+	ueNum   string `json:"ueNum" bson:"UeNum"`
+	cpuRate string `json:"cpuRate" bson:"cpuRate"`
 }
 
 type AMFMdafMsgService service
@@ -52,20 +53,30 @@ func MdafMsg() (*models.ProblemDetails, error) {
 	amfSelf := amf_context.AMF_Self()
 
 	tempUeNum := amfSelf.UeNum
+	ueNum := strconv.Itoa(tempUeNum)
 
 	tempCpuRate, err := getCpuInfo()
 	if err != nil {
 		return nil, err
 	}
-	amfDataBody := amfData{
-		amfNum:  0,
-		ueNum:   tempUeNum,
-		cpuRate: tempCpuRate[0],
+	// totalCpuRate := strconv.Itoa(tempCpuRate[0])
+	totalCpuRate := strconv.FormatFloat(tempCpuRate[0], 'f', 3, 64)
+	// amfDataBody := amfData{
+	// 	amfNum:  0,
+	// 	ueNum:   tempUeNum,
+	// 	cpuRate: tempCpuRate[0],
+	// }
+
+	registrationData := models.Amf3GppAccessRegistration{
+		AmfInstanceId:     "0",
+		SupportedFeatures: ueNum,
+		Pei:               totalCpuRate,
 	}
 
 	logger.HttpLog.Infoln("===Start AmfMdafMsg===")
-	logger.HttpLog.Infof("amfNum: %v ueNum: %v cpuRate: %v", amfDataBody.amfNum, amfDataBody.ueNum, amfDataBody.cpuRate)
-	_, httpResp, localErr := client.AMFMdafMsgApi.AmfMdafMsg(context.Background(), amfDataBody)
+	// logger.HttpLog.Infof("amfNum: %v ueNum: %v cpuRate: %v", amfDataBody.amfNum, amfDataBody.ueNum, amfDataBody.cpuRate)
+	// _, httpResp, localErr := client.AMFMdafMsgApi.AmfMdafMsg(context.Background(), amfDataBody)
+	_, httpResp, localErr := client.AMFMdafMsgApi.AmfMdafMsg(context.Background(), registrationData)
 	if localErr == nil {
 		return nil, nil
 	} else if httpResp != nil {
@@ -148,7 +159,8 @@ func NewAPIClient(cfg *Configuration) *APIClient {
 	return c
 }
 
-func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context, tempamfData amfData) (amfData, *http.Response, error) {
+// func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context, tempamfData amfData) (amfData, *http.Response, error) {
+func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context, registration models.Amf3GppAccessRegistration) (models.Amf3GppAccessRegistration, *http.Response, error) {
 	logger.HttpLog.Infoln("===In AmfMdafMsg===")
 	var (
 		localVarHTTPMethod   = strings.ToUpper("Put")
@@ -156,7 +168,7 @@ func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context, tempamfData amfData)
 		localVarFormFileName string
 		localVarFileName     string
 		localVarFileBytes    []byte
-		localVarReturnValue  amfData
+		localVarReturnValue  models.Amf3GppAccessRegistration
 	)
 
 	// create path and map variables
@@ -181,7 +193,8 @@ func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context, tempamfData amfData)
 	}
 
 	// body params
-	localVarPostBody = &tempamfData
+	localVarPostBody = &registration
+	logger.HttpLog.Infoln("localVarPostBody: ", localVarPostBody)
 
 	r, err := openapi.PrepareRequest(ctx, a.client.cfg, localVarPath, localVarHTTPMethod,
 		localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams,
@@ -190,6 +203,8 @@ func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context, tempamfData amfData)
 		logger.HttpLog.Errorln("===PrepareRequest===")
 		return localVarReturnValue, nil, err
 	}
+
+	logger.HttpLog.Infoln("PrepareRequest: ", r.GetBody)
 
 	localVarHTTPResponse, err := openapi.CallAPI(a.client.cfg, r)
 	if err != nil || localVarHTTPResponse == nil {
@@ -209,7 +224,6 @@ func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context, tempamfData amfData)
 		ErrorStatus: localVarHTTPResponse.Status,
 	}
 
-	logger.HttpLog.Infoln("===Switch case===")
 	switch localVarHTTPResponse.StatusCode {
 	case 201:
 		err = openapi.Deserialize(&localVarReturnValue, localVarBody, localVarHTTPResponse.Header.Get("Content-Type"))
@@ -244,7 +258,6 @@ func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context, tempamfData amfData)
 		apiError.ErrorModel = v
 		return localVarReturnValue, localVarHTTPResponse, apiError
 	case 404:
-		logger.HttpLog.Infoln("===Switch case: case 404===")
 		var v models.ProblemDetails
 		err = openapi.Deserialize(&v, localVarBody, localVarHTTPResponse.Header.Get("Content-Type"))
 		if err != nil {

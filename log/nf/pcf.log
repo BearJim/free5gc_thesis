@@ -268,3 +268,39 @@ time="2022-05-23T16:37:13Z" level=info msg="PCF Log level is set to [info] level
 time="2022-05-23T16:37:13Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
 time="2022-05-23T16:37:13Z" level=info msg="Server started" category=Init component=PCF
 time="2022-05-23T16:37:13Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF
+time="2022-05-23T17:05:16Z" level=info msg="Terminating PCF..." category=Init component=PCF
+time="2022-05-23T17:05:16Z" level=info msg="Send Deregister NFInstance" category=Consumer component=PCF
+time="2022-05-23T17:05:16Z" level=error msg="Deregister NF instance Error[server no response]" category=Init component=PCF
+time="2022-05-23T17:05:16Z" level=info msg="PCF terminated" category=Init component=PCF
+time="2022-05-23T17:18:54Z" level=info msg="PCF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=PCF
+time="2022-05-23T17:18:54Z" level=info msg="PCF Log level is set to [info] level" category=Init component=PCF
+time="2022-05-23T17:18:54Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
+time="2022-05-23T17:18:54Z" level=info msg="Server started" category=Init component=PCF
+time="2022-05-23T17:18:54Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF
+time="2022-05-23T17:35:21Z" level=info msg="Terminating PCF..." category=Init component=PCF
+time="2022-05-23T17:35:21Z" level=info msg="Send Deregister NFInstance" category=Consumer component=PCF
+time="2022-05-23T17:35:22Z" level=info msg="Deregister from NRF successfully" category=Init component=PCF
+time="2022-05-23T17:35:22Z" level=info msg="PCF terminated" category=Init component=PCF
+time="2022-05-23T17:36:17Z" level=info msg="PCF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=PCF
+time="2022-05-23T17:36:17Z" level=info msg="PCF Log level is set to [info] level" category=Init component=PCF
+time="2022-05-23T17:36:17Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
+time="2022-05-23T17:36:17Z" level=info msg="Server started" category=Init component=PCF
+time="2022-05-23T17:36:17Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF
+time="2022-05-23T17:53:14Z" level=info msg="Terminating PCF..." category=Init component=PCF
+time="2022-05-23T17:53:14Z" level=info msg="Send Deregister NFInstance" category=Consumer component=PCF
+time="2022-05-23T17:53:14Z" level=error msg="Deregister NF instance Error[server no response]" category=Init component=PCF
+time="2022-05-23T17:53:14Z" level=info msg="PCF terminated" category=Init component=PCF
+time="2022-05-23T17:56:18Z" level=info msg="PCF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=PCF
+time="2022-05-23T17:56:18Z" level=info msg="PCF Log level is set to [info] level" category=Init component=PCF
+time="2022-05-23T17:56:18Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
+time="2022-05-23T17:56:18Z" level=info msg="Server started" category=Init component=PCF
+time="2022-05-23T17:56:18Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF
+time="2022-05-24T14:09:04Z" level=info msg="Terminating PCF..." category=Init component=PCF
+time="2022-05-24T14:09:04Z" level=info msg="Send Deregister NFInstance" category=Consumer component=PCF
+time="2022-05-24T14:09:05Z" level=info msg="Deregister from NRF successfully" category=Init component=PCF
+time="2022-05-24T14:09:05Z" level=info msg="PCF terminated" category=Init component=PCF
+time="2022-05-24T14:17:23Z" level=info msg="PCF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=PCF
+time="2022-05-24T14:17:23Z" level=info msg="PCF Log level is set to [info] level" category=Init component=PCF
+time="2022-05-24T14:17:23Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
+time="2022-05-24T14:17:23Z" level=info msg="Server started" category=Init component=PCF
+time="2022-05-24T14:17:23Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF

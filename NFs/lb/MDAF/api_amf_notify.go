@@ -12,15 +12,16 @@ import (
 	"github.com/free5gc/openapi/models"
 )
 
-type amfData struct {
-	amfNum  int     `json:"amfId" bson:"amfId"`
-	ueNum   int     `json:"ueNum" bson:"UeNum"`
-	cpuRate float64 `json:"cpuRate" bson:"cpuRate"`
-}
+// type amfData struct {
+// 	amfNum  string `json:"amfId" bson:"amfId"`
+// 	ueNum   string `json:"ueNum" bson:"UeNum"`
+// 	cpuRate string `json:"cpuRate" bson:"cpuRate"`
+// }
 
 func HTTPNotifyAmf(ctx *gin.Context) {
 	logger.HttpLog.Errorln("===Start HTTPNotifyAmf===")
-	var amfData *amfData
+	// var amfData amfData
+	var amf3GppAccessRegistration models.Amf3GppAccessRegistration
 
 	// step 1: retrieve http request body
 	requestBody, err := ctx.GetRawData()
@@ -35,9 +36,11 @@ func HTTPNotifyAmf(ctx *gin.Context) {
 		ctx.JSON(http.StatusInternalServerError, problemDetail)
 		return
 	}
+	logger.HttpLog.Errorln("requestBody: ", requestBody)
 
 	// step 2: convert requestBody to openapi models
-	err = openapi.Deserialize(&amfData, requestBody, "application/json")
+	// err = openapi.Deserialize(&amfData, requestBody, "application/json")
+	err = openapi.Deserialize(&amf3GppAccessRegistration, requestBody, "application/json")
 	if err != nil {
 		problemDetail := "[Request Body] " + err.Error()
 		rsp := models.ProblemDetails{
@@ -49,8 +52,11 @@ func HTTPNotifyAmf(ctx *gin.Context) {
 		ctx.JSON(http.StatusBadRequest, rsp)
 		return
 	}
+	// logger.AppLog.Infoln("~~amfData: ", amfData)
+	logger.AppLog.Errorln("amf3GppAccessRegistration: ", amf3GppAccessRegistration)
 
-	req := http_wrapper.NewRequest(ctx.Request, amfData)
+	// req := http_wrapper.NewRequest(ctx.Request, amfData)
+	req := http_wrapper.NewRequest(ctx.Request, amf3GppAccessRegistration)
 	logger.AppLog.Infoln("===Start HandleHTTPNotifyAmf===")
 	rsp := HandleHTTPNotifyAmf(req)
 
@@ -77,10 +83,12 @@ func HandleHTTPNotifyAmf(request *http_wrapper.Request) *http_wrapper.Response {
 	logger.HttpLog.Infof("Handle AMF HTTP Notify")
 
 	// step 2: retrieve request
-	registerRequest := request.Body.(*amfData)
+	// registerRequest := request.Body.(amfData)
+	registerRequest := request.Body.(models.Amf3GppAccessRegistration)
 
 	// step 3: handle the message
-	header, response, problemDetails := MDAFProcedure(*registerRequest)
+	// logger.HttpLog.Infof("registerRequest.amfNum: ", registerRequest.amfNum)
+	header, response, problemDetails := MDAFProcedure(registerRequest)
 
 	// step 4: process the return value from step 3
 	if response != nil {

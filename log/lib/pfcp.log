@@ -110,3 +110,21 @@ time="2022-05-23T15:08:17Z" level=info msg="Remove Request Transaction [1]\n" ca
 time="2022-05-23T16:37:08Z" level=info msg="set log level : info" category=PFCP component=LIB
 time="2022-05-23T16:37:08Z" level=info msg="set report call : false" category=PFCP component=LIB
 time="2022-05-23T16:37:08Z" level=info msg="Remove Request Transaction [1]\n" category=PFCP component=LIB
+time="2022-05-23T17:18:36Z" level=info msg="set log level : info" category=PFCP component=LIB
+time="2022-05-23T17:18:36Z" level=info msg="set report call : false" category=PFCP component=LIB
+time="2022-05-23T17:18:42Z" level=info msg="Remove Request Transaction [1]\n" category=PFCP component=LIB
+time="2022-05-23T17:18:48Z" level=info msg="set log level : info" category=PFCP component=LIB
+time="2022-05-23T17:18:48Z" level=info msg="set report call : false" category=PFCP component=LIB
+time="2022-05-23T17:18:48Z" level=info msg="Remove Request Transaction [1]\n" category=PFCP component=LIB
+time="2022-05-23T17:35:57Z" level=info msg="set log level : info" category=PFCP component=LIB
+time="2022-05-23T17:35:57Z" level=info msg="set report call : false" category=PFCP component=LIB
+time="2022-05-23T17:36:03Z" level=info msg="Remove Request Transaction [1]\n" category=PFCP component=LIB
+time="2022-05-23T17:36:12Z" level=info msg="set log level : info" category=PFCP component=LIB
+time="2022-05-23T17:36:12Z" level=info msg="set report call : false" category=PFCP component=LIB
+time="2022-05-23T17:36:12Z" level=info msg="Remove Request Transaction [1]\n" category=PFCP component=LIB
+time="2022-05-23T17:56:13Z" level=info msg="set log level : info" category=PFCP component=LIB
+time="2022-05-23T17:56:13Z" level=info msg="set report call : false" category=PFCP component=LIB
+time="2022-05-23T17:56:13Z" level=info msg="Remove Request Transaction [1]\n" category=PFCP component=LIB
+time="2022-05-24T14:17:17Z" level=info msg="set log level : info" category=PFCP component=LIB
+time="2022-05-24T14:17:17Z" level=info msg="set report call : false" category=PFCP component=LIB
+time="2022-05-24T14:17:17Z" level=info msg="Remove Request Transaction [1]\n" category=PFCP component=LIB
