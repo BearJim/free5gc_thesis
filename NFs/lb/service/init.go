@@ -113,14 +113,14 @@ func (lb *LB) Start() {
 	initLog.Infoln("before ngap service")
 	NgapIp := []string{"127.0.0.21"}
 	AmfIp := []string{"127.0.0.18"}
-	// Amf1Ip := []string{"127.0.0.19"}
-	// Amf2Ip := []string{"127.0.0.20"}
+	Amf1Ip := []string{"127.0.0.19"}
+	Amf2Ip := []string{"127.0.0.20"}
 	initLog.Infoln("DialToAmf")
 	ngap_service.DialToAmf(AmfIp, 38412, 0)
-	// initLog.Infoln("DialToAmf1")
-	// ngap_service.DialToAmf(Amf1Ip, 38413, 1)
-	// initLog.Infoln("DialToAmf2")
-	// ngap_service.DialToAmf(Amf2Ip, 38414, 2)
+	initLog.Infoln("DialToAmf1")
+	ngap_service.DialToAmf(Amf1Ip, 38412, 1)
+	initLog.Infoln("DialToAmf2")
+	ngap_service.DialToAmf(Amf2Ip, 38412, 2)
 	initLog.Infoln("Run ngap")
 	ngap_service.Run(NgapIp, 38415)
 

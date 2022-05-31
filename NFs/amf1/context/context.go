@@ -33,6 +33,7 @@ func init() {
 	AMF_Self().PlmnSupportList = make([]factory.PlmnSupportItem, 0, MaxNumOfPLMNs)
 	AMF_Self().NfService = make(map[models.ServiceName]models.NfService)
 	AMF_Self().NetworkName.Full = "free5GC"
+	AMF_Self().UeNum = 0
 	tmsiGenerator = idgenerator.NewGenerator(1, math.MaxInt32)
 	amfStatusSubscriptionIDGenerator = idgenerator.NewGenerator(1, math.MaxInt32)
 	amfUeNGAPIDGenerator = idgenerator.NewGenerator(1, MaxValueOfAmfUeNgapId)
@@ -68,12 +69,14 @@ type AMFContext struct {
 	T3512Value                      int      // unit is second
 	Non3gppDeregistrationTimerValue int      // unit is second
 	// read-only fields
-	T3513Cfg factory.TimerValue
-	T3522Cfg factory.TimerValue
-	T3550Cfg factory.TimerValue
-	T3560Cfg factory.TimerValue
-	T3565Cfg factory.TimerValue
-	Locality string
+	T3513Cfg       factory.TimerValue
+	T3522Cfg       factory.TimerValue
+	T3550Cfg       factory.TimerValue
+	T3560Cfg       factory.TimerValue
+	T3565Cfg       factory.TimerValue
+	TimerToMdafCfg factory.TimerValue
+	Locality       string
+	UeNum          int
 }
 
 type AMFContextEventSubscription struct {

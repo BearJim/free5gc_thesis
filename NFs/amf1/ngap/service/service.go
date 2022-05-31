@@ -69,7 +69,7 @@ func listenAndServe(addr *sctp.SCTPAddr, handler NGAPHandler) {
 		if err != nil {
 			switch err {
 			case syscall.EINTR, syscall.EAGAIN:
-				logger.NgapLog.Debugf("AcceptSCTP: %+v", err)
+				logger.NgapLog.Infof("AcceptSCTP: %+v", err)
 			default:
 				logger.NgapLog.Errorf("Failed to accept: %+v", err)
 			}

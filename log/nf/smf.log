@@ -1035,3 +1035,16 @@ time="2022-05-24T14:17:17Z" level=info msg="Send PFCP Association Request to UPF
 time="2022-05-24T14:17:17Z" level=info msg="In HandlePfcpAssociationSetupResponse" category=PFCP component=SMF
 time="2022-05-24T14:17:17Z" level=info msg="Handle PFCP Association Setup Response with NodeID[127.0.0.8]" category=PFCP component=SMF
 time="2022-05-24T14:17:17Z" level=info msg="UPF(127.0.0.8)[internet] setup association" category=PFCP component=SMF
+time="2022-05-31T19:11:00Z" level=info msg="SMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=SMF
+time="2022-05-31T19:11:00Z" level=info msg="SMF Log level is set to [info] level" category=Init component=SMF
+time="2022-05-31T19:11:00Z" level=info msg="SMF config version [1.0.2]" category=CFG component=SMF
+time="2022-05-31T19:11:00Z" level=info msg="UE-Routing config version [1.0.1]" category=CFG component=SMF
+time="2022-05-31T19:11:00Z" level=info msg="smfconfig Info: Version[1.0.2] Description[SMF initial local configuration]" category=CTX component=SMF
+time="2022-05-31T19:11:00Z" level=info msg="Endpoints: [127.0.0.8]" category=CTX component=SMF
+time="2022-05-31T19:11:00Z" level=info msg="Server started" category=Init component=SMF
+time="2022-05-31T19:11:00Z" level=info msg="SMF Registration to NRF {c99cfb12-2901-4fc8-8d2b-afcfadf0e0c5 SMF REGISTERED 0 0xc0003e6e20 0xc0003e6e60 [] []   [127.0.0.2] [] <nil> [] [] <nil> 0 0 0 area1 <nil> <nil> <nil> <nil> 0xc000311840 <nil> <nil> <nil> <nil> <nil> map[] <nil> false 0xc0003e6ca0 false false []}" category=Init component=SMF
+time="2022-05-31T19:11:00Z" level=info msg="Listen on 127.0.0.1:8805" category=PFCP component=SMF
+time="2022-05-31T19:11:00Z" level=info msg="Send PFCP Association Request to UPF[127.0.0.8]\n" category=App component=SMF
+time="2022-05-31T19:11:00Z" level=info msg="In HandlePfcpAssociationSetupResponse" category=PFCP component=SMF
+time="2022-05-31T19:11:00Z" level=info msg="Handle PFCP Association Setup Response with NodeID[127.0.0.8]" category=PFCP component=SMF
+time="2022-05-31T19:11:00Z" level=info msg="UPF(127.0.0.8)[internet] setup association" category=PFCP component=SMF

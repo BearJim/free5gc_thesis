@@ -33,6 +33,9 @@ type AmfRan struct {
 
 	/* logger */
 	Log *logrus.Entry
+
+	/*Timer*/
+	TimerToMdaf *Timer
 }
 
 type SupportedTAI struct {

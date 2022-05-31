@@ -597,3 +597,8 @@ time="2022-05-24T14:17:19Z" level=info msg="AUSF Log level is set to [info] leve
 time="2022-05-24T14:17:19Z" level=info msg="config version [1.0.0]" category=CFG component=AUSF
 time="2022-05-24T14:17:19Z" level=info msg="Server started" category=Init component=AUSF
 time="2022-05-24T14:17:19Z" level=info msg="ausfconfig Info: Version[1.0.0] Description[AUSF initial local configuration]\n" category=Init component=AUSF
+time="2022-05-31T19:11:03Z" level=info msg="AUSF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=AUSF
+time="2022-05-31T19:11:03Z" level=info msg="AUSF Log level is set to [info] level" category=Init component=AUSF
+time="2022-05-31T19:11:03Z" level=info msg="config version [1.0.0]" category=CFG component=AUSF
+time="2022-05-31T19:11:03Z" level=info msg="Server started" category=Init component=AUSF
+time="2022-05-31T19:11:03Z" level=info msg="ausfconfig Info: Version[1.0.0] Description[AUSF initial local configuration]\n" category=Init component=AUSF

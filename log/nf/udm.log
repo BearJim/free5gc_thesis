@@ -938,3 +938,9 @@ time="2022-05-24T14:17:24Z" level=info msg="config version [1.0.1]" category=CFG
 time="2022-05-24T14:17:24Z" level=info msg="UDM Config Info: Version[1.0.1] Description[UDM initial local configuration]" category=Init component=UDM
 time="2022-05-24T14:17:24Z" level=info msg="Server started" category=Init component=UDM
 time="2022-05-24T14:17:24Z" level=info msg="udmconfig Info: Version[1.0.1] Description[UDM initial local configuration]" category=Util component=UDM
+time="2022-05-31T19:11:10Z" level=info msg="UDM version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=UDM
+time="2022-05-31T19:11:10Z" level=info msg="UDM Log level is set to [info] level" category=Init component=UDM
+time="2022-05-31T19:11:10Z" level=info msg="config version [1.0.1]" category=CFG component=UDM
+time="2022-05-31T19:11:10Z" level=info msg="UDM Config Info: Version[1.0.1] Description[UDM initial local configuration]" category=Init component=UDM
+time="2022-05-31T19:11:10Z" level=info msg="Server started" category=Init component=UDM
+time="2022-05-31T19:11:10Z" level=info msg="udmconfig Info: Version[1.0.1] Description[UDM initial local configuration]" category=Util component=UDM

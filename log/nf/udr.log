@@ -1034,3 +1034,10 @@ time="2022-05-24T14:17:26Z" level=info msg="config version [1.0.0]" category=CFG
 time="2022-05-24T14:17:26Z" level=info msg="UDR Config Info: Version[1.0.0] Description[UDR initial local configuration]" category=Init component=UDR
 time="2022-05-24T14:17:26Z" level=info msg="Server started" category=Init component=UDR
 time="2022-05-24T14:17:26Z" level=info msg="udrconfig Info: Version[1.0.0] Description[UDR initial local configuration]" category=Util component=UDR
+time="2022-05-31T19:11:12Z" level=info msg=udr category=App component=UDR
+time="2022-05-31T19:11:12Z" level=info msg="UDR version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=UDR
+time="2022-05-31T19:11:12Z" level=info msg="UDR Log level is set to [info] level" category=Init component=UDR
+time="2022-05-31T19:11:12Z" level=info msg="config version [1.0.0]" category=CFG component=UDR
+time="2022-05-31T19:11:12Z" level=info msg="UDR Config Info: Version[1.0.0] Description[UDR initial local configuration]" category=Init component=UDR
+time="2022-05-31T19:11:12Z" level=info msg="Server started" category=Init component=UDR
+time="2022-05-31T19:11:12Z" level=info msg="udrconfig Info: Version[1.0.0] Description[UDR initial local configuration]" category=Util component=UDR

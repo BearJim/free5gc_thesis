@@ -362,8 +362,8 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 			case 3:
 				logger.NgapLog.Info("NGSetup send to all AMfs")
 				SendToAmf(amfConn0, bufUp[:n], info)
-				// SendToAmf(amfConn1, bufUp[:n], info)
-				// SendToAmf(amfConn2, bufUp[:n], info)
+				SendToAmf(amfConn1, bufUp[:n], info)
+				SendToAmf(amfConn2, bufUp[:n], info)
 			default:
 				logger.NgapLog.Info("Send to AMf number: Default, goAmf = ", goAmf)
 				SendToAmf(amfConn, bufUp[:n], info)

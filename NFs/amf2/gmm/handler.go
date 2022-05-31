@@ -547,6 +547,8 @@ func HandleInitialRegistration(ue *context.AmfUe, anType models.AccessType) erro
 	ue.GmmLog.Infoln("Handle InitialRegistration")
 
 	amfSelf := context.AMF_Self()
+	amfSelf.UeNum += 1
+	ue.GmmLog.Info("Start of UE Number: +v%", amfSelf.UeNum)
 
 	// update Kgnb/Kn3iwf
 	ue.UpdateSecurityContext(anType)
@@ -2089,6 +2091,9 @@ func HandleAuthenticationFailure(ue *context.AmfUe, anType models.AccessType,
 func HandleRegistrationComplete(ue *context.AmfUe, accessType models.AccessType,
 	registrationComplete *nasMessage.RegistrationComplete) error {
 	ue.GmmLog.Info("Handle Registration Complete")
+	amfSelf := context.AMF_Self()
+	amfSelf.UeNum -= 1
+	ue.GmmLog.Info("End of UE Number: +v%", amfSelf.UeNum)
 
 	if ue.T3550 != nil {
 		ue.T3550.Stop()

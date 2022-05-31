@@ -304,3 +304,8 @@ time="2022-05-24T14:17:23Z" level=info msg="PCF Log level is set to [info] level
 time="2022-05-24T14:17:23Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
 time="2022-05-24T14:17:23Z" level=info msg="Server started" category=Init component=PCF
 time="2022-05-24T14:17:23Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF
+time="2022-05-31T19:11:08Z" level=info msg="PCF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=PCF
+time="2022-05-31T19:11:08Z" level=info msg="PCF Log level is set to [info] level" category=Init component=PCF
+time="2022-05-31T19:11:08Z" level=info msg="config version [1.0.0]" category=CFG component=PCF
+time="2022-05-31T19:11:08Z" level=info msg="Server started" category=Init component=PCF
+time="2022-05-31T19:11:08Z" level=info msg="pcfconfig Info: Version[1.0.0] Description[PCF initial local configuration]" category=Util component=PCF

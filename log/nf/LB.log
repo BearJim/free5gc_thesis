@@ -5929,3 +5929,169 @@ time="2022-05-24T18:23:15Z" level=info msg="Terminating LB..." category=Init com
 time="2022-05-24T18:23:15Z" level=info msg="Close SCTP server..." category=NGAP component=LB
 time="2022-05-24T18:23:15Z" level=info msg="SCTP server closed" category=NGAP component=LB
 time="2022-05-24T18:23:15Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-31T19:11:17Z" level=info msg=lb category=App component=LB
+time="2022-05-31T19:11:17Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-31T19:11:17Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-31T19:11:17Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-31T19:11:17Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-31T19:11:17Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-31T19:11:17Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-31T19:11:17Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-31T19:11:17Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-31T19:11:17Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:38230; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-31T19:11:17Z" level=info msg=DialToAmf1 category=Init component=LB
+time="2022-05-31T19:11:17Z" level=info msg="raw addr: [2 0 150 12 127 0 0 19 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-31T19:11:17Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-31T19:11:17Z" level=error msg="failed to dial 177: connection refused" category=NGAP component=LB
+time="2022-05-31T19:11:17Z" level=info msg="this is amf 1" category=NGAP component=LB
+time="2022-05-31T19:11:17Z" level=info msg=DialToAmf2 category=Init component=LB
+time="2022-05-31T19:11:17Z" level=info msg="raw addr: [2 0 150 12 127 0 0 20 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-31T19:11:17Z" level=error msg="failed to dial 177: connection refused" category=NGAP component=LB
+time="2022-05-31T19:11:17Z" level=info msg="this is amf 2" category=NGAP component=LB
+time="2022-05-31T19:11:17Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-31T19:11:17Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-31T19:11:17Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-31T19:11:20Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-31T19:11:20Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-31T19:11:20Z" level=error msg="bad file descriptor" category=NGAP component=LB
+time="2022-05-31T19:11:20Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-31T19:11:20Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-31T19:11:20Z" level=info msg="LB terminated" category=Init component=LB
+time="2022-05-31T19:15:27Z" level=info msg=lb category=App component=LB
+time="2022-05-31T19:15:27Z" level=info msg="LB version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=LB
+time="2022-05-31T19:15:27Z" level=info msg="config version [1.0.0]" category=CFG component=LB
+time="2022-05-31T19:15:27Z" level=info msg="Server started" category=Init component=LB
+time="2022-05-31T19:15:27Z" level=info msg="before add service" category=Init component=LB
+time="2022-05-31T19:15:27Z" level=info msg="before ngap service" category=Init component=LB
+time="2022-05-31T19:15:27Z" level=info msg=DialToAmf category=Init component=LB
+time="2022-05-31T19:15:27Z" level=info msg="raw addr: [2 0 150 12 127 0 0 18 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-31T19:15:27Z" level=info msg="this is amf 0" category=NGAP component=LB
+time="2022-05-31T19:15:27Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:44736; RemoteAddr: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-31T19:15:27Z" level=info msg=DialToAmf1 category=Init component=LB
+time="2022-05-31T19:15:27Z" level=info msg="raw addr: [2 0 150 12 127 0 0 19 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-31T19:15:27Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-31T19:15:27Z" level=info msg="this is amf 1" category=NGAP component=LB
+time="2022-05-31T19:15:27Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:43183; RemoteAddr: 127.0.0.19:38412" category=NGAP component=LB
+time="2022-05-31T19:15:27Z" level=info msg=DialToAmf2 category=Init component=LB
+time="2022-05-31T19:15:27Z" level=info msg="raw addr: [2 0 150 12 127 0 0 20 0 0 0 0 0 0 0 0]\n" category=NGAP component=LB
+time="2022-05-31T19:15:27Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-31T19:15:27Z" level=info msg="this is amf 2" category=NGAP component=LB
+time="2022-05-31T19:15:27Z" level=info msg="Dail LocalAddr: 127.0.0.1/10.10.0.27/172.18.0.1/172.17.0.1:58455; RemoteAddr: 127.0.0.20:38412" category=NGAP component=LB
+time="2022-05-31T19:15:27Z" level=info msg="Run ngap" category=Init component=LB
+time="2022-05-31T19:15:27Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-31T19:15:27Z" level=info msg="before http server" category=Init component=LB
+time="2022-05-31T19:15:27Z" level=info msg="71 Listen on 127.0.0.21:38415" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="Set read buffer to 8192 bytes" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="[AMF] SCTP Accept from: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="NGSETUP, send to AMF0 AMF1 AMF2, goAmf: %!(EXTRA int=3)" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="NGSetup send to all AMfs" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="Create a new NG connection for: 127.0.0.18:38412" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="Create a new NG connection for: 127.0.0.19:38412" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg=SendToAmf category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="Create a new NG connection for: 127.0.0.20:38412" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="write to amf: len 57" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="Create a new NG connection for: 127.0.0.1:9487" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="write: len 53" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="NGSETUP response drop" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=error msg="Read EOF from client" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="NGSETUP response drop" category=NGAP component=LB
+time="2022-05-31T19:15:40Z" level=info msg="Downlink before Read" category=NGAP component=LB
+time="2022-05-31T19:15:43Z" level=info msg="===Start HTTPNotifyAmf===" category=HTTP component=LB
+time="2022-05-31T19:15:43Z" level=info msg="AMF data Info msg:  {0 0 false 1.669      false <nil> [] false }" category=App component=LB
+time="2022-05-31T19:15:43Z" level=info msg="===Start HandleHTTPNotifyAmf===" category=App component=LB
+time="2022-05-31T19:15:43Z" level=info msg="Handle AMF HTTP Notify" category=HTTP component=LB
+time="2022-05-31T19:15:43Z" level=info msg="========MDAFProcedure========" category=HTTP component=LB
+time="2022-05-31T19:15:43Z" level=info msg="amfNum: 0, ueNum: 0, cpuRate: 1.669" category=HTTP component=LB
+time="2022-05-31T19:15:43Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nmdaf-msg/v1/notify | " category=GIN component=LB
+time="2022-05-31T19:15:43Z" level=info msg="===Start HTTPNotifyAmf===" category=HTTP component=LB
+time="2022-05-31T19:15:43Z" level=info msg="AMF data Info msg:  {0 0 false 1.669      false <nil> [] false }" category=App component=LB
+time="2022-05-31T19:15:43Z" level=info msg="===Start HandleHTTPNotifyAmf===" category=App component=LB
+time="2022-05-31T19:15:43Z" level=info msg="Handle AMF HTTP Notify" category=HTTP component=LB
+time="2022-05-31T19:15:43Z" level=info msg="========MDAFProcedure========" category=HTTP component=LB
+time="2022-05-31T19:15:43Z" level=info msg="amfNum: 0, ueNum: 0, cpuRate: 1.669" category=HTTP component=LB
+time="2022-05-31T19:15:43Z" level=info msg="===Start HTTPNotifyAmf===" category=HTTP component=LB
+time="2022-05-31T19:15:43Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nmdaf-msg/v1/notify | " category=GIN component=LB
+time="2022-05-31T19:15:43Z" level=info msg="AMF data Info msg:  {0 0 false 1.751      false <nil> [] false }" category=App component=LB
+time="2022-05-31T19:15:43Z" level=info msg="===Start HandleHTTPNotifyAmf===" category=App component=LB
+time="2022-05-31T19:15:43Z" level=info msg="Handle AMF HTTP Notify" category=HTTP component=LB
+time="2022-05-31T19:15:43Z" level=info msg="========MDAFProcedure========" category=HTTP component=LB
+time="2022-05-31T19:15:43Z" level=info msg="amfNum: 0, ueNum: 0, cpuRate: 1.751" category=HTTP component=LB
+time="2022-05-31T19:15:43Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nmdaf-msg/v1/notify | " category=GIN component=LB
+time="2022-05-31T19:15:49Z" level=info msg="===Start HTTPNotifyAmf===" category=HTTP component=LB
+time="2022-05-31T19:15:49Z" level=info msg="===Start HTTPNotifyAmf===" category=HTTP component=LB
+time="2022-05-31T19:15:49Z" level=info msg="AMF data Info msg:  {0 0 false 1.501      false <nil> [] false }" category=App component=LB
+time="2022-05-31T19:15:49Z" level=info msg="===Start HandleHTTPNotifyAmf===" category=App component=LB
+time="2022-05-31T19:15:49Z" level=info msg="Handle AMF HTTP Notify" category=HTTP component=LB
+time="2022-05-31T19:15:49Z" level=info msg="AMF data Info msg:  {0 0 false 1.501      false <nil> [] false }" category=App component=LB
+time="2022-05-31T19:15:49Z" level=info msg="========MDAFProcedure========" category=HTTP component=LB
+time="2022-05-31T19:15:49Z" level=info msg="===Start HandleHTTPNotifyAmf===" category=App component=LB
+time="2022-05-31T19:15:49Z" level=info msg="Handle AMF HTTP Notify" category=HTTP component=LB
+time="2022-05-31T19:15:49Z" level=info msg="========MDAFProcedure========" category=HTTP component=LB
+time="2022-05-31T19:15:49Z" level=info msg="amfNum: 0, ueNum: 0, cpuRate: 1.501" category=HTTP component=LB
+time="2022-05-31T19:15:49Z" level=info msg="amfNum: 0, ueNum: 0, cpuRate: 1.501" category=HTTP component=LB
+time="2022-05-31T19:15:49Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nmdaf-msg/v1/notify | " category=GIN component=LB
+time="2022-05-31T19:15:49Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nmdaf-msg/v1/notify | " category=GIN component=LB
+time="2022-05-31T19:15:49Z" level=info msg="===Start HTTPNotifyAmf===" category=HTTP component=LB
+time="2022-05-31T19:15:49Z" level=info msg="AMF data Info msg:  {0 0 false 1.501      false <nil> [] false }" category=App component=LB
+time="2022-05-31T19:15:49Z" level=info msg="===Start HandleHTTPNotifyAmf===" category=App component=LB
+time="2022-05-31T19:15:49Z" level=info msg="Handle AMF HTTP Notify" category=HTTP component=LB
+time="2022-05-31T19:15:49Z" level=info msg="========MDAFProcedure========" category=HTTP component=LB
+time="2022-05-31T19:15:49Z" level=info msg="amfNum: 0, ueNum: 0, cpuRate: 1.501" category=HTTP component=LB
+time="2022-05-31T19:15:49Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nmdaf-msg/v1/notify | " category=GIN component=LB
+time="2022-05-31T19:15:52Z" level=info msg="===Start HTTPNotifyAmf===" category=HTTP component=LB
+time="2022-05-31T19:15:52Z" level=info msg="AMF data Info msg:  {0 0 false 0.917      false <nil> [] false }" category=App component=LB
+time="2022-05-31T19:15:52Z" level=info msg="===Start HandleHTTPNotifyAmf===" category=App component=LB
+time="2022-05-31T19:15:52Z" level=info msg="Handle AMF HTTP Notify" category=HTTP component=LB
+time="2022-05-31T19:15:52Z" level=info msg="========MDAFProcedure========" category=HTTP component=LB
+time="2022-05-31T19:15:52Z" level=info msg="amfNum: 0, ueNum: 0, cpuRate: 0.917" category=HTTP component=LB
+time="2022-05-31T19:15:52Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nmdaf-msg/v1/notify | " category=GIN component=LB
+time="2022-05-31T19:15:52Z" level=info msg="===Start HTTPNotifyAmf===" category=HTTP component=LB
+time="2022-05-31T19:15:52Z" level=info msg="AMF data Info msg:  {0 0 false 0.917      false <nil> [] false }" category=App component=LB
+time="2022-05-31T19:15:52Z" level=info msg="===Start HandleHTTPNotifyAmf===" category=App component=LB
+time="2022-05-31T19:15:52Z" level=info msg="Handle AMF HTTP Notify" category=HTTP component=LB
+time="2022-05-31T19:15:52Z" level=info msg="========MDAFProcedure========" category=HTTP component=LB
+time="2022-05-31T19:15:52Z" level=info msg="amfNum: 0, ueNum: 0, cpuRate: 0.917" category=HTTP component=LB
+time="2022-05-31T19:15:52Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nmdaf-msg/v1/notify | " category=GIN component=LB
+time="2022-05-31T19:15:52Z" level=info msg="===Start HTTPNotifyAmf===" category=HTTP component=LB
+time="2022-05-31T19:15:52Z" level=info msg="AMF data Info msg:  {0 0 false 0.917      false <nil> [] false }" category=App component=LB
+time="2022-05-31T19:15:52Z" level=info msg="===Start HandleHTTPNotifyAmf===" category=App component=LB
+time="2022-05-31T19:15:52Z" level=info msg="Handle AMF HTTP Notify" category=HTTP component=LB
+time="2022-05-31T19:15:52Z" level=info msg="========MDAFProcedure========" category=HTTP component=LB
+time="2022-05-31T19:15:52Z" level=info msg="amfNum: 0, ueNum: 0, cpuRate: 0.917" category=HTTP component=LB
+time="2022-05-31T19:15:52Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nmdaf-msg/v1/notify | " category=GIN component=LB
+time="2022-05-31T19:15:55Z" level=info msg="===Start HTTPNotifyAmf===" category=HTTP component=LB
+time="2022-05-31T19:15:55Z" level=info msg="AMF data Info msg:  {0 0 false 1.668      false <nil> [] false }" category=App component=LB
+time="2022-05-31T19:15:55Z" level=info msg="===Start HandleHTTPNotifyAmf===" category=App component=LB
+time="2022-05-31T19:15:55Z" level=info msg="Handle AMF HTTP Notify" category=HTTP component=LB
+time="2022-05-31T19:15:55Z" level=info msg="========MDAFProcedure========" category=HTTP component=LB
+time="2022-05-31T19:15:55Z" level=info msg="amfNum: 0, ueNum: 0, cpuRate: 1.668" category=HTTP component=LB
+time="2022-05-31T19:15:55Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nmdaf-msg/v1/notify | " category=GIN component=LB
+time="2022-05-31T19:15:55Z" level=info msg="===Start HTTPNotifyAmf===" category=HTTP component=LB
+time="2022-05-31T19:15:55Z" level=info msg="AMF data Info msg:  {0 0 false 1.585      false <nil> [] false }" category=App component=LB
+time="2022-05-31T19:15:55Z" level=info msg="===Start HandleHTTPNotifyAmf===" category=App component=LB
+time="2022-05-31T19:15:55Z" level=info msg="Handle AMF HTTP Notify" category=HTTP component=LB
+time="2022-05-31T19:15:55Z" level=info msg="========MDAFProcedure========" category=HTTP component=LB
+time="2022-05-31T19:15:55Z" level=info msg="amfNum: 0, ueNum: 0, cpuRate: 1.585" category=HTTP component=LB
+time="2022-05-31T19:15:55Z" level=info msg="===Start HTTPNotifyAmf===" category=HTTP component=LB
+time="2022-05-31T19:15:55Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nmdaf-msg/v1/notify | " category=GIN component=LB
+time="2022-05-31T19:15:55Z" level=info msg="AMF data Info msg:  {0 0 false 1.585      false <nil> [] false }" category=App component=LB
+time="2022-05-31T19:15:55Z" level=info msg="===Start HandleHTTPNotifyAmf===" category=App component=LB
+time="2022-05-31T19:15:55Z" level=info msg="Handle AMF HTTP Notify" category=HTTP component=LB
+time="2022-05-31T19:15:55Z" level=info msg="========MDAFProcedure========" category=HTTP component=LB
+time="2022-05-31T19:15:55Z" level=info msg="amfNum: 0, ueNum: 0, cpuRate: 1.585" category=HTTP component=LB
+time="2022-05-31T19:15:55Z" level=info msg="| 201 |       127.0.0.1 | PUT     | /nmdaf-msg/v1/notify | " category=GIN component=LB
+time="2022-05-31T19:16:16Z" level=info msg="Terminating LB..." category=Init component=LB
+time="2022-05-31T19:16:16Z" level=info msg="Close SCTP server..." category=NGAP component=LB
+time="2022-05-31T19:16:16Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-31T19:16:16Z" level=info msg="SCTP server closed" category=NGAP component=LB
+time="2022-05-31T19:16:16Z" level=info msg="Downlink after Read" category=NGAP component=LB
+time="2022-05-31T19:16:16Z" level=info msg="LB terminated" category=Init component=LB

@@ -128,3 +128,6 @@ time="2022-05-23T17:56:13Z" level=info msg="Remove Request Transaction [1]\n" ca
 time="2022-05-24T14:17:17Z" level=info msg="set log level : info" category=PFCP component=LIB
 time="2022-05-24T14:17:17Z" level=info msg="set report call : false" category=PFCP component=LIB
 time="2022-05-24T14:17:17Z" level=info msg="Remove Request Transaction [1]\n" category=PFCP component=LIB
+time="2022-05-31T19:11:00Z" level=info msg="set log level : info" category=PFCP component=LIB
+time="2022-05-31T19:11:00Z" level=info msg="set report call : false" category=PFCP component=LIB
+time="2022-05-31T19:11:00Z" level=info msg="Remove Request Transaction [1]\n" category=PFCP component=LIB

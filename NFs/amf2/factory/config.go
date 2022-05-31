@@ -27,7 +27,7 @@ type Info struct {
 }
 
 const (
-	AMF_DEFAULT_IPV4     = "127.0.0.18"
+	AMF_DEFAULT_IPV4     = "127.0.0.20"
 	AMF_DEFAULT_PORT     = "8000"
 	AMF_DEFAULT_PORT_INT = 8000
 	AMF_DEFAULT_NRFURI   = "https://127.0.0.10:8000"
@@ -55,6 +55,7 @@ type Configuration struct {
 	T3560                           TimerValue                `yaml:"t3560"`
 	T3565                           TimerValue                `yaml:"t3565"`
 	Locality                        string                    `yaml:"locality,omitempty"`
+	TimerToMdaf                     TimerValue                `yaml:"timerToMdaf"`
 }
 
 func (c *Configuration) Get5gsNwFeatSuppEnable() bool {
