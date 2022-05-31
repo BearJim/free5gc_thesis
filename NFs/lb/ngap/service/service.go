@@ -236,6 +236,7 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 		bufUp := make([]byte, bufsize)
 		n, info, notification, err := conn.SCTPRead(bufUp)
 		// MDAF need to decide which AMF to go
+		goAmf = context.LB_Self().MdafGoAmf
 		goAmf = 0 //call MDAF
 		if err != nil {
 			switch err {

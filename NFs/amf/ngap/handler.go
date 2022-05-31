@@ -157,7 +157,7 @@ func HandleNGSetupRequest(ran *context.AmfRan, message *ngapType.NGAPPDU) {
 	cfg := context.AMF_Self().TimerToMdafCfg
 	logger.NgapLog.Infof("timer ExpireTime: %v, MaxRetryTimes: %v", cfg.ExpireTime, cfg.MaxRetryTimes)
 	ran.TimerToMdaf = context.NewTimer(cfg.ExpireTime, cfg.MaxRetryTimes, func(expireTimes int32) {
-		logger.ContextLog.Infof("timerToMdaf expires, retransmit Registration Accept (retry: %d)", expireTimes)
+		logger.ContextLog.Infof("timerToMdaf expires, retransmit AMF data msg to MDAF (retry: %d)", expireTimes)
 		problemDetails, errMdaf := consumer.MdafMsg()
 		if problemDetails != nil {
 			logger.NgapLog.Errorf("MdafMsg() Failed Problem[%+v]", problemDetails)
@@ -165,7 +165,7 @@ func HandleNGSetupRequest(ran *context.AmfRan, message *ngapType.NGAPPDU) {
 			logger.NgapLog.Errorf("MdafMsg() Error[%+v]", errMdaf)
 		}
 	}, func() {
-		logger.ContextLog.Warnf("T3550 Expires %d times, abort retransmission of Registration Accept", cfg.MaxRetryTimes)
+		logger.ContextLog.Warnf("timerToMdaf Expires %d times", cfg.MaxRetryTimes)
 		ran.TimerToMdaf = nil // clear the timer
 	})
 }

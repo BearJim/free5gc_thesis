@@ -38,6 +38,7 @@ func init() {
 	tmsiGenerator = idgenerator.NewGenerator(1, math.MaxInt32)
 	lbStatusSubscriptionIDGenerator = idgenerator.NewGenerator(1, math.MaxInt32)
 	lbUeNGAPIDGenerator = idgenerator.NewGenerator(1, MaxValueOfLbUeNgapId)
+	LB_Self().MdafGoAmf = 0
 }
 
 type LBContext struct {
@@ -70,12 +71,13 @@ type LBContext struct {
 	T3512Value                      int      // unit is second
 	Non3gppDeregistrationTimerValue int      // unit is second
 	// read-only fields
-	T3513Cfg factory.TimerValue
-	T3522Cfg factory.TimerValue
-	T3550Cfg factory.TimerValue
-	T3560Cfg factory.TimerValue
-	T3565Cfg factory.TimerValue
-	Locality string
+	T3513Cfg  factory.TimerValue
+	T3522Cfg  factory.TimerValue
+	T3550Cfg  factory.TimerValue
+	T3560Cfg  factory.TimerValue
+	T3565Cfg  factory.TimerValue
+	Locality  string
+	MdafGoAmf int
 }
 
 type LBContextEventSubscription struct {

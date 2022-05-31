@@ -14,6 +14,7 @@ import (
 	"testing"
 	"time"
 
+	"git.cs.nctu.edu.tw/calee/sctp"
 	"github.com/mohae/deepcopy"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -39,7 +40,212 @@ const ranN2Ipv4Addr string = "127.0.0.1"
 
 const lbN2Ipv4Addr string = "127.0.0.21"
 const ranN3Ipv4Addr string = "10.200.200.1"
-const upfN3Ipv4Addr string = "10.200.200.102"
+
+// const upfN3Ipv4Addr string = "10.200.200.102"
+
+func TestUe(t *testing.T) {
+	var n int
+	var sendMsg []byte
+	var recvMsg = make([]byte, 2048)
+
+	// RAN connect to AMF
+	conn, err := test.ConnectToAmf(lbN2Ipv4Addr, ranN2Ipv4Addr, 38415, 9487)
+	assert.Nil(t, err)
+
+	// RAN connect to UPF
+	// upfConn, err := test.ConnectToUpf(ranN3Ipv4Addr, upfN3Ipv4Addr, 2152, 2152)
+	// assert.Nil(t, err)
+
+	// send NGSetupRequest Msg
+	sendMsg, err = test.GetNGSetupRequest([]byte("\x00\x01\x02"), 24, "free5gc")
+	assert.Nil(t, err)
+	_, err = conn.Write(sendMsg)
+	assert.Nil(t, err)
+
+	// receive NGSetupResponse Msg
+	n, err = conn.Read(recvMsg)
+	assert.Nil(t, err)
+	ngapPdu, err := ngap.Decoder(recvMsg[:n])
+	assert.Nil(t, err)
+	assert.True(t, ngapPdu.Present == ngapType.NGAPPDUPresentSuccessfulOutcome && ngapPdu.SuccessfulOutcome.ProcedureCode.Value == ngapType.ProcedureCodeNGSetup, "No NGSetupResponse received.")
+
+	// New UE
+	// ue := test.NewRanUeContext("imsi-2089300000001", 1, security.AlgCiphering128NEA2, security.AlgIntegrity128NIA2, models.AccessType__3_GPP_ACCESS)
+	timerMax := 50
+	ueMax := 10
+	allUe := 0 // Max number of UEs = ueMax * timerMax
+	sleepTime := 1000
+	for timerCount := 1; timerCount <= timerMax; timerCount++ {
+		time.Sleep(time.Duration(sleepTime) * time.Millisecond)
+		sleepTime = 1000
+		for i := 0; i < ueMax; i++ {
+			go ueSendRq(t, allUe, conn, ngapPdu, err)
+			allUe += 1
+		}
+		if timerCount <= (timerMax / 2) {
+			sleepTime = sleepTime / (10 * (timerCount / (timerMax / 2)))
+		} else if timerCount > (timerMax / 2) {
+			sleepTime = (sleepTime * (timerCount / timerMax))
+		}
+	}
+}
+
+func ueSendRq(t *testing.T, allUe int, conn *sctp.SCTPConn, ngapPdu *ngapType.NGAPPDU, err error) {
+	var n int
+	var sendMsg []byte
+	var recvMsg = make([]byte, 2048)
+	var ueSupiSlice []string
+	fmt.Printf("allUe: %d", allUe)
+	supiNum := 2089300000001
+	supiNum = supiNum + allUe
+	supiNumString := strconv.Itoa(supiNum)
+	ueSupi := "imsi-" + supiNumString
+	ueSupiSlice = append(ueSupiSlice, ueSupi)
+	ranUeNgap := 1 + allUe
+	amfUeNgap := 1 + allUe
+
+	ue := test.NewRanUeContext(ueSupi, int64(ranUeNgap), security.AlgCiphering128NEA0, security.AlgIntegrity128NIA2,
+		models.AccessType__3_GPP_ACCESS)
+	ue.AmfUeNgapId = int64(amfUeNgap)
+	ue.AuthenticationSubs = test.GetAuthSubscription(TestGenAuthData.MilenageTestSet19.K,
+		TestGenAuthData.MilenageTestSet19.OPC,
+		TestGenAuthData.MilenageTestSet19.OP)
+	// insert UE data to MongoDB
+
+	servingPlmnId := "20893"
+	test.InsertAuthSubscriptionToMongoDB(ue.Supi, ue.AuthenticationSubs)
+	getData := test.GetAuthSubscriptionFromMongoDB(ue.Supi)
+	assert.NotNil(t, getData)
+	{
+		amData := test.GetAccessAndMobilitySubscriptionData()
+		test.InsertAccessAndMobilitySubscriptionDataToMongoDB(ue.Supi, amData, servingPlmnId)
+		getData := test.GetAccessAndMobilitySubscriptionDataFromMongoDB(ue.Supi, servingPlmnId)
+		assert.NotNil(t, getData)
+	}
+	{
+		smfSelData := test.GetSmfSelectionSubscriptionData()
+		test.InsertSmfSelectionSubscriptionDataToMongoDB(ue.Supi, smfSelData, servingPlmnId)
+		getData := test.GetSmfSelectionSubscriptionDataFromMongoDB(ue.Supi, servingPlmnId)
+		assert.NotNil(t, getData)
+	}
+	{
+		smSelData := test.GetSessionManagementSubscriptionData()
+		test.InsertSessionManagementSubscriptionDataToMongoDB(ue.Supi, servingPlmnId, smSelData)
+		getData := test.GetSessionManagementDataFromMongoDB(ue.Supi, servingPlmnId)
+		assert.NotNil(t, getData)
+	}
+	{
+		amPolicyData := test.GetAmPolicyData()
+		test.InsertAmPolicyDataToMongoDB(ue.Supi, amPolicyData)
+		getData := test.GetAmPolicyDataFromMongoDB(ue.Supi)
+		assert.NotNil(t, getData)
+	}
+	{
+		smPolicyData := test.GetSmPolicyData()
+		test.InsertSmPolicyDataToMongoDB(ue.Supi, smPolicyData)
+		getData := test.GetSmPolicyDataFromMongoDB(ue.Supi)
+		assert.NotNil(t, getData)
+	}
+
+	// send InitialUeMessage(Registration Request)(imsi-2089300000001) TS24501 9.11.3.4.1
+	mobileIdentity5GS := nasType.MobileIdentity5GS{
+		Len:    12, // suci
+		Buffer: []uint8{0x01, 0x02, 0xf8, 0x39, 0xf0, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00, 0x10},
+	}
+	if allUe < 99 {
+		mobileIdentity5GS.Buffer[11] = mobileIdentity5GS.Buffer[11] + 0x10*uint8(allUe%10) + 0x01*uint8(allUe/10)
+	} else if allUe >= 100 {
+		mobileIdentity5GS.Buffer[10] = mobileIdentity5GS.Buffer[10] + 0x10*uint8(allUe/100)
+		allUe = allUe % 100
+		mobileIdentity5GS.Buffer[11] = mobileIdentity5GS.Buffer[11] + 0x10*uint8(allUe%10) + 0x01*uint8(allUe/10)
+	}
+
+	ueSecurityCapability := ue.GetUESecurityCapability()
+	registrationRequest := nasTestpacket.GetRegistrationRequest(
+		nasMessage.RegistrationType5GSInitialRegistration, mobileIdentity5GS, nil, ueSecurityCapability, nil, nil, nil)
+	sendMsg, err = test.GetInitialUEMessage(ue.RanUeNgapId, registrationRequest, "")
+	assert.Nil(t, err)
+	_, err = conn.Write(sendMsg)
+	assert.Nil(t, err)
+
+	// receive NAS Authentication Request Msg
+	n, err = conn.Read(recvMsg)
+	assert.Nil(t, err)
+	ngapPdu, err = ngap.Decoder(recvMsg[:n])
+	assert.Nil(t, err)
+	assert.True(t, ngapPdu.Present == ngapType.NGAPPDUPresentInitiatingMessage, "No NGAP Initiating Message received.")
+
+	// Calculate for RES*
+	nasPdu := test.GetNasPdu(ue, ngapPdu.InitiatingMessage.Value.DownlinkNASTransport)
+	require.NotNil(t, nasPdu)
+	require.NotNil(t, nasPdu.GmmMessage, "GMM message is nil")
+	require.Equal(t, nasPdu.GmmHeader.GetMessageType(), nas.MsgTypeAuthenticationRequest,
+		"Received wrong GMM message. Expected Authentication Request.")
+	rand := nasPdu.AuthenticationRequest.GetRANDValue()
+	resStat := ue.DeriveRESstarAndSetKey(ue.AuthenticationSubs, rand[:], "5G:mnc093.mcc208.3gppnetwork.org")
+
+	// send NAS Authentication Response
+	pdu := nasTestpacket.GetAuthenticationResponse(resStat, "")
+	sendMsg, err = test.GetUplinkNASTransport(ue.AmfUeNgapId, ue.RanUeNgapId, pdu)
+	assert.Nil(t, err)
+	_, err = conn.Write(sendMsg)
+	assert.Nil(t, err)
+
+	// receive NAS Security Mode Command Msg
+	n, err = conn.Read(recvMsg)
+	assert.Nil(t, err)
+	ngapPdu, err = ngap.Decoder(recvMsg[:n])
+	assert.Nil(t, err)
+	assert.NotNil(t, ngapPdu)
+	nasPdu = test.GetNasPdu(ue, ngapPdu.InitiatingMessage.Value.DownlinkNASTransport)
+	require.NotNil(t, nasPdu)
+	require.NotNil(t, nasPdu.GmmMessage, "GMM message is nil")
+	require.Equal(t, nasPdu.GmmHeader.GetMessageType(), nas.MsgTypeSecurityModeCommand,
+		"Received wrong GMM message. Expected Security Mode Command.")
+
+	// send NAS Security Mode Complete Msg
+	registrationRequestWith5GMM := nasTestpacket.GetRegistrationRequest(nasMessage.RegistrationType5GSInitialRegistration,
+		mobileIdentity5GS, nil, ueSecurityCapability, ue.Get5GMMCapability(), nil, nil)
+	pdu = nasTestpacket.GetSecurityModeComplete(registrationRequestWith5GMM)
+	pdu, err = test.EncodeNasPduWithSecurity(ue, pdu, nas.SecurityHeaderTypeIntegrityProtectedAndCipheredWithNew5gNasSecurityContext, true, true)
+	assert.Nil(t, err)
+	sendMsg, err = test.GetUplinkNASTransport(ue.AmfUeNgapId, ue.RanUeNgapId, pdu)
+	assert.Nil(t, err)
+	_, err = conn.Write(sendMsg)
+	assert.Nil(t, err)
+
+	// receive ngap Initial Context Setup Request Msg
+	n, err = conn.Read(recvMsg)
+	assert.Nil(t, err)
+	ngapPdu, err = ngap.Decoder(recvMsg[:n])
+	assert.Nil(t, err)
+	assert.True(t, ngapPdu.Present == ngapType.NGAPPDUPresentInitiatingMessage &&
+		ngapPdu.InitiatingMessage.ProcedureCode.Value == ngapType.ProcedureCodeInitialContextSetup,
+		"No InitialContextSetup received.")
+
+	// send ngap Initial Context Setup Response Msg
+	sendMsg, err = test.GetInitialContextSetupResponse(ue.AmfUeNgapId, ue.RanUeNgapId)
+	assert.Nil(t, err)
+	_, err = conn.Write(sendMsg)
+	assert.Nil(t, err)
+
+	// send NAS Registration Complete Msg
+	pdu = nasTestpacket.GetRegistrationComplete(nil)
+	pdu, err = test.EncodeNasPduWithSecurity(ue, pdu, nas.SecurityHeaderTypeIntegrityProtectedAndCiphered, true, false)
+	assert.Nil(t, err)
+	sendMsg, err = test.GetUplinkNASTransport(ue.AmfUeNgapId, ue.RanUeNgapId, pdu)
+	assert.Nil(t, err)
+	_, err = conn.Write(sendMsg)
+	assert.Nil(t, err)
+
+	// delete test data
+	for _, value := range ueSupiSlice {
+		servingPlmnId := "20893"
+		test.DelAuthSubscriptionToMongoDB(value)
+		test.DelAccessAndMobilitySubscriptionDataFromMongoDB(value, servingPlmnId)
+		test.DelSmfSelectionSubscriptionDataFromMongoDB(value, servingPlmnId)
+	}
+}
 
 func TestNGsetup(t *testing.T) {
 	var n int
@@ -65,7 +271,10 @@ func TestNGsetup(t *testing.T) {
 	assert.Nil(t, err)
 	ngapPdu, err := ngap.Decoder(recvMsg[:n])
 	assert.Nil(t, err)
-	assert.True(t, ngapPdu.Present == ngapType.NGAPPDUPresentSuccessfulOutcome && ngapPdu.SuccessfulOutcome.ProcedureCode.Value == ngapType.ProcedureCodeNGSetup, "No NGSetupResponse received.")
+	assert.True(t,
+		ngapPdu.Present == ngapType.NGAPPDUPresentSuccessfulOutcome &&
+			ngapPdu.SuccessfulOutcome.ProcedureCode.Value == ngapType.ProcedureCodeNGSetup,
+		"No NGSetupResponse received.")
 }
 
 // Registration
@@ -98,6 +307,7 @@ func TestRegistration(t *testing.T) {
 
 	// New UE
 	// ue := test.NewRanUeContext("imsi-2089300007487", 1, security.AlgCiphering128NEA2, security.AlgIntegrity128NIA2, models.AccessType__3_GPP_ACCESS)
+
 	ueMax := 1
 	for ueCount := 0; ueCount <= ueMax; ueCount++ {
 		fmt.Printf("ueCount: %d", ueCount)
@@ -152,7 +362,7 @@ func TestRegistration(t *testing.T) {
 			assert.NotNil(t, getData)
 		}
 
-		// send InitialUeMessage(Registration Request)(imsi-2089300007487)
+		// send InitialUeMessage(Registration Request)(imsi-2089300007487) TS24501 9.11.3.4.1
 		mobileIdentity5GS := nasType.MobileIdentity5GS{
 			Len:    12, // suci
 			Buffer: []uint8{0x01, 0x02, 0xf8, 0x39, 0xf0, 0xff, 0x00, 0x00, 0x00, 0x00, 0x47, 0x78},
@@ -240,32 +450,32 @@ func TestRegistration(t *testing.T) {
 		time.Sleep(100 * time.Millisecond)
 		// send GetPduSessionEstablishmentRequest Msg
 
-		sNssai := models.Snssai{
-			Sst: 1,
-			Sd:  "010203",
-		}
-		pdu = nasTestpacket.GetUlNasTransport_PduSessionEstablishmentRequest(10, nasMessage.ULNASTransportRequestTypeInitialRequest, "internet", &sNssai)
-		pdu, err = test.EncodeNasPduWithSecurity(ue, pdu, nas.SecurityHeaderTypeIntegrityProtectedAndCiphered, true, false)
-		assert.Nil(t, err)
-		sendMsg, err = test.GetUplinkNASTransport(ue.AmfUeNgapId, ue.RanUeNgapId, pdu)
-		assert.Nil(t, err)
-		_, err = conn.Write(sendMsg)
-		assert.Nil(t, err)
+		// sNssai := models.Snssai{
+		// 	Sst: 1,
+		// 	Sd:  "010203",
+		// }
+		// pdu = nasTestpacket.GetUlNasTransport_PduSessionEstablishmentRequest(10, nasMessage.ULNASTransportRequestTypeInitialRequest, "internet", &sNssai)
+		// pdu, err = test.EncodeNasPduWithSecurity(ue, pdu, nas.SecurityHeaderTypeIntegrityProtectedAndCiphered, true, false)
+		// assert.Nil(t, err)
+		// sendMsg, err = test.GetUplinkNASTransport(ue.AmfUeNgapId, ue.RanUeNgapId, pdu)
+		// assert.Nil(t, err)
+		// _, err = conn.Write(sendMsg)
+		// assert.Nil(t, err)
 
-		// receive 12. NGAP-PDU Session Resource Setup Request(DL nas transport((NAS msg-PDU session setup Accept)))
-		n, err = conn.Read(recvMsg)
-		assert.Nil(t, err)
-		ngapPdu, err = ngap.Decoder(recvMsg[:n])
-		assert.Nil(t, err)
-		assert.True(t, ngapPdu.Present == ngapType.NGAPPDUPresentInitiatingMessage &&
-			ngapPdu.InitiatingMessage.ProcedureCode.Value == ngapType.ProcedureCodePDUSessionResourceSetup,
-			"No PDUSessionResourceSetup received.")
+		// // receive 12. NGAP-PDU Session Resource Setup Request(DL nas transport((NAS msg-PDU session setup Accept)))
+		// n, err = conn.Read(recvMsg)
+		// assert.Nil(t, err)
+		// ngapPdu, err = ngap.Decoder(recvMsg[:n])
+		// assert.Nil(t, err)
+		// assert.True(t, ngapPdu.Present == ngapType.NGAPPDUPresentInitiatingMessage &&
+		// 	ngapPdu.InitiatingMessage.ProcedureCode.Value == ngapType.ProcedureCodePDUSessionResourceSetup,
+		// 	"No PDUSessionResourceSetup received.")
 
-		// send 14. NGAP-PDU Session Resource Setup Response
-		sendMsg, err = test.GetPDUSessionResourceSetupResponse(10, ue.AmfUeNgapId, ue.RanUeNgapId, ranN3Ipv4Addr)
-		assert.Nil(t, err)
-		_, err = conn.Write(sendMsg)
-		assert.Nil(t, err)
+		// // send 14. NGAP-PDU Session Resource Setup Response
+		// sendMsg, err = test.GetPDUSessionResourceSetupResponse(10, ue.AmfUeNgapId, ue.RanUeNgapId, ranN3Ipv4Addr)
+		// assert.Nil(t, err)
+		// _, err = conn.Write(sendMsg)
+		// assert.Nil(t, err)
 
 	}
 	// wait 1s
