@@ -1048,3 +1048,64 @@ time="2022-05-31T19:11:00Z" level=info msg="Send PFCP Association Request to UPF
 time="2022-05-31T19:11:00Z" level=info msg="In HandlePfcpAssociationSetupResponse" category=PFCP component=SMF
 time="2022-05-31T19:11:00Z" level=info msg="Handle PFCP Association Setup Response with NodeID[127.0.0.8]" category=PFCP component=SMF
 time="2022-05-31T19:11:00Z" level=info msg="UPF(127.0.0.8)[internet] setup association" category=PFCP component=SMF
+time="2022-06-07T01:44:04Z" level=info msg="Terminating SMF..." category=Init component=SMF
+time="2022-06-07T01:44:04Z" level=info msg="Send Deregister NFInstance" category=Consumer component=SMF
+time="2022-06-07T01:44:05Z" level=info msg="Deregister from NRF successfully" category=Init component=SMF
+time="2022-06-07T15:18:47Z" level=info msg="SMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=SMF
+time="2022-06-07T15:18:47Z" level=info msg="SMF Log level is set to [info] level" category=Init component=SMF
+time="2022-06-07T15:18:47Z" level=info msg="SMF config version [1.0.2]" category=CFG component=SMF
+time="2022-06-07T15:18:47Z" level=info msg="UE-Routing config version [1.0.1]" category=CFG component=SMF
+time="2022-06-07T15:18:47Z" level=info msg="smfconfig Info: Version[1.0.2] Description[SMF initial local configuration]" category=CTX component=SMF
+time="2022-06-07T15:18:47Z" level=info msg="Endpoints: [127.0.0.8]" category=CTX component=SMF
+time="2022-06-07T15:18:47Z" level=info msg="Server started" category=Init component=SMF
+time="2022-06-07T15:18:47Z" level=info msg="SMF Registration to NRF {c156ea21-9a44-42b2-acc9-8123e7c77e02 SMF REGISTERED 0 0xc0003f4f00 0xc0003f4f40 [] []   [127.0.0.2] [] <nil> [] [] <nil> 0 0 0 area1 <nil> <nil> <nil> <nil> 0xc0000a5880 <nil> <nil> <nil> <nil> <nil> map[] <nil> false 0xc0003f4d80 false false []}" category=Init component=SMF
+time="2022-06-07T15:18:47Z" level=info msg="Listen on 127.0.0.1:8805" category=PFCP component=SMF
+time="2022-06-07T15:18:47Z" level=info msg="Send PFCP Association Request to UPF[127.0.0.8]\n" category=App component=SMF
+time="2022-06-07T15:18:47Z" level=info msg="In HandlePfcpAssociationSetupResponse" category=PFCP component=SMF
+time="2022-06-07T15:18:47Z" level=info msg="Handle PFCP Association Setup Response with NodeID[127.0.0.8]" category=PFCP component=SMF
+time="2022-06-07T15:18:47Z" level=info msg="UPF(127.0.0.8)[internet] setup association" category=PFCP component=SMF
+time="2022-06-14T11:47:13Z" level=info msg="Terminating SMF..." category=Init component=SMF
+time="2022-06-14T11:47:13Z" level=info msg="Send Deregister NFInstance" category=Consumer component=SMF
+time="2022-06-14T11:47:14Z" level=info msg="Deregister from NRF successfully" category=Init component=SMF
+time="2022-06-14T12:03:51Z" level=info msg="SMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=SMF
+time="2022-06-14T12:03:51Z" level=info msg="SMF Log level is set to [info] level" category=Init component=SMF
+time="2022-06-14T12:03:51Z" level=info msg="SMF config version [1.0.2]" category=CFG component=SMF
+time="2022-06-14T12:03:51Z" level=info msg="UE-Routing config version [1.0.1]" category=CFG component=SMF
+time="2022-06-14T12:03:51Z" level=info msg="smfconfig Info: Version[1.0.2] Description[SMF initial local configuration]" category=CTX component=SMF
+time="2022-06-14T12:03:51Z" level=info msg="Endpoints: [127.0.0.8]" category=CTX component=SMF
+time="2022-06-14T12:03:51Z" level=info msg="Server started" category=Init component=SMF
+time="2022-06-14T12:03:51Z" level=info msg="SMF Registration to NRF {910f1c4a-ac6d-453f-9753-a424b8463c1e SMF REGISTERED 0 0xc00009c1e0 0xc00009c220 [] []   [127.0.0.2] [] <nil> [] [] <nil> 0 0 0 area1 <nil> <nil> <nil> <nil> 0xc0000b6080 <nil> <nil> <nil> <nil> <nil> map[] <nil> false 0xc00009c060 false false []}" category=Init component=SMF
+time="2022-06-14T12:03:51Z" level=info msg="Listen on 127.0.0.1:8805" category=PFCP component=SMF
+time="2022-06-14T12:03:51Z" level=info msg="Send PFCP Association Request to UPF[127.0.0.8]\n" category=App component=SMF
+time="2022-06-14T12:03:51Z" level=info msg="In HandlePfcpAssociationSetupResponse" category=PFCP component=SMF
+time="2022-06-14T12:03:51Z" level=info msg="Handle PFCP Association Setup Response with NodeID[127.0.0.8]" category=PFCP component=SMF
+time="2022-06-14T12:03:51Z" level=info msg="UPF(127.0.0.8)[internet] setup association" category=PFCP component=SMF
+time="2022-06-14T12:39:30Z" level=info msg="Terminating SMF..." category=Init component=SMF
+time="2022-06-14T12:39:30Z" level=info msg="Send Deregister NFInstance" category=Consumer component=SMF
+time="2022-06-14T12:39:31Z" level=info msg="Deregister from NRF successfully" category=Init component=SMF
+time="2022-06-14T12:39:46Z" level=info msg="SMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=SMF
+time="2022-06-14T12:39:46Z" level=info msg="SMF Log level is set to [info] level" category=Init component=SMF
+time="2022-06-14T12:39:46Z" level=info msg="SMF config version [1.0.2]" category=CFG component=SMF
+time="2022-06-14T12:39:46Z" level=info msg="UE-Routing config version [1.0.1]" category=CFG component=SMF
+time="2022-06-14T12:39:46Z" level=info msg="smfconfig Info: Version[1.0.2] Description[SMF initial local configuration]" category=CTX component=SMF
+time="2022-06-14T12:39:46Z" level=info msg="Endpoints: [127.0.0.8]" category=CTX component=SMF
+time="2022-06-14T12:39:46Z" level=info msg="Server started" category=Init component=SMF
+time="2022-06-14T12:39:46Z" level=info msg="SMF Registration to NRF {156a3f08-7b68-40ba-892a-ed5064fa3d85 SMF REGISTERED 0 0xc0000da1e0 0xc0000da220 [] []   [127.0.0.2] [] <nil> [] [] <nil> 0 0 0 area1 <nil> <nil> <nil> <nil> 0xc0000aa140 <nil> <nil> <nil> <nil> <nil> map[] <nil> false 0xc0000da060 false false []}" category=Init component=SMF
+time="2022-06-14T12:39:46Z" level=info msg="Listen on 127.0.0.1:8805" category=PFCP component=SMF
+time="2022-06-14T12:39:46Z" level=info msg="Send PFCP Association Request to UPF[127.0.0.8]\n" category=App component=SMF
+time="2022-06-14T12:39:46Z" level=info msg="In HandlePfcpAssociationSetupResponse" category=PFCP component=SMF
+time="2022-06-14T12:39:46Z" level=info msg="Handle PFCP Association Setup Response with NodeID[127.0.0.8]" category=PFCP component=SMF
+time="2022-06-14T12:39:46Z" level=info msg="UPF(127.0.0.8)[internet] setup association" category=PFCP component=SMF
+time="2022-06-20T13:12:31Z" level=info msg="SMF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=SMF
+time="2022-06-20T13:12:31Z" level=info msg="SMF Log level is set to [info] level" category=Init component=SMF
+time="2022-06-20T13:12:31Z" level=info msg="SMF config version [1.0.2]" category=CFG component=SMF
+time="2022-06-20T13:12:31Z" level=info msg="UE-Routing config version [1.0.1]" category=CFG component=SMF
+time="2022-06-20T13:12:31Z" level=info msg="smfconfig Info: Version[1.0.2] Description[SMF initial local configuration]" category=CTX component=SMF
+time="2022-06-20T13:12:31Z" level=info msg="Endpoints: [127.0.0.8]" category=CTX component=SMF
+time="2022-06-20T13:12:31Z" level=info msg="Server started" category=Init component=SMF
+time="2022-06-20T13:12:31Z" level=info msg="SMF Registration to NRF {f6e977be-e39e-4579-99ec-c94b5a0b1a6e SMF REGISTERED 0 0xc0004c41e0 0xc0004c4220 [] []   [127.0.0.2] [] <nil> [] [] <nil> 0 0 0 area1 <nil> <nil> <nil> <nil> 0xc000492140 <nil> <nil> <nil> <nil> <nil> map[] <nil> false 0xc0004c4060 false false []}" category=Init component=SMF
+time="2022-06-20T13:12:31Z" level=info msg="Listen on 127.0.0.1:8805" category=PFCP component=SMF
+time="2022-06-20T13:12:31Z" level=info msg="Send PFCP Association Request to UPF[127.0.0.8]\n" category=App component=SMF
+time="2022-06-20T13:12:31Z" level=info msg="In HandlePfcpAssociationSetupResponse" category=PFCP component=SMF
+time="2022-06-20T13:12:31Z" level=info msg="Handle PFCP Association Setup Response with NodeID[127.0.0.8]" category=PFCP component=SMF
+time="2022-06-20T13:12:31Z" level=info msg="UPF(127.0.0.8)[internet] setup association" category=PFCP component=SMF

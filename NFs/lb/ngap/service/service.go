@@ -34,10 +34,14 @@ var (
 	amfConn1        *sctp.SCTPConn
 	amfConn2        *sctp.SCTPConn
 	newConn         *sctp.SCTPConn
-	goAmf           int
+	goAmf           int   //實際要去哪個AMF
+	oldGoAmf        []int //舊策略
+	nowGoAmf        []int //正在執行中的策略，用來計數
+	countSum        int   //用來計算分配一論的次數，為oldGoAmf的總和
+	count           int   //用來計當前輪到哪個AMF0~2, count = count%3 < countSum
 	err             error
 	NGsetupResponse bool
-	initailMsgCount int
+	// initailMsgCount int //用initailMsgCount做暫時RR
 )
 
 var sctpConfig sctp.SocketConfig = sctp.SocketConfig{
@@ -65,7 +69,7 @@ func Run(addresses []string, port int) {
 		Port:    port,
 	}
 	NGsetupResponse = false
-	initailMsgCount = 0
+	// initailMsgCount = 0
 	go listenAndServe(addr)
 }
 
@@ -235,19 +239,16 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 		ppid += 1
 		bufUp := make([]byte, bufsize)
 		n, info, notification, err := conn.SCTPRead(bufUp)
-		// MDAF need to decide which AMF to go
-		goAmf = context.LB_Self().MdafGoAmf
-		goAmf = 0 //call MDAF
 		if err != nil {
 			switch err {
 			case io.EOF, io.ErrUnexpectedEOF:
-				logger.NgapLog.Errorf("Read EOF from client")
+				logger.NgapLog.Debugf("Read EOF from client")
 				return
 			case syscall.EAGAIN:
-				logger.NgapLog.Errorf("SCTP read timeout")
+				logger.NgapLog.Debugf("SCTP read timeout")
 				continue
 			case syscall.EINTR:
-				logger.NgapLog.Errorf("SCTPRead: %+v", err)
+				logger.NgapLog.Debugf("SCTPRead: %+v", err)
 				continue
 			default:
 				logger.NgapLog.Errorf("Handle connection[addr: %+v] error: %+v", conn.RemoteAddr(), err)
@@ -277,18 +278,23 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 					goAmf = 3
 					logger.NgapLog.Infof("NGSETUP, send to AMF0 AMF1 AMF2, goAmf: ", goAmf)
 				case ngapType.ProcedureCodeInitialUEMessage: // initail UE message
-					logger.NgapLog.Errorln("initail UE message: ", initailMsgCount)
+					// logger.NgapLog.Infof("initail UE message: ", initailMsgCount) //用initailMsgCount做暫時RR
+					// MDAF need to decide which AMF to go
+					newGoAmf := context.LB_Self().MdafGoAmf //抓MDAF的新策略
+					checkChange(newGoAmf)                   //確認是否更新策略，有更新:重新計數
+					goAmf = getGoAMf()
 					for _, ie := range initiatingMessage.Value.InitialUEMessage.ProtocolIEs.List {
 						switch ie.Id.Value {
 						case ngapType.ProtocolIEIDRANUENGAPID:
 							rANUENGAPID := ie.Value.RANUENGAPID
 							value, isExist := mUEAMF[*rANUENGAPID]
 							if !isExist {
-								logger.NgapLog.Errorln("is not Exist")
-								mUEAMF[*rANUENGAPID] = goAmf + initailMsgCount
+								logger.NgapLog.Infof("is not Exist")
+								// mUEAMF[*rANUENGAPID] = goAmf + initailMsgCount
+								mUEAMF[*rANUENGAPID] = goAmf
 								goAmf = mUEAMF[*rANUENGAPID]
 							} else {
-								logger.NgapLog.Errorln("is Exist")
+								logger.NgapLog.Infof("is Exist")
 								goAmf = value
 							}
 							logger.NgapLog.Errorf("mUEAMF: ", mUEAMF)
@@ -301,11 +307,11 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 							}
 						}
 					}
-					if initailMsgCount >= 2 {
-						initailMsgCount = 0
-					} else {
-						initailMsgCount += 1
-					}
+					// if initailMsgCount >= 2 {
+					// 	initailMsgCount = 0
+					// } else {
+					// 	initailMsgCount += 1
+					// }
 				case ngapType.ProcedureCodeUplinkNASTransport: // Uplink NAS Transport
 					for i := 0; i < len(initiatingMessage.Value.UplinkNASTransport.ProtocolIEs.List); i++ {
 						ie := initiatingMessage.Value.UplinkNASTransport.ProtocolIEs.List[i]
@@ -316,7 +322,7 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 							logger.NgapLog.Infof("Uplink NAS Transport is Exist?: %v", isExist)
 							goAmf = value
 
-							logger.NgapLog.Errorf("mUEAMF: ", mUEAMF)
+							logger.NgapLog.Infof("mUEAMF: ", mUEAMF)
 							logger.NgapLog.Infof("mUEAMF key: %v , goAmf: %d", rANUENGAPID, goAmf)
 							logger.NgapLog.Trace("Decode IE RANUENGAPID")
 							if rANUENGAPID == nil {
@@ -396,7 +402,7 @@ func SendToAmf(conn *sctp.SCTPConn, msg []byte, info *sctp.SndRcvInfo) {
 	}
 	n, err = conn.SCTPWrite(msg, info)
 	if err != nil {
-		logger.NgapLog.Errorf("failed to write: %v", err)
+		logger.NgapLog.Errorf("failed to write to AMF: %v", err)
 	} else {
 		logger.NgapLog.Infof("write to amf: len %d", n)
 	}
@@ -497,7 +503,7 @@ func SendToRan(conn *sctp.SCTPConn, msg []byte, info *sctp.SndRcvInfo) {
 	}
 	n, err = conn.SCTPWrite(msg, info)
 	if err != nil {
-		logger.NgapLog.Errorf("failed to write: %v", err)
+		logger.NgapLog.Errorf("failed to write to RAN: %v", err)
 	} else {
 		logger.NgapLog.Infof("write: len %d", n)
 	}
@@ -519,3 +525,132 @@ func Stop() {
 	})
 	logger.NgapLog.Infof("SCTP server closed")
 }
+
+func checkChange(newGoAmf []int) {
+	change := sliceEqual(newGoAmf, oldGoAmf) //是否更新策略
+	if change {
+		oldGoAmf = newGoAmf //更新策略
+		nowGoAmf = oldGoAmf
+		for _, v := range oldGoAmf {
+			countSum += v //計算新countSum
+		}
+		count = 0 //如果更新策略，重新一輪
+	}
+}
+
+func sliceEqual(a, b []int) bool {
+	if len(a) != len(b) {
+		return true
+	}
+
+	if (a == nil) != (b == nil) {
+		return true
+	}
+
+	for i, v := range a {
+		if v != b[i] {
+			return true
+		}
+	}
+
+	return false //表示兩者相同，沒有更新策略
+}
+
+func getGoAMf() (amfNum int) {
+	if count >= countSum { //如果超過一輪次數，重新一輪
+		count = 0
+		nowGoAmf = oldGoAmf
+	}
+	if nowGoAmf[count%3] != 0 {
+		nowGoAmf[count%3] -= 1
+		amfNum = count % 3
+		count++
+	} else {
+		count++
+		amfNum = getGoAMf()
+	}
+	return
+}
+
+// func getGoAMf(l []int) (amfNum int) { //回傳slice中的位址 代表哪個AMF
+// 	typeCount := 0     //用以辨別type 0和3
+// 	tempMaxAmf := 4    //現在要給最多負載的AMF
+// 	tempGoAmfType := 4 //屬於哪種分派
+// 	for key, v := range l {
+// 		if v == 4 {
+// 			tempGoAmfType = 1
+// 			tempMaxAmf = key
+// 			break
+// 		} else if v == 3 {
+// 			tempGoAmfType = 2
+// 			tempMaxAmf = key
+// 			break
+// 		} else if v == 1 {
+// 			typeCount += 1
+// 			if typeCount == 3 {
+// 				tempGoAmfType = 3
+// 				break
+// 			} else if typeCount == 1 {
+// 				tempGoAmfType = 0
+// 			}
+// 		}
+// 	}
+// 	if tempGoAmfType == goAmfType {
+// 		if tempMaxAmf == nowMaxAmf { //type 0 or 1 or 2 沒改變
+// 			switch goAmfType {
+// 			case 0: // 1 0 0
+// 				amfNum = nowMaxAmf
+// 			case 1: // 1 4 0
+// 				if amfCount > 1 {
+// 					amfCount -= 1
+// 					amfNum = nowMaxAmf
+// 				} else {
+// 					amfCount = 5
+// 					for key, v := range l {
+// 						if v == 1 {
+// 							amfNum = key
+// 							break
+// 						}
+// 					}
+// 				}
+// 			case 2: // 1 1 3
+// 				if amfCount > 2 {
+// 					amfCount -= 1
+// 					amfNum = nowMaxAmf
+// 				} else {
+// 					for key, v := range l {
+// 						if v == 1 {
+// 							if !pickAmf {
+// 								amfNum = key
+// 								pickAmf = true
+// 								break
+// 							} else {
+// 								pickAmf = false
+// 								amfCount = 5
+// 								continue //跳過一次看到數字1
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 		} else if goAmfType == 3 { // type 3 round robin
+// 			amfNum = nowMaxAmf
+// 			nowMaxAmf += 1
+// 			if nowMaxAmf > 2 {
+// 				nowMaxAmf = 0
+// 			}
+// 		} else { //決策變更但同type，不會是type 3 ex. 140->401 , 113->311
+// 			nowMaxAmf = tempMaxAmf
+// 			amfNum = nowMaxAmf
+// 			amfCount = 4 //這次也算一次，5-1=4
+// 		}
+
+// 	} else { //決策變更且type變更
+// 		nowMaxAmf = tempMaxAmf
+// 		goAmfType = tempGoAmfType
+// 		amfNum = nowMaxAmf
+// 		amfCount = 4 //這次也算一次，5-1=4
+// 	}
+
+// 	return
+// }

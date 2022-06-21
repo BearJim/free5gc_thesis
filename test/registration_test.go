@@ -2,6 +2,7 @@ package test_test
 
 import (
 	"bytes"
+	"sync"
 
 	"encoding/binary"
 	"encoding/hex"
@@ -44,6 +45,7 @@ const ranN3Ipv4Addr string = "10.200.200.1"
 // const upfN3Ipv4Addr string = "10.200.200.102"
 
 func TestUe(t *testing.T) {
+	var wg sync.WaitGroup
 	var n int
 	var sendMsg []byte
 	var recvMsg = make([]byte, 2048)
@@ -71,26 +73,29 @@ func TestUe(t *testing.T) {
 
 	// New UE
 	// ue := test.NewRanUeContext("imsi-2089300000001", 1, security.AlgCiphering128NEA2, security.AlgIntegrity128NIA2, models.AccessType__3_GPP_ACCESS)
-	timerMax := 50
-	ueMax := 10
+	timerMax := 1
+	ueMax := 2
 	allUe := 0 // Max number of UEs = ueMax * timerMax
-	sleepTime := 1000
+	sleepTime := 100
 	for timerCount := 1; timerCount <= timerMax; timerCount++ {
-		time.Sleep(time.Duration(sleepTime) * time.Millisecond)
-		sleepTime = 1000
 		for i := 0; i < ueMax; i++ {
-			go ueSendRq(t, allUe, conn, ngapPdu, err)
+			go ueSendRq(t, allUe, conn, ngapPdu, err, wg.Done)
 			allUe += 1
 		}
+		time.Sleep(time.Duration(sleepTime) * time.Millisecond)
 		if timerCount <= (timerMax / 2) {
-			sleepTime = sleepTime / (10 * (timerCount / (timerMax / 2)))
+			ueMax = ueMax + 2
 		} else if timerCount > (timerMax / 2) {
-			sleepTime = (sleepTime * (timerCount / timerMax))
+			ueMax = ueMax - 2
 		}
 	}
+	wg.Add(allUe)
+	time.Sleep(1000 * time.Millisecond)
+	wg.Wait()
 }
 
-func ueSendRq(t *testing.T, allUe int, conn *sctp.SCTPConn, ngapPdu *ngapType.NGAPPDU, err error) {
+func ueSendRq(t *testing.T, allUe int, conn *sctp.SCTPConn, ngapPdu *ngapType.NGAPPDU, err error, done func()) {
+	defer done()
 	var n int
 	var sendMsg []byte
 	var recvMsg = make([]byte, 2048)

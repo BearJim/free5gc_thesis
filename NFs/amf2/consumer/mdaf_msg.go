@@ -68,7 +68,7 @@ func MdafMsg() (*models.ProblemDetails, error) {
 	// }
 
 	registrationData := models.Amf3GppAccessRegistration{
-		AmfInstanceId:     "0",
+		AmfInstanceId:     "2",
 		SupportedFeatures: ueNum,
 		Pei:               totalCpuRate,
 	}

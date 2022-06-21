@@ -38,7 +38,6 @@ func init() {
 	tmsiGenerator = idgenerator.NewGenerator(1, math.MaxInt32)
 	lbStatusSubscriptionIDGenerator = idgenerator.NewGenerator(1, math.MaxInt32)
 	lbUeNGAPIDGenerator = idgenerator.NewGenerator(1, MaxValueOfLbUeNgapId)
-	LB_Self().MdafGoAmf = 0
 }
 
 type LBContext struct {
@@ -77,7 +76,7 @@ type LBContext struct {
 	T3560Cfg  factory.TimerValue
 	T3565Cfg  factory.TimerValue
 	Locality  string
-	MdafGoAmf int
+	MdafGoAmf []int
 }
 
 type LBContextEventSubscription struct {
