@@ -90,8 +90,8 @@ configuration:
     maxRetryTimes: 4 # the max number of retransmission
   timerToMdaf:
     enable: true     # true or false
-    expireTime: 3s   # default is 6 seconds
-    maxRetryTimes: 3 # the max number of retransmission
+    expireTime: 3s   # default is 10 seconds
+    maxRetryTimes: 100 # the max number of retransmission
 
 # the kind of log output
   # debugLevel: how detailed to output, value: trace, debug, info, warn, error, fatal, panic

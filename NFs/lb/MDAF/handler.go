@@ -20,7 +20,7 @@ type amfInfo struct {
 var amf0, amf1, amf2 amfInfo
 
 func MDAFProcedure(request models.Amf3GppAccessRegistration) (header http.Header, response *models.Amf3GppAccessRegistration, problemDetails *models.ProblemDetails) {
-	logger.HttpLog.Infoln("========MDAFProcedure========")
+	logger.HttpLog.Debugln("========MDAFProcedure========")
 
 	amfNum := request.AmfInstanceId
 	ueNum := request.SupportedFeatures
@@ -30,7 +30,7 @@ func MDAFProcedure(request models.Amf3GppAccessRegistration) (header http.Header
 	amf0.amfNum = "0"
 	amf1.amfNum = "1"
 	amf2.amfNum = "2"
-	logger.HttpLog.Infof("amfNum: %v, ueNum: %v, cpuRate: %v", amfNum, ueNum_i, cpuRate_f)
+	// logger.HttpLog.Infof("amfNum: %v, ueNum: %v, cpuRate: %v", amfNum, ueNum_i, cpuRate_f)
 
 	//update each AMF info
 	switch amfNum {
@@ -45,7 +45,7 @@ func MDAFProcedure(request models.Amf3GppAccessRegistration) (header http.Header
 		amf2.cpuRate = cpuRate_f
 	}
 	// logger.HttpLog.Infof("amf0 ue: %v, amf1 ue: %v, amf2 ue: %v", amf0.ueNum, amf1.ueNum, amf2.ueNum)
-	logger.HttpLog.Infof("amf0 cpu: %v, amf1 cpu: %v, amf2 cpu: %v", amf0.cpuRate, amf1.cpuRate, amf2.cpuRate)
+	logger.HttpLog.Infof("====== amf0 cpu: %v, amf1 cpu: %v, amf2 cpu: %v ======", amf0.cpuRate, amf1.cpuRate, amf2.cpuRate)
 	// ueNumSlice := []int{amf0.ueNum, amf1.ueNum, amf2.ueNum}
 	cpuRateSlice := []float64{amf0.cpuRate, amf1.cpuRate, amf2.cpuRate}
 
@@ -55,6 +55,7 @@ func MDAFProcedure(request models.Amf3GppAccessRegistration) (header http.Header
 	secCpu, secCpuK := sec(cpuRateSlice)
 	_, minCPuK := min(cpuRateSlice)
 	if maxCpu > threshold && secCpu < threshold { //AMF數: 2
+		logger.HttpLog.Infof("====== add AMF num to 2 ======")
 		targetAmfp[minCPuK] = 0
 		if cpuRateSlice[maxCpuK] != 0 && cpuRateSlice[secCpuK] != 0 {
 			u0 := 100.0 - cpuRateSlice[maxCpuK] //小
@@ -70,6 +71,7 @@ func MDAFProcedure(request models.Amf3GppAccessRegistration) (header http.Header
 			}
 		}
 	} else if maxCpu > threshold && secCpu > threshold { //AMF數: 3
+		logger.HttpLog.Infof("====== add AMF num to 3 ======")
 		// COOP algo
 		if amf0.cpuRate != 0 && amf1.cpuRate != 0 && amf2.cpuRate != 0 {
 			u0 := 100.0 - amf0.cpuRate
@@ -156,6 +158,17 @@ func max(l []float64) (max float64, maxK int) {
 	return
 }
 
+func maxi(l []int) (max int, maxK int) {
+	max = l[0]
+	for k, v := range l {
+		if v > max {
+			max = v
+			maxK = k
+		}
+	}
+	return
+}
+
 func min(l []float64) (min float64, minK int) {
 	min = l[0]
 	for k, v := range l {
@@ -179,5 +192,17 @@ func sec(l []float64) (sec float64, secK int) {
 }
 
 func UpdateLBGoAmf(targetAmfp []int) {
+	countSum := 0
+	for _, v := range targetAmfp {
+		countSum += v //計算新countSum
+	}
+	if countSum < 10 {
+		_, k := maxi(targetAmfp)
+		targetAmfp[k] = targetAmfp[k] + (10 - countSum)
+	} else if countSum > 10 {
+		_, k := maxi(targetAmfp)
+		targetAmfp[k] = targetAmfp[k] - (countSum - 10)
+	}
 	context.LB_Self().MdafGoAmf = targetAmfp
+	logger.HttpLog.Infof("====== LBGoAmf: %v ======", targetAmfp)
 }

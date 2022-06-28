@@ -296,16 +296,6 @@ func (amf *AMF) Start() {
 
 	initLog.Infoln("===Before http server===")
 	server, err := http2_util.NewServer(addr, util.AmfLogPath, router)
-
-	// logger.NgapLog.Infoln("======start MdafMsg======")
-	// problemDetails, errMdaf := consumer.MdafMsg()
-	// if problemDetails != nil {
-	// 	logger.NgapLog.Errorf("MdafMsg() Failed Problem[%+v]", problemDetails)
-	// } else if errMdaf != nil {
-	// 	logger.NgapLog.Errorf("MdafMsg() Error[%+v]", errMdaf)
-	// }
-	// logger.NgapLog.Infoln("======after MdafMsg======")
-
 	if server == nil {
 		initLog.Errorf("Initialize HTTP server failed: %+v", err)
 		return

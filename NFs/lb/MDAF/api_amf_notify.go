@@ -19,7 +19,7 @@ import (
 // }
 
 func HTTPNotifyAmf(ctx *gin.Context) {
-	logger.HttpLog.Infoln("===Start HTTPNotifyAmf===")
+	logger.HttpLog.Debugln("===Start HTTPNotifyAmf===")
 	// var amfData amfData
 	var amf3GppAccessRegistration models.Amf3GppAccessRegistration
 
@@ -52,11 +52,11 @@ func HTTPNotifyAmf(ctx *gin.Context) {
 		return
 	}
 	// logger.AppLog.Infoln("~~amfData: ", amfData)
-	logger.AppLog.Infoln("AMF data Info msg: ", amf3GppAccessRegistration)
+	logger.AppLog.Debugln("AMF data Info msg: ", amf3GppAccessRegistration)
 
 	// req := http_wrapper.NewRequest(ctx.Request, amfData)
 	req := http_wrapper.NewRequest(ctx.Request, amf3GppAccessRegistration)
-	logger.AppLog.Infoln("===Start HandleHTTPNotifyAmf===")
+	logger.AppLog.Debugln("===Start HandleHTTPNotifyAmf===")
 	rsp := HandleHTTPNotifyAmf(req)
 
 	// step 5: response
@@ -79,7 +79,7 @@ func HTTPNotifyAmf(ctx *gin.Context) {
 
 func HandleHTTPNotifyAmf(request *http_wrapper.Request) *http_wrapper.Response {
 	// step 1: log
-	logger.HttpLog.Infof("Handle AMF HTTP Notify")
+	logger.HttpLog.Debugln("Handle AMF HTTP Notify")
 
 	// step 2: retrieve request
 	// registerRequest := request.Body.(amfData)

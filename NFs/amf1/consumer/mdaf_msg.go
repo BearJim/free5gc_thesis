@@ -37,16 +37,10 @@ type service struct {
 	client *APIClient
 }
 
-// type amfData struct {
-// 	amfNum  string `json:"amfId" bson:"amfId"`
-// 	ueNum   string `json:"ueNum" bson:"UeNum"`
-// 	cpuRate string `json:"cpuRate" bson:"cpuRate"`
-// }
-
 type AMFMdafMsgService service
 
 func MdafMsg() (*models.ProblemDetails, error) {
-	logger.HttpLog.Infoln("Start MdafMsg")
+	logger.HttpLog.Debugln("Start MdafMsg")
 	configuration := NewConfiguration()
 	configuration.SetBasePath("http://127.0.0.21:8000") //TH LB http IP
 	client := NewAPIClient(configuration)
@@ -59,23 +53,14 @@ func MdafMsg() (*models.ProblemDetails, error) {
 	if err != nil {
 		return nil, err
 	}
-	// totalCpuRate := strconv.Itoa(tempCpuRate[0])
 	totalCpuRate := strconv.FormatFloat(tempCpuRate[0], 'f', 3, 64)
-	// amfDataBody := amfData{
-	// 	amfNum:  0,
-	// 	ueNum:   tempUeNum,
-	// 	cpuRate: tempCpuRate[0],
-	// }
-
 	registrationData := models.Amf3GppAccessRegistration{
 		AmfInstanceId:     "1",
 		SupportedFeatures: ueNum,
 		Pei:               totalCpuRate,
 	}
 
-	logger.HttpLog.Infoln("===Start AmfMdafMsg===")
-	// logger.HttpLog.Infof("amfNum: %v ueNum: %v cpuRate: %v", amfDataBody.amfNum, amfDataBody.ueNum, amfDataBody.cpuRate)
-	// _, httpResp, localErr := client.AMFMdafMsgApi.AmfMdafMsg(context.Background(), amfDataBody)
+	logger.HttpLog.Debugln("===Start AmfMdafMsg===")
 	_, httpResp, localErr := client.AMFMdafMsgApi.AmfMdafMsg(context.Background(), registrationData)
 	if localErr == nil {
 		return nil, nil
@@ -159,9 +144,8 @@ func NewAPIClient(cfg *Configuration) *APIClient {
 	return c
 }
 
-// func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context, tempamfData amfData) (amfData, *http.Response, error) {
 func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context, registration models.Amf3GppAccessRegistration) (models.Amf3GppAccessRegistration, *http.Response, error) {
-	logger.HttpLog.Infoln("===In AmfMdafMsg===")
+	logger.HttpLog.Debugln("===In AmfMdafMsg===")
 	var (
 		localVarHTTPMethod   = strings.ToUpper("Put")
 		localVarPostBody     interface{}
@@ -194,7 +178,6 @@ func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context, registration models.
 
 	// body params
 	localVarPostBody = &registration
-	logger.HttpLog.Infoln("localVarPostBody: ", localVarPostBody)
 
 	r, err := openapi.PrepareRequest(ctx, a.client.cfg, localVarPath, localVarHTTPMethod,
 		localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams,
@@ -203,8 +186,6 @@ func (a *AMFMdafMsgService) AmfMdafMsg(ctx context.Context, registration models.
 		logger.HttpLog.Errorln("===PrepareRequest===")
 		return localVarReturnValue, nil, err
 	}
-
-	logger.HttpLog.Infoln("PrepareRequest: ", r.GetBody)
 
 	localVarHTTPResponse, err := openapi.CallAPI(a.client.cfg, r)
 	if err != nil || localVarHTTPResponse == nil {
