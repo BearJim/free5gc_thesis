@@ -146,14 +146,14 @@ func HandleNGSetupRequest(ran *context.AmfRan, message *ngapType.NGAPPDU) {
 		ngap_message.SendNGSetupFailure(ran, cause)
 	}
 
-	logger.NgapLog.Infoln("======start MdafMsg======")
+	logger.NgapLog.Debugln("======start MdafMsg======")
 	problemDetails, errMdaf := consumer.MdafMsg()
 	if problemDetails != nil {
 		logger.NgapLog.Errorf("MdafMsg() Failed Problem[%+v]", problemDetails)
 	} else if errMdaf != nil {
 		logger.NgapLog.Errorf("MdafMsg() Error[%+v]", errMdaf)
 	}
-	logger.NgapLog.Infoln("======Start timer======")
+	logger.NgapLog.Debugln("======Start timer======")
 	cfg := context.AMF_Self().TimerToMdafCfg
 	logger.NgapLog.Infof("timer ExpireTime: %v, MaxRetryTimes: %v", cfg.ExpireTime, cfg.MaxRetryTimes)
 	ran.TimerToMdaf = context.NewTimer(cfg.ExpireTime, cfg.MaxRetryTimes, func(expireTimes int32) {

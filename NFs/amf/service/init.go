@@ -231,7 +231,7 @@ func (amf *AMF) FilterCli(c *cli.Context) (args []string) {
 }
 
 func (amf *AMF) Start() {
-	initLog.Infoln("Server started")
+	initLog.Infoln("AMF0 Server started")
 
 	router := logger_util.NewGinWithLogrus(logger.GinLog)
 	router.Use(cors.New(cors.Config{
@@ -294,7 +294,6 @@ func (amf *AMF) Start() {
 		os.Exit(0)
 	}()
 
-	initLog.Infoln("===Before http server===")
 	server, err := http2_util.NewServer(addr, util.AmfLogPath, router)
 	if server == nil {
 		initLog.Errorf("Initialize HTTP server failed: %+v", err)

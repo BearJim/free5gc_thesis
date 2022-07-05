@@ -336,6 +336,8 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 							}
 						}
 					}
+				default:
+					logger.NgapLog.Infof("2 default~~~~~")
 				}
 			case ngapType.NGAPPDUPresentSuccessfulOutcome:
 				successfulOutcome := pdu.SuccessfulOutcome
@@ -357,7 +359,29 @@ func handleUplinkConnection(conn *sctp.SCTPConn, bufsize uint32) {
 							}
 						}
 					}
+				case ngapType.ProcedureCodeUEContextRelease:
+					logger.NgapLog.Infof("ProcedureCodeUEContextRelease")
+					UEContextReleaseResponse := successfulOutcome.Value.UEContextReleaseComplete
+					for _, ie := range UEContextReleaseResponse.ProtocolIEs.List {
+						switch ie.Id.Value {
+						case ngapType.ProtocolIEIDRANUENGAPID:
+							rANUENGAPID := ie.Value.RANUENGAPID
+							value := mUEAMF[*rANUENGAPID]
+							goAmf = value
+							logger.NgapLog.Debugf("mUEAMF key: %d , goAmf: %d", rANUENGAPID, value)
+							logger.NgapLog.Trace("Decode IE RANUENGAPID")
+							logger.NgapLog.Debugf("RANUENGAPID: %d", rANUENGAPID)
+							if rANUENGAPID == nil {
+								logger.NgapLog.Error("RANUENGAPID is nil")
+								return
+							}
+						}
+					}
+				default:
+					logger.NgapLog.Infof("3 default~~~~~ procedureCode value: ", successfulOutcome.ProcedureCode.Value)
 				}
+			default:
+				logger.NgapLog.Infof("first default")
 			}
 
 			switch goAmf {

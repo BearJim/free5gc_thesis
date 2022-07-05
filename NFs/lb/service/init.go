@@ -132,7 +132,6 @@ func (lb *LB) Start() {
 		os.Exit(0)
 	}()
 
-	initLog.Infoln("before http server")
 	addr := fmt.Sprintf("%s:%d", "127.0.0.21", 8000)
 	server, err := http2_util.NewServer(addr, path_util.Free5gcPath("free5gc/lbsslkey.log"), router)
 

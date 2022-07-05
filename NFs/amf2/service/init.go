@@ -231,7 +231,7 @@ func (amf *AMF) FilterCli(c *cli.Context) (args []string) {
 }
 
 func (amf *AMF) Start() {
-	initLog.Infoln("Server started")
+	initLog.Infoln("AMF2 Server started")
 
 	router := logger_util.NewGinWithLogrus(logger.GinLog)
 	router.Use(cors.New(cors.Config{
@@ -294,18 +294,7 @@ func (amf *AMF) Start() {
 		os.Exit(0)
 	}()
 
-	initLog.Infoln("===Before http server===")
 	server, err := http2_util.NewServer(addr, util.AmfLogPath, router)
-
-	// logger.NgapLog.Infoln("======start MdafMsg======")
-	// problemDetails, errMdaf := consumer.MdafMsg()
-	// if problemDetails != nil {
-	// 	logger.NgapLog.Errorf("MdafMsg() Failed Problem[%+v]", problemDetails)
-	// } else if errMdaf != nil {
-	// 	logger.NgapLog.Errorf("MdafMsg() Error[%+v]", errMdaf)
-	// }
-	// logger.NgapLog.Infoln("======after MdafMsg======")
-
 	if server == nil {
 		initLog.Errorf("Initialize HTTP server failed: %+v", err)
 		return
