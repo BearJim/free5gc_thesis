@@ -50,7 +50,7 @@ func MDAFProcedure(request models.Amf3GppAccessRegistration) (header http.Header
 	cpuRateSlice := []float64{amf0.cpuRate, amf1.cpuRate, amf2.cpuRate}
 
 	targetAmfp := []int{10, 0, 0} //當所有AMF都小於threshold，給AMF0
-	threshold := 20.0
+	threshold := 50.0             //CPU limit rate
 	maxCpu, maxCpuK := max(cpuRateSlice)
 	secCpu, secCpuK := sec(cpuRateSlice)
 	_, minCPuK := min(cpuRateSlice)

@@ -262,3 +262,11 @@ time="2022-07-05T18:11:17Z" level=info msg="set log level : info" category=MonDB
 time="2022-07-05T18:11:17Z" level=info msg="set report call : false" category=MonDB component=LIB
 time="2022-07-05T18:11:32Z" level=info msg="set log level : info" category=MonDB component=LIB
 time="2022-07-05T18:11:32Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-07-06T08:06:06Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-07-06T08:06:06Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-07-06T08:06:25Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-07-06T08:06:25Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-07-06T08:09:45Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-07-06T08:09:45Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2022-07-06T08:09:58Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2022-07-06T08:09:58Z" level=info msg="set report call : false" category=MonDB component=LIB
